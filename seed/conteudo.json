@@ -1,0 +1,5822 @@
+{
+ "versao": 1,
+ "atualizado": "2026-11-02T21:07:11.853Z",
+ "personagens": [
+  {
+   "id": "francisca",
+   "nome": "Francisca",
+   "img": "/personagens/francisca.jpg",
+   "frase": "Olá! Eu sou a Francisca!",
+   "tom": {
+    "p": 1.35,
+    "r": 0.95
+   }
+  },
+  {
+   "id": "maia",
+   "nome": "Maia",
+   "img": "/personagens/maia.jpg",
+   "frase": "O nariz nunca mente!",
+   "tom": {
+    "p": 1.25,
+    "r": 0.95
+   }
+  },
+  {
+   "id": "balu",
+   "nome": "Balu",
+   "img": "/personagens/balu.jpg",
+   "frase": "Eu vou! Eu vou! Eu vou!",
+   "tom": {
+    "p": 1.6,
+    "r": 1.08
+   }
+  },
+  {
+   "id": "banze",
+   "nome": "Banzé",
+   "img": "/personagens/banze.jpg",
+   "frase": "Devagar também se chega.",
+   "tom": {
+    "p": 0.72,
+    "r": 0.84
+   }
+  },
+  {
+   "id": "tartarugas",
+   "nome": "Júlia e Xica",
+   "img": "/personagens/tartarugas.jpg",
+   "frase": "Eu primeiro! Não, eu primeiro!",
+   "tom": {
+    "p": 1.1,
+    "r": 0.9
+   }
+  },
+  {
+   "id": "tuninho",
+   "nome": "Tuninho",
+   "img": "/personagens/tuninho.jpg",
+   "frase": "Bip-bop!",
+   "tom": {
+    "p": 1.45,
+    "r": 1.05
+   }
+  },
+  {
+   "id": "coelhita",
+   "nome": "Coelhita",
+   "img": "/personagens/coelhita.jpg",
+   "frase": "Olha as cores!",
+   "tom": {
+    "p": 1.5,
+    "r": 1
+   }
+  },
+  {
+   "id": "rugido",
+   "nome": "Rugido",
+   "img": "/personagens/rugido.jpg",
+   "frase": "Capacetes postos?",
+   "tom": {
+    "p": 0.8,
+    "r": 1
+   }
+  },
+  {
+   "id": "lila",
+   "nome": "Lila",
+   "img": "/personagens/lila.jpg",
+   "frase": "Não sou princesa de ficar à espera.",
+   "tom": {
+    "p": 1.3,
+    "r": 0.95
+   }
+  },
+  {
+   "id": "cavaleiro",
+   "nome": "Cavaleiro",
+   "img": "/personagens/cavaleiro.jpg",
+   "frase": "Uma cor de cada vez.",
+   "tom": {
+    "p": 0.95,
+    "r": 0.9
+   }
+  },
+  {
+   "id": "girafa",
+   "nome": "Girafa",
+   "img": "/personagens/girafa.jpg",
+   "frase": "O caminho torto é o mais curto.",
+   "tom": {
+    "p": 0.9,
+    "r": 0.9
+   }
+  },
+  {
+   "id": "borbolessauro",
+   "nome": "Borbolessauro",
+   "img": "/personagens/borbolessauro.jpg",
+   "frase": "Sou grande, mas sou meigo.",
+   "tom": {
+    "p": 0.6,
+    "r": 0.8
+   }
+  },
+  {
+   "id": "ketchup",
+   "nome": "Ketchup e Mustarda",
+   "img": "/personagens/ketchup.jpg",
+   "frase": "É contigo ou é comigo?",
+   "tom": {
+    "p": 1.15,
+    "r": 0.85
+   }
+  },
+  {
+   "id": "joao",
+   "nome": "João",
+   "img": "/personagens/joao.jpg",
+   "frase": "A minha mãe não mente.",
+   "tom": {
+    "p": 1.3,
+    "r": 1
+   }
+  },
+  {
+   "id": "gelino",
+   "nome": "Gelino",
+   "img": "/personagens/gelino.jpg",
+   "frase": "Eu não sabia pedir.",
+   "tom": {
+    "p": 1.55,
+    "r": 0.95
+   }
+  },
+  {
+   "id": "maria",
+   "nome": "Maria",
+   "img": "/personagens/maria.jpg",
+   "frase": "Eu só queria ter alguém.",
+   "tom": {
+    "p": 1.25,
+    "r": 0.92
+   }
+  },
+  {
+   "id": "dragao",
+   "nome": "Dragão dos Sonhos",
+   "img": "/personagens/dragao.jpg",
+   "frase": "Quem souber procurar, encontra-me sempre.",
+   "tom": {
+    "p": 0.7,
+    "r": 0.8
+   }
+  },
+  {
+   "id": "julia",
+   "nome": "Dona Júlia",
+   "img": "/personagens/tartarugas.jpg",
+   "tom": {
+    "p": 0.85,
+    "r": 0.85
+   },
+   "extra": 1
+  },
+  {
+   "id": "xica",
+   "nome": "Dona Xica",
+   "img": "/personagens/tartarugas.jpg",
+   "tom": {
+    "p": 1.5,
+    "r": 1.02
+   },
+   "extra": 1
+  },
+  {
+   "id": "mustarda",
+   "nome": "Mustarda",
+   "img": "/personagens/ketchup.jpg",
+   "tom": {
+    "p": 0.95,
+    "r": 0.85
+   },
+   "extra": 1
+  }
+ ],
+ "livros": [
+  {
+   "n": 1,
+   "t": "O Balde que Apareceu",
+   "capa": "francisca",
+   "pags": [
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Lá na Estela, numa casa com um jardim pequenino, vivia uma menina chamada Francisca. Tinha cinco anos, cabelo louro aos caracóis e uns olhos azuis muito redondos."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Tinha também uns óculos cor-de-rosa, os seus preferidos. A mãe dizia que eram da mesma cor dos beijinhos. E a Francisca achava que a mãe tinha toda a razão."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "o": {
+      "noite": 1
+     },
+     "x": [
+      "Naquela manhã, a Francisca acordou antes de toda a gente. A casa estava muito silenciosa. Lá fora, o sol ainda se estava a espreguiçar."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Ela esticou os braços, deu um bocejo do tamanho de um hipopótamo e, quando ia pôr os pés no chão... parou.",
+      "Ao pé da janela estava uma coisa que não estava lá na noite anterior."
+     ]
+    },
+    {
+     "c": "quarto",
+     "b": 1,
+     "x": [
+      "Era um balde. Mas não era um balde qualquer. Era dourado, com brilhantezinhos a piscar no bordo, como se tivesse estrelas escondidas lá dentro."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "A Francisca pôs os óculos em cima do nariz e foi ter com ele, descalça e devagarinho, pé ante pé, para não fazer barulho."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "Quando lhe tocou com a ponta do dedo, sentiu uma coisa quentinha, como o sol da Primavera nas bochechas.",
+      "O balde não disse nada. Mas brilhou mais forte, como quem diz: ainda bem que chegaste."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      [
+       "francisca",
+       "Olá, balde. Tu queres mostrar-me uma coisa?"
+      ],
+      "O balde brilhou três vezes. Plim, plim, plim! Parecia mesmo um sim."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Mas eu não posso sair sozinha. A mãe e o pai ainda estão a dormir. Iam ficar muito preocupados!"
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "b": 1,
+     "o": {
+      "relogio": 1
+     },
+     "x": [
+      "Então o balde brilhou de uma maneira diferente. O relógio da mesa de cabeceira parou. O ponteiro grande não andava. O ponteiro pequeno também não."
+     ]
+    },
+    {
+     "c": "quarto",
+     "o": {
+      "relogio": 1,
+      "passaro": 1
+     },
+     "x": [
+      "Lá fora, um passarinho ficou parado no ar, de asas abertas, como numa fotografia. A casa inteira ficou quietinha."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      [
+       "francisca",
+       "Paraste o tempo?"
+      ],
+      "Plim, plim, plim.",
+      [
+       "francisca",
+       "Então ninguém vai ficar preocupado, porque ninguém vai dar pela minha falta!"
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "o": {
+      "desenho": 1
+     },
+     "x": [
+      "Mesmo assim, a Francisca pensou um bocadinho. Pegou numa folha e nos lápis de cor e fez um desenho: ela, com um balde amarelo e uma seta a apontar para a rua.",
+      [
+       "francisca",
+       "Por via das dúvidas."
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "o": {
+      "desenho": 1
+     },
+     "x": [
+      "Deixou o desenho em cima da almofada da mãe, com muito cuidado para não a acordar. Assim, se a mãe acordasse, sabia onde ela estava."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "Depois vestiu o vestido das florzinhas, calçou as sapatilhas e pendurou o balde no braço. Estava pronta."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "Lá fora, o ar estava fresquinho e as nuvens estavam paradas no céu, fofas como algodão-doce. A rua inteira parecia um desenho."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "O balde começou a puxá-la, muito suavemente. Não a aleijava. Era como se lhe desse a mão e dissesse: anda, é por aqui."
+     ]
+    },
+    {
+     "c": "portao",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "E foi assim, passinho a passinho, que a Francisca chegou a um portão de ferro cheio de flores. Por cima, umas letras diziam: Parque dos Sonhos."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor são os óculos da Francisca?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "azul",
+       "d": "azuis"
+      },
+      {
+       "cor": "cor-de-rosa",
+       "d": "cor-de-rosa"
+      },
+      {
+       "cor": "verde",
+       "d": "verdes"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que apareceu ao pé da janela?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "bola",
+       "d": "uma bola"
+      },
+      {
+       "svg": "flor",
+       "d": "uma flor"
+      },
+      {
+       "svg": "balde",
+       "d": "um balde dourado"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "Quem é a menina desta história?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "lila"
+      },
+      {
+       "img": "francisca"
+      },
+      {
+       "img": "maria"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "t": "Os Três Cães do Rio",
+   "capa": "maia",
+   "pags": [
+    {
+     "c": "portao",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "Mal a Francisca passou o portão, as nuvens voltaram a mexer-se. Lá fora, o tempo estava parado. Mas ali dentro, andava à sua maneira."
+     ]
+    },
+    {
+     "c": "triste",
+     "x": [
+      "O Parque dos Sonhos devia ser o sítio mais bonito do mundo. Tinha baloiços de prata, escorregas que mudavam de cor e árvores com flores que cantavam baixinho."
+     ]
+    },
+    {
+     "c": "triste",
+     "x": [
+      "Devia ser. Mas não era. As flores estavam encolhidas. A relva tinha perdido a cor. E as árvores não cantavam: gemiam, como quem tem dor de barriga."
+     ]
+    },
+    {
+     "c": "rio",
+     "x": [
+      "E o rio, que devia brilhar como vidro ao sol, corria cinzento e devagarinho, sem vontade nenhuma."
+     ]
+    },
+    {
+     "c": "triste",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Mas o que é que aconteceu aqui?"
+      ],
+      "O balde brilhou, muito triste. A Francisca abraçou-o com força e continuou a andar."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "balu",
+      "maia",
+      "banze"
+     ],
+     "x": [
+      "À beira do rio estavam três cães sentados em fila, com cara de quem estava a pensar muito. Quando a viram, viraram a cabeça os três ao mesmo tempo."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "maia",
+      "francisca"
+     ],
+     "x": [
+      [
+       "maia",
+       "Olá! Ainda bem que veio alguém."
+      ],
+      [
+       "francisca",
+       "Tu... falas?"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "Falamos todos. No Parque dos Sonhos, todos os bichos falam. Estranho era se não falássemos."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "balu"
+     ],
+     "x": [
+      "O mais pequenino, preto e branco e de lenço vermelho, já estava a saltar-lhe à volta.",
+      [
+       "balu",
+       "Au au! És nova aqui? Eu sou o Balu! Esta é a Maia! E aquele velhote é o Banzé!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze",
+      "balu"
+     ],
+     "x": [
+      [
+       "banze",
+       "Não me chames velhote."
+      ],
+      "Mas o Banzé disse isto a sorrir. Ele nunca se zangava."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "maia",
+      "francisca"
+     ],
+     "x": [
+      "A Maia, a cadelinha castanha de coleira amarela, chegou o focinho à mão da Francisca e cheirou-a com atenção.",
+      [
+       "maia",
+       "Cheiras a coisa boa. O nariz nunca mente!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Eu sou a Francisca. Acordei e este balde estava no meu quarto. Acho que foi ele que me trouxe aqui."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze"
+     ],
+     "b": 1,
+     "x": [
+      "O Banzé levantou-se devagar. Era o maior dos três, malhado, com um colar havaiano de flores ao pescoço. Cheirou o balde e ficou muito sério."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "A minha avó contava histórias de baldes assim. Dizia que o parque tem quatro Luzes, que vivem na fonte onde nasce o rio."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "São elas que dão cor às flores, música às árvores e brilho à água. Alguém as tirou de lá. Por isso está tudo tão triste."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze",
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "banze",
+       "Quando as Luzes se perdem, aparece um balde dourado. E o balde escolhe sempre alguém com o coração certo para as ir buscar."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "maia",
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Coração certo?"
+      ],
+      [
+       "maia",
+       "Um coração que ajuda."
+      ],
+      "A Francisca sentiu um aperto no peito. Não era medo. Era vontade de pôr o parque bom outra vez."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "balu",
+      "maia",
+      "banze"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Eu quero ajudar! Mas não sei por onde começar."
+      ],
+      [
+       "balu",
+       "Começamos juntos! Eu vou! Eu vou! Eu vou!"
+      ],
+      [
+       "banze",
+       "E eu vou para vos manter sossegados."
+      ],
+      "A Francisca sorriu. Já tinha três amigos."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quantas Luzes perdeu o parque?",
+     "quem": "banze",
+     "ops": [
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      },
+      {
+       "num": 7,
+       "d": "sete"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Qual destes é o Balu?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "banze"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "maia"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "De que cor é a Maia?",
+     "quem": "balu",
+     "ops": [
+      {
+       "cor": "castanho",
+       "d": "castanha"
+      },
+      {
+       "cor": "verde",
+       "d": "verde"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "t": "As Tartarugas que Discutem",
+   "capa": "tartarugas",
+   "pags": [
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "balu",
+      "maia",
+      "banze"
+     ],
+     "x": [
+      "Foram seguindo o rio. O Balu corria à frente, voltava para trás e corria outra vez. A Maia ia ao lado da Francisca, de nariz no ar. O Banzé fechava o grupo, devagarinho."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Shhh! Estão a ouvir? Há alguém a discutir."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      "Em cima de uma pedra grande, à beira da água, estava uma tartaruga velha, de carapaça cor de areia. E em cima da carapaça dela, como num baloiço, estava outra, pequenina e esverdeada."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "julia",
+       "Eu já te disse que não!"
+      ],
+      [
+       "xica",
+       "E eu já te disse que sim!"
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Ai, com licença..."
+      ],
+      "As duas tartarugas esticaram o pescoço ao mesmo tempo."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Visitas! Olá, olá, olá! Eu sou a Dona Xica, e esta é a minha irmã mais velha, a Dona Júlia."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Ando sempre às costas dela, porque daqui de cima vê-se melhor."
+      ],
+      [
+       "julia",
+       "E porque tens preguiça."
+      ],
+      [
+       "xica",
+       "Também."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "E estavam a discutir porquê?"
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "julia",
+       "A Xica acha que o rio ficou cinzento por causa de uma nuvem. Eu acho que foi por causa de uns bichos estranhos que andam por aí."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas",
+      "banze"
+     ],
+     "x": [
+      [
+       "julia",
+       "Vimos quatro. Não são daqui. Nunca os tínhamos visto."
+      ],
+      [
+       "banze",
+       "Foram eles que estragaram o parque?"
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Eu acho que nem fizeram de propósito. Pareciam mais perdidos do que mauzinhos."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "julia",
+       "Xica, deixa-me pensar..."
+      ],
+      [
+       "xica",
+       "Júlia, eu também posso dizer coisas!"
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "As duas iam começar outra vez, mas a Francisca desatou a rir. E elas pararam, admiradas.",
+      [
+       "francisca",
+       "Se calhar as duas têm razão! Pode haver bichos e pode haver uma nuvem."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Querem vir connosco descobrir?"
+      ],
+      "A Dona Júlia olhou para cima. A Dona Xica olhou para baixo."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Vamos! Mas eu primeiro!"
+      ],
+      [
+       "julia",
+       "Não, eu primeiro!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze",
+      "tartarugas"
+     ],
+     "x": [
+      "O Banzé suspirou, divertido, e deitou-se no chão. Subiu a Dona Júlia e, às costas dela, a Dona Xica. Pareciam um bolo de três andares!"
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "maia",
+      "banze",
+      "tartarugas"
+     ],
+     "b": 1,
+     "x": [
+      "E lá foram, rio fora. Agora eram seis amigos à procura das quatro Luzes. E o balde brilhou mais um bocadinho."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem anda às costas da irmã?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "tuninho"
+      },
+      {
+       "img": "tartarugas"
+      },
+      {
+       "img": "rugido"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quantos bichos estranhos viram as tartarugas?",
+     "quem": "tartarugas",
+     "ops": [
+      {
+       "num": 4,
+       "d": "quatro"
+      },
+      {
+       "num": 2,
+       "d": "dois"
+      },
+      {
+       "num": 6,
+       "d": "seis"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Onde estavam as tartarugas?",
+     "quem": "maia",
+     "ops": [
+      {
+       "cena": "quarto",
+       "d": "num quarto"
+      },
+      {
+       "cena": "pedra",
+       "d": "numa pedra, à beira do rio"
+      },
+      {
+       "cena": "rua",
+       "d": "na rua"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "t": "O Peixe com Pernas",
+   "capa": "tuninho",
+   "pags": [
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "maia",
+      "balu"
+     ],
+     "x": [
+      "Os amigos continuaram pelo rio. A água ainda estava cinzenta, e as flores da margem continuavam de cabeça baixa."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Olhem! O que é aquilo?"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      "Pela margem vinha uma coisa que a Francisca nunca tinha imaginado. Era um aquário redondo, com um peixinho cor de laranja lá dentro. E o aquário tinha pernas!"
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      "Duas perninhas de metal dourado por baixo, e dois bracinhos de metal dos lados. Tique-tique-tique, fazia ao andar."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Bip-bop! Bom dia!"
+      ],
+      "O peixe acenou com um bracinho. A Francisca tapou a boca para não se rir alto."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Tu vives aí dentro?"
+      ],
+      [
+       "tuninho",
+       "Vivo! Chamo-me Tuninho. Fui eu que inventei estas pernas. Demorei imenso tempo!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Sou um peixe inventor. Dantes, só podia inventar debaixo de água. Agora posso inventar em todo o lado!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      "Dentro do aquário havia parafusos pequeninos, chaves de fendas do tamanho de alfinetes e um relógio de bolso. Tudo muito arrumado, como numa oficina."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Andamos à procura de quatro Luzes. Saíram da fonte, e o parque ficou triste."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Bip! Então precisam de um mapa. Tenho aqui um detetor de brilhos. Inventei-o na terça-feira."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "o": {
+      "mapa": 1
+     },
+     "x": [
+      "O Tuninho esticou um bracinho. Da ponta saiu um feixe de luz que desenhou o parque inteiro no ar, a flutuar."
+     ]
+    },
+    {
+     "c": "rio",
+     "o": {
+      "mapa": 1
+     },
+     "x": [
+      "No mapa apareceram quatro pontinhos dourados. Um numa caverna, ao pé da floresta. Outro no cimo de uma colina gelada. Outro numa torre velha, lá no norte."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tartarugas"
+     ],
+     "o": {
+      "mapa": 1
+     },
+     "x": [
+      [
+       "julia",
+       "E o quarto pontinho? Está a mexer-se!"
+      ],
+      "Era verdade. O quarto pontinho andava de um lado para o outro, como se alguém o levasse ao colo."
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Isto é um mistério. Bip. Eu adoro mistérios!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Vens connosco?"
+      ],
+      [
+       "tuninho",
+       "Vou! Mas aviso já: ando devagar. As pernas ainda estão a ser melhoradas."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "banze",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "banze",
+       "Não faz mal. Os mais velhos também andam devagar e chegam na mesma."
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "tuninho",
+      "maia",
+      "banze"
+     ],
+     "b": 1,
+     "x": [
+      "E lá foram todos, com o Tuninho a fazer tique-tique-tique e o mapa de luz a flutuar à frente, a mostrar o caminho."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Onde vive o Tuninho?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "aquario",
+       "d": "num aquário com pernas"
+      },
+      {
+       "svg": "balde",
+       "d": "num balde"
+      },
+      {
+       "svg": "flor",
+       "d": "numa flor"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantos pontinhos tinha o mapa de luz?",
+     "quem": "tuninho",
+     "ops": [
+      {
+       "num": 2,
+       "d": "dois"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      },
+      {
+       "num": 6,
+       "d": "seis"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Qual destes é o Tuninho?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "joao"
+      },
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "tuninho"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "t": "A Coelhita e o Rugido",
+   "capa": "coelhita",
+   "pags": [
+    {
+     "c": "campo",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "O caminho passava por um campo cheio de margaridas. Mas as margaridas também estavam tristes, com as pétalas fechadinhas."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "De repente, do meio delas, saltou uma coelhinha azul-clarinha, com um vestido com um arco-íris desenhado."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "Quando saltava, deixava no ar um rastinho de cores. Mas as cores estavam tão pálidas que quase não se viam."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "coelhita",
+      "francisca"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Olá! Eu sou a Coelhita. Tenho poderes de arco-íris. Olhem!"
+      ],
+      "Deu um salto. O arco-íris saiu tão desbotado que parecia lavado vezes demais."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Desde que o parque ficou triste, as minhas cores fugiram. Se as Luzes voltarem, acho que as cores também voltam."
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "coelhita",
+      "francisca"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Posso ir convosco? Salto muito depressa!"
+      ],
+      [
+       "francisca",
+       "Claro que podes!"
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "x": [
+      "Não tinham andado muito quando ouviram um barulho ao longe. VRUUUM! VRUUUM!"
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      "Pelo caminho vinha um leão cor de mel numa mota reluzente. Tinha um casaco de cabedal, botas grandes e uns óculos de aviador em cima da juba."
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "x": [
+      [
+       "rugido",
+       "Olá, malta! Eu sou o Rugido. Faço as estradas do parque. E hoje cheira-me que há coisa errada no ar."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "francisca",
+      "rugido"
+     ],
+     "b": 1,
+     "x": [
+      "A Francisca explicou tudo: as Luzes, a fonte, o balde dourado.",
+      [
+       "rugido",
+       "Um balde dourado! Que coisa rara."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "x": [
+      [
+       "rugido",
+       "E sabes o que é mais raro ainda? Diz-se que, quando as Luzes voltam, passa no céu o Dragão dos Sonhos. Ando há anos à procura dele e nunca o vi."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "francisca",
+      "rugido"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Se calhar hoje vês!"
+      ],
+      [
+       "rugido",
+       "Querem boleia? A minha mota é mágica. Cresce conforme precisamos."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "banze",
+      "rugido"
+     ],
+     "x": [
+      [
+       "banze",
+       "E é segura?"
+      ],
+      [
+       "rugido",
+       "Seguríssima! Regra número um do Rugido: ninguém anda de mota sem capacete."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "tartarugas",
+      "rugido"
+     ],
+     "x": [
+      [
+       "xica",
+       "Mas nós já temos casca!"
+      ],
+      [
+       "rugido",
+       "Casca não é capacete."
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      "A mota cresceu até ficar do tamanho de um autocarro pequenino. Subiram todos, de capacete. O Tuninho foi preso com um cinto, para o aquário não entornar."
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido",
+      "coelhita"
+     ],
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      [
+       "rugido",
+       "Capacetes postos?"
+      ],
+      "Todos gritaram: postos! E a mota partiu. VRUUUM!"
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor é a Coelhita?",
+     "quem": "rugido",
+     "ops": [
+      {
+       "cor": "vermelho",
+       "d": "vermelha"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      },
+      {
+       "cor": "verde",
+       "d": "verde"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Em que anda o Rugido?",
+     "quem": "coelhita",
+     "ops": [
+      {
+       "svg": "mota",
+       "d": "numa mota"
+      },
+      {
+       "svg": "balde",
+       "d": "num balde"
+      },
+      {
+       "svg": "aquario",
+       "d": "num aquário"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que se põe na cabeça para andar de mota?",
+     "quem": "rugido",
+     "ops": [
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "flor",
+       "d": "uma flor"
+      },
+      {
+       "svg": "capacete",
+       "d": "um capacete"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "t": "O Urso dos Mapas",
+   "capa": "girafa",
+   "pags": [
+    {
+     "c": "floresta",
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      "A mota parou à entrada da floresta, debaixo de uma árvore enorme. Os troncos eram altos e as folhas faziam um teto verde-escuro."
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      "Encostado ao tronco estava um urso castanho, de chapéu na cabeça e casaco cor de laranja. Tinha os braços tão cheios de mapas que mal se lhe via a barriga."
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Bom dia! Vão para a floresta? Cuidado. Há um caminho que parece direitinho e afinal dá uma volta enorme."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa",
+      "maia"
+     ],
+     "x": [
+      [
+       "girafa",
+       "E há um caminho que parece torto e chega num instante."
+      ],
+      [
+       "maia",
+       "Como é que sabes?"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Porque adoro mapas! Chamo-me Girafa."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "coelhita",
+      "girafa"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Mas tu não és uma girafa. És um urso!"
+      ],
+      "O urso encolheu os ombros, e caíram-lhe dois mapas ao chão."
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Quando eu era pequenino, achava que as girafas tinham o pescoço comprido para verem o caminho lá de longe."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Eu queria ver tudo de longe, como elas. Os meus pais acharam tanta graça que começaram a chamar-me Girafa. E ficou!"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca achou que era a história mais bonita do mundo para um nome.",
+      [
+       "francisca",
+       "E porque estás aqui, Girafa?"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Porque os meus mapas andam esquisitos. Há uma semana que os caminhos para a torre velha mudaram de sítio."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Quem vai pela esquerda, volta ao princípio. Quem vai pela direita, também. É como se alguém não quisesse que ninguém lá chegasse."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "tuninho",
+      "girafa"
+     ],
+     "o": {
+      "mapa": 1
+     },
+     "x": [
+      "O Tuninho mostrou o mapa de luz. O Girafa olhou, comparou com os mapas de papel, virou um deles ao contrário e abriu muito os olhos."
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Agora faz sentido! Os vossos pontinhos estão mesmo onde os meus caminhos se enrolam. Posso ir convosco?"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa",
+      "francisca"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Se os caminhos se baralham, eu desbaralho-os!"
+      ],
+      [
+       "francisca",
+       "Podes vir!"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa",
+      "balu"
+     ],
+     "x": [
+      [
+       "girafa",
+       "O primeiro sítio é por aqui. E pelo caminho passamos por alguém que pode ajudar."
+      ],
+      [
+       "balu",
+       "Quem? Quem? Quem?"
+      ],
+      [
+       "girafa",
+       "Vão ver."
+      ]
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Qual destes é o Girafa?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "girafa"
+      },
+      {
+       "img": "balu"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que traz o Girafa nos braços?",
+     "quem": "coelhita",
+     "ops": [
+      {
+       "svg": "mapa",
+       "d": "mapas"
+      },
+      {
+       "svg": "sandes",
+       "d": "sandes"
+      },
+      {
+       "svg": "flor",
+       "d": "flores"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Onde estava o Girafa?",
+     "quem": "maia",
+     "ops": [
+      {
+       "cena": "quarto",
+       "d": "num quarto"
+      },
+      {
+       "cena": "pedra",
+       "d": "numa pedra"
+      },
+      {
+       "cena": "floresta",
+       "d": "à entrada da floresta"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "t": "A Princesa Lila e o Cavaleiro",
+   "capa": "lila",
+   "pags": [
+    {
+     "c": "castelo",
+     "x": [
+      "O caminho torto ia dar a um castelinho cor de lilás, do tamanho de uma casa, com bandeirinhas a esvoaçar no telhado."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "Sentada no degrau da porta estava uma menina com um vestido lilás cheio de flores e uma coroa dourada pequenina. O cabelo dela era lilás também, aos caracóis."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "Tinha um ramo de flores ao colo. Mas as flores estavam todas de cabeça baixa."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "francisca"
+     ],
+     "x": [
+      [
+       "lila",
+       "Boa tarde. Vocês são bastantes!"
+      ],
+      [
+       "francisca",
+       "Tu és uma princesa?"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "Sou a Princesa Lila. Mas não sou daquelas princesas que ficam à espera. Gosto de andar pelo parque e de resolver coisas."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "Hoje estou aqui sentada porque estou preocupada. As flores do meu jardim estão tristes."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "E a minha melhor amiga, uma fadinha que mora num cogumelo aqui ao lado, foi-se embora porque o ar ficou pesado."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "balu",
+      "lila"
+     ],
+     "x": [
+      [
+       "balu",
+       "Nós vamos buscar as Luzes do parque! Queres vir?"
+      ],
+      [
+       "lila",
+       "Quero a minha fadinha de volta. Vou já!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "A Lila bateu palmas três vezes. Plac, plac, plac!"
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      "Pela porta do castelinho saiu, a tilintar, um pequeno cavaleiro de armadura prateada, com um escudo azul com uma estrela e uma espada de madeira."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      "Mas o mais especial não era a armadura. Eram as tranças! Saíam-lhe do capacete duas tranças compridas, com todas as cores do arco-íris."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "lila",
+       "Este é o Cavaleiro das Tranças Arco-Íris. Onde eu vou, ele vai."
+      ],
+      [
+       "cavaleiro",
+       "Olá a todos. Estou pronto."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Porque é que as tuas tranças têm as cores todas?"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Cada cor lembra-me uma coisa importante. O vermelho é a coragem. O laranja, a alegria. O amarelo, a amizade."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "O verde é a calma. O azul, a verdade. O anil, a paciência. E o violeta, a bondade."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Quando tenho de fazer uma coisa difícil, toco numa cor e lembro-me do que importa."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Uma cor de cada vez."
+      ],
+      [
+       "cavaleiro",
+       "Isso mesmo. Uma cor de cada vez."
+      ]
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor é o castelo da Lila?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "vermelho",
+       "d": "vermelho"
+      },
+      {
+       "cor": "verde",
+       "d": "verde"
+      },
+      {
+       "cor": "roxo",
+       "d": "lilás"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "O que tem a Lila na cabeça?",
+     "quem": "balu",
+     "ops": [
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "capacete",
+       "d": "um capacete"
+      },
+      {
+       "svg": "flor",
+       "d": "uma flor"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem tem tranças de todas as cores?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "lila"
+      },
+      {
+       "img": "cavaleiro"
+      },
+      {
+       "img": "maria"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "t": "O Borbolessauro",
+   "capa": "borbolessauro",
+   "pags": [
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "cavaleiro"
+     ],
+     "x": [
+      "Mal entraram na floresta, ouviram passos. Não eram passos pequeninos. Eram passos enormes. PUM. PUM. PUM."
+     ]
+    },
+    {
+     "c": "mata",
+     "x": [
+      "As árvores afastaram-se, e por entre os troncos apareceu um dinossauro enorme, verde-água, com placas grandes ao longo das costas."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "o": {
+      "borboletas": 2
+     },
+     "x": [
+      "Tinha borboletas desenhadas pelo corpo todo. E à volta dele voavam borboletas a sério. Bem... voavam duas. Só duas."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "balu",
+      "maia",
+      "tartarugas"
+     ],
+     "x": [
+      "O Balu escondeu-se atrás da Maia. A Maia escondeu-se atrás do Banzé. E as tartarugas meteram a cabeça dentro da casca."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      [
+       "borbolessauro",
+       "Calma. Eu sei que sou grande. Mas sou meigo. Sou meigo a sério."
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "borbolessauro"
+     ],
+     "x": [
+      "A Francisca aproximou-se devagar. Ele tinha uns olhos enormes e doces, como os dos cães quando pedem festinhas.",
+      [
+       "francisca",
+       "Como te chamas?"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      [
+       "borbolessauro",
+       "Borbolessauro. Vivo escondido na floresta, porque tenho medo que as pessoas tenham medo de mim."
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "o": {
+      "borboletas": 2
+     },
+     "x": [
+      [
+       "borbolessauro",
+       "E hoje acordei muito triste. Olha."
+      ],
+      "Abanou as placas. Saíram as duas borboletas, que voaram e pousaram nos óculos da Francisca, uma em cada lente."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      [
+       "borbolessauro",
+       "Dantes saíam centenas. O parque está doente. E eu faço parte do parque."
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "borbolessauro"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Nós vamos pô-lo bom. Queres vir? És tão grande que podes levar-nos a todos!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      "O Borbolessauro abanou a cauda devagar, como um cão grande contente.",
+      [
+       "borbolessauro",
+       "Adorava. Há tanto tempo que ninguém quer andar às minhas costas."
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "borbolessauro",
+      "francisca",
+      "cavaleiro"
+     ],
+     "x": [
+      "Subiram todos. Entre as placas havia espaços fofinhos para se sentarem. A Francisca foi à frente, no pescoço, e o Cavaleiro foi lá atrás, a guardar o grupo."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "rugido"
+     ],
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      "O Rugido seguiu ao lado, de mota, a fazer vrum baixinho para não assustar as borboletas."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca tentou contar os amigos pelos dedos. Mas os dedos não chegaram! Eram doze amigos. E, com ela, treze."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "E o balde... ainda estava vazio. Estava na hora de encontrar a primeira Luz."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "O que tem o Borbolessauro desenhado no corpo?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "estrela",
+       "d": "estrelas"
+      },
+      {
+       "svg": "borboleta",
+       "d": "borboletas"
+      },
+      {
+       "svg": "flor",
+       "d": "flores"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quantas borboletas voavam à volta dele?",
+     "quem": "borbolessauro",
+     "ops": [
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 5,
+       "d": "cinco"
+      },
+      {
+       "num": 8,
+       "d": "oito"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Qual destes é o Borbolessauro?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "dragao"
+      },
+      {
+       "img": "borbolessauro"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "t": "Os Dois Cíclopes",
+   "capa": "ketchup",
+   "luz": 1,
+   "pags": [
+    {
+     "c": "caverna",
+     "x": [
+      "O primeiro pontinho do mapa era numa caverna pequenina, no canto da floresta."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      "À entrada estavam dois bichos sentados lado a lado, gorduchinhos e peludos, com um só olho grande no meio da cara. Um era vermelho. O outro era amarelo."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "borbolessauro",
+      "ketchup"
+     ],
+     "x": [
+      [
+       "borbolessauro",
+       "Bom... bom dia?"
+      ],
+      "Os dois olharam para cima. Depois um para o outro. Depois para cima outra vez."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "É connosco?"
+      ],
+      [
+       "mustarda",
+       "É contigo ou é comigo?"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "ketchup"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Olá! Eu sou a Francisca. E vocês?"
+      ],
+      [
+       "ketchup",
+       "Eu sou o Ketchup."
+      ],
+      [
+       "mustarda",
+       "E eu sou o Mustarda."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Somos irmãos. Eu sou o mais velho."
+      ],
+      [
+       "mustarda",
+       "Não és nada! Eu é que sou o mais velho."
+      ],
+      [
+       "ketchup",
+       "Pois és. Esqueci-me."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "o": {
+      "luz": 1
+     },
+     "x": [
+      "Lá no fundo da caverna brilhava uma luz dourada. Os dois irmãos estavam sentados à frente dela, como dois guardas muito pequenos."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "rugido",
+      "francisca"
+     ],
+     "x": [
+      "O Rugido ia dizer qualquer coisa zangada. Mas a Francisca não deixou. Ajoelhou-se e fez a pergunta que ninguém lhes tinha feito.",
+      [
+       "francisca",
+       "Porque é que estão a guardar aquela luz?"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Uma bruxa chamou-nos lá de longe e disse-nos para tomarmos conta dela."
+      ],
+      [
+       "mustarda",
+       "E nós temos medo do escuro. A caverna é muito escura à noite."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "E ninguém fala connosco. Acham que somos esquisitos. Por isso ninguém nos disse de quem era a luz."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Aquela luz é do parque inteiro. Sem ela, o rio fica cinzento e as flores ficam tristes."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "ketchup"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Mas eu percebo o medo do escuro. Eu também tenho, às vezes. Quando se tem medo do escuro, pede-se uma luz de presença!"
+      ],
+      [
+       "mustarda",
+       "Nunca tínhamos pensado nisso!"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      "O Cavaleiro deu um passo em frente e tocou na trança amarela, a da amizade. Depois tirou do cinto uma lanterna prateada pequenina.",
+      [
+       "cavaleiro",
+       "Esta é para vocês. Funciona sempre."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Para nós?"
+      ],
+      [
+       "mustarda",
+       "De graça?"
+      ],
+      [
+       "cavaleiro",
+       "De graça."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "o": {
+      "luz": 1
+     },
+     "x": [
+      "Os irmãos abraçaram-se tanto que caíram para o lado! Depois foram buscar a luz dourada e trouxeram-na nos braços."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      "A Francisca estendeu o balde, e a luz entrou lá para dentro. Plim! O balde ficou mais pesado e mais quentinho.",
+      [
+       "francisca",
+       "Uma! Faltam três."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      "O Ketchup e o Mustarda ficaram à porta da caverna, com a lanterna acesa, a acenar.",
+      [
+       "ketchup",
+       "Olha que bonita!"
+      ],
+      [
+       "mustarda",
+       "Fui eu que lhe peguei primeiro!"
+      ]
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Do que tinham medo o Ketchup e o Mustarda?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "lua",
+       "d": "do escuro"
+      },
+      {
+       "svg": "flor",
+       "d": "das flores"
+      },
+      {
+       "svg": "bola",
+       "d": "das bolas"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que lhes deu o Cavaleiro?",
+     "quem": "ketchup",
+     "ops": [
+      {
+       "svg": "sandes",
+       "d": "uma sandes"
+      },
+      {
+       "svg": "lanterna",
+       "d": "uma lanterna"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quantas Luzes há agora no balde?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "t": "O Pinguim Amarelo",
+   "capa": "joao",
+   "luz": 1,
+   "pags": [
+    {
+     "c": "colina",
+     "q": [
+      "rugido",
+      "borbolessauro"
+     ],
+     "x": [
+      "O segundo pontinho era no cimo da Colina Geladinha. Lá em cima corria sempre um ventinho frio. A mota do Rugido subiu à frente, e o Borbolessauro foi atrás. PUM, PUM, PUM."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      "Lá no cimo, a passear de asas atrás das costas, estava um pinguim. Mas não era um pinguim qualquer. Era todo amarelo, com um gorro de lã azul."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "joao"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Ó pinguim?"
+      ],
+      "O pinguim deu um salto de susto e quase caiu de rabo!"
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "joao",
+       "Ai! Olá, olá! Não vos tinha visto. Estava a pensar nas minhas coisas."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "joao",
+       "Sou o João! Sou um pinguim amarelo, já repararam? Os meus pais são pretos e brancos, mas eu nasci assim."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "joao",
+       "A minha mãe diz que é porque, quando estava à minha espera, comeu muitas mangas."
+      ],
+      [
+       "tuninho",
+       "Bip! Não é bem assim que funciona."
+      ],
+      [
+       "joao",
+       "Funciona, funciona. A minha mãe não mente."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "joao"
+     ],
+     "x": [
+      [
+       "francisca",
+       "João, o que fazes aqui sozinho?"
+      ],
+      [
+       "joao",
+       "Estou à espera de um amigo. Um dragãozinho. Disse que íamos ter uma aventura."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "joao",
+       "Pediu-me para esperar aqui em cima, que ele vinha já. Isso foi há três dias. Acho que se esqueceu de mim."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "A Maia levantou o nariz. Cheirou para a esquerda. Cheirou para a direita. E correu até uma pedra grande.",
+      [
+       "maia",
+       "Está aqui! Cheira a luz! Está numa racha da pedra."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "tuninho"
+     ],
+     "o": {
+      "luz": 1
+     },
+     "x": [
+      "A racha era tão estreita que nem a pata do Balu lá cabia. Mas o Tuninho esticou um bracinho de metal, mais, e mais, tique-tique-tique, e puxou lá de dentro uma luz dourada.",
+      [
+       "tuninho",
+       "Bip-bop! Apanhei!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao",
+      "francisca"
+     ],
+     "x": [
+      [
+       "joao",
+       "Uma luz? Eu não pus aqui luz nenhuma."
+      ],
+      [
+       "francisca",
+       "Pois não. Mas acho que o teu amigo pôs. E pediu-te para ficares aqui para ninguém desconfiar."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      "O João ficou parado muito tempo. Não estava zangado. Estava confuso, e um bocadinho magoado.",
+      [
+       "joao",
+       "Eu até lhe fiz sandes. Trouxe duas, uma para mim e outra para ele."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "maia",
+      "joao"
+     ],
+     "x": [
+      "A Maia encostou a cabeça à barriga do João, que era a maneira dela de dar abraços.",
+      [
+       "maia",
+       "Tens aqui muitos amigos. Amigos a sério."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao",
+      "lila"
+     ],
+     "x": [
+      [
+       "joao",
+       "Mas eu às vezes sou tontinho. Acredito em tudo o que me dizem."
+      ],
+      [
+       "lila",
+       "Acreditar nos outros não é ser tontinho. É ser bom. Com o tempo, aprendemos quem é nosso amigo de verdade."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      "A Francisca estendeu o balde, e o Tuninho pousou lá dentro a luz. Plim!",
+      [
+       "francisca",
+       "Duas! Faltam duas."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "Lá em baixo, as primeiras flores levantaram a cabeça. E a Coelhita deu um salto que já tinha vermelho, laranja e amarelo a sério!"
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao",
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "João, queres vir connosco? Ainda temos de encontrar o teu amigo."
+      ],
+      [
+       "joao",
+       "Vou! E levo as sandes. Posso fazê-las em pedacinhos para todos."
+      ]
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor é o João?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "preto",
+       "d": "preto"
+      },
+      {
+       "cor": "amarelo",
+       "d": "amarelo"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quem encontrou a luz com o nariz?",
+     "quem": "joao",
+     "ops": [
+      {
+       "img": "maia"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "rugido"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que trazia o João na mochila?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "lanterna",
+       "d": "uma lanterna"
+      },
+      {
+       "svg": "bola",
+       "d": "uma bola"
+      },
+      {
+       "svg": "sandes",
+       "d": "sandes"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "t": "O Dragãozinho de Gelo",
+   "capa": "gelino",
+   "luz": 1,
+   "pags": [
+    {
+     "c": "bosque",
+     "x": [
+      "O pontinho que se mexia estava no bosque escuro. Ali as árvores eram mais altas e o ar mais frio. As folhas estalavam debaixo das patas. Crec, crec."
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Shhh! Está alguém a chorar."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "Atrás de um arbusto, enroscado no chão, estava um dragãozinho azul-gelo, de cachecol ao pescoço, com a cara escondida nas patas. À volta dele, a relva estava coberta de geada."
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      [
+       "joao",
+       "Gelino? És tu?"
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "O dragãozinho levantou a cabeça. Tinha lágrimas nas bochechas, e as lágrimas transformavam-se em bolinhas de gelo quando caíam. Tlin, tlin.",
+      [
+       "gelino",
+       "João... desculpa. Eu sei o que te fiz."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "gelino"
+     ],
+     "x": [
+      "A Francisca sentou-se ao lado dele, devagarinho. E fez outra vez a pergunta mais importante.",
+      [
+       "francisca",
+       "Porquê, Gelino?"
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Porque sou pequeno. E estou sozinho. Uma bruxa chamou-me lá do meu bosque gelado, e eu vim parar aqui sem conhecer ninguém."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino",
+      "joao"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Depois vi o João, todo amarelo e simpático. Pensei: se ele tiver de ficar à minha espera, vai ter de ser meu amigo."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Escondi uma luz na colina para ele ter uma razão para ficar. Mas ele era tão simpático que ficava na mesma, sem mentiras."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "maia",
+      "gelino"
+     ],
+     "o": {
+      "luz": 1
+     },
+     "x": [
+      [
+       "maia",
+       "E essa luz que tens debaixo da asa?"
+      ],
+      "O Gelino abriu uma asa. Lá debaixo brilhava uma bolinha dourada."
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Estava a aquecer-me. Os dragões de gelo não se conseguem aquecer sozinhos. Precisam de outros à volta."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "balu",
+      "gelino"
+     ],
+     "x": [
+      "O Balu deu um saltinho e lambeu a cara do Gelino. Ficou com a língua tão gelada que espirrou. Atchim! E o Gelino, sem querer, riu-se. Tlin-tlin-tlin!"
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "maia",
+      "gelino"
+     ],
+     "x": [
+      [
+       "maia",
+       "Gelino, não precisas de enganar ninguém para teres companhia. Basta pedir."
+      ],
+      [
+       "gelino",
+       "Eu não sabia pedir. Nunca tinha pedido nada a ninguém."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "gelino",
+      "joao"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Então experimenta agora."
+      ],
+      [
+       "gelino",
+       "João... queres ser meu amigo? A sério, sem truques?"
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      [
+       "joao",
+       "Eu sou do tipo de amigo que perdoa. Mas só vale se prometeres não mentir mais."
+      ],
+      [
+       "gelino",
+       "Prometo. Prometo a sério."
+      ],
+      [
+       "joao",
+       "Então sim! Mas primeiro tens de comer uma sandes."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      "O Gelino deu a luz à Francisca, e ela pousou-a no balde. Plim!",
+      [
+       "francisca",
+       "Três! Falta só uma."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "O João abriu uma asa amarela e o Gelino enroscou-se lá debaixo. E, pela primeira vez em muitos dias, o dragãozinho não teve frio."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que é feito o Gelino?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "gelo",
+       "d": "de gelo"
+      },
+      {
+       "svg": "flor",
+       "d": "de flores"
+      },
+      {
+       "svg": "bola",
+       "d": "de borracha"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem perdoou o Gelino?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "maria"
+      },
+      {
+       "img": "joao"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "Quantas Luzes estão agora no balde?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 5,
+       "d": "cinco"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "t": "A Bruxa da Torre",
+   "capa": "maria",
+   "luz": 1,
+   "pags": [
+    {
+     "c": "bosque",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Falta o último pontinho: a torre velha. Mas os caminhos estão todos baralhados. É agora que eu entro!"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "girafa"
+     ],
+     "o": {
+      "mapa": 1
+     },
+     "x": [
+      "O Girafa desenrolou três mapas ao mesmo tempo.",
+      [
+       "girafa",
+       "Esquerda, esquerda, direita, salto por cima do regato, volta ao carvalho ao contrário... e... aqui!"
+      ]
+     ]
+    },
+    {
+     "c": "torre",
+     "x": [
+      "E de repente, ali estava a torre. Alta e cinzenta, com uma janelinha redonda lá no topo. Por cima dela estava uma nuvem escura e pesada, a pingar uma chuvinha triste."
+     ]
+    },
+    {
+     "c": "torre",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Uma nuvem! Eu não disse? Havia uma nuvem!"
+      ],
+      [
+       "julia",
+       "E havia bichos. Afinal tínhamos razão as duas!"
+      ]
+     ]
+    },
+    {
+     "c": "torre",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "Mas a torre não tinha escada. A porta era lá muito em cima.",
+      [
+       "coelhita",
+       "Deixem comigo!"
+      ]
+     ]
+    },
+    {
+     "c": "torre",
+     "q": [
+      "coelhita"
+     ],
+     "o": {
+      "escada": 1
+     },
+     "x": [
+      "Com três Luzes no balde, as cores da Coelhita tinham voltado quase todas. Deu um salto, e outro, e outro, e atrás dela ficou uma escada de arco-íris até à porta da torre!"
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      "Lá em cima havia uma sala redonda, cheia de frasquinhos de todas as cores. Ao pé da janela estava uma menina vestida de preto, com chapéu de bruxa e meias às riscas."
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria",
+      "francisca"
+     ],
+     "x": [
+      "E o cabelo dela era cor-de-rosa. Exatamente da mesma cor dos óculos da Francisca.",
+      [
+       "maria",
+       "Esperem! Eu sei que vão zangar-se comigo. Eu peço desculpa antes de tudo!"
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "Chamo-me Maria. Bruxa é o que me chamam. Eu acho que sou só uma menina que sabe fazer feitiços. Mas dizem que cabelo cor-de-rosa não é normal."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "x": [
+      [
+       "francisca",
+       "O teu cabelo é lindo! Eu uso óculos cor-de-rosa porque é a minha cor preferida."
+      ],
+      "A Maria pareceu derreter um bocadinho."
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Maria... porquê?"
+      ],
+      [
+       "maria",
+       "Eu vivo no parque há muito tempo. Mas vivo sozinha. Quando vou lá abaixo, as crianças fogem. Ninguém me convida para nada."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "Então pensei: se o parque fosse menos bonito, ninguém vinha cá. E eu deixava de ser a única sozinha."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "Tirei as quatro Luzes da fonte. Chamei bichos de longe para as guardarem. E baralhei os caminhos. Mas não pensei que o parque ficasse tão triste. E a minha tristeza fez aquela nuvem."
+      ]
+     ]
+    },
+    {
+     "c": "torre",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      "Lá de baixo, ouviu-se uma voz grande e meiga. O Borbolessauro tinha esticado o pescoço até à janela.",
+      [
+       "borbolessauro",
+       "Maria, eu também vivia escondido. Mas hoje deixei que me conhecessem. E olha: ninguém fugiu."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "tartarugas",
+      "maria"
+     ],
+     "x": [
+      [
+       "julia",
+       "Eu lembro-me de ti pequenina, Maria. Brincavas sozinha à beira do rio. E eu nunca te disse olá. Também tenho de pedir desculpa."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "francisca",
+      "maria",
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Maria, fizeste uma coisa muito errada. Mas estás a dizer a verdade. E isso conta muito."
+      ],
+      [
+       "cavaleiro",
+       "Dizer a verdade é o primeiro passo. O segundo é ajudar a consertar."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "lila",
+      "maria"
+     ],
+     "x": [
+      [
+       "lila",
+       "E quando isto acabar, vens lanchar ao meu castelo. Às quintas-feiras há bolo de amora!"
+      ],
+      [
+       "maria",
+       "Nunca tinha visto tanta gente junta a olhar para mim sem fugir."
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      "E a Maria pousou a última luz no balde. Plim!",
+      [
+       "francisca",
+       "Quatro! Estão todas!"
+      ],
+      "Lá fora, a nuvem por cima da torre começou a desfazer-se como algodão-doce."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor é o cabelo da Maria?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "cor-de-rosa",
+       "d": "cor-de-rosa"
+      },
+      {
+       "cor": "preto",
+       "d": "preto"
+      },
+      {
+       "cor": "verde",
+       "d": "verde"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Como subiram à torre?",
+     "quem": "coelhita",
+     "ops": [
+      {
+       "svg": "mota",
+       "d": "de mota"
+      },
+      {
+       "svg": "arcoiris",
+       "d": "por uma escada de arco-íris"
+      },
+      {
+       "svg": "aquario",
+       "d": "de aquário"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quantas Luzes há no balde no fim?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 7,
+       "d": "sete"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "t": "A Fonte e o Dragão dos Sonhos",
+   "capa": "dragao",
+   "pags": [
+    {
+     "c": "torre",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "o": {
+      "escada": 1
+     },
+     "x": [
+      "Desceram todos pela escada de arco-íris. A Maria desceu de mão dada com a Francisca."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      "O Borbolessauro levou-os às costas, PUM, PUM, PUM, até à fonte de pedra onde nasce o rio."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "O balde agora pesava como uma melancia e estava quentinho como pão acabado de sair do forno."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Juntas?"
+      ],
+      [
+       "maria",
+       "Juntas."
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "b": 1,
+     "x": [
+      "Pegaram no balde, uma de cada lado, e despejaram as quatro Luzes na fonte.",
+      [
+       "maria",
+       "Luz que volta, luz que fica, quem estava só já não fica!"
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "o": {
+      "acesa": 1
+     },
+     "plim": 1,
+     "x": [
+      "A fonte encheu-se de brilho. E o parque acordou!"
+     ]
+    },
+    {
+     "c": "feliz",
+     "x": [
+      "As flores levantaram a cabeça todas ao mesmo tempo. A relva ficou verdinha. As árvores começaram a cantar, primeiro baixinho, depois a toda a voz."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "coelhita"
+     ],
+     "o": {
+      "arco": 1
+     },
+     "x": [
+      "O rio correu cristalino. A Coelhita deu um salto, e o arco-íris foi tão grande que atravessou o céu de um lado ao outro!"
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "Do cogumelo ao pé do castelo saiu uma fadinha, a voar direitinha para os braços da Lila."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "borbolessauro"
+     ],
+     "o": {
+      "borboletas": 14
+     },
+     "x": [
+      "E das placas do Borbolessauro começaram a sair borboletas. Dezenas, centenas, como confetis vivos!"
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "Foi então que as nuvens fofas lá em cima se abriram.",
+      [
+       "banze",
+       "Olhem..."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      "Por entre as nuvens saiu um dragão comprido, comprido, todo cor-de-rosa, com escamas que brilhavam como luzinhas."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "rugido"
+     ],
+     "x": [
+      [
+       "rugido",
+       "O Dragão dos Sonhos! A lenda é verdade!"
+      ],
+      "E o Rugido ficou tão espantado que deixou cair os óculos."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao",
+      "francisca"
+     ],
+     "o": {
+      "escamas": 1
+     },
+     "x": [
+      "O dragão deixou cair escamas que brilhavam como estrelinhas. A Francisca apanhou uma. Era leve, cor-de-rosa clarinho, e quentinha."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao",
+      "francisca"
+     ],
+     "x": [
+      [
+       "dragao",
+       "Francisca. Hoje fizeste uma coisa rara."
+      ],
+      [
+       "francisca",
+       "Eu? Eu não fiz quase nada. Foram os meus amigos."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      [
+       "dragao",
+       "Os teus amigos seguiram-te porque não trataste mal ninguém, nem quem tinha feito mal. Perguntaste porquê. Ouviste. E deste uma segunda oportunidade."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      [
+       "dragao",
+       "Há quem chame a isso magia. Eu chamo-lhe coragem do coração. Guarda-o bem, Francisca."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "o": {
+      "escamas": 1
+     },
+     "x": [
+      [
+       "dragao",
+       "Adeus, amigos. Volto em dias de nuvens fofas. Quem souber procurar, encontra-me sempre."
+      ],
+      "E foi-se, devagarinho, a desaparecer entre as nuvens."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Onde puseram as Luzes?",
+     "quem": "maria",
+     "ops": [
+      {
+       "cena": "quarto",
+       "d": "num quarto"
+      },
+      {
+       "cena": "fonte",
+       "d": "na fonte"
+      },
+      {
+       "cena": "caverna",
+       "d": "numa caverna"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "De que cor é o Dragão dos Sonhos?",
+     "quem": "rugido",
+     "ops": [
+      {
+       "cor": "verde",
+       "d": "verde"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      },
+      {
+       "cor": "cor-de-rosa",
+       "d": "cor-de-rosa"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "O que deixou cair o dragão?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "escama",
+       "d": "escamas"
+      },
+      {
+       "svg": "lanterna",
+       "d": "lanternas"
+      },
+      {
+       "svg": "sandes",
+       "d": "sandes"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "t": "Para Sempre Amigos",
+   "capa": "cavaleiro",
+   "pags": [
+    {
+     "c": "feliz",
+     "o": {
+      "arco": 1
+     },
+     "x": [
+      "Nessa tarde fez-se uma grande festa no Parque dos Sonhos. Ninguém a combinou. Aconteceu sozinha, porque toda a gente queria festejar."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "balu",
+      "maia",
+      "banze"
+     ],
+     "x": [
+      "O Balu, a Maia e o Banzé corriam atrás de uma bola. O Balu ladrava de felicidade, a Maia era a mais rápida, e o Banzé ia devagarinho, mas chegava na mesma."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      "As Donas Júlia e Xica discutiam se a água estava mais fria ou mais quente do que de manhã. Mas discutiam muito felizes."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tuninho",
+      "borbolessauro"
+     ],
+     "o": {
+      "borboletas": 10
+     },
+     "x": [
+      "O Tuninho e o Borbolessauro contavam as borboletas que tinham voltado. Já iam em duzentas e tal!"
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "rugido"
+     ],
+     "o": {
+      "mota": 1
+     },
+     "x": [
+      "O Rugido dava voltas de mota a todas as crianças do parque. De capacete, claro! E havia fila."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "girafa",
+      "lila",
+      "cavaleiro"
+     ],
+     "x": [
+      "O Girafa mostrava à Lila um mapa novinho, com sítios bonitos para explorar. E o Cavaleiro ensinava a fadinha a fazer tranças de todas as cores."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "o": {
+      "lanterna": 1
+     },
+     "x": [
+      "O Ketchup e o Mustarda continuaram a viver na caverna, agora sempre iluminada pela lanterna prateada. E passaram a fazer visitas guiadas!"
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "O João abriu uma banquinha de sandes à beira do rio. Esquecia-se sempre de cobrar. E o Gelino ajudava-o a manter a manteiga fresquinha."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "maria",
+      "lila"
+     ],
+     "x": [
+      "E a Maria? Mudou-se da torre para uma casinha à beira do rio. Agora só faz feitiços bons. E às quintas-feiras lancha no castelo da Lila."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      "A Francisca sentou-se na relva com o balde ao colo. Tinha os óculos um bocadinho tortos e folhinhas no cabelo. Mas estava feliz como nunca."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "plim": 1,
+     "x": [
+      "O balde brilhou três vezes. Plim, plim, plim. Não disse nada. Mas ela percebeu: era um obrigado."
+     ]
+    },
+    {
+     "c": "portao",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "Já está na hora?"
+      ],
+      "Plim, plim, plim. Despediu-se de todos, um a um. Foram muitos abraços. O Balu deu três!"
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "o": {
+      "passaro": 1
+     },
+     "x": [
+      "Quando a Francisca entrou no quarto, o relógio fez tic. E depois tac. Lá fora, o passarinho acabou o voo que tinha começado de manhã."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "o": {
+      "desenho": 1
+     },
+     "x": [
+      "A mãe apareceu à porta, ainda ensonada, com o desenho na mão. Bom dia, filha! Que desenho tão bonito, com um balde amarelo!"
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "b": 1,
+     "x": [
+      [
+       "francisca",
+       "É dourado, mãe. E é mágico."
+      ],
+      "A mãe sorriu, deu-lhe um beijinho cor-de-rosa e foi fazer o pequeno-almoço."
+     ]
+    },
+    {
+     "c": "quarto",
+     "b": 1,
+     "o": {
+      "caneca": 1
+     },
+     "x": [
+      "A Francisca pousou o balde ao pé da janela. Ao lado dele estava uma caneca com dinossauros, ainda quentinha. E lá fora, ao fundo da rua, alguém de capa roxa acenou-lhe antes de desaparecer."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "o": {
+      "escamas": 1
+     },
+     "x": [
+      "Ela meteu a mão no bolso do vestido. Lá estava a escama cor-de-rosa, a brilhar baixinho."
+     ]
+    },
+    {
+     "c": "ceu",
+     "o": {
+      "escamas": 1
+     },
+     "x": [
+      "E desde esse dia, sempre que há nuvens fofas no céu da Estela, quem souber procurar bem ainda encontra escaminhas cor-de-rosa a brilhar na relva. Fim."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem faz sandes à beira do rio?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "joao"
+      },
+      {
+       "img": "maria"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Onde ficou o balde no fim?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "quarto",
+       "d": "no quarto da Francisca"
+      },
+      {
+       "cena": "caverna",
+       "d": "na caverna"
+      },
+      {
+       "cena": "fonte",
+       "d": "na fonte"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas vezes brilhou o balde para dizer obrigado?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 6,
+       "d": "seis"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  }
+ ],
+ "factos": [
+  {
+   "id": "animais",
+   "t": "Animais",
+   "q": "maia",
+   "cls": "t-coral",
+   "f": [
+    "Os cães sentem cheiros muito, muito melhor do que nós.",
+    "Os gatos passam grande parte do dia a dormir.",
+    "Os elefantes são os maiores animais que vivem em terra.",
+    "O elefante usa a tromba para cheirar, beber água e agarrar coisas.",
+    "As girafas são os animais mais altos do mundo.",
+    "A chita é o animal de terra mais rápido de todos.",
+    "Os cangurus bebés crescem dentro de uma bolsa na barriga da mãe.",
+    "As corujas conseguem rodar a cabeça muito mais do que nós.",
+    "Os morcegos são os únicos mamíferos que conseguem voar.",
+    "As abelhas fazem mel com o néctar das flores.",
+    "As formigas conseguem carregar coisas muito mais pesadas do que elas.",
+    "Os caracóis levam a casa às costas: a concha.",
+    "Não há duas zebras com riscas iguais.",
+    "Os camelos guardam gordura nas bossas, e isso ajuda-os a aguentar muito tempo sem comer.",
+    "O estômago das vacas tem quatro partes.",
+    "Os sapos e as rãs começam a vida como girinos, dentro de água.",
+    "As lagartas transformam-se em borboletas dentro de uma crisálida.",
+    "Os pandas passam quase o dia todo a comer bambu.",
+    "Os flamingos são cor-de-rosa por causa daquilo que comem.",
+    "Os dentes dos coelhos nunca param de crescer. Por isso eles estão sempre a roer."
+   ]
+  },
+  {
+   "id": "corpo",
+   "t": "O teu corpo",
+   "q": "banze",
+   "cls": "t-verde",
+   "f": [
+    "O teu coração bate a toda a hora, mesmo quando estás a dormir.",
+    "Os bebés nascem com mais ossos do que os adultos. Alguns juntam-se enquanto crescemos.",
+    "O osso maior do corpo fica na coxa e chama-se fémur.",
+    "Os dentes de leite caem para dar lugar aos dentes definitivos.",
+    "Lavar as mãos com sabão ajuda a afastar os micróbios.",
+    "Quando espirras, o ar sai muito depressa. Tapa sempre com o cotovelo!",
+    "Dormir bem ajuda o corpo a crescer e a cabeça a aprender.",
+    "Os teus olhos piscam muitas vezes por minuto, sem dares por isso.",
+    "As tuas impressões digitais são só tuas. Ninguém tem iguais.",
+    "Beber água ajuda o corpo a funcionar bem.",
+    "O cérebro manda em tudo: em mexer, pensar, sentir e lembrar.",
+    "Quando corres, o coração bate mais depressa para levar mais sangue aos músculos.",
+    "A língua tem muitos pontinhos que te ajudam a sentir os sabores.",
+    "O cabelo e as unhas estão sempre a crescer.",
+    "Quando respiras, os pulmões enchem-se de ar, como dois balões.",
+    "A pele protege o corpo, como um casaco que nunca tiras.",
+    "Tens cinco sentidos: visão, audição, olfato, paladar e tato.",
+    "Os músculos ficam mais fortes quando brincas e te mexes.",
+    "As lágrimas ajudam a limpar e proteger os olhos.",
+    "O som chega aos teus ouvidos como ondas invisíveis no ar."
+   ]
+  },
+  {
+   "id": "natureza",
+   "t": "Natureza",
+   "q": "coelhita",
+   "cls": "t-azul",
+   "f": [
+    "O arco-íris aparece quando o sol brilha através das gotinhas de chuva.",
+    "O arco-íris tem sete cores: vermelho, laranja, amarelo, verde, azul, anil e violeta.",
+    "As plantas precisam de água, luz e terra para crescer.",
+    "As folhas são verdes por causa de uma coisa chamada clorofila.",
+    "No outono, muitas árvores perdem as folhas.",
+    "As sementes viajam com o vento, com a água ou na barriga dos animais.",
+    "As abelhas ajudam as flores, levando o pólen de umas para as outras.",
+    "Os girassóis novos viram-se para seguir o sol ao longo do dia.",
+    "Os cogumelos não são plantas. São fungos.",
+    "As nuvens são feitas de gotinhas de água muito pequeninas.",
+    "O trovão é o barulho que o relâmpago faz.",
+    "Vemos o relâmpago antes de ouvir o trovão, porque a luz é mais rápida do que o som.",
+    "As árvores ajudam a limpar o ar que respiramos.",
+    "Cada anel no tronco de uma árvore cortada é um ano de vida.",
+    "O vento é ar a mexer-se.",
+    "Há quatro estações do ano: primavera, verão, outono e inverno.",
+    "As minhocas ajudam a terra a ficar fofa e boa para as plantas.",
+    "O orvalho são gotinhas de água que aparecem de manhã na relva.",
+    "Os catos guardam água para aguentar no deserto.",
+    "Uma árvore enorme pode nascer de uma semente pequenina."
+   ]
+  },
+  {
+   "id": "espaco",
+   "t": "Espaço",
+   "q": "dragao",
+   "cls": "t-lilas",
+   "f": [
+    "O Sol é uma estrela: a estrela que está mais perto de nós.",
+    "A Terra anda à volta do Sol. Uma volta inteira demora um ano.",
+    "A Terra roda sobre si mesma. É por isso que há dia e noite.",
+    "A Lua anda à volta da Terra.",
+    "A Lua não tem luz própria. Brilha porque o Sol a ilumina.",
+    "Há oito planetas à volta do Sol.",
+    "Júpiter é o maior planeta do nosso sistema solar.",
+    "Marte é conhecido como o planeta vermelho.",
+    "Os anéis de Saturno são feitos de gelo e de pedrinhas.",
+    "Dentro da estação espacial, os astronautas flutuam.",
+    "Em 1969, pessoas caminharam na Lua pela primeira vez.",
+    "As estrelas parecem pequeninas porque estão muito, muito longe.",
+    "Um grupo de estrelas que forma um desenho no céu chama-se constelação.",
+    "No espaço não há ar para respirar, por isso os astronautas usam fatos especiais.",
+    "As estrelas cadentes são pedrinhas do espaço a arder quando entram no céu da Terra.",
+    "Mercúrio é o planeta mais perto do Sol.",
+    "A Terra é o único planeta onde sabemos que há vida.",
+    "A Lua parece mudar de forma ao longo do mês. São as fases da Lua.",
+    "Os foguetões precisam de muita força para fugir da gravidade da Terra.",
+    "A gravidade é a força que nos puxa para o chão."
+   ]
+  },
+  {
+   "id": "oceano",
+   "t": "Oceano",
+   "q": "tuninho",
+   "cls": "t-azul",
+   "f": [
+    "Os peixes respiram debaixo de água com as guelras.",
+    "A baleia-azul é o maior animal que alguma vez existiu.",
+    "As baleias e os golfinhos respiram ar, por isso vêm à superfície.",
+    "O polvo tem oito braços.",
+    "Nos cavalos-marinhos, é o pai que carrega os ovos numa bolsa.",
+    "Se uma estrela-do-mar perder um braço, pode crescer-lhe um novo.",
+    "As tartarugas-marinhas põem os ovos na areia da praia.",
+    "A água do mar é salgada.",
+    "A maior parte da Terra está coberta de água.",
+    "Os corais parecem pedras ou plantas, mas são animais.",
+    "Os golfinhos falam uns com os outros com assobios e estalidos.",
+    "As medusas não têm cérebro.",
+    "O tubarão-baleia é o maior peixe do mundo.",
+    "Os caranguejos andam muitas vezes de lado.",
+    "Os pinguins nadam muito bem, mas não voam.",
+    "Na maior parte das praias, o mar sobe e desce duas vezes por dia. São as marés.",
+    "O peixe-palhaço vive escondido entre os braços das anémonas.",
+    "No fundo do mar há peixes que fazem a sua própria luz.",
+    "As conchas são as casas de animais como os búzios e as amêijoas.",
+    "Os peixes-dourados podem viver muitos anos, se forem bem tratados."
+   ]
+  },
+  {
+   "id": "dinos",
+   "t": "Dinossauros",
+   "q": "borbolessauro",
+   "cls": "t-verde",
+   "f": [
+    "Os dinossauros viveram há muitos, muitos milhões de anos.",
+    "Sabemos como eram os dinossauros por causa dos fósseis.",
+    "O estegossauro tinha placas grandes nas costas e espinhos na cauda.",
+    "O tiranossauro tinha dentes enormes, mas uns braços muito curtinhos.",
+    "O tricerátops tinha três cornos na cabeça.",
+    "Alguns dinossauros comiam plantas e outros comiam carne.",
+    "Os dinossauros punham ovos.",
+    "As aves de hoje são parentes dos dinossauros.",
+    "Alguns dinossauros tinham penas.",
+    "O braquiossauro tinha um pescoço comprido para chegar às folhas das árvores mais altas.",
+    "Na Lourinhã, em Portugal, encontraram-se muitos fósseis e ovos de dinossauro.",
+    "Os cientistas que estudam fósseis chamam-se paleontólogos.",
+    "O anquilossauro tinha uma cauda em forma de martelo.",
+    "Nem todos os dinossauros eram grandes. Alguns eram do tamanho de uma galinha.",
+    "Os pterossauros voavam, mas não eram dinossauros.",
+    "Ninguém sabe ao certo de que cor era a maioria dos dinossauros.",
+    "O velociraptor era mais ou menos do tamanho de um peru.",
+    "Em Portugal há pegadas de dinossauro que se podem visitar.",
+    "Os dinossauros desapareceram há cerca de 66 milhões de anos.",
+    "A palavra dinossauro quer dizer lagarto terrível."
+   ]
+  },
+  {
+   "id": "comida",
+   "t": "Comida",
+   "q": "joao",
+   "cls": "t-ouro",
+   "f": [
+    "As cenouras crescem debaixo da terra.",
+    "As bananas crescem em cachos.",
+    "O mel pode durar muitos, muitos anos sem se estragar.",
+    "O leite pode vir das vacas, das cabras e das ovelhas.",
+    "O pão faz-se com farinha, água, sal e fermento.",
+    "A farinha faz-se moendo grãos de trigo ou de outros cereais.",
+    "Os morangos têm as sementes por fora.",
+    "O chocolate faz-se a partir das sementes do cacau.",
+    "As pipocas saltam porque a água dentro do grão de milho aquece e rebenta.",
+    "O tomate é um fruto, porque tem sementes.",
+    "As laranjas têm muita vitamina C.",
+    "Comer fruta e legumes de muitas cores faz bem ao corpo.",
+    "Os ovos que comemos são quase sempre de galinha.",
+    "O queijo faz-se com leite.",
+    "As maçãs boiam na água.",
+    "O arroz cresce muitas vezes em campos cheios de água.",
+    "O azeite faz-se com azeitonas.",
+    "O sal das salinas faz-se deixando a água do mar secar ao sol.",
+    "O feijão cresce dentro de vagens.",
+    "Beber água é a melhor maneira de matar a sede."
+   ]
+  },
+  {
+   "id": "gelo",
+   "t": "Gelo e tempo",
+   "q": "gelino",
+   "cls": "t-azul",
+   "f": [
+    "A água transforma-se em gelo quando fica muito fria.",
+    "A neve é feita de cristais de gelo.",
+    "Os flocos de neve têm quase sempre seis pontas.",
+    "O gelo boia na água.",
+    "Debaixo do pelo branco, os ursos-polares têm a pele escura.",
+    "A maioria dos pinguins vive no sul do mundo.",
+    "Os ursos-polares vivem no norte, perto do Polo Norte.",
+    "Os icebergues são montanhas de gelo a flutuar no mar.",
+    "A maior parte de um icebergue está escondida debaixo de água.",
+    "Quando está frio, o nosso bafo parece fumo. É água a arrefecer no ar.",
+    "A água pode ser sólida, líquida ou vapor.",
+    "O granizo são pedrinhas de gelo que caem do céu.",
+    "Em Portugal, a Serra da Estrela é onde costuma nevar mais.",
+    "Alguns animais dormem quase todo o inverno. Chama-se hibernar.",
+    "As focas têm uma camada grossa de gordura para não terem frio.",
+    "A Antártida é o sítio mais frio da Terra.",
+    "O termómetro serve para medir a temperatura.",
+    "Quando a neve derrete, transforma-se em água.",
+    "Os bonecos de neve derretem quando o sol aquece.",
+    "O gelo é escorregadio porque fica com uma camadinha de água por cima."
+   ]
+  },
+  {
+   "id": "mundo",
+   "t": "O mundo",
+   "q": "girafa",
+   "cls": "t-coral",
+   "f": [
+    "Um mapa é um desenho de um sítio visto de cima.",
+    "A Terra é redonda, como uma bola.",
+    "Há sete continentes na Terra.",
+    "Portugal fica na Europa, ao lado de Espanha.",
+    "A capital de Portugal é Lisboa.",
+    "Os Açores e a Madeira são ilhas portuguesas.",
+    "Os cientistas ainda discutem qual é o rio mais comprido do mundo: o Nilo ou o Amazonas.",
+    "A montanha mais alta do mundo é o Evereste.",
+    "A montanha mais alta de Portugal é o Pico, nos Açores.",
+    "O deserto do Saara é enorme e muito quente.",
+    "A agulha de uma bússola aponta para norte.",
+    "Os quatro pontos cardeais são norte, sul, este e oeste.",
+    "O Oceano Pacífico é o maior oceano do mundo.",
+    "Portugal fica à beira do Oceano Atlântico.",
+    "No mundo falam-se milhares de línguas diferentes.",
+    "O português fala-se em vários países, como o Brasil, Angola e Moçambique.",
+    "Quando é dia em Portugal, é noite noutros lados do mundo.",
+    "A cidade do Porto fica junto ao rio Douro.",
+    "Os vulcões são montanhas que podem deitar lava quente.",
+    "As ilhas dos Açores nasceram de vulcões no meio do mar."
+   ]
+  },
+  {
+   "id": "musica",
+   "t": "Música e cores",
+   "q": "cavaleiro",
+   "cls": "t-rosa",
+   "f": [
+    "Na pintura, as cores principais são o vermelho, o amarelo e o azul.",
+    "Azul e amarelo misturados dão verde.",
+    "Vermelho e amarelo misturados dão laranja.",
+    "Vermelho e azul misturados dão roxo.",
+    "Branco com vermelho dá cor-de-rosa.",
+    "Preto com branco dá cinzento.",
+    "As notas musicais são sete: dó, ré, mi, fá, sol, lá e si.",
+    "O piano tem teclas brancas e teclas pretas.",
+    "A guitarra faz som quando as cordas vibram.",
+    "O tambor faz som quando lhe batemos e a pele dele vibra.",
+    "O som viaja pelo ar, mas também pela água.",
+    "Um grupo de pessoas a cantar juntas chama-se coro.",
+    "O fado é uma música muito portuguesa.",
+    "Uma orquestra tem muitos instrumentos a tocar juntos.",
+    "A pessoa que dirige a orquestra chama-se maestro.",
+    "Bater palmas ao ritmo da música ajuda a sentir o compasso.",
+    "O violino toca-se com um arco.",
+    "As cores quentes são o vermelho, o laranja e o amarelo.",
+    "As cores frias são o azul, o verde e o violeta.",
+    "A roupa branca reflete a luz do sol, por isso é mais fresca no verão."
+   ]
+  }
+ ],
+ "cores": [
+  [
+   "balu",
+   "o lenço do Balu",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "o João",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "o gorro do João",
+   "azul"
+  ],
+  [
+   "francisca",
+   "os óculos da Francisca",
+   "cor-de-rosa"
+  ],
+  [
+   "maia",
+   "a coleira da Maia",
+   "amarelo"
+  ],
+  [
+   "maia",
+   "a Maia",
+   "castanho"
+  ],
+  [
+   "ketchup",
+   "o Ketchup",
+   "vermelho"
+  ],
+  [
+   "ketchup",
+   "o Mustarda",
+   "amarelo"
+  ],
+  [
+   "borbolessauro",
+   "o Borbolessauro",
+   "verde"
+  ],
+  [
+   "coelhita",
+   "a Coelhita",
+   "azul"
+  ],
+  [
+   "gelino",
+   "o Gelino",
+   "azul"
+  ],
+  [
+   "maria",
+   "o vestido da Maria",
+   "preto"
+  ],
+  [
+   "maria",
+   "o cabelo da Maria",
+   "cor-de-rosa"
+  ],
+  [
+   "maria",
+   "o chapéu da Maria",
+   "preto"
+  ],
+  [
+   "dragao",
+   "o Dragão dos Sonhos",
+   "cor-de-rosa"
+  ],
+  [
+   "dragao",
+   "as escamas do Dragão dos Sonhos",
+   "cor-de-rosa"
+  ],
+  [
+   "girafa",
+   "o casaco do Girafa",
+   "laranja"
+  ],
+  [
+   "girafa",
+   "o Girafa",
+   "castanho"
+  ],
+  [
+   "francisca",
+   "o balde mágico",
+   "amarelo"
+  ],
+  [
+   "lila",
+   "o cabelo da Lila",
+   "roxo"
+  ],
+  [
+   "lila",
+   "o vestido da Lila",
+   "roxo"
+  ],
+  [
+   "lila",
+   "o castelo da Lila",
+   "roxo"
+  ],
+  [
+   "cavaleiro",
+   "a armadura do Cavaleiro",
+   "cinzento"
+  ],
+  [
+   "rugido",
+   "o casaco do Rugido",
+   "preto"
+  ],
+  [
+   "tuninho",
+   "o Tuninho",
+   "laranja"
+  ],
+  [
+   "francisca",
+   "as Luzes do parque",
+   "amarelo"
+  ],
+  [
+   "tartarugas",
+   "o rio, quando o parque estava triste",
+   "cinzento"
+  ],
+  [
+   "tartarugas",
+   "a nuvem por cima da torre",
+   "cinzento"
+  ],
+  [
+   "tartarugas",
+   "a Dona Xica",
+   "verde"
+  ],
+  [
+   "balu",
+   "o Balu",
+   "preto"
+  ],
+  [
+   "joao",
+   "as sandes de banana do João",
+   "amarelo"
+  ],
+  [
+   "cavaleiro",
+   "o escudo do Cavaleiro",
+   "azul"
+  ],
+  [
+   "joao",
+   "uma banana madura",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "um morango",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "um tomate maduro",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "uma cenoura",
+   "laranja"
+  ],
+  [
+   "joao",
+   "uma laranja",
+   "laranja"
+  ],
+  [
+   "joao",
+   "um limão",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "uma alface",
+   "verde"
+  ],
+  [
+   "joao",
+   "as ervilhas",
+   "verde"
+  ],
+  [
+   "joao",
+   "os brócolos",
+   "verde"
+  ],
+  [
+   "joao",
+   "uma beringela",
+   "roxo"
+  ],
+  [
+   "joao",
+   "uma cereja",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "os mirtilos",
+   "azul"
+  ],
+  [
+   "joao",
+   "uma abóbora",
+   "laranja"
+  ],
+  [
+   "joao",
+   "um pepino",
+   "verde"
+  ],
+  [
+   "joao",
+   "um kiwi por dentro",
+   "verde"
+  ],
+  [
+   "joao",
+   "uma melancia por dentro",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "uma melancia por fora",
+   "verde"
+  ],
+  [
+   "joao",
+   "um coco por dentro",
+   "branco"
+  ],
+  [
+   "joao",
+   "um coco por fora",
+   "castanho"
+  ],
+  [
+   "joao",
+   "o chocolate",
+   "castanho"
+  ],
+  [
+   "joao",
+   "o leite",
+   "branco"
+  ],
+  [
+   "joao",
+   "o arroz",
+   "branco"
+  ],
+  [
+   "joao",
+   "o açúcar",
+   "branco"
+  ],
+  [
+   "joao",
+   "o sal",
+   "branco"
+  ],
+  [
+   "joao",
+   "a gema do ovo",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "a clara do ovo cozido",
+   "branco"
+  ],
+  [
+   "joao",
+   "a manteiga",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "o milho",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "uma azeitona preta",
+   "preto"
+  ],
+  [
+   "joao",
+   "as nozes",
+   "castanho"
+  ],
+  [
+   "joao",
+   "as avelãs",
+   "castanho"
+  ],
+  [
+   "joao",
+   "a couve",
+   "verde"
+  ],
+  [
+   "joao",
+   "os espinafres",
+   "verde"
+  ],
+  [
+   "joao",
+   "uma romã por dentro",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "uma ameixa",
+   "roxo"
+  ],
+  [
+   "joao",
+   "um gelado de morango",
+   "cor-de-rosa"
+  ],
+  [
+   "joao",
+   "o algodão-doce",
+   "cor-de-rosa"
+  ],
+  [
+   "joao",
+   "o ketchup",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "a maionese",
+   "branco"
+  ],
+  [
+   "joao",
+   "o ananás por dentro",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "a farinha",
+   "branco"
+  ],
+  [
+   "joao",
+   "o pão de forma por dentro",
+   "branco"
+  ],
+  [
+   "joao",
+   "o pastel de nata",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "as pipocas",
+   "branco"
+  ],
+  [
+   "joao",
+   "o iogurte natural",
+   "branco"
+  ],
+  [
+   "joao",
+   "o cacau em pó",
+   "castanho"
+  ],
+  [
+   "joao",
+   "uma framboesa",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "uma uva-passa",
+   "castanho"
+  ],
+  [
+   "coelhita",
+   "a relva",
+   "verde"
+  ],
+  [
+   "coelhita",
+   "o céu num dia de sol",
+   "azul"
+  ],
+  [
+   "coelhita",
+   "o sol",
+   "amarelo"
+  ],
+  [
+   "coelhita",
+   "uma nuvem fofa",
+   "branco"
+  ],
+  [
+   "gelino",
+   "a neve",
+   "branco"
+  ],
+  [
+   "dragao",
+   "o céu à noite",
+   "preto"
+  ],
+  [
+   "coelhita",
+   "as folhas das árvores no verão",
+   "verde"
+  ],
+  [
+   "coelhita",
+   "as folhas secas do outono",
+   "castanho"
+  ],
+  [
+   "girafa",
+   "o tronco de uma árvore",
+   "castanho"
+  ],
+  [
+   "girafa",
+   "a terra",
+   "castanho"
+  ],
+  [
+   "tuninho",
+   "o mar",
+   "azul"
+  ],
+  [
+   "girafa",
+   "o carvão",
+   "preto"
+  ],
+  [
+   "gelino",
+   "uma nuvem de chuva",
+   "cinzento"
+  ],
+  [
+   "girafa",
+   "uma pedra",
+   "cinzento"
+  ],
+  [
+   "girafa",
+   "a lama",
+   "castanho"
+  ],
+  [
+   "coelhita",
+   "um girassol",
+   "amarelo"
+  ],
+  [
+   "coelhita",
+   "um dente-de-leão",
+   "amarelo"
+  ],
+  [
+   "coelhita",
+   "uma rosa",
+   "vermelho"
+  ],
+  [
+   "tuninho",
+   "as algas",
+   "verde"
+  ],
+  [
+   "coelhita",
+   "a cinza da lareira",
+   "cinzento"
+  ],
+  [
+   "gelino",
+   "um boneco de neve",
+   "branco"
+  ],
+  [
+   "gelino",
+   "o gelo",
+   "branco"
+  ],
+  [
+   "dragao",
+   "uma estrela no céu",
+   "amarelo"
+  ],
+  [
+   "coelhita",
+   "a primeira cor do arco-íris",
+   "vermelho"
+  ],
+  [
+   "coelhita",
+   "a última cor do arco-íris",
+   "roxo"
+  ],
+  [
+   "coelhita",
+   "o meio do arco-íris",
+   "verde"
+  ],
+  [
+   "girafa",
+   "um cato",
+   "verde"
+  ],
+  [
+   "coelhita",
+   "um trevo de quatro folhas",
+   "verde"
+  ],
+  [
+   "maia",
+   "um flamingo",
+   "cor-de-rosa"
+  ],
+  [
+   "maia",
+   "um corvo",
+   "preto"
+  ],
+  [
+   "maia",
+   "um cisne",
+   "branco"
+  ],
+  [
+   "maia",
+   "um sapo",
+   "verde"
+  ],
+  [
+   "maia",
+   "uma joaninha",
+   "vermelho"
+  ],
+  [
+   "maia",
+   "uma abelha",
+   "amarelo"
+  ],
+  [
+   "maia",
+   "um elefante",
+   "cinzento"
+  ],
+  [
+   "maia",
+   "um rato",
+   "cinzento"
+  ],
+  [
+   "joao",
+   "um urso-polar",
+   "branco"
+  ],
+  [
+   "maia",
+   "um porquinho",
+   "cor-de-rosa"
+  ],
+  [
+   "maia",
+   "uma ovelha",
+   "branco"
+  ],
+  [
+   "tuninho",
+   "um tubarão",
+   "cinzento"
+  ],
+  [
+   "tuninho",
+   "um golfinho",
+   "cinzento"
+  ],
+  [
+   "borbolessauro",
+   "um crocodilo",
+   "verde"
+  ],
+  [
+   "tartarugas",
+   "uma tartaruga",
+   "verde"
+  ],
+  [
+   "borbolessauro",
+   "uma lagarta",
+   "verde"
+  ],
+  [
+   "maia",
+   "um coala",
+   "cinzento"
+  ],
+  [
+   "maia",
+   "um esquilo",
+   "castanho"
+  ],
+  [
+   "joao",
+   "um canário",
+   "amarelo"
+  ],
+  [
+   "joao",
+   "um pintainho",
+   "amarelo"
+  ],
+  [
+   "tuninho",
+   "um peixe-dourado",
+   "laranja"
+  ],
+  [
+   "maia",
+   "uma minhoca",
+   "cor-de-rosa"
+  ],
+  [
+   "maia",
+   "um morcego",
+   "preto"
+  ],
+  [
+   "rugido",
+   "uma raposa",
+   "laranja"
+  ],
+  [
+   "maia",
+   "um gorila",
+   "preto"
+  ],
+  [
+   "maia",
+   "um camelo",
+   "castanho"
+  ],
+  [
+   "tuninho",
+   "uma estrela-do-mar",
+   "laranja"
+  ],
+  [
+   "tuninho",
+   "um caranguejo cozido",
+   "vermelho"
+  ],
+  [
+   "maia",
+   "um cavalo castanho",
+   "castanho"
+  ],
+  [
+   "maia",
+   "um gato preto",
+   "preto"
+  ],
+  [
+   "girafa",
+   "um urso pardo",
+   "castanho"
+  ],
+  [
+   "maia",
+   "um papagaio verde",
+   "verde"
+  ],
+  [
+   "joao",
+   "um patinho",
+   "amarelo"
+  ],
+  [
+   "tuninho",
+   "um peixe-palhaço",
+   "laranja"
+  ],
+  [
+   "rugido",
+   "o semáforo para parar",
+   "vermelho"
+  ],
+  [
+   "rugido",
+   "o semáforo para andar",
+   "verde"
+  ],
+  [
+   "rugido",
+   "o semáforo para ter cuidado",
+   "amarelo"
+  ],
+  [
+   "rugido",
+   "um carro dos bombeiros",
+   "vermelho"
+  ],
+  [
+   "rugido",
+   "os pneus de um carro",
+   "preto"
+  ],
+  [
+   "rugido",
+   "o alcatrão da estrada",
+   "preto"
+  ],
+  [
+   "rugido",
+   "um cone de trânsito",
+   "laranja"
+  ],
+  [
+   "rugido",
+   "o marco do correio",
+   "vermelho"
+  ],
+  [
+   "tuninho",
+   "a pasta de dentes",
+   "branco"
+  ],
+  [
+   "tuninho",
+   "a espuma da pasta de dentes",
+   "branco"
+  ],
+  [
+   "tuninho",
+   "os teus dentes",
+   "branco"
+  ],
+  [
+   "tuninho",
+   "a tua língua",
+   "cor-de-rosa"
+  ],
+  [
+   "cavaleiro",
+   "o nariz do palhaço",
+   "vermelho"
+  ],
+  [
+   "cavaleiro",
+   "o fato do Pai Natal",
+   "vermelho"
+  ],
+  [
+   "cavaleiro",
+   "a barba do Pai Natal",
+   "branco"
+  ],
+  [
+   "cavaleiro",
+   "a árvore de Natal",
+   "verde"
+  ],
+  [
+   "maria",
+   "a abóbora do Halloween",
+   "laranja"
+  ],
+  [
+   "maria",
+   "um fantasma de lençol",
+   "branco"
+  ],
+  [
+   "maria",
+   "um gato de bruxa",
+   "preto"
+  ],
+  [
+   "cavaleiro",
+   "um coração desenhado",
+   "vermelho"
+  ],
+  [
+   "gelino",
+   "o nariz de cenoura do boneco de neve",
+   "laranja"
+  ],
+  [
+   "gelino",
+   "os olhos de carvão do boneco de neve",
+   "preto"
+  ],
+  [
+   "francisca",
+   "uma folha de papel",
+   "branco"
+  ],
+  [
+   "francisca",
+   "o giz da escola",
+   "branco"
+  ],
+  [
+   "francisca",
+   "o quadro de ardósia",
+   "preto"
+  ],
+  [
+   "francisca",
+   "o algodão",
+   "branco"
+  ],
+  [
+   "girafa",
+   "o cimento",
+   "cinzento"
+  ],
+  [
+   "francisca",
+   "o ouro",
+   "amarelo"
+  ],
+  [
+   "girafa",
+   "os azulejos antigos de Lisboa",
+   "azul"
+  ],
+  [
+   "girafa",
+   "o elétrico de Lisboa",
+   "amarelo"
+  ],
+  [
+   "girafa",
+   "o galo de Barcelos",
+   "preto"
+  ],
+  [
+   "girafa",
+   "o mar dos Açores",
+   "azul"
+  ],
+  [
+   "francisca",
+   "uma borracha de apagar",
+   "cor-de-rosa"
+  ],
+  [
+   "francisca",
+   "o leite com chocolate",
+   "castanho"
+  ],
+  [
+   "francisca",
+   "um lápis de carvão",
+   "cinzento"
+  ],
+  [
+   "coelhita",
+   "uma flor de lavanda",
+   "roxo"
+  ],
+  [
+   "coelhita",
+   "uma violeta",
+   "roxo"
+  ],
+  [
+   "coelhita",
+   "uma flor de cerejeira",
+   "cor-de-rosa"
+  ],
+  [
+   "coelhita",
+   "um malmequer por dentro",
+   "amarelo"
+  ],
+  [
+   "coelhita",
+   "as pétalas de um malmequer",
+   "branco"
+  ],
+  [
+   "gelino",
+   "um floco de neve",
+   "branco"
+  ],
+  [
+   "girafa",
+   "uma folha de hera",
+   "verde"
+  ],
+  [
+   "girafa",
+   "uma bolota",
+   "castanho"
+  ],
+  [
+   "girafa",
+   "uma castanha assada",
+   "castanho"
+  ],
+  [
+   "girafa",
+   "uma pinha",
+   "castanho"
+  ],
+  [
+   "rugido",
+   "a juba do Rugido",
+   "laranja"
+  ],
+  [
+   "cavaleiro",
+   "a espada de madeira do Cavaleiro",
+   "castanho"
+  ],
+  [
+   "maia",
+   "um pinguim de barriga",
+   "branco"
+  ],
+  [
+   "joao",
+   "uma clementina",
+   "laranja"
+  ],
+  [
+   "joao",
+   "um rabanete",
+   "vermelho"
+  ],
+  [
+   "joao",
+   "um feijão-verde",
+   "verde"
+  ],
+  [
+   "francisca",
+   "uma bola de neve",
+   "branco"
+  ],
+  [
+   "tuninho",
+   "uma baleia-azul",
+   "azul"
+  ],
+  [
+   "coelhita",
+   "uma papoila",
+   "vermelho"
+  ],
+  [
+   "girafa",
+   "uma castanha por dentro",
+   "amarelo"
+  ],
+  [
+   "maia",
+   "um leão",
+   "amarelo"
+  ],
+  [
+   "dragao",
+   "o céu ao pôr do sol",
+   "laranja"
+  ],
+  [
+   "joao",
+   "um pimento verde",
+   "verde"
+  ]
+ ],
+ "frases": [
+  [
+   "balu",
+   "Eu vou! Eu vou! Eu vou!"
+  ],
+  [
+   "banze",
+   "Devagar também se chega."
+  ],
+  [
+   "banze",
+   "Não me chames velhote."
+  ],
+  [
+   "tuninho",
+   "Bip-bop!"
+  ],
+  [
+   "tuninho",
+   "Inventei-o na terça-feira."
+  ],
+  [
+   "rugido",
+   "Capacetes postos?"
+  ],
+  [
+   "rugido",
+   "Casca não é capacete."
+  ],
+  [
+   "cavaleiro",
+   "Uma cor de cada vez."
+  ],
+  [
+   "borbolessauro",
+   "Sou grande, mas sou meigo."
+  ],
+  [
+   "joao",
+   "A minha mãe não mente."
+  ],
+  [
+   "joao",
+   "Primeiro tens de comer uma sandes."
+  ],
+  [
+   "lila",
+   "Não sou princesa de ficar à espera."
+  ],
+  [
+   "lila",
+   "Às quintas-feiras há bolo de amora."
+  ],
+  [
+   "maia",
+   "O nariz nunca mente."
+  ],
+  [
+   "girafa",
+   "O caminho torto é o mais curto."
+  ],
+  [
+   "girafa",
+   "Se os caminhos se baralham, eu desbaralho-os."
+  ],
+  [
+   "tartarugas",
+   "Eu primeiro! Não, eu primeiro!"
+  ],
+  [
+   "ketchup",
+   "É contigo ou é comigo?"
+  ],
+  [
+   "gelino",
+   "Eu não sabia pedir."
+  ],
+  [
+   "maria",
+   "Eu só queria ter alguém."
+  ],
+  [
+   "dragao",
+   "Quem souber procurar, encontra-me sempre."
+  ],
+  [
+   "francisca",
+   "Eu quero ajudar!"
+  ],
+  [
+   "coelhita",
+   "Olhem as cores!"
+  ]
+ ],
+ "adivinhas": {
+  "francisca": [
+   "Tenho cinco anos e uns óculos cor-de-rosa.",
+   "Encontrei um balde mágico no meu quarto."
+  ],
+  "maia": [
+   "Sou uma cadelinha castanha com uma coleira amarela.",
+   "Cheiro tudo primeiro, porque o meu nariz nunca mente."
+  ],
+  "balu": [
+   "Sou pequenino, preto e branco, e uso um lenço vermelho.",
+   "Nunca consigo estar quieto!"
+  ],
+  "banze": [
+   "Sou o cão mais velho e uso um colar de flores.",
+   "Sei as histórias antigas do parque."
+  ],
+  "tartarugas": [
+   "Somos duas irmãs, e uma anda às costas da outra.",
+   "Estamos sempre a discutir, mas gostamos muito uma da outra."
+  ],
+  "tuninho": [
+   "Sou um peixe e vivo num aquário com pernas.",
+   "Sou inventor e faço mapas de luz."
+  ],
+  "coelhita": [
+   "Sou azul e deixo arco-íris quando salto.",
+   "As minhas cores voltam quando as Luzes voltam."
+  ],
+  "rugido": [
+   "Sou um leão e ando de mota.",
+   "Ninguém anda comigo sem capacete!"
+  ],
+  "girafa": [
+   "Sou um urso, mas tenho nome de outro animal.",
+   "Ando sempre com os braços cheios de mapas."
+  ],
+  "lila": [
+   "Tenho o cabelo lilás e uma coroa dourada.",
+   "Moro num castelinho cor de lilás."
+  ],
+  "cavaleiro": [
+   "Tenho tranças com todas as cores do arco-íris.",
+   "Uso armadura e uma espada de madeira."
+  ],
+  "borbolessauro": [
+   "Sou um dinossauro com borboletas desenhadas no corpo.",
+   "Sou enorme, mas muito meigo."
+  ],
+  "ketchup": [
+   "Somos dois irmãos, um vermelho e um amarelo.",
+   "Temos só um olho cada um e medo do escuro."
+  ],
+  "joao": [
+   "Sou um pinguim, mas sou todo amarelo.",
+   "Faço as melhores sandes do parque."
+  ],
+  "gelino": [
+   "Sou um dragãozinho feito de gelo.",
+   "Não me consigo aquecer sozinho."
+  ],
+  "maria": [
+   "Tenho o cabelo cor-de-rosa e um chapéu de bruxa.",
+   "Faço feitiços, mas agora só dos bons."
+  ],
+  "dragao": [
+   "Sou comprido, cor-de-rosa e só apareço em dias de nuvens fofas.",
+   "Deixo cair escamas da sorte."
+  ]
+ },
+ "situacoes": [
+  {
+   "q": "maia",
+   "t": "A Maia quer brincar com o teu balde, mas tu ainda estás a brincar. O que fazes?",
+   "ops": [
+    [
+     "Digo: brincas tu a seguir!",
+     "clock",
+     1,
+     "Boa ideia! Fazer à vez é uma maneira de partilhar."
+    ],
+    [
+     "Escondo o balde.",
+     "eye-off",
+     0,
+     "Assim a Maia fica triste. E se fizessem à vez?"
+    ]
+   ]
+  },
+  {
+   "q": "gelino",
+   "t": "O Gelino está sozinho e parece triste. O que fazes?",
+   "ops": [
+    [
+     "Convido-o para brincar.",
+     "users",
+     1,
+     "Era isso que o Gelino mais queria: um amigo."
+    ],
+    [
+     "Finjo que não o vi.",
+     "eye-off",
+     0,
+     "Quem está sozinho fica ainda mais triste. Que tal ires ter com ele?"
+    ]
+   ]
+  },
+  {
+   "q": "tartarugas",
+   "t": "Só há um baloiço e estão três amigos à espera. O que fazem?",
+   "ops": [
+    [
+     "Cada um anda um bocadinho.",
+     "refresh-cw",
+     1,
+     "Isso! Contam até dez e trocam."
+    ],
+    [
+     "Um fica lá o dia todo.",
+     "lock",
+     0,
+     "Assim os outros nunca andam. Não é justo."
+    ]
+   ]
+  },
+  {
+   "q": "balu",
+   "t": "O Balu estragou o teu desenho sem querer. O que fazes?",
+   "ops": [
+    [
+     "Fazemos outro juntos.",
+     "pencil",
+     1,
+     "Que bonito! Foi sem querer, e agora ainda fazem um desenho melhor."
+    ],
+    [
+     "Grito com ele.",
+     "megaphone",
+     0,
+     "Ele não fez de propósito. Podes dizer que ficaste triste, sem gritar."
+    ]
+   ]
+  },
+  {
+   "q": "lila",
+   "t": "Tens três bolachas e a Lila não tem nenhuma. O que fazes?",
+   "ops": [
+    [
+     "Dou-lhe uma.",
+     "cookie",
+     1,
+     "Partilhar sabe bem! Agora as duas têm bolachas."
+    ],
+    [
+     "Como as três sozinha.",
+     "x",
+     0,
+     "Assim a Lila fica a ver. E se partilhasses?"
+    ]
+   ]
+  },
+  {
+   "q": "joao",
+   "t": "O João quer ver o teu livro. O que fazes?",
+   "ops": [
+    [
+     "Lemos juntos.",
+     "book-open",
+     1,
+     "Ótima ideia! Assim os dois divertem-se."
+    ],
+    [
+     "Digo que não.",
+     "x",
+     0,
+     "Podes mostrar-lhe como se pega no livro, com cuidado."
+    ]
+   ]
+  },
+  {
+   "q": "ketchup",
+   "t": "Ganhaste o jogo e o Ketchup perdeu. O que dizes?",
+   "ops": [
+    [
+     "Jogaste bem! Outra vez?",
+     "thumbs-up",
+     1,
+     "Ganhar com simpatia é ser um bom amigo."
+    ],
+    [
+     "Gozo com ele.",
+     "frown",
+     0,
+     "Isso magoa. Podemos ficar contentes sem deixar os outros tristes."
+    ]
+   ]
+  },
+  {
+   "q": "tartarugas",
+   "t": "A Dona Xica quer ser sempre a primeira. O que fazem?",
+   "ops": [
+    [
+     "Combinamos fazer à vez.",
+     "refresh-cw",
+     1,
+     "Isso! Uma vez é a Xica, outra vez é outro amigo."
+    ],
+    [
+     "Deixamos de brincar com ela.",
+     "user-x",
+     0,
+     "Assim ninguém fica feliz. É melhor combinar regras."
+    ]
+   ]
+  }
+ ],
+ "musicas": [
+  {
+   "id": "m-francisca",
+   "src": "",
+   "t": "A Canção do Balde",
+   "a": "Francisca e amigos",
+   "capa": "francisca",
+   "bpm": 112,
+   "seq": [
+    "A",
+    "A"
+   ],
+   "A": [
+    "G4:1 G4:1 G4:1 E4:.5 F4:.5 G4:1 A4:1 G4:2",
+    "F4:1 F4:1 F4:1 D4:.5 E4:.5 F4:1 G4:1 F4:2",
+    "C4:1 E4:1 D4:1 F4:1 E4:1 G4:1 F4:1 A4:1",
+    "G4:1 G4:.5 A4:.5 G4:1 F4:1 E4:1 D4:1 C4:2"
+   ]
+  },
+  {
+   "id": "m-tuninho",
+   "src": "",
+   "t": "Escova, Escova",
+   "a": "Tuninho",
+   "capa": "tuninho",
+   "bpm": 126,
+   "seq": [
+    "A",
+    "A"
+   ],
+   "A": [
+    "C5:.5 C5:.5 G4:1 A4:.5 B4:.5 C5:2",
+    "A4:.5 A4:.5 A4:.5 G4:.5 F4:.5 E4:.5 D4:2",
+    "E4:.5 E4:.5 G4:1 E4:.5 E4:.5 G4:1 F4:.5 F4:.5 A4:1",
+    "G4:.5 G4:.5 G4:.5 A4:.5 G4:.5 F4:.5 E4:.5 D4:.5 C4:2"
+   ]
+  },
+  {
+   "id": "m-cavaleiro",
+   "src": "",
+   "t": "Uma Cor de Cada Vez",
+   "a": "Cavaleiro das Tranças",
+   "capa": "cavaleiro",
+   "bpm": 100,
+   "seq": [
+    "A",
+    "B"
+   ],
+   "A": [
+    "E4:1 E4:.5 F4:.5 G4:1 G4:1 A4:.5 G4:.5 F4:1 E4:2",
+    "D4:1 D4:.5 E4:.5 F4:1 F4:1 G4:.5 F4:.5 E4:1 D4:2",
+    "E4:1 G4:1 C5:1 B4:1 A4:1 G4:1 A4:1 G4:1",
+    "F4:1 E4:1 D4:1 F4:1 E4:.5 D4:.5 C4:3"
+   ],
+   "B": [
+    "G4:1 A4:1 G4:1 E4:2 R:1",
+    "A4:1 B4:1 A4:1 F4:2 R:1",
+    "G4:1 G4:1 A4:1 G4:1 F4:1 E4:1",
+    "D4:1 E4:1 F4:1 D4:1 C4:3"
+   ]
+  },
+  {
+   "id": "m-rugido",
+   "src": "",
+   "t": "Marcha do Rugido",
+   "a": "Rugido",
+   "capa": "rugido",
+   "bpm": 132,
+   "seq": [
+    "A",
+    "B",
+    "A"
+   ],
+   "A": [
+    "C4:.5 C4:.5 G4:1 G4:1 E4:.5 E4:.5 C4:1 C4:1",
+    "D4:.5 D4:.5 A4:1 A4:1 F4:.5 F4:.5 D4:2"
+   ],
+   "B": [
+    "G4:.5 A4:.5 B4:.5 C5:.5 B4:1 G4:1",
+    "A4:.5 G4:.5 F4:.5 E4:.5 D4:1 C4:2"
+   ]
+  },
+  {
+   "id": "m-dragao",
+   "src": "",
+   "t": "Canção de Embalar",
+   "a": "Dragão dos Sonhos",
+   "capa": "dragao",
+   "bpm": 72,
+   "seq": [
+    "A",
+    "A"
+   ],
+   "A": [
+    "E4:2 G4:1 E4:2 G4:1",
+    "E4:1 G4:1 C5:2 B4:1 A4:2 R:1",
+    "D4:2 E4:1 F4:2 D4:1",
+    "D4:1 E4:1 F4:1 D4:1 E4:3 R:1"
+   ]
+  }
+ ]
+}
