@@ -1,18 +1,34 @@
 {
-  "name": "Amigos do Arco-Íris",
-  "short_name": "Amigos",
+  "name": "Arco-Íris",
+  "short_name": "Arco-Íris",
   "description": "As histórias, os jogos e as músicas da Francisca e dos Amigos do Arco-Íris.",
   "lang": "pt-PT",
   "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
-  "display_override": ["fullscreen", "standalone"],
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "orientation": "any",
-  "background_color": "#DCEEFB",
+  "background_color": "#2F8FEA",
   "theme_color": "#DCEEFB",
   "icons": [
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

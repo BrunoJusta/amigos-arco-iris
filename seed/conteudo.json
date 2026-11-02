@@ -124,11 +124,21 @@
   },
   {
    "id": "ketchup",
-   "nome": "Ketchup e Mustarda",
+   "nome": "Ketchup",
    "img": "/personagens/ketchup.jpg",
+   "frase": "É connosco?",
+   "tom": {
+    "p": 1.05,
+    "r": 0.85
+   }
+  },
+  {
+   "id": "mustarda",
+   "nome": "Mustarda",
+   "img": "/personagens/mustarda.jpg",
    "frase": "É contigo ou é comigo?",
    "tom": {
-    "p": 1.15,
+    "p": 1.25,
     "r": 0.85
    }
   },
@@ -189,16 +199,6 @@
    "tom": {
     "p": 1.5,
     "r": 1.02
-   },
-   "extra": 1
-  },
-  {
-   "id": "mustarda",
-   "nome": "Mustarda",
-   "img": "/personagens/ketchup.jpg",
-   "tom": {
-    "p": 0.95,
-    "r": 0.85
    },
    "extra": 1
   }
@@ -2374,7 +2374,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       "À entrada estavam dois bichos sentados lado a lado, gorduchinhos e peludos, com um só olho grande no meio da cara. Um era vermelho. O outro era amarelo."
@@ -2384,7 +2385,8 @@
      "c": "caverna",
      "q": [
       "borbolessauro",
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2397,7 +2399,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2414,7 +2417,8 @@
      "c": "caverna",
      "q": [
       "francisca",
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2434,7 +2438,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2454,7 +2459,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "o": {
       "luz": 1
@@ -2480,7 +2486,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2496,7 +2503,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2522,7 +2530,8 @@
      "c": "caverna",
      "q": [
       "francisca",
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       [
@@ -2552,6 +2561,7 @@
      "c": "caverna",
      "q": [
       "ketchup",
+      "mustarda",
       "cavaleiro"
      ],
      "x": [
@@ -2572,7 +2582,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "o": {
       "luz": 1
@@ -2599,7 +2610,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "x": [
       "O Ketchup e o Mustarda ficaram à porta da caverna, com a lanterna acesa, a acenar.",
@@ -3931,7 +3943,8 @@
     {
      "c": "caverna",
      "q": [
-      "ketchup"
+      "ketchup",
+      "mustarda"
      ],
      "o": {
       "lanterna": 1
@@ -4443,7 +4456,7 @@
    "vermelho"
   ],
   [
-   "ketchup",
+   "mustarda",
    "o Mustarda",
    "amarelo"
   ],
@@ -5478,10 +5491,6 @@
    "Eu primeiro! Não, eu primeiro!"
   ],
   [
-   "ketchup",
-   "É contigo ou é comigo?"
-  ],
-  [
    "gelino",
    "Eu não sabia pedir."
   ],
@@ -5500,6 +5509,22 @@
   [
    "coelhita",
    "Olhem as cores!"
+  ],
+  [
+   "mustarda",
+   "É contigo ou é comigo?"
+  ],
+  [
+   "ketchup",
+   "É connosco?"
+  ],
+  [
+   "mustarda",
+   "Fui eu que lhe peguei primeiro!"
+  ],
+  [
+   "ketchup",
+   "Olha que bonita!"
   ]
  ],
  "adivinhas": {
@@ -5552,8 +5577,8 @@
    "Sou enorme, mas muito meigo."
   ],
   "ketchup": [
-   "Somos dois irmãos, um vermelho e um amarelo.",
-   "Temos só um olho cada um e medo do escuro."
+   "Sou um ciclope vermelho e tenho um irmão amarelo.",
+   "Acho sempre que sou o irmão mais velho."
   ],
   "joao": [
    "Sou um pinguim, mas sou todo amarelo.",
@@ -5570,6 +5595,10 @@
   "dragao": [
    "Sou comprido, cor-de-rosa e só apareço em dias de nuvens fofas.",
    "Deixo cair escamas da sorte."
+  ],
+  "mustarda": [
+   "Sou um ciclope amarelo e tenho um irmão vermelho.",
+   "Tinha medo do escuro, mas agora tenho uma lanterna."
   ]
  },
  "situacoes": [
@@ -5817,6 +5846,103 @@
     "D4:2 E4:1 F4:2 D4:1",
     "D4:1 E4:1 F4:1 D4:1 E4:3 R:1"
    ]
+  }
+ ],
+ "cenarios": [
+  {
+   "id": "quarto",
+   "nome": "Quarto da Francisca",
+   "img": ""
+  },
+  {
+   "id": "rua",
+   "nome": "Rua",
+   "img": ""
+  },
+  {
+   "id": "portao",
+   "nome": "Portão do parque",
+   "img": ""
+  },
+  {
+   "id": "triste",
+   "nome": "Parque triste",
+   "img": ""
+  },
+  {
+   "id": "rio",
+   "nome": "Rio",
+   "img": ""
+  },
+  {
+   "id": "pedra",
+   "nome": "Pedra do rio",
+   "img": ""
+  },
+  {
+   "id": "campo",
+   "nome": "Campo de margaridas",
+   "img": ""
+  },
+  {
+   "id": "estrada",
+   "nome": "Estrada",
+   "img": ""
+  },
+  {
+   "id": "floresta",
+   "nome": "Entrada da floresta",
+   "img": ""
+  },
+  {
+   "id": "mata",
+   "nome": "Dentro da floresta",
+   "img": ""
+  },
+  {
+   "id": "castelo",
+   "nome": "Castelo da Lila",
+   "img": ""
+  },
+  {
+   "id": "caverna",
+   "nome": "Caverna",
+   "img": ""
+  },
+  {
+   "id": "colina",
+   "nome": "Colina gelada",
+   "img": ""
+  },
+  {
+   "id": "bosque",
+   "nome": "Bosque escuro",
+   "img": ""
+  },
+  {
+   "id": "torre",
+   "nome": "Torre",
+   "img": ""
+  },
+  {
+   "id": "sala",
+   "nome": "Sala da torre",
+   "img": ""
+  },
+  {
+   "id": "fonte",
+   "nome": "Fonte",
+   "img": ""
+  },
+  {
+   "id": "feliz",
+   "nome": "Parque feliz",
+   "img": ""
+  },
+  {
+   "id": "ceu",
+   "nome": "Céu",
+   "img": ""
   }
  ]
 }

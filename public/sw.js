@@ -1,5 +1,5 @@
 // Service worker: a app funciona sem internet depois da primeira visita.
-const VERSAO = 'amigos-v1';
+const VERSAO = 'arco-iris-v2';
 const BASE = ['/', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', (e) => {

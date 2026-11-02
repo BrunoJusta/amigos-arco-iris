@@ -18,21 +18,21 @@ export default function Login() {
   }
 
   return (
-    <main className="login">
-      <form className="login-cartao" onSubmit={entrar}>
-        <img src="/icon-192.png" alt="" width="72" height="72" />
-        <h1>Backoffice</h1>
-        <p className="sub">Amigos do Arco-Íris</p>
+    <main className="login-bo">
+      <form className="login-c" onSubmit={entrar}>
+        <img src="/icon-192.png" alt="" width="48" height="48" />
+        <h1>Entrar no backoffice</h1>
+        <p className="sub">Arco-Íris</p>
         <div className="campo">
           <label htmlFor="email">Email</label>
-          <input id="email" type="email" autoComplete="email" spellCheck="false" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input id="email" name="email" type="email" autoComplete="email" spellCheck="false" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div className="campo">
           <label htmlFor="password">Password</label>
-          <input id="password" type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input id="password" name="password" type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         {erro && <p className="erro" role="alert">{erro}</p>}
-        <button className="b b-ouro largo" disabled={aEntrar}>{aEntrar ? 'A entrar…' : 'Entrar'}</button>
+        <button className="btn btn-pri" disabled={aEntrar}>{aEntrar ? 'A entrar…' : 'Entrar'}</button>
       </form>
     </main>
   );

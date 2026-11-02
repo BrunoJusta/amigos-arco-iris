@@ -3,7 +3,7 @@ import { sessaoAtual } from '@/lib/auth';
 import { r2Ativo, urlUpload, urlPublica } from '@/lib/r2';
 
 export const dynamic = 'force-dynamic';
-const PASTAS = ['personagens', 'musicas', 'imagens', 'audio'];
+const PASTAS = ['personagens', 'cenarios', 'musicas', 'imagens', 'audio'];
 const TIPOS = /^(image\/(jpeg|png|webp|gif)|audio\/(mpeg|mp3|mp4|aac|ogg|wav|x-wav|x-m4a|webm))$/;
 
 export async function POST(req) {

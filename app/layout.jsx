@@ -4,10 +4,11 @@ const baloo = Baloo_2({ subsets: ['latin', 'latin-ext'], weight: ['500', '600', 
 const andika = Andika({ subsets: ['latin', 'latin-ext'], weight: ['400', '700'], variable: '--fonte-andika', display: 'swap' });
 
 export const metadata = {
-  title: 'Amigos do Arco-Íris',
+  title: 'Arco-Íris',
+  applicationName: 'Arco-Íris',
   description: 'As histórias, os jogos e as músicas da Francisca e dos Amigos do Arco-Íris.',
   manifest: '/manifest.webmanifest',
-  appleWebApp: { capable: true, title: 'Amigos', statusBarStyle: 'default' },
+  appleWebApp: { capable: true, title: 'Arco-Íris', statusBarStyle: 'default' },
   icons: { icon: '/icon-192.png', apple: '/apple-touch-icon.png' },
 };
 
