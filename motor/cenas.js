@@ -1,5 +1,5 @@
 // Cenários das histórias. Cada cenário é desenhado em SVG; se o backoffice tiver uma imagem para ele, a imagem substitui o desenho.
-export function criarCena({ IMG = {}, NOME = {}, BALDE = '', cenarios = [] }) {
+export function criarCena({ IMG = {}, NOME = {}, BALDE = '', cenarios = [], baldeImg = '' }) {
 const IMGC = {};
 (cenarios || []).forEach((c) => { if (c && c.id && c.img) IMGC[c.id] = c.img; });
 const CENAS = {
@@ -74,7 +74,22 @@ function cena(key, quem=[], o={}){
   if(o.mota) s+='<g transform="translate(330 196)"><circle cx="-26" cy="10" r="12" fill="#22263D"/><circle cx="26" cy="10" r="12" fill="#22263D"/><circle cx="-26" cy="10" r="4" fill="#C9CCDA"/><circle cx="26" cy="10" r="4" fill="#C9CCDA"/><path d="M-30 4q6-18 26-18h18l12 14z" fill="#E5484D"/><rect x="-14" y="-18" width="22" height="7" rx="3" fill="#2B2B33"/><path d="M22 -12l8-10" stroke="#55628E" stroke-width="3" stroke-linecap="round"/><circle cx="34" cy="-4" r="4" fill="#FFE07A"/></g>';
   if(o.borboletas){ const cs=[['#7FB3E8','#B79CEB'],['#F48FB8','#F7BC2F'],['#9FE0C0','#7FB3E8'],['#F7BC2F','#F28C28']]; for(let i=0;i<o.borboletas;i++){ const x=40+((i*73)%330), y=30+((i*41)%110); s+=BORB(x,y,.9+(i%3)*.2,cs[i%4][0],cs[i%4][1],(i%5)*12-24); } }
   if(o.escamas) s+='<g fill="#F7B6D2" stroke="#fff" stroke-width="1.5">'+[[60,40],[120,90],[200,30],[260,110],[330,60],[160,150],[90,130],[300,150]].map(([x,y],i)=>'<path transform="translate('+x+' '+y+') rotate('+(i*37)+')" d="M0 -8q7 4 0 14q-7-10 0-14z"/>').join('')+'</g>';
-  if(o.balde){ const bx = quem.length ? 312 : 290; s+='<g class="balde-c" transform="translate('+bx+' '+(c.dentro?128:140)+') scale(.62)">'+BALDE.replace(/^<svg[^>]*>|<\/svg>$/g,'')+'</g>'; }
+  if(o.balde){
+    // O balde fica pousado no chão, à mesma altura das personagens, com um brilho dourado à volta.
+    const bx = quem.length ? 330 : 200, w = 74, h = 70;
+    const corpo = baldeImg
+      ? '<image href="'+baldeImg+'" x="'+(-w/2)+'" y="'+(-h)+'" width="'+w+'" height="'+h+'" preserveAspectRatio="xMidYMax meet"/>'
+      : '<g transform="translate(-37 -60) scale(.62)">'+BALDE.replace(/^<svg[^>]*>|<\/svg>$/g,'')+'</g>';
+    const estrela = (x,y,r,d) => '<path class="balde-brilho" style="animation-delay:'+d+'s" transform="translate('+x+' '+y+')" d="M0 -'+r+'Q0 0 '+r+' 0Q0 0 0 '+r+'Q0 0 -'+r+' 0Q0 0 0 -'+r+'Z" fill="#FFF6C8"/>';
+    s+='<defs><radialGradient id="'+id+'bh"><stop offset="0" stop-color="#FFE68A" stop-opacity=".9"/><stop offset=".45" stop-color="#FFD24A" stop-opacity=".45"/><stop offset="1" stop-color="#FFD24A" stop-opacity="0"/></radialGradient>'+
+      '<filter id="'+id+'bf" x="-60%" y="-60%" width="220%" height="220%"><feFlood flood-color="#FFD54A" result="c"/><feComposite in="c" in2="SourceAlpha" operator="in" result="s"/><feGaussianBlur in="s" stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'+
+      '<g class="balde-c" transform="translate('+bx+' 226)">'+
+        '<ellipse class="balde-halo" cx="0" cy="-32" rx="64" ry="56" fill="url(#'+id+'bh)"/>'+
+        '<ellipse cx="0" cy="2" rx="28" ry="5" fill="#000" opacity=".14"/>'+
+        '<g filter="url(#'+id+'bf)">'+corpo+'</g>'+
+        estrela(-40,-58,7,0)+estrela(38,-70,5,.8)+estrela(30,-18,4,1.5)+
+      '</g>';
+  }
   const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
   const n=quem.length, tam = n<=1?120:n==2?106:n==3?88:n==4?74:62, larg = temObj?(c.dentro==='quarto'&&!o.balde?380:250):380, x0 = 10+(larg-n*tam-(n-1)*8)/2;
   quem.forEach((k,i)=>{

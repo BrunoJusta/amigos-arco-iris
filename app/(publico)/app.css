@@ -171,7 +171,11 @@ svg.ic{stroke-width:2.6}
 .cena .pers{cursor:pointer;transform-box:fill-box;transform-origin:50% 100%}
 .cena .pers.entra-p{animation:sobe .5s var(--mola) both}
 .cena .pers.salta{animation:salto .6s var(--suave)}
-.cena .balde-c{transform-box:fill-box;transform-origin:50% 10%;animation:baloica 3s ease-in-out infinite}
+.cena .balde-halo{transform-box:fill-box;transform-origin:50% 60%;animation:halo 2.6s ease-in-out infinite}
+.cena .balde-brilho{transform-box:fill-box;transform-origin:center;animation:cintila 2.2s ease-in-out infinite}
+@keyframes halo{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.86)}}
+@keyframes cintila{0%,100%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1)}}
+.contador .b img,.op-svg img{width:100%;height:100%;object-fit:contain}
 .texto{background:var(--cartao);border-radius:24px;padding:1.1rem 1.2rem;display:grid;gap:.75rem;min-height:9rem;align-content:start}
 .narr{font-family:var(--f-l);font-size:1.32rem;line-height:1.6}
 .fala{display:flex;gap:.6rem;align-items:flex-start}

@@ -76,7 +76,8 @@ const falar = (t,quem,fim) => falarFila([{t,quem}],fim);
 function palavras(t){ let h='',pos=0; t.split(/(\s+)/).forEach(tok=>{ if(/^\s+$/.test(tok)||!tok){ h+=tok; } else { h+='<span class="w" data-s="'+pos+'">'+esc(tok)+'</span>'; } pos+=tok.length; }); return h; }
 const esc = s => String(s).replace(/[&<>"]/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 
-const cena = criarCena({IMG, NOME, BALDE, cenarios:C.cenarios});
+const BALDE_HTML = C.balde ? '<img src="'+String(C.balde).replace(/"/g,'&quot;')+'" alt="">' : BALDE;
+  const cena = criarCena({IMG, NOME, BALDE, cenarios:C.cenarios, baldeImg:C.balde||''});
 const LIVROS = C.livros||[];
 
 /* ---------- Estrutura ---------- */
@@ -86,7 +87,7 @@ const TABS=['historias','aprender','jogos','musicas'];
 
 function topo(){
   return '<header class="topo entra" style="--i:0"><span class="avatar"><img src="'+IMG.francisca+'" alt=""></span><div class="tx"><h1>Olá, Francisca!</h1><p>'+({historias:'Que história vamos ler?',aprender:'O Banzé tem coisas para te ensinar.',jogos:'O Balu quer brincar contigo!',musicas:'A Coelhita quer cantar.'})[tab]+'</p></div>'+
-    '<span class="contador" id="contador" aria-label="'+nEstrelas()+' estrelas"><span class="b">'+BALDE+'</span><span id="n-estr">'+nEstrelas()+'</span></span>'+
+    '<span class="contador" id="contador" aria-label="'+nEstrelas()+' estrelas"><span class="b">'+BALDE_HTML+'</span><span id="n-estr">'+nEstrelas()+'</span></span>'+
     '<button class="som-t" id="som-t" aria-label="'+(somOn?'Desligar sons':'Ligar sons')+'">'+ic(somOn?'volume-2':'volume-x',somOn?'♪':'×')+'</button></header>';
 }
 function render(){
@@ -262,7 +263,7 @@ function opVisual(o){
   if(o.cor) return '<span class="pote" style="background:'+COR[o.cor]+'"></span>';
   if(o.num) return '<span class="luzes-c">'+'<i></i>'.repeat(o.num)+'</span>';
   if(o.cena) return '<span class="op-cena">'+cena(o.cena,[],{})+'</span>';
-  if(o.svg) return '<span class="op-svg">'+DESENHOS[o.svg]+'</span>';
+  if(o.svg) return '<span class="op-svg">'+(o.svg==='balde'?BALDE_HTML:DESENHOS[o.svg])+'</span>';
   return '';
 }
 function pergunta(){
@@ -631,7 +632,7 @@ function eSe(){
 
 /* ---------- Motor dos jogos de ação ---------- */
 const SPR={}; function spr(k){ if(!SPR[k]){ const i=new Image(); i.src=IMG[k]; SPR[k]=i; } return SPR[k]; }
-const BALDE_IMG=new Image(); BALDE_IMG.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(BALDE.replace('<svg','<svg xmlns="http://www.w3.org/2000/svg"'));
+const BALDE_IMG=new Image(); BALDE_IMG.src=C.balde||('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(BALDE.replace('<svg','<svg xmlns="http://www.w3.org/2000/svg"')));
 const P_EST=new Path2D('M12 2.5l2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.5l1.3-6.6L2.5 9.3l6.6-.8z');
 const CORACAO='<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.2 3.3 4.5 7 4.5c2.1 0 3.6 1.1 5 2.8 1.4-1.7 2.9-2.8 5-2.8 3.7 0 6 3.7 4.5 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>';
 function retrato(cx,k,x,y,r,rot,borda,alpha){ cx.save(); cx.globalAlpha=alpha==null?1:alpha; cx.translate(x,y); if(rot) cx.rotate(rot); cx.beginPath(); cx.arc(0,0,r+4,0,7); cx.fillStyle=borda||'#fff'; cx.fill(); cx.beginPath(); cx.arc(0,0,r,0,7); cx.clip(); const im=spr(k); if(im.complete&&im.naturalWidth) cx.drawImage(im,-r,-r,r*2,r*2); else { cx.fillStyle='#ddd'; cx.fill(); } cx.restore(); }

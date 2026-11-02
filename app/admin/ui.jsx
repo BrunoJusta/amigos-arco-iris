@@ -21,8 +21,11 @@ async function reduzirImagem(ficheiro, max) {
   const k = Math.min(1, max / Math.max(img.width, img.height));
   const c = document.createElement('canvas'); c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
   c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
-  const blob = await new Promise((res) => c.toBlob(res, 'image/jpeg', 0.86));
-  return new File([blob], ficheiro.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' });
+  // PNG e WebP mantêm a transparência; o resto passa a JPEG
+  const transp = ficheiro.type === 'image/png' || ficheiro.type === 'image/webp';
+  const tipo = transp ? 'image/png' : 'image/jpeg';
+  const blob = await new Promise((res) => c.toBlob(res, tipo, 0.86));
+  return new File([blob], ficheiro.name.replace(/\.\w+$/, '') + (transp ? '.png' : '.jpg'), { type: tipo });
 }
 
 export async function enviarFicheiro(ficheiro, pasta, max = 800) {

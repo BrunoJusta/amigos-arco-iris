@@ -99,7 +99,7 @@ function ouvir(p) {
 }
 
 /* ---------- Cenários ---------- */
-export function Cenarios({ lista, set, livros, setLivros, cena, avisar, confirmar }) {
+export function Cenarios({ lista, set, balde, setBalde, livros, cena, avisar, confirmar }) {
   const [aEnviar, setAEnviar] = useState(null);
   const [novo, setNovo] = useState(null);
   const [sobre, setSobre] = useState(null);
@@ -139,6 +139,7 @@ export function Cenarios({ lista, set, livros, setLivros, cena, avisar, confirma
       <Cabecalho titulo="Cenários" texto="Os fundos das páginas dos livros. Cada cenário tem um desenho da app; podes trocá-lo por uma imagem tua (paisagem, idealmente 1600 × 1000). As personagens e os objetos continuam a ser desenhados por cima.">
         <button className="btn btn-pri" onClick={() => setNovo({ nome: '', img: '', aEnviar: false })}><Plus size={16} />Novo cenário</button>
       </Cabecalho>
+      <CartaoBalde balde={balde} setBalde={setBalde} cena={cena} avisar={avisar} confirmar={confirmar} />
       <div className="ferr">
         <div className="seg" role="group" aria-label="Filtrar cenários">
           {[['todos', 'Todos', lista.length], ['img', 'Com imagem', nImg], ['des', 'Desenho', lista.length - nImg]].map(([k, t, n]) => (
@@ -465,5 +466,39 @@ export function Musicas({ lista, set, pers, avisar, confirmar }) {
         {!lista.length && <Vazio titulo="Ainda não há músicas" texto="Envia o primeiro ficheiro de áudio." />}
       </div>
     </>
+  );
+}
+
+/* ---------- Balde mágico ---------- */
+function CartaoBalde({ balde, setBalde, cena, avisar, confirmar }) {
+  const [aEnviar, setAEnviar] = useState(false);
+  const [sobre, setSobre] = useState(false);
+  async function enviar(f) {
+    if (!f) return;
+    if (f.type !== 'image/png' && f.type !== 'image/webp') { avisar('Usa um PNG com fundo transparente, para o balde ficar bem pousado no cenário.', 'erro'); return; }
+    setAEnviar(true);
+    try { const url = await enviarFicheiro(f, 'imagens', 600); setBalde(url); avisar('Balde enviado. Guarda para publicar.'); }
+    catch (e) { avisar(e.message, 'erro'); }
+    setAEnviar(false);
+  }
+  return (
+    <div className="cartao" style={{ marginBottom: 24 }}>
+      <div className="cartao-cab"><h2>Balde mágico</h2><span className={'etq' + (balde ? ' azul' : '')}>{balde ? 'Imagem própria' : 'Desenho da app'}</span></div>
+      <div className="balde-cartao">
+        <div className={'vis' + (sobre ? ' solta' : '')} onDragOver={(e) => { e.preventDefault(); setSobre(true); }} onDragLeave={() => setSobre(false)} onDrop={(e) => { e.preventDefault(); setSobre(false); enviar(e.dataTransfer.files[0]); }}>
+          <Svg html={cena('quarto', ['francisca'], { balde: 1 })} />
+        </div>
+        <div className="txt">
+          <p>O balde aparece pousado no chão, ao lado das personagens, com um brilho dourado. Também é usado no contador de estrelas, nas perguntas e no jogo das Luzes.</p>
+          <p className="ajuda-c">Envia um PNG com fundo transparente, de preferência quadrado (por exemplo 600 × 600), com o balde a ocupar a imagem até ao fundo.</p>
+          <div className="linha">
+            <label className="btn btn-sec peq">{aEnviar ? <LoaderCircle size={14} className="gira" /> : <Upload size={14} />}{balde ? 'Trocar PNG' : 'Enviar PNG'}
+              <input type="file" accept="image/png,image/webp" onChange={(e) => { enviar(e.target.files[0]); e.target.value = ''; }} />
+            </label>
+            {balde && <button className="btn btn-fan peq" onClick={async () => { if (await confirmar({ titulo: 'Voltar ao desenho', texto: 'O balde volta a usar o desenho original da app.', confirmar: 'Usar desenho' })) setBalde(''); }}><Undo2 size={14} />Usar desenho</button>}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
