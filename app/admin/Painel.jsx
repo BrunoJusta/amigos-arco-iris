@@ -143,6 +143,7 @@ export default function Painel() {
           {pendentes.length > 0 && <button className="btn btn-fan" onClick={descartar} disabled={aGuardar}>Descartar</button>}
           <button className="btn btn-pri" onClick={guardar} disabled={!pendentes.length || aGuardar || estado?.r2 === false} title={estado?.r2 === false ? 'O R2 não está configurado' : 'Guardar (Ctrl/⌘ + S)'}>Guardar <kbd>⌘S</kbd></button>
         </header>
+        {estado?.r2 && estado.escrita && !estado.escrita.ok && <div className="faixa"><TriangleAlert size={16} /><span><b>O backoffice não consegue gravar no R2.</b> {estado.escrita.erro}</span></div>}
         {estado && !estado.r2 && <div className="faixa"><TriangleAlert size={16} /><span>O armazenamento R2 ainda não está configurado. Podes ver e experimentar o conteúdo, mas não guardar nem enviar ficheiros. Segue o README para configurar as variáveis de ambiente no Vercel.</span></div>}
 
         {seccao === 'livros' ? (
@@ -234,6 +235,7 @@ function Resumo({ c, valor, estado, irPara, avisar, confirmar, aoRepor }) {
           <div className="cartao-cab"><Info size={16} /><h2>Estado</h2></div>
           <ul className="estado-l">
             <li><span className={'bola ' + (estado?.r2 ? 'ok' : 'nao')} />Armazenamento R2<b>{estado?.r2 ? 'Ligado' : 'Por configurar'}</b></li>
+            {estado?.r2 && <li><span className={'bola ' + (estado?.escrita?.ok ? 'ok' : 'nao')} />Gravação no R2<b>{estado?.escrita?.ok ? 'A funcionar' : 'Com erro'}</b></li>}
             <li><span className={'bola ' + (estado?.publico ? 'ok' : 'meio')} />Ficheiros<b>{estado?.publico ? 'Endereço público R2' : 'Servidos pela app'}</b></li>
             <li><span className="bola" />Última alteração<b>{c.atualizado ? new Date(c.atualizado).toLocaleString('pt-PT') : 'Conteúdo inicial'}</b></li>
           </ul>

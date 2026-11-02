@@ -24,6 +24,6 @@ export async function PUT(req) {
     return NextResponse.json({ ok: true, versao: novo.versao, atualizado: novo.atualizado });
   } catch (e) {
     console.error(e);
-    return NextResponse.json({ erro: 'Não foi possível guardar no R2.' }, { status: 500 });
+    return NextResponse.json({ erro: 'Não foi possível guardar. ' + (e?.message || '') }, { status: 500 });
   }
 }
