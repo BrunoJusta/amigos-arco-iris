@@ -45,6 +45,8 @@ function cara(t){
 /* ---------- Guardar progresso (só neste telemóvel) ---------- */
 function ler(k,d){ try{ const v=localStorage.getItem(k); return v==null?d:JSON.parse(v); }catch(e){ return d; } }
 function gravar(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+/* Reposição pedida no backoffice: apaga o progresso deste telemóvel uma única vez por pedido */
+try{ const t=C.reset||''; if(t && localStorage.getItem('ami-reset')!==t){ Object.keys(localStorage).filter(k=>/^(ami-feito|rec-|fac-|part-niv)/.test(k)).forEach(k=>localStorage.removeItem(k)); localStorage.setItem('ami-reset',t); } }catch(e){}
 let feito = ler('ami-feito',{})||{};
 let somOn = ler('ami-som',true);
 const nEstrelas = () => Object.keys(feito).length;

@@ -129,7 +129,7 @@ export default function Painel() {
         </header>
         {estado && !estado.r2 && <p className="faixa">O R2 ainda não está configurado. Podes ver o conteúdo, mas não guardar. Segue o README para configurar as variáveis de ambiente.</p>}
         <section className="corpo-p">
-          {seccao === 'resumo' && <Resumo c={conteudo} estado={estado} irPara={irPara} />}
+          {seccao === 'resumo' && <Resumo c={conteudo} estado={estado} irPara={irPara} setAviso={setAviso} aoRepor={(t) => setConteudo((c) => ({ ...c, reset: t }))} />}
           {seccao === 'livros' && <Livros livros={valor('livros') || []} set={(v) => mudar('livros', v)} pers={pers} />}
           {seccao === 'personagens' && <Personagens lista={pers} set={(v) => mudar('personagens', v)} setAviso={setAviso} />}
           {seccao === 'factos' && <Factos temas={valor('factos') || []} set={(v) => mudar('factos', v)} pers={pers} />}
@@ -170,7 +170,23 @@ function Mini({ onUp, onDown, onDel, onDup }) {
 }
 
 /* ---------- Resumo ---------- */
-function Resumo({ c, estado, irPara }) {
+function Resumo({ c, estado, irPara, setAviso, aoRepor }) {
+  const [aRepor, setARepor] = useState(false);
+  async function reporTodos() {
+    if (!confirm('Repor o progresso em todos os telemóveis? Estrelas, livros lidos, recordes e factos lidos voltam a zero da próxima vez que a app abrir.')) return;
+    setARepor(true);
+    try {
+      const t = new Date().toISOString();
+      await api('/api/admin/conteudo', { method: 'PUT', body: JSON.stringify({ seccao: 'reset', valor: t }) });
+      reporAqui(true); aoRepor(t);
+      setAviso({ tipo: 'ok', t: 'Feito. Cada telemóvel volta ao início da próxima vez que abrir a app.' });
+    } catch (e) { setAviso({ tipo: 'erro', t: e.message }); }
+    setARepor(false);
+  }
+  function reporAqui(silencioso) {
+    try { Object.keys(localStorage).filter((k) => /^(ami-feito|rec-|fac-|part-niv|ami-reset)/.test(k)).forEach((k) => localStorage.removeItem(k)); } catch {}
+    if (silencioso !== true) setAviso({ tipo: 'ok', t: 'Progresso apagado neste browser. Abre a app para começar do zero.' });
+  }
   const pags = (c.livros || []).reduce((a, l) => a + (l.pags || []).length, 0);
   const factos = (c.factos || []).reduce((a, t) => a + (t.f || []).length, 0);
   const itens = [
@@ -184,6 +200,15 @@ function Resumo({ c, estado, irPara }) {
       <div className="grelha-resumo">{itens.map(([id, t, n, s]) => (
         <button key={id} className="cartao-r" onClick={() => irPara(id)}><b>{n}</b><span>{t}</span>{s && <small>{s}</small>}</button>
       ))}</div>
+      <div className="cartao">
+        <h2>Progresso da Francisca</h2>
+        <p className="ajuda">O progresso (estrelas, livros lidos, recordes dos jogos, factos lidos e nível da partilha) fica guardado em cada telemóvel. Usa isto para testar a app desde o início.</p>
+        <div className="linha">
+          <button className="b b-ouro" disabled={aRepor || !estado?.r2} onClick={reporTodos}>{aRepor ? 'A repor…' : 'Repor em todos os telemóveis'}</button>
+          <button className="b b-claro" onClick={reporAqui}>Repor só neste browser</button>
+        </div>
+        {c.reset && <small className="ajuda">Última reposição: {new Date(c.reset).toLocaleString('pt-PT')}</small>}
+      </div>
       <div className="cartao">
         <h2>Estado</h2>
         <ul className="lista-estado">
