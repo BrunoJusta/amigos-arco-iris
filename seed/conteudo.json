@@ -223,13 +223,13 @@
    }
   },
   {
-   "id": "olga",
-   "nome": "Doutora Olga",
-   "img": "/personagens/olga.jpg",
-   "frase": "Hum-hum. Deixa-me consultar as estrelas.",
+   "id": "foxius",
+   "nome": "Dr. Foxius",
+   "img": "/personagens/foxius.jpg",
+   "frase": "Ora, ora! Deixa-me consultar os meus livros.",
    "tom": {
-    "p": 0.95,
-    "r": 0.85
+    "p": 0.9,
+    "r": 0.88
    }
   },
   {
@@ -6395,7 +6395,7 @@
      "x": [
       [
        "maia",
-       "Quando não sabemos o caminho, perguntamos a quem sabe. E quem sabe tudo sobre o céu é a Doutora Olga!"
+       "Quando não sabemos o caminho, perguntamos a quem sabe. E quem sabe tudo sobre o céu é o Dr. Foxius!"
       ],
       "E foram pela floresta, com a Bia aninhada dentro do balde."
      ],
@@ -6404,63 +6404,63 @@
     {
      "c": "floresta",
      "q": [
-      "olga"
+      "foxius"
      ],
      "x": [
-      "No tronco da árvore mais velha da floresta havia uma janelinha redonda, com luz lá dentro. Toc, toc, toc.",
+      "No tronco da árvore mais velha da floresta havia uma portinha redonda, com luz lá dentro. Toc, toc, toc.",
       [
-       "olga",
-       "Hum-hum. Quem bate à minha porta a estas horas?"
+       "foxius",
+       "Ora, ora. Quem bate à minha porta a estas horas?"
       ]
      ]
     },
     {
      "c": "floresta",
      "q": [
-      "olga"
+      "foxius"
      ],
      "x": [
-      "Apareceu uma coruja de óculos redondos, com uma touca de dormir e um livro debaixo da asa. Era a Doutora Olga."
+      "Apareceu uma raposa cor de laranja, de óculos redondos na ponta do focinho, um cachecol às riscas e um livro debaixo do braço. Era o Dr. Foxius, o sábio da floresta."
      ]
     },
     {
      "c": "floresta",
      "q": [
-      "olga",
+      "foxius",
       "bia"
      ],
      "x": [
       [
-       "olga",
+       "foxius",
        "Ora, ora! Uma estrelinha cá em baixo! Isso não acontece todos os dias."
       ],
       [
        "bia",
-       "Perdi as minhas três faíscas, Doutora Olga."
+       "Perdi as minhas três faíscas, Dr. Foxius."
       ]
      ]
     },
     {
      "c": "floresta",
      "q": [
-      "olga"
+      "foxius"
      ],
      "x": [
-      "A Doutora Olga abriu um livro enorme, cheio de desenhos do céu, e ajeitou os óculos.",
+      "O Dr. Foxius abriu um livro enorme, cheio de desenhos do céu, e ajeitou os óculos com a ponta da pata.",
       [
-       "olga",
-       "Hum-hum. As faíscas de estrela gostam de se esconder onde faz falta um bocadinho de luz."
+       "foxius",
+       "Ora, ora. As faíscas de estrela gostam de se esconder onde faz falta um bocadinho de luz."
       ]
      ]
     },
     {
      "c": "floresta",
      "q": [
-      "olga"
+      "foxius"
      ],
      "x": [
       [
-       "olga",
+       "foxius",
        "Uma foi para debaixo da terra. Outra subiu para as nuvens. E a terceira foi para o meio da mata, onde moram os pirilampos."
       ]
      ]
@@ -6513,7 +6513,7 @@
        "img": "maia"
       },
       {
-       "img": "olga"
+       "img": "foxius"
       }
      ],
      "ok": 0
@@ -6548,7 +6548,7 @@
        "img": "balu"
       },
       {
-       "img": "olga"
+       "img": "foxius"
       }
      ],
      "ok": 2
@@ -7390,7 +7390,7 @@
      "quem": "bia",
      "ops": [
       {
-       "img": "olga"
+       "img": "foxius"
       },
       {
        "img": "lu"
@@ -7449,25 +7449,25 @@
     {
      "c": "floresta",
      "q": [
-      "olga"
+      "foxius"
      ],
      "x": [
-      "Na noite seguinte, foram todos ter com a Doutora Olga. Ela já estava à espera, de óculos na ponta do bico.",
+      "Na noite seguinte, foram todos ter com o Dr. Foxius. Ele já estava à espera, de óculos na ponta do focinho e cauda a abanar.",
       [
-       "olga",
-       "Hum-hum. Esta noite o céu está limpinho. É a noite certa para voltar."
+       "foxius",
+       "Ora, ora. Esta noite o céu está limpinho. É a noite certa para voltar."
       ]
      ]
     },
     {
      "c": "floresta",
      "q": [
-      "olga",
+      "foxius",
       "bia"
      ],
      "x": [
       [
-       "olga",
+       "foxius",
        "Mas para subir tão alto é preciso um caminho especial. Um caminho feito de todas as cores."
       ]
      ]
@@ -7655,7 +7655,7 @@
    "perg": [
     {
      "q": "Quem fez a escada de arco-íris?",
-     "quem": "olga",
+     "quem": "foxius",
      "ops": [
       {
        "img": "coelhita"
@@ -9117,10 +9117,6 @@
    "Cada faísca que encontro faz-me brilhar um bocadinho mais."
   ],
   [
-   "olga",
-   "Hum-hum. Deixa-me consultar as estrelas."
-  ],
-  [
    "tobias",
    "Ai, que claridade!"
   ],
@@ -9139,6 +9135,10 @@
   [
    "lu",
    "Um, dois, três, luzinhas outra vez!"
+  ],
+  [
+   "foxius",
+   "Ora, ora! Deixa-me consultar os meus livros."
   ]
  ],
  "adivinhas": {
@@ -9223,10 +9223,6 @@
    "Sou uma estrela pequenina que caiu do céu.",
    "Perdi o meu brilho e ando à procura das minhas faíscas."
   ],
-  "olga": [
-   "Sou uma coruja de óculos e sei ler o céu.",
-   "Moro numa árvore cheia de livros."
-  ],
   "tobias": [
    "Sou uma toupeira e vivo debaixo da terra.",
    "Vejo mal, mas tenho umas mãos ótimas para cavar."
@@ -9238,6 +9234,10 @@
   "lu": [
    "Sou uma pirilampa e tenho uma luzinha na barriga.",
    "Dirijo o coro de luzes da mata."
+  ],
+  "foxius": [
+   "Sou uma raposa cor de laranja e uso óculos redondos.",
+   "Sei tudo sobre o céu e as estrelas."
   ]
  },
  "situacoes": [
