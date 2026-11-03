@@ -1,14 +1,14 @@
 'use client';
 import { useMemo, useState } from 'react';
 import { ImagePlus, LoaderCircle, SlidersHorizontal, Undo2, RotateCcw } from 'lucide-react';
-import { OBJETOS_BASE, EFEITOS } from '@/motor/cenas';
+import { OBJETOS_BASE, EFEITOS, DESENHOS, DESENHOS_PERGUNTAS } from '@/motor/cenas';
 import { Campo, Dialogo, Interruptor, Svg, enviarFicheiro } from './ui';
 
 const vazio = (a) => a === undefined || a === null || a === '';
 const nomeEfeito = (e) => EFEITOS.find((x) => x[0] === e)?.[1] || e;
 
 /* Objetos que aparecem por cima dos cenários: imagem própria, posição, tamanho e efeito */
-export default function Objetos({ objetos, set, balde, setBalde, livros, cenarios, cena, avisar, confirmar }) {
+export default function Objetos({ objetos, set, desenhos, setDesenhos, balde, setBalde, livros, cenarios, cena, avisar, confirmar }) {
   const [aEnviar, setAEnviar] = useState(null);
   const [aAjustar, setAAjustar] = useState(null);
   const [sobre, setSobre] = useState(null);
@@ -87,6 +87,7 @@ export default function Objetos({ objetos, set, balde, setBalde, livros, cenario
         })}
       </div>
       <p className="ajuda-c" style={{ marginTop: 16 }}>Usa PNG com fundo transparente, de preferência quadrado (por exemplo 600 × 600), com o objeto a tocar no fundo da imagem para assentar bem no chão. Podes arrastar o ficheiro para cima do cartão.</p>
+      <DesenhosPerguntas desenhos={desenhos} set={setDesenhos} livros={livros} avisar={avisar} confirmar={confirmar} />
       {aAjustar && <Ajustar o={OBJETOS_BASE.find((x) => x.id === aAjustar)} c={cfg(aAjustar)} mudar={(campos) => mudar(aAjustar, campos)} cenarios={cenarios} previa={previa} onFechar={() => setAAjustar(null)} />}
     </>
   );
@@ -184,5 +185,55 @@ function Ajustar({ o, c, mudar, cenarios, previa, onFechar }) {
         <button className="btn btn-pri" onClick={onFechar}>Concluir</button>
       </div>
     </Dialogo>
+  );
+}
+
+/* Desenhos que só aparecem nas respostas das perguntas */
+function DesenhosPerguntas({ desenhos, set, livros, avisar, confirmar }) {
+  const [aEnviar, setAEnviar] = useState(null);
+  const [sobre, setSobre] = useState(null);
+  const usos = useMemo(() => {
+    const u = {};
+    (livros || []).forEach((l) => (l.perg || []).forEach((q) => q.ops.forEach((op) => { if (op.svg) u[op.svg] = (u[op.svg] || 0) + 1; })));
+    return u;
+  }, [livros]);
+  const mudar = (k, url) => { const n = { ...desenhos }; if (url) n[k] = url; else delete n[k]; set(n); };
+  async function enviar(k, f) {
+    if (!f) return;
+    if (f.type !== 'image/png' && f.type !== 'image/webp') { avisar('Usa um PNG com fundo transparente.', 'erro'); return; }
+    setAEnviar(k);
+    try { mudar(k, await enviarFicheiro(f, 'imagens', 600)); avisar('Imagem enviada. Guarda para publicar.'); }
+    catch (e) { avisar(e.message, 'erro'); }
+    setAEnviar(null);
+  }
+  return (
+    <>
+      <div className="cab" style={{ marginTop: 40 }}><div><h2 style={{ fontSize: 18, fontWeight: 600, letterSpacing: '-.02em' }}>Só nas perguntas</h2><p>Desenhos que aparecem como respostas nas perguntas do fim dos livros. O balde, a mota, o mapa, a lanterna, a borboleta, a escama e o arco-íris usam a imagem do objeto lá em cima.</p></div></div>
+      <div className="grelha-c">
+        {DESENHOS_PERGUNTAS.map(([k, nome]) => {
+          const img = desenhos[k], n = usos[k] || 0;
+          return (
+            <div className="cartao c-cen" key={k}>
+              <div className={'vis vis-des' + (sobre === k ? ' solta' : '')}
+                onDragOver={(e) => { e.preventDefault(); setSobre(k); }} onDragLeave={() => setSobre(null)}
+                onDrop={(e) => { e.preventDefault(); setSobre(null); enviar(k, e.dataTransfer.files[0]); }}>
+                {img ? <img src={img} alt="" /> : <Svg html={DESENHOS[k] || ''} />}
+                <span className={'etq' + (img ? ' azul' : '')}>{aEnviar === k ? 'A enviar…' : img ? 'Imagem' : 'Desenho'}</span>
+              </div>
+              <div className="info">
+                <b style={{ fontWeight: 500 }}>{nome}</b>
+                <div className="meta"><span className="mono">{k}</span><span className="esp" /><span className={'etq' + (n ? '' : ' aviso')}>{n ? `${n} perg.` : 'Sem uso'}</span></div>
+              </div>
+              <div className="acoes-c">
+                <label className="btn btn-sec peq">{aEnviar === k ? <LoaderCircle size={14} className="gira" /> : <ImagePlus size={14} />}{img ? 'Trocar PNG' : 'Enviar PNG'}
+                  <input type="file" accept="image/png,image/webp" onChange={(e) => { enviar(k, e.target.files[0]); e.target.value = ''; }} />
+                </label>
+                {img && <button className="btn btn-fan peq" onClick={async () => { if (await confirmar({ titulo: 'Voltar ao desenho', texto: `${nome} volta a usar o desenho original da app.`, confirmar: 'Usar desenho' })) mudar(k, ''); }}><Undo2 size={14} />Usar desenho</button>}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }

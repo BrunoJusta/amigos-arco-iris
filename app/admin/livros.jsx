@@ -19,7 +19,8 @@ export function OpcaoVisual({ o, pers, cena }) {
   if (t === 'cor') return <div className="op-vis"><span className="cor" style={{ background: CORES[o.cor] || '#ccc' }} /></div>;
   if (t === 'num') return <div className="op-vis"><span className="luzes" aria-label={o.num + ' Luzes'}>{Array.from({ length: Math.min(12, o.num || 0) }, (_, i) => <i key={i} />)}</span></div>;
   if (t === 'cena') return <div className="op-vis cena"><Svg html={cena(o.cena, [], {})} /></div>;
-  return <div className="op-vis"><Svg html={DESENHOS[o.svg] || ''} /></div>;
+  const img = cena.imgDesenho?.(o.svg);
+  return <div className="op-vis">{img ? <img src={img} alt="" style={{ width: 80, height: 80, borderRadius: 0, objectFit: 'contain' }} /> : <Svg html={DESENHOS[o.svg] || ''} />}</div>;
 }
 
 export function Previa({ p, pers, cena }) {

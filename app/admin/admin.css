@@ -407,3 +407,6 @@ label.btn input[type='file'] { display: none; }
 .bo .obj-luminoso .ef,.bo .obj-luminoso>g[filter]{filter:drop-shadow(0 0 4px #FFF1A8) drop-shadow(0 0 12px #FFD54Acc) drop-shadow(0 0 24px #FFC83D88)}
 .bo .ef-aura{transform-box:fill-box;transform-origin:center;mix-blend-mode:screen;animation:aura 2.8s ease-in-out infinite}
 @keyframes aura{0%,100%{opacity:.75;transform:scale(.92)}50%{opacity:1;transform:scale(1.1)}}
+
+.c-cen .vis.vis-des { display: grid; place-items: center; background: var(--soft); }
+.c-cen .vis.vis-des svg, .c-cen .vis.vis-des img { width: 46%; height: 72%; object-fit: contain; }

@@ -80,6 +80,8 @@ const imgObj = (k) => (((C.objetos||{})[k]||{}).img) || (k==='balde' ? C.balde||
   const tagImg = (u) => '<img src="'+String(u).replace(/"/g,'&quot;')+'" alt="">';
   const BALDE_HTML = imgObj('balde') ? tagImg(imgObj('balde')) : BALDE;
   const DES_OBJ = { balde:'balde', mota:'mota', mapa:'mapa', lanterna:'lanterna', borboleta:'borboletas', escama:'escamas', arcoiris:'arco' };
+  // imagem do backoffice para um desenho das perguntas: própria, ou a do objeto correspondente
+  const imgDes = (k) => ((C.desenhos||{})[k]) || (DES_OBJ[k] ? imgObj(DES_OBJ[k]) : '');
   const cena = criarCena({IMG, NOME, BALDE, cenarios:C.cenarios, baldeImg:C.balde||'', objetos:C.objetos||{}});
 const LIVROS = C.livros||[];
 
@@ -266,7 +268,7 @@ function opVisual(o){
   if(o.cor) return '<span class="pote" style="background:'+COR[o.cor]+'"></span>';
   if(o.num) return '<span class="luzes-c">'+'<i></i>'.repeat(o.num)+'</span>';
   if(o.cena) return '<span class="op-cena">'+cena(o.cena,[],{})+'</span>';
-  if(o.svg) return '<span class="op-svg">'+(DES_OBJ[o.svg]&&imgObj(DES_OBJ[o.svg])?tagImg(imgObj(DES_OBJ[o.svg])):DESENHOS[o.svg])+'</span>';
+  if(o.svg) return '<span class="op-svg">'+(imgDes(o.svg)?tagImg(imgDes(o.svg)):DESENHOS[o.svg])+'</span>';
   return '';
 }
 function pergunta(){

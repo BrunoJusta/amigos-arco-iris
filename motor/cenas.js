@@ -187,3 +187,11 @@ export const OBJETOS_BASE = [
 ];
 const OBJ = Object.fromEntries(OBJETOS_BASE.map((o) => [o.id, o]));
 export const EFEITOS = [['nenhum', 'Nenhum'], ['brilho', 'Brilho dourado'], ['flutuar', 'Flutuar'], ['pulsar', 'Pulsar'], ['baloicar', 'Baloiçar'], ['cintilar', 'Cintilar']];
+
+// Desenhos que só aparecem como respostas nas perguntas dos livros (podem ser trocados por imagens no backoffice).
+export const DESENHOS_PERGUNTAS = [
+  ['bola', 'Bola'], ['flor', 'Flor'], ['aquario', 'Aquário'], ['capacete', 'Capacete'], ['coroa', 'Coroa'],
+  ['sandes', 'Sandes'], ['estrela', 'Estrela'], ['lua', 'Lua'], ['gelo', 'Floco de gelo'],
+];
+// Desenhos das perguntas que correspondem a um objeto dos cenários (usam a imagem desse objeto).
+export const DESENHO_OBJETO = { balde: 'balde', mota: 'mota', mapa: 'mapa', lanterna: 'lanterna', borboleta: 'borboletas', escama: 'escamas', arcoiris: 'arco' };
