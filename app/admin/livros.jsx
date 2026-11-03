@@ -9,6 +9,7 @@ export const OBJETOS = [
   ['escamas', 'Escamas'], ['lanterna', 'Lanterna'], ['caneca', 'Caneca'], ['relogio', 'Relógio parado'], ['passaro', 'Passarinho'], ['desenho', 'Desenho'], ['noite', 'Noite'], ['borboletas', 'Borboletas'],
   ['faisca', 'Faísca'], ['cogumelos', 'Cogumelos'], ['pirilampos', 'Pirilampos'], ['escadagelo', 'Escada de gelo'], ['livro', 'Livro'], ['bola', 'Bola'], ['piquenique', 'Piquenique'],
   ['bolo', 'Bolo'], ['bandeirinhas', 'Bandeirinhas'], ['caldeirao', 'Caldeirão'], ['magia', 'Pó mágico'], ['gelado', 'Gelado'], ['trovoada', 'Trovoada'], ['cabana', 'Cabana'], ['pocas', 'Poças'], ['cogumelocasa', 'Casinha-cogumelo'],
+  ['nevoeiro', 'Nevoeiro'], ['baldepartido', 'Balde rachado'], ['faiscacor', 'Faísca colorida'], ['nuvenzinha', 'Nuvenzinha'], ['carta', 'Carta'],
 ];
 const TIPOS = [['img', 'Personagem'], ['cor', 'Cor'], ['num', 'Luzes'], ['cena', 'Cenário'], ['svg', 'Desenho']];
 const tipoDe = (o) => (o.img ? 'img' : o.cor ? 'cor' : o.num ? 'num' : o.cena ? 'cena' : 'svg');
@@ -266,6 +267,18 @@ function EditorPagina({ p, i, total, set, pers, cenarios, cena, acoes, irPara })
               <div className="linha c" style={{ marginTop: 6 }}>
                 <label htmlFor="p-bor" className="rotulo">Quantas borboletas</label>
                 <input id="p-bor" type="number" min="1" max="20" className="peq" style={{ width: 80 }} value={p.o.borboletas} onChange={(e) => set({ ...p, o: { ...p.o, borboletas: Math.max(1, Math.min(20, +e.target.value || 1)) } })} />
+              </div>
+            ) : null}
+            {p.o?.faiscacor ? (
+              <div className="linha c" style={{ marginTop: 6 }}>
+                <label htmlFor="p-fc" className="rotulo">Cor da faísca</label>
+                <select id="p-fc" className="peq" style={{ width: 160 }} value={p.o.faiscacor} onChange={(e) => set({ ...p, o: { ...p.o, faiscacor: +e.target.value } })}>{['Vermelho', 'Laranja', 'Amarelo', 'Verde', 'Azul', 'Anil', 'Violeta'].map((t, i) => <option key={i} value={i + 1}>{t}</option>)}</select>
+              </div>
+            ) : null}
+            {p.o?.nevoeiro ? (
+              <div className="linha c" style={{ marginTop: 6 }}>
+                <label htmlFor="p-nv" className="rotulo">Nevoeiro</label>
+                <select id="p-nv" className="peq" style={{ width: 160 }} value={p.o.nevoeiro} onChange={(e) => set({ ...p, o: { ...p.o, nevoeiro: +e.target.value } })}><option value={1}>Cinzento</option><option value={2}>Branco</option><option value={3}>Cor-de-rosa</option></select>
               </div>
             ) : null}
             {p.o?.pirilampos ? (

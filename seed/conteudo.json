@@ -12989,7 +12989,10 @@
        "ernesto",
        "Bom dia, Francisca! Hoje há uma carta para ti!"
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13002,7 +13005,10 @@
        "francisca",
        "Gosto do teu riso. Faz o parque mais bonito."
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13037,7 +13043,10 @@
        "xica",
        "A minha diz o mesmo! Eu é que li primeiro!"
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "estrada",
@@ -13050,7 +13059,10 @@
        "rugido",
        "És muito corajoso, mesmo quando tens medo. Ora... quem é que sabe isto?"
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "feliz",
@@ -13064,7 +13076,10 @@
        "O teu frio é um abraço fresquinho nos dias quentes."
       ],
       "O Gelino ficou tão contente que até nevou um bocadinho."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "feliz",
@@ -13077,7 +13092,10 @@
        "ernesto",
        "Em tantos anos de carteiro, nunca vi nada assim!"
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "feliz",
@@ -13203,7 +13221,10 @@
      ],
      "x": [
       "No dia seguinte, juntaram as cartas todas em cima de um banco. Eram tantas que pareciam um arco-íris de papel."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13215,7 +13236,10 @@
        "francisca",
        "Um bom detetive olha para as coisas pequeninas. Vamos ver o que as cartas têm em comum."
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13224,7 +13248,10 @@
      ],
      "x": [
       "Primeira pista: todas tinham a mesma letra. Redondinha, com as letras muito juntinhas, como se quem escrevesse tivesse mãos pequenas."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13237,7 +13264,10 @@
        "ernesto",
        "Parece... um sol? Ou uma castanha?"
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13250,7 +13280,10 @@
        "maia",
        "Cheiram todas a folhas secas. E a bolachas de aveia."
       ]
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "rua",
@@ -13263,7 +13296,10 @@
        "Folhas secas e bolachas de aveia? Quem é que no parque cheira assim?"
       ],
       "O Ernesto coçou a cabeça. Os picos fizeram um barulhinho. Tchic, tchic."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "feliz",
@@ -13947,7 +13983,8 @@
       ]
      ],
      "o": {
-      "desenho": 1
+      "desenho": 1,
+      "carta": 1
      }
     },
     {
@@ -13958,7 +13995,10 @@
      ],
      "x": [
       "O Gelino escreveu com letra fria e azul: Obrigado pelo abraço de papel. E o João colou uma sandes de banana na carta dele. Era a carta mais pesada de todas."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "feliz",
@@ -13970,7 +14010,8 @@
       "A Florinda pintou uma flor tão pequenina que quase não se via. E a Lila escreveu com a sua caneta lilás: És o carteiro mais querido do mundo."
      ],
      "o": {
-      "cogumelocasa": 1
+      "cogumelocasa": 1,
+      "carta": 1
      }
     },
     {
@@ -13981,7 +14022,10 @@
      ],
      "x": [
       "Juntaram mais de trinta cartas. A Francisca pô-las todas num saco enorme. A Maia carregou-o às costas até à mata."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "floresta",
@@ -13990,7 +14034,10 @@
      ],
      "x": [
       "À porta azul do Ernesto, encheram a caixa do correio até não caber mais nada. As cartas saíam pelas bordas, como flores de papel."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "floresta",
@@ -14004,7 +14051,10 @@
        "Ernesto! Podes vir à porta?"
       ],
       "O Ernesto abriu a portinha. Viu a caixa do correio a transbordar. Viu os amigos todos escondidos atrás das árvores. E ficou sem palavras."
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "floresta",
@@ -21697,7 +21747,9 @@
      "x": [
       "Numa manhã de domingo, a Francisca acordou e foi dar os bons-dias ao balde mágico, como sempre. Mas o balde não brilhou."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "quarto",
@@ -21707,7 +21759,9 @@
      "x": [
       "Olhou melhor. No bordo dourado havia uma racha fininha, como um risco de lápis. E os brilhantezinhos, que antes piscavam como estrelas, estavam apagados."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "quarto",
@@ -21725,7 +21779,9 @@
        "Snif, snif... Cheira a tristeza. E a pouca magia."
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "rua",
@@ -21744,7 +21800,9 @@
        "Padrinho, o balde mágico partiu-se e já não brilha!"
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "rua",
@@ -21758,7 +21816,9 @@
        "Hum. Isto é um trabalho para quem sabe muito. Vamos ter com o Dr. Foxius."
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "floresta",
@@ -21773,9 +21833,9 @@
       ]
      ],
      "o": {
-      "livro": 1
-     },
-     "b": 1
+      "livro": 1,
+      "baldepartido": 1
+     }
     },
     {
      "c": "floresta",
@@ -21843,7 +21903,9 @@
       "E foi assim que começou a maior aventura do parque.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -21929,7 +21991,10 @@
      ],
      "x": [
       "O Ouriço Ernesto pedalou pelo parque inteiro a entregar convites. Correio! Correio para todos! Reunião na fonte!"
-     ]
+     ],
+     "o": {
+      "carta": 1
+     }
     },
     {
      "c": "fonte",
@@ -21993,7 +22058,9 @@
        "Quando a tempestade passou, no sítio onde tinham estado abraçados, apareceu um balde dourado. Era o arco-íris guardado. É por isso que o balde brilha quando os amigos estão juntos."
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "fonte",
@@ -22173,7 +22240,7 @@
       "E do peito dele saiu uma faísca vermelha, quente como o sol de verão."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 1
      }
     },
     {
@@ -22189,7 +22256,7 @@
       "Outra faísca vermelha!"
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 1
      }
     },
     {
@@ -22213,7 +22280,7 @@
       ]
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 1
      }
     },
     {
@@ -22230,7 +22297,7 @@
       "Toda a gente riu, mas era verdade. E saiu mais uma faísca."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 1
      }
     },
     {
@@ -22241,7 +22308,9 @@
      "x": [
       "As faíscas juntaram-se numa só e entraram no balde. Plim! Um risco vermelho acendeu-se no bordo dourado."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "estrada",
@@ -22259,7 +22328,9 @@
        "ROAAAR! Capacetes postos, vamos à próxima!"
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "estrada",
@@ -22270,7 +22341,9 @@
       "E a racha do balde ficou um bocadinho mais pequenina.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -22410,7 +22483,7 @@
       "E do aquário dele saiu uma faísca laranja, viva, a rodopiar como uma roda de inventor."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 2
      }
     },
     {
@@ -22426,7 +22499,7 @@
       "Outra faísca laranja."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 2
      }
     },
     {
@@ -22443,7 +22516,7 @@
       "E o ecrã dele ficou cor de laranja."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 2
      }
     },
     {
@@ -22454,7 +22527,9 @@
      "x": [
       "Plim! O segundo risco, cor de laranja, acendeu-se no balde. A racha ficou ainda mais pequena."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "rua",
@@ -22473,7 +22548,9 @@
       ],
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -22562,7 +22639,7 @@
       "Também lá estavam o Mustarda, a Dona Leonor com os dez patinhos amarelinhos e, lá em cima no céu, a piscar, a Estrelinha Bia."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 3
      }
     },
     {
@@ -22606,7 +22683,7 @@
       "Uma faísca amarela saiu da cesta vazia."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 3
      }
     },
     {
@@ -22622,8 +22699,8 @@
       "Outra faísca."
      ],
      "o": {
-      "faisca": 1,
-      "lanterna": 1
+      "lanterna": 1,
+      "faiscacor": 3
      }
     },
     {
@@ -22639,7 +22716,7 @@
       "E os patinhos fizeram piu-piu todos juntos. Mais uma faísca."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 3
      }
     },
     {
@@ -22655,7 +22732,7 @@
       ]
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 3
      }
     },
     {
@@ -22666,7 +22743,9 @@
      "x": [
       "Plim! O risco amarelo acendeu-se no balde. Três cores! A racha já quase não se via."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "colina",
@@ -22686,7 +22765,9 @@
       "E toda a gente riu.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -22802,7 +22883,7 @@
       "A Florinda contou como pintava as flores todas as manhãs, às escondidas, para o jardim ter cor. Uma faísca verde saiu do seu pincel de orvalho."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 4
      }
     },
     {
@@ -22818,8 +22899,8 @@
       "Outra faísca verde."
      ],
      "o": {
-      "faisca": 1,
-      "borboletas": 4
+      "borboletas": 4,
+      "faiscacor": 4
      }
     },
     {
@@ -22835,7 +22916,7 @@
       "E o Zé, pela primeira vez, falou devagar e baixinho. Mais uma faísca."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 4
      }
     },
     {
@@ -22851,7 +22932,7 @@
       ]
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 4
      }
     },
     {
@@ -22862,7 +22943,9 @@
      "x": [
       "Plim! O risco verde acendeu-se. Quatro cores! O balde começou a ficar morninho nas mãos da Francisca."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "campo",
@@ -22880,7 +22963,9 @@
        "Tlim! Está a acordar!"
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "campo",
@@ -22896,7 +22981,9 @@
       "Ao longe, uma névoa cinzenta começava a rastejar pelo chão.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -23004,7 +23091,8 @@
       "E soprou uma faísca azul, fresquinha, com floquinhos de neve à volta."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 5,
+      "carta": 1
      }
     },
     {
@@ -23020,7 +23108,7 @@
       "Outra faísca azul."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 5
      }
     },
     {
@@ -23036,7 +23124,8 @@
       "A carta abriu-se sozinha, e dela saiu mais uma faísca."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 5,
+      "carta": 1
      }
     },
     {
@@ -23047,7 +23136,9 @@
      "x": [
       "Plim! O risco azul acendeu-se. Cinco cores!"
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "colina",
@@ -23056,7 +23147,10 @@
      ],
      "x": [
       "Mas nesse momento, a névoa cinzenta subiu a colina. Era um nevoeiro enorme, espesso como algodão."
-     ]
+     ],
+     "o": {
+      "nevoeiro": 1
+     }
     },
     {
      "c": "colina",
@@ -23070,7 +23164,10 @@
        "bruno",
        "Francisca! Dá-me a mão!"
       ]
-     ]
+     ],
+     "o": {
+      "nevoeiro": 1
+     }
     },
     {
      "c": "colina",
@@ -23080,7 +23177,10 @@
      "x": [
       "E dentro do nevoeiro, as cores começavam a desbotar. O vermelho do lenço do Balu ficou cinzento. A Coelhita ficou cinzenta."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     },
     {
      "c": "colina",
@@ -23095,7 +23195,10 @@
       ],
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     }
    ],
    "perg": [
@@ -23172,7 +23275,8 @@
       "No nevoeiro, cada um ficou sozinho. A Francisca chamava, mas as vozes pareciam vir de todo o lado e de lado nenhum."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23184,9 +23288,10 @@
       "Sentou-se no chão, com o balde ao colo. Estava com medo. Lembrou-se do Parafuso: o medo fica mais pequeno com luz, com amigos e com respiração devagarinho."
      ],
      "o": {
-      "noite": 1
-     },
-     "b": 1
+      "noite": 1,
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     },
     {
      "c": "bosque",
@@ -23201,7 +23306,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23214,7 +23320,8 @@
       "A Maia saltou-lhe para o colo. E juntas começaram a chamar os outros, um a um, seguindo os cheiros."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23235,7 +23342,8 @@
      ],
      "o": {
       "noite": 1,
-      "relogio": 1
+      "relogio": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23252,7 +23360,8 @@
      ],
      "o": {
       "noite": 1,
-      "lanterna": 1
+      "lanterna": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23269,7 +23378,8 @@
      ],
      "o": {
       "noite": 1,
-      "lanterna": 1
+      "lanterna": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23284,7 +23394,8 @@
      ],
      "o": {
       "noite": 1,
-      "lanterna": 1
+      "lanterna": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23302,7 +23413,8 @@
      ],
      "o": {
       "noite": 1,
-      "lanterna": 1
+      "lanterna": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23320,9 +23432,10 @@
      ],
      "o": {
       "noite": 1,
-      "lanterna": 1
-     },
-     "b": 1
+      "lanterna": 1,
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     }
    ],
    "perg": [
@@ -23398,7 +23511,8 @@
      ],
      "o": {
       "noite": 1,
-      "mapa": 1
+      "mapa": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23414,7 +23528,8 @@
      ],
      "o": {
       "noite": 1,
-      "mapa": 1
+      "mapa": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -23454,9 +23569,9 @@
       "E as cores voltaram! O Balu ficou outra vez com o lenço vermelho. A Coelhita voltou a ser azul. E os cinco riscos do balde brilharam mais fortes."
      ],
      "o": {
-      "cogumelos": 1
-     },
-     "b": 1
+      "cogumelos": 1,
+      "baldepartido": 1
+     }
     },
     {
      "c": "caverna",
@@ -23542,9 +23657,9 @@
       "Continua..."
      ],
      "o": {
-      "magia": 1
-     },
-     "b": 1
+      "magia": 1,
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -23707,8 +23822,8 @@
       "A Francisca fechou os olhos e sonhou acordada: sonhou com o parque cheio de cores outra vez. Do sonho dela saiu uma faísca cor de anil."
      ],
      "o": {
-      "faisca": 1,
-      "escamas": 1
+      "escamas": 1,
+      "faiscacor": 6
      }
     },
     {
@@ -23721,8 +23836,8 @@
       "A Bia piscou e deu outra. A Lu e os pirilampos acenderam-se todos ao mesmo tempo, e saiu mais uma."
      ],
      "o": {
-      "faisca": 1,
-      "pirilampos": 12
+      "pirilampos": 12,
+      "faiscacor": 6
      }
     },
     {
@@ -23734,9 +23849,9 @@
       "Plim! O sexto risco acendeu-se. Seis cores! Só faltava o violeta."
      ],
      "o": {
-      "noite": 1
-     },
-     "b": 1
+      "noite": 1,
+      "baldepartido": 1
+     }
     },
     {
      "c": "torre",
@@ -23752,9 +23867,9 @@
       "Continua..."
      ],
      "o": {
-      "noite": 1
-     },
-     "b": 1
+      "noite": 1,
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -23831,7 +23946,10 @@
        "lila",
        "Não sou princesa de ficar à espera! Venham!"
       ]
-     ]
+     ],
+     "o": {
+      "nevoeiro": 1
+     }
     },
     {
      "c": "castelo",
@@ -23846,7 +23964,7 @@
       "E soltou a trança violeta."
      ],
      "o": {
-      "faisca": 1
+      "faiscacor": 7
      }
     },
     {
@@ -23889,8 +24007,8 @@
       "Das mãos das duas saiu uma faísca violeta, a brilhar como uma ametista."
      ],
      "o": {
-      "faisca": 1,
-      "magia": 1
+      "magia": 1,
+      "faiscacor": 7
      }
     },
     {
@@ -23901,7 +24019,9 @@
      "x": [
       "Plim! O sétimo risco acendeu-se. Sete cores! O balde ficou quente, dourado e cheio de brilhantezinhos outra vez."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "castelo",
@@ -23915,7 +24035,9 @@
        "Porquê? Já temos as sete cores!"
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     },
     {
      "c": "castelo",
@@ -23962,7 +24084,10 @@
       "Lá fora, o nevoeiro encostava-se às janelas do castelo, cinzento e silencioso. Parecia estar a ouvir.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     }
    ],
    "perg": [
@@ -24043,7 +24168,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24058,7 +24184,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24078,7 +24205,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24094,7 +24222,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24110,7 +24239,8 @@
       "E a Francisca abriu a janela."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24126,7 +24256,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24136,7 +24267,8 @@
       "E o nevoeiro, pela primeira vez, parou. Ficou à volta deles, quieto, como quem escuta."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24151,7 +24283,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24173,7 +24306,8 @@
      ],
      "o": {
       "noite": 1,
-      "pirilampos": 8
+      "pirilampos": 8,
+      "nevoeiro": 1
      }
     },
     {
@@ -24186,9 +24320,9 @@
       "Continua..."
      ],
      "o": {
-      "noite": 1
-     },
-     "b": 1
+      "noite": 1,
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -24263,7 +24397,8 @@
       "Ao amanhecer, todos se juntaram no meio do parque, dentro do nevoeiro. O Professor Bigodes e a Pirilampa Lu organizaram o maior coro de sempre."
      ],
      "o": {
-      "pirilampos": 14
+      "pirilampos": 14,
+      "nevoeiro": 1
      }
     },
     {
@@ -24278,7 +24413,8 @@
       ]
      ],
      "o": {
-      "pirilampos": 14
+      "pirilampos": 14,
+      "nevoeiro": 1
      }
     },
     {
@@ -24293,7 +24429,8 @@
       "O Rugido rugiu. O Balu ladrou. Os cíclopes bateram nos troncos como tambores. Tum, tum, tum!"
      ],
      "o": {
-      "pirilampos": 10
+      "pirilampos": 10,
+      "nevoeiro": 1
      }
     },
     {
@@ -24307,7 +24444,8 @@
      ],
      "o": {
       "pirilampos": 10,
-      "pocas": 1
+      "pocas": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24321,7 +24459,8 @@
      ],
      "o": {
       "pirilampos": 10,
-      "relogio": 1
+      "relogio": 1,
+      "nevoeiro": 1
      }
     },
     {
@@ -24335,7 +24474,8 @@
       "As tartarugas cantaram a duas vozes, sem discutir! A Bolota batia bolotas umas nas outras. E o Teodoro cantava devagarinho a nota mais comprida de todas."
      ],
      "o": {
-      "pirilampos": 10
+      "pirilampos": 10,
+      "nevoeiro": 1
      }
     },
     {
@@ -24347,9 +24487,10 @@
       "E a Francisca bateu no balde mágico com a pontinha do dedo. Tlim! Tlim! Tlim!"
      ],
      "o": {
-      "pirilampos": 14
-     },
-     "b": 1
+      "pirilampos": 14,
+      "baldepartido": 1,
+      "nevoeiro": 1
+     }
     },
     {
      "c": "feliz",
@@ -24359,7 +24500,8 @@
      ],
      "o": {
       "pirilampos": 16,
-      "arco": 1
+      "arco": 1,
+      "nevoeiro": 3
      }
     },
     {
@@ -24374,7 +24516,8 @@
       ]
      ],
      "o": {
-      "pirilampos": 10
+      "pirilampos": 10,
+      "nevoeiro": 2
      }
     },
     {
@@ -24387,9 +24530,10 @@
       "Continua..."
      ],
      "o": {
-      "pirilampos": 10
-     },
-     "b": 1
+      "pirilampos": 10,
+      "baldepartido": 1,
+      "nevoeiro": 2
+     }
     }
    ],
    "perg": [
@@ -24461,7 +24605,10 @@
      ],
      "x": [
       "A Francisca olhou à sua volta. Para os amigos todos, tão diferentes. Grandes e pequenos, rápidos e lentos, falantes e calados."
-     ]
+     ],
+     "o": {
+      "nevoeiro": 2
+     }
     },
     {
      "c": "feliz",
@@ -24471,7 +24618,10 @@
      "x": [
       "E lembrou-se da história do Banzé: o balde tinha nascido no dia em que todos se abrigaram juntos, abraçados."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1,
+      "nevoeiro": 2
+     }
     },
     {
      "c": "feliz",
@@ -24492,7 +24642,10 @@
        "francisca",
        "Somos nós. Todos juntos!"
       ]
-     ]
+     ],
+     "o": {
+      "nevoeiro": 2
+     }
     },
     {
      "c": "feliz",
@@ -24506,7 +24659,10 @@
        "Amigos! Façam um círculo! De mãos dadas! Todos, todos, todos!"
       ]
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1,
+      "nevoeiro": 2
+     }
     },
     {
      "c": "fonte",
@@ -24577,7 +24733,9 @@
       "Era o maior círculo de amigos que o parque alguma vez tinha visto. E no meio dele, o balde começou a tremer, quente, quente, cada vez mais quente.",
       "Continua..."
      ],
-     "b": 1
+     "o": {
+      "baldepartido": 1
+     }
     }
    ],
    "perg": [
@@ -24676,7 +24834,8 @@
       "O nevoeiro, aquecido pela luz, começou a subir. Subiu, subiu, ficou branquinho e fofo, e transformou-se numa nuvenzinha bebé, com dois olhinhos e um sorriso."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "nuvenzinha": 1
      }
     },
     {
@@ -24692,7 +24851,8 @@
       "E o Senhor Nimbo subiu também, para a acompanhar. Lá em cima, a nuvenzinha deu-lhe um abraço de algodão."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "nuvenzinha": 1
      }
     },
     {
@@ -24930,7 +25090,8 @@
       "O Ernesto distribuiu cartas a toda a gente. E desta vez, todas tinham remetente: Com carinho, de todos para todos."
      ],
      "o": {
-      "bandeirinhas": 1
+      "bandeirinhas": 1,
+      "carta": 1
      }
     },
     {
@@ -25110,7 +25271,8 @@
       "Lá fora, no céu, a Estrelinha Bia piscou duas vezes. E ao lado dela, uma nuvenzinha bebé, branca e fofa, fez adeus."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "nuvenzinha": 1
      }
     },
     {

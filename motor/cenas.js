@@ -87,7 +87,12 @@ function cena(key, quem=[], o={}){
     if(!o[k]) continue;
     const n=NOVOS_OBJ[k];
     if(k==='pirilampos'){ const q=Math.max(1,+o[k]||8); for(let i=0;i<q;i++){ const x=30+((i*67)%340), y=40+((i*53)%130); s+=varios('pirilampos',x,y,.8+(i%3)*.25,n.svg,i); } }
-    else s+=objeto(k,n.x,n.y,n.svg,0,0);
+    else {
+      const v=o[k], svg=typeof n.svg==='function'?n.svg(v,BALDE):n.svg;
+      const x=k==='baldepartido'?(quem.length?330:200):n.x;
+      const tinta=k==='faiscacor'?CORES_FAISCA[(Math.max(1,Math.min(7,+v||1))-1)]:'';
+      s+=objeto(k,x,n.y,svg,0,0,tinta);
+    }
   }
   if(o.balde) s+=objeto('balde',quem.length?330:200,226,'<g transform="translate(-37 -60) scale(.62)">'+BALDE.replace(/^<svg[^>]*>|<\/svg>$/g,'')+'</g>',0,0);
 
@@ -100,12 +105,14 @@ function cena(key, quem=[], o={}){
       w: vazio(u.w)?b.w:+u.w, efeito: vazio(u.efeito)?b.efeito:u.efeito, sombra: vazio(u.sombra)?!!b.sombra:!!u.sombra };
   }
   // ax0/ay0: sítio onde o desenho original assenta neste cenário; ox/oy: esse ponto dentro do próprio desenho
-  function objeto(k,ax0,ay0,desenho,ox,oy){
+  function objeto(k,ax0,ay0,desenho,ox,oy,tinta){
     const b=OBJ[k], u=cfgObj(k), w=u.w;
     const x=u.x===null?ax0:u.x, y=u.y===null?ay0:u.y;
     if(ox===undefined){ ox=ax0; oy=ay0; }
+    // imagem branca enviada no backoffice pode ser pintada com uma cor (faíscas coloridas)
+    const ti=tinta&&u.img?id+'t'+(++cid):'';
     const corpo=u.img
-      ? '<image href="'+u.img+'" x="'+(-w/2)+'" y="'+(-w)+'" width="'+w+'" height="'+w+'" preserveAspectRatio="xMidYMax meet"/>'
+      ? (ti?'<defs><filter id="'+ti+'"><feFlood flood-color="'+tinta+'" result="f"/><feComposite in="f" in2="SourceAlpha" operator="in" result="c"/><feBlend in="c" in2="SourceGraphic" mode="multiply"/></filter></defs><g filter="url(#'+ti+')">':'')+'<image href="'+u.img+'" x="'+(-w/2)+'" y="'+(-w)+'" width="'+w+'" height="'+w+'" preserveAspectRatio="xMidYMax meet"/>'+(ti?'</g>':'')
       : '<g transform="scale('+(w/b.w)+') translate('+(-ox)+' '+(-oy)+')">'+desenho+'</g>';
     return montar(k,x,y,w,u.efeito,u.sombra,corpo,0);
   }
@@ -118,7 +125,7 @@ function cena(key, quem=[], o={}){
   }
   function montar(k,x,y,w,ef,sombra,corpo,atraso){
     const f=id+k+(++cid);
-    const luminoso = k==='luz' || k==='lanterna' || k==='faisca' || k==='cogumelos';
+    const luminoso = k==='luz' || k==='lanterna' || k==='faisca' || k==='faiscacor' || k==='cogumelos';
     let r='<g class="obj'+(luminoso?' obj-luminoso':'')+'" data-obj="'+k+'" transform="translate('+x+' '+y+')">';
     // Luz e lanterna: aura de luz extra por trás (o brilho e a pulsação vêm do CSS)
     if(luminoso) r+='<defs><radialGradient id="'+f+'a"><stop offset="0" stop-color="#FFF4B8" stop-opacity=".95"/><stop offset=".4" stop-color="#FFE07A" stop-opacity=".55"/><stop offset="1" stop-color="#FFD24A" stop-opacity="0"/></radialGradient></defs>'+
@@ -136,7 +143,7 @@ function cena(key, quem=[], o={}){
     return r+'</g>';
   }
 
-  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||o.faisca||o.cogumelos||o.escadagelo||o.livro||o.bola||o.piquenique||o.bolo||o.caldeirao||o.gelado||o.cabana||o.cogumelocasa||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
+  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||o.faisca||o.cogumelos||o.escadagelo||o.livro||o.bola||o.piquenique||o.bolo||o.caldeirao||o.gelado||o.cabana||o.cogumelocasa||o.baldepartido||o.carta||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
   const n=quem.length, tam = n<=1?120:n==2?106:n==3?88:n==4?74:62, larg = temObj?(c.dentro==='quarto'&&!o.balde?380:250):380, x0 = 10+(larg-n*tam-(n-1)*8)/2;
   quem.forEach((k,i)=>{
     const x=x0+i*(tam+8), y=224-tam, cl=id+'c'+i, cx=x+tam/2, cy=y+tam/2;
@@ -206,6 +213,11 @@ export const OBJETOS_BASE = [
   { id: 'trovoada', nome: 'Trovoada', w: 400, efeito: 'nenhum', cena: 'quarto', quem: ['maia'] },
   { id: 'cabana', nome: 'Cabana de cobertor', w: 144, efeito: 'nenhum', cena: 'quarto', quem: ['francisca', 'maia'] },
   { id: 'cogumelocasa', nome: 'Casinha-cogumelo', w: 72, efeito: 'nenhum', sombra: 1, cena: 'castelo', quem: ['lila'] },
+  { id: 'nevoeiro', nome: 'Nevoeiro', w: 400, efeito: 'nenhum', cena: 'colina', quem: ['francisca'] },
+  { id: 'baldepartido', nome: 'Balde rachado', w: 74, efeito: 'nenhum', sombra: 1, cena: 'quarto', quem: ['francisca'] },
+  { id: 'faiscacor', nome: 'Faíscas coloridas', w: 40, efeito: 'pulsar', cena: 'estrada', quem: ['rugido'] },
+  { id: 'nuvenzinha', nome: 'Nuvenzinha bebé', w: 84, efeito: 'flutuar', cena: 'ceu', quem: ['nimbo'] },
+  { id: 'carta', nome: 'Carta', w: 44, efeito: 'nenhum', sombra: 1, cena: 'rua', quem: ['ernesto'] },
   { id: 'pocas', nome: 'Poças de água', w: 360, efeito: 'nenhum', cena: 'feliz', quem: ['maia'] },
 ];
 const OBJ = Object.fromEntries(OBJETOS_BASE.map((o) => [o.id, o]));
@@ -220,7 +232,13 @@ export const DESENHOS_PERGUNTAS = [
 export const DESENHO_OBJETO = { balde: 'balde', mota: 'mota', mapa: 'mapa', lanterna: 'lanterna', borboleta: 'borboletas', escama: 'escamas', arcoiris: 'arco' };
 
 // Desenhos dos objetos das histórias novas (largura de referência = w em OBJETOS_BASE; base em y=0, centro em x=0).
+const CORES_FAISCA=['#E5484D','#F28C28','#F5C518','#2FB383','#3E92E0','#4B4BB5','#9A5BD6'];
 const NOVOS_OBJ = {
+  nevoeiro:{x:200,y:250,svg:(v)=>{ const cor=['#9AA3AE','#F2F4F7','#F6C9DA'][(Math.max(1,Math.min(3,+v||1)))-1]; return '<rect x="-200" y="-250" width="400" height="250" fill="'+cor+'" opacity=".42"/>'+[[-150,-40,90],[-40,-25,110],[90,-45,100],[170,-20,70],[-110,-120,80],[60,-140,90],[-10,-200,110]].map(([x,y,r])=>'<ellipse cx="'+x+'" cy="'+y+'" rx="'+r+'" ry="'+(r*.38)+'" fill="'+cor+'" opacity=".55"/>').join(''); }},
+  baldepartido:{x:300,y:226,svg:(v,B)=>'<g transform="translate(-37 -60) scale(.62)">'+String(B||'').replace(/^<svg[^>]*>|<\/svg>$/g,'').replace(/#F7BC2F/g,'#C9B48A').replace(/#FFD86B/g,'#D8CCAE').replace(/#B57A00/g,'#8C7A5A').replace(/#fff/g,'#BDB3A0')+'</g><path d="M-6 -50l5 9-6 7 7 8-4 9" fill="none" stroke="#5E5040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'},
+  faiscacor:{x:330,y:150,svg:(v)=>{ const c=CORES_FAISCA[(Math.max(1,Math.min(7,+v||1)))-1]; return '<circle cx="0" cy="-20" r="20" fill="'+c+'" opacity=".3"/><path d="M0 -40Q3 -23 20 -20Q3 -17 0 0Q-3 -17 -20 -20Q-3 -23 0 -40Z" fill="'+c+'" stroke="#fff" stroke-width="1.5"/><circle cx="0" cy="-20" r="4" fill="#fff"/>'; }},
+  nuvenzinha:{x:230,y:120,svg:'<g fill="#fff" stroke="#D5DEEA" stroke-width="1.5"><circle cx="-22" cy="-22" r="18"/><circle cx="4" cy="-34" r="22"/><circle cx="28" cy="-22" r="17"/><rect x="-40" y="-24" width="84" height="24" rx="12"/></g><circle cx="-6" cy="-20" r="2.6" fill="#3B4A6B"/><circle cx="12" cy="-20" r="2.6" fill="#3B4A6B"/><path d="M-2 -13q5 4 10 0" stroke="#3B4A6B" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="-14" cy="-14" r="3.5" fill="#F7B6D2" opacity=".7"/><circle cx="20" cy="-14" r="3.5" fill="#F7B6D2" opacity=".7"/>'},
+  carta:{x:330,y:226,svg:'<rect x="-22" y="-30" width="44" height="30" rx="3" fill="#FFF8E7" stroke="#D9C9A8" stroke-width="1.5"/><path d="M-22 -30L0 -12L22 -30" fill="none" stroke="#D9C9A8" stroke-width="1.5"/><circle cx="0" cy="-12" r="5" fill="#E5484D"/><path d="M-2 -13l2 2 3 -4" stroke="#fff" stroke-width="1.2" fill="none"/>'},
   cogumelocasa:{x:335,y:226,svg:'<rect x="-14" y="-34" width="28" height="34" rx="6" fill="#F4EBD8" stroke="#D9C9A8" stroke-width="1.5"/><path d="M-5 0V-14Q0 -20 5 -14V0Z" fill="#B7834F" stroke="#8E6136" stroke-width="1"/><circle cx="3" cy="-7" r="1" fill="#F7BC2F"/><circle cx="-8" cy="-24" r="3" fill="#BFE3FF" stroke="#D9C9A8" stroke-width="1"/><path d="M-36 -32Q-34 -66 0 -68Q34 -66 36 -32Q0 -26 -36 -32Z" fill="#E5484D" stroke="#B83236" stroke-width="1.5"/><circle cx="-18" cy="-46" r="5" fill="#fff"/><circle cx="4" cy="-58" r="4" fill="#fff"/><circle cx="20" cy="-42" r="5" fill="#fff"/><circle cx="-4" cy="-40" r="3" fill="#fff"/>'},
   faisca:{x:330,y:150,svg:'<circle cx="0" cy="-20" r="20" fill="#FFE68A" opacity=".45"/><path d="M0 -40Q3 -23 20 -20Q3 -17 0 0Q-3 -17 -20 -20Q-3 -23 0 -40Z" fill="#FFD54A" stroke="#E0A800" stroke-width="1.5"/><circle cx="0" cy="-20" r="4" fill="#FFF8DC"/>'},
   cogumelos:{x:320,y:226,svg:'<ellipse cx="0" cy="-14" rx="40" ry="18" fill="#B7FFD9" opacity=".35"/>'+[[-22,0,.8],[2,0,1.1],[24,0,.7]].map(([x,y,k])=>'<g transform="translate('+x+' '+y+') scale('+k+')"><rect x="-4" y="-22" width="8" height="22" rx="4" fill="#F4EBD8"/><path d="M-16 -20Q0 -44 16 -20Z" fill="#59D3A8" stroke="#2FA37E" stroke-width="1.5"/><circle cx="-6" cy="-27" r="2.5" fill="#E8FFF5"/><circle cx="5" cy="-30" r="2" fill="#E8FFF5"/></g>').join('')},
