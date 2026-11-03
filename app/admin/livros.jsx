@@ -44,8 +44,16 @@ export default function Livros({ livros, set, pers, cenarios, cena, confirmar, i
   const [aba, setAba] = useState('pags');
   const [pi, setPi] = useState(0);
   const [qi, setQi] = useState(0);
+  const [novos, setNovos] = useState([]);
   const L = livros[sel];
   useEffect(() => { setPi(0); setQi(0); }, [sel]);
+  // livros novos que vieram com a app e ainda não estão no conteúdo guardado
+  useEffect(() => {
+    fetch('/api/admin/novidades').then((r) => (r.ok ? r.json() : { livros: [] })).then((d) => setNovos(d.livros || [])).catch(() => {});
+  }, []);
+  const titulos = new Set(livros.map((l) => l.t));
+  const porJuntar = novos.filter((l) => !titulos.has(l.t));
+  function juntar(l) { set([...livros, { ...l, n: livros.length + 1 }]); setSel(livros.length); }
   if (!L) return <div className="bo-corpo"><Vazio titulo="Ainda não há livros" acao={<button className="btn btn-pri" onClick={() => novoLivro()}><Plus size={16} />Novo livro</button>} /></div>;
 
   const setL = (n) => { const l = livros.slice(); l[sel] = n; set(l); };
@@ -73,6 +81,12 @@ export default function Livros({ livros, set, pers, cenarios, cena, confirmar, i
     <div className="livros">
       <div className="col col-livros">
         <div className="col-cab"><b>Livros</b><small className="num">{livros.length}</small><button className="btn-ic" onClick={novoLivro} aria-label="Novo livro" title="Novo livro"><Plus size={16} /></button></div>
+        {porJuntar.map((l) => (
+          <div className="novo-livro" key={l.t}>
+            <span><b>Livro novo</b>{l.t}</span>
+            <button className="btn btn-pri peq" onClick={() => juntar(l)}><Plus size={14} />Juntar</button>
+          </div>
+        ))}
         <div className="col-lista" role="list">
           {livros.map((l, i) => (
             <button key={i} className="item" aria-current={i === sel} onClick={() => setSel(i)} role="listitem">

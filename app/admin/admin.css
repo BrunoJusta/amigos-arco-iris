@@ -410,3 +410,7 @@ label.btn input[type='file'] { display: none; }
 
 .c-cen .vis.vis-des { display: grid; place-items: center; background: var(--soft); }
 .c-cen .vis.vis-des svg, .c-cen .vis.vis-des img { width: 46%; height: 72%; object-fit: contain; }
+
+.novo-livro { margin: 8px; padding: 10px; border-radius: var(--rc); background: var(--link-soft); display: flex; flex-direction: column; gap: 8px; font-size: 13px; }
+.novo-livro b { display: block; font-size: 12px; font-weight: 600; color: var(--link); }
+.novo-livro .btn { align-self: flex-start; }

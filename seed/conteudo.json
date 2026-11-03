@@ -4135,6 +4135,373 @@
      "ok": 1
     }
    ]
+  },
+  {
+   "n": 15,
+   "t": "O Dia em que o Tuninho Ficou Branco",
+   "capa": "tuninho",
+   "pags": [
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      "O Tuninho veio passar o fim de semana a casa da Francisca. Trazia o aquário a brilhar, as perninhas de metal bem oleadas e uma mochila cheia de parafusos."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Bip-bop! Passei a semana inteira na minha oficina, dentro da caverna. Estou a inventar uma máquina de fazer bolas de sabão gigantes!"
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Nessa noite, a Francisca adormeceu a sonhar com bolas de sabão do tamanho de casas. O Tuninho ficou no seu cantinho, a fazer bolhinhas devagar."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "De manhã, o sol entrou pela janela. A Francisca espreguiçou-se, pôs os óculos cor-de-rosa e foi logo dar os bons-dias ao amigo.",
+      [
+       "francisca",
+       "Bom dia, Tuninho!"
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      "E então parou. Esfregou os olhos. Olhou outra vez.",
+      "O Tuninho já não era cor de laranja. Estava branco! Branquinho como leite."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Tuninho! Estás todo branco!"
+      ],
+      "O Tuninho olhou para o seu reflexo no vidro do aquário e deu uma volta inteira, muito depressa.",
+      [
+       "tuninho",
+       "Bip... bop?"
+      ]
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Será que avariei? Será que deixei a minha cor esquecida na oficina?"
+      ],
+      "E foi espreitar debaixo da cama, a ver se a cor tinha caído para lá. Mas lá só havia uma meia e um lápis de cera."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Já sei! Vamos perguntar às tartarugas. A Dona Júlia e a Dona Xica têm muitos, muitos anos. Sabem imensas coisas."
+      ],
+      [
+       "tuninho",
+       "Boa ideia! Tique-tique, vamos!"
+      ]
+     ]
+    },
+    {
+     "c": "rio",
+     "q": [
+      "francisca",
+      "tuninho"
+     ],
+     "x": [
+      "Foram pela beira do rio, que agora corria azul e a brilhar. O Tuninho ia tão depressa que até deixava um rasto de bolhinhas no ar."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      "Na pedra grande estavam as duas irmãs, como sempre, uma em cima da outra. E, como sempre, estavam a discutir.",
+      [
+       "xica",
+       "As nuvens sabem a algodão-doce!"
+      ],
+      [
+       "julia",
+       "Sabem nada. Sabem a chuva."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca",
+      "tuninho",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Visitas! Olá, olá, olá! A Francisca e... um peixe novo?"
+      ],
+      [
+       "tuninho",
+       "Sou eu, o Tuninho! Fiquei branco e não sei porquê."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas",
+      "tuninho"
+     ],
+     "x": [
+      "A Dona Júlia esticou o pescoço devagarinho e olhou para o Tuninho de cima a baixo.",
+      [
+       "julia",
+       "Ora, ora... Mas que peixe tão elegante!"
+      ],
+      "E as bochechas dela ficaram cor-de-rosa."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "Júlia! Estás corada!"
+      ],
+      [
+       "julia",
+       "Estou nada. É do sol."
+      ],
+      "E a Dona Júlia ajeitou a carapaça, como quem ajeita um vestido de festa."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas",
+      "tuninho"
+     ],
+     "x": [
+      [
+       "julia",
+       "Branco como uma pérola. Fica-lhe mesmo bem, Tuninho."
+      ],
+      "O Tuninho deu três voltas no aquário, muito envergonhado. Bip-bop, bip-bop, bip-bop."
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Mas porque é que ele ficou branco?"
+      ],
+      [
+       "julia",
+       "Eu explico!"
+      ],
+      [
+       "xica",
+       "Não, eu explico!"
+      ],
+      [
+       "julia",
+       "Explico eu, que sou a mais velha."
+      ]
+     ]
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "julia",
+       "Os peixes cor de laranja precisam de luz do sol para guardar a sua cor. Quando passam muito tempo no escuro, a cor vai desbotando, devagarinho, como um desenho deixado à chuva."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tuninho"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "A minha oficina! Passei a semana toda dentro da caverna, só com a luz da lanterna. Nem me lembrei de vir cá fora apanhar sol!"
+      ]
+     ],
+     "o": {
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "pedra",
+     "q": [
+      "francisca",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "xica",
+       "E às vezes os peixes também mudam de cor só porque estão a crescer. Não faz mal nenhum."
+      ],
+      [
+       "julia",
+       "O que importa é saber se ele está bem. Tuninho: comes bem? Nadas bem? Estás contente?"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "tuninho",
+      "tartarugas"
+     ],
+     "x": [
+      [
+       "tuninho",
+       "Como tudo! Nado como um foguete! E estou muito contente!"
+      ],
+      "Daí em diante, o Tuninho passou a inventar ao pé da janela, com um bocadinho de sol todos os dias e a água sempre limpinha."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "tuninho",
+      "tartarugas"
+     ],
+     "x": [
+      "Passaram muitos dias e o Tuninho continuou branquinho. Mas a Francisca percebeu uma coisa importante: por fora tinha mudado, e por dentro era o mesmo amigo inventor e brincalhão de sempre.",
+      [
+       "tuninho",
+       "Bip-bop! Agora sou o Tuninho Pérola!"
+      ],
+      [
+       "julia",
+       "E que pérola..."
+      ],
+      "Fim."
+     ],
+     "o": {
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor ficou o Tuninho?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "laranja",
+       "d": "cor de laranja"
+      },
+      {
+       "cor": "branco",
+       "d": "branco"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que precisam os peixes para guardar a sua cor?",
+     "quem": "tartarugas",
+     "ops": [
+      {
+       "cena": "bosque",
+       "d": "o escuro da noite"
+      },
+      {
+       "cena": "caverna",
+       "d": "uma caverna"
+      },
+      {
+       "cena": "feliz",
+       "d": "a luz do sol"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "Quem achou o Tuninho muito elegante?",
+     "quem": "tuninho",
+     "ops": [
+      {
+       "img": "maia"
+      },
+      {
+       "img": "tartarugas"
+      },
+      {
+       "img": "balu"
+      }
+     ],
+     "ok": 1
+    }
+   ]
   }
  ],
  "factos": [
