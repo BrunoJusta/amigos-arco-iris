@@ -8,7 +8,7 @@ export const OBJETOS = [
   ['mapa', 'Mapa de luz'], ['luz', 'Luz dourada'], ['escada', 'Escada de arco-íris'], ['acesa', 'Fonte acesa'], ['mota', 'Mota'], ['arco', 'Arco-íris'],
   ['escamas', 'Escamas'], ['lanterna', 'Lanterna'], ['caneca', 'Caneca'], ['relogio', 'Relógio parado'], ['passaro', 'Passarinho'], ['desenho', 'Desenho'], ['noite', 'Noite'], ['borboletas', 'Borboletas'],
   ['faisca', 'Faísca'], ['cogumelos', 'Cogumelos'], ['pirilampos', 'Pirilampos'], ['escadagelo', 'Escada de gelo'], ['livro', 'Livro'], ['bola', 'Bola'], ['piquenique', 'Piquenique'],
-  ['bolo', 'Bolo'], ['bandeirinhas', 'Bandeirinhas'], ['caldeirao', 'Caldeirão'], ['magia', 'Pó mágico'], ['gelado', 'Gelado'], ['trovoada', 'Trovoada'], ['cabana', 'Cabana'], ['pocas', 'Poças'],
+  ['bolo', 'Bolo'], ['bandeirinhas', 'Bandeirinhas'], ['caldeirao', 'Caldeirão'], ['magia', 'Pó mágico'], ['gelado', 'Gelado'], ['trovoada', 'Trovoada'], ['cabana', 'Cabana'], ['pocas', 'Poças'], ['cogumelocasa', 'Casinha-cogumelo'],
 ];
 const TIPOS = [['img', 'Personagem'], ['cor', 'Cor'], ['num', 'Luzes'], ['cena', 'Cenário'], ['svg', 'Desenho']];
 const tipoDe = (o) => (o.img ? 'img' : o.cor ? 'cor' : o.num ? 'num' : o.cena ? 'cena' : 'svg');

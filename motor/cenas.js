@@ -136,7 +136,7 @@ function cena(key, quem=[], o={}){
     return r+'</g>';
   }
 
-  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||o.faisca||o.cogumelos||o.escadagelo||o.livro||o.bola||o.piquenique||o.bolo||o.caldeirao||o.gelado||o.cabana||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
+  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||o.faisca||o.cogumelos||o.escadagelo||o.livro||o.bola||o.piquenique||o.bolo||o.caldeirao||o.gelado||o.cabana||o.cogumelocasa||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
   const n=quem.length, tam = n<=1?120:n==2?106:n==3?88:n==4?74:62, larg = temObj?(c.dentro==='quarto'&&!o.balde?380:250):380, x0 = 10+(larg-n*tam-(n-1)*8)/2;
   quem.forEach((k,i)=>{
     const x=x0+i*(tam+8), y=224-tam, cl=id+'c'+i, cx=x+tam/2, cy=y+tam/2;
@@ -205,6 +205,7 @@ export const OBJETOS_BASE = [
   { id: 'gelado', nome: 'Gelado de banana', w: 24, efeito: 'nenhum', cena: 'feliz', quem: ['gelino'] },
   { id: 'trovoada', nome: 'Trovoada', w: 400, efeito: 'nenhum', cena: 'quarto', quem: ['maia'] },
   { id: 'cabana', nome: 'Cabana de cobertor', w: 144, efeito: 'nenhum', cena: 'quarto', quem: ['francisca', 'maia'] },
+  { id: 'cogumelocasa', nome: 'Casinha-cogumelo', w: 72, efeito: 'nenhum', sombra: 1, cena: 'castelo', quem: ['lila'] },
   { id: 'pocas', nome: 'Poças de água', w: 360, efeito: 'nenhum', cena: 'feliz', quem: ['maia'] },
 ];
 const OBJ = Object.fromEntries(OBJETOS_BASE.map((o) => [o.id, o]));
@@ -220,6 +221,7 @@ export const DESENHO_OBJETO = { balde: 'balde', mota: 'mota', mapa: 'mapa', lant
 
 // Desenhos dos objetos das histórias novas (largura de referência = w em OBJETOS_BASE; base em y=0, centro em x=0).
 const NOVOS_OBJ = {
+  cogumelocasa:{x:335,y:226,svg:'<rect x="-14" y="-34" width="28" height="34" rx="6" fill="#F4EBD8" stroke="#D9C9A8" stroke-width="1.5"/><path d="M-5 0V-14Q0 -20 5 -14V0Z" fill="#B7834F" stroke="#8E6136" stroke-width="1"/><circle cx="3" cy="-7" r="1" fill="#F7BC2F"/><circle cx="-8" cy="-24" r="3" fill="#BFE3FF" stroke="#D9C9A8" stroke-width="1"/><path d="M-36 -32Q-34 -66 0 -68Q34 -66 36 -32Q0 -26 -36 -32Z" fill="#E5484D" stroke="#B83236" stroke-width="1.5"/><circle cx="-18" cy="-46" r="5" fill="#fff"/><circle cx="4" cy="-58" r="4" fill="#fff"/><circle cx="20" cy="-42" r="5" fill="#fff"/><circle cx="-4" cy="-40" r="3" fill="#fff"/>'},
   faisca:{x:330,y:150,svg:'<circle cx="0" cy="-20" r="20" fill="#FFE68A" opacity=".45"/><path d="M0 -40Q3 -23 20 -20Q3 -17 0 0Q-3 -17 -20 -20Q-3 -23 0 -40Z" fill="#FFD54A" stroke="#E0A800" stroke-width="1.5"/><circle cx="0" cy="-20" r="4" fill="#FFF8DC"/>'},
   cogumelos:{x:320,y:226,svg:'<ellipse cx="0" cy="-14" rx="40" ry="18" fill="#B7FFD9" opacity=".35"/>'+[[-22,0,.8],[2,0,1.1],[24,0,.7]].map(([x,y,k])=>'<g transform="translate('+x+' '+y+') scale('+k+')"><rect x="-4" y="-22" width="8" height="22" rx="4" fill="#F4EBD8"/><path d="M-16 -20Q0 -44 16 -20Z" fill="#59D3A8" stroke="#2FA37E" stroke-width="1.5"/><circle cx="-6" cy="-27" r="2.5" fill="#E8FFF5"/><circle cx="5" cy="-30" r="2" fill="#E8FFF5"/></g>').join('')},
   pirilampos:{svg:'<circle r="11" fill="#F6FF8A" opacity=".35"/><circle r="5.5" fill="#E2EE4A" stroke="#C8D23A" stroke-width="1"/><circle r="2.6" fill="#FFFFF0"/>'},

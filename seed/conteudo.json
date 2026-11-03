@@ -103,6 +103,16 @@
    }
   },
   {
+   "id": "florinda",
+   "nome": "Fadinha Florinda",
+   "img": "/personagens/florinda.jpg",
+   "frase": "Tlim! Bom dia, flores!",
+   "tom": {
+    "p": 1.65,
+    "r": 1.08
+   }
+  },
+  {
    "id": "cavaleiro",
    "nome": "Cavaleiro",
    "img": "/personagens/cavaleiro.jpg",
@@ -7915,6 +7925,305 @@
      "ok": 1
     }
    ]
+  },
+  {
+   "n": 26,
+   "t": "Quem é a Fadinha?",
+   "capa": "florinda",
+   "pags": [
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila"
+     ],
+     "x": [
+      "Era hora do lanche no castelinho cor de lilás. A Lila e a Francisca bebiam chá de camomila em chávenas pequeninas, quando uma luzinha passou a voar entre as duas. Tlim!"
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "Viste? Era a minha fadinha! É a minha melhor amiga há imenso tempo."
+      ],
+      [
+       "francisca",
+       "E como é que ela é?"
+      ],
+      [
+       "lila",
+       "Pois... essa é a parte estranha. Nunca a vi bem."
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "Ela é tão pequenina e tão rápida que só se vê uma luzinha. Ouço-a rir, ouço o tlim das asas... Nem sequer sei o nome dela. Chamo-lhe só fadinha."
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila"
+     ],
+     "x": [
+      "A Francisca pousou a chávena e ajeitou os óculos, como uma detetive.",
+      [
+       "francisca",
+       "Então hoje vamos descobrir quem é a fadinha!"
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Ao pé do castelo havia um cogumelo vermelho de pintas brancas, com uma portinha do tamanho de um botão. À volta havia pegadas minúsculas de pólen dourado. E todas as flores do jardim tinham cores fresquinhas, como se tivessem sido pintadas nessa manhã."
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Não a vamos apanhar, que isso assusta. Vamos só esperar com calma e dizer-lhe obrigada."
+      ],
+      [
+       "lila",
+       "Amanhã, bem cedinho, antes de o sol acordar?"
+      ],
+      [
+       "francisca",
+       "Combinado!"
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila"
+     ],
+     "x": [
+      "No dia seguinte, ainda o céu estava cor-de-rosa, as duas esconderam-se atrás de um arbusto, sem fazer barulho nenhum. Só se ouviam os passarinhos a bocejar."
+     ],
+     "o": {
+      "cogumelocasa": 1,
+      "passaro": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [],
+     "x": [
+      "De repente, a portinha do cogumelo abriu-se. Nhec. E lá de dentro saiu a voar uma coisinha brilhante, com um pincel feito de uma gota de orvalho. Pintou uma flor de cor-de-rosa. Outra de amarelo. Outra de lilás."
+     ],
+     "o": {
+      "cogumelocasa": 1,
+      "magia": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "florinda"
+     ],
+     "x": [
+      "Era uma fadinha do tamanho de um polegar. Tinha um vestido de pétalas cor-de-rosa, asas transparentes como bolhas de sabão e o cabelo fofo como um dente-de-leão."
+     ],
+     "o": {
+      "cogumelocasa": 1,
+      "magia": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "florinda",
+      "lila"
+     ],
+     "x": [
+      "A Lila saiu de trás do arbusto, devagarinho.",
+      [
+       "lila",
+       "Bom dia, fadinha. És tu que pintas as minhas flores?"
+      ],
+      "A fadinha deu um salto e quase fugiu.",
+      [
+       "francisca",
+       "Não tenhas medo! Só queremos dizer obrigada."
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "florinda"
+     ],
+     "x": [
+      [
+       "florinda",
+       "Tlim... Chamo-me Florinda. Sou tão pequenina que pensava que ninguém reparava em mim. Por isso trabalho sempre às escondidas."
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "florinda"
+     ],
+     "x": [
+      [
+       "lila",
+       "Florinda! Que nome tão bonito! Sem ti, o meu jardim não tinha cor nenhuma. Quando foste embora, as flores ficaram tristes. E eu também."
+      ],
+      "A Florinda ficou tão corada que parecia uma pétala de rosa."
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "florinda"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Sabes, Florinda? Tu és pequenina, mas fazes uma coisa enorme. Dás cor ao mundo todos os dias."
+      ],
+      [
+       "florinda",
+       "Ninguém nunca me tinha dito isso..."
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila",
+      "florinda"
+     ],
+     "x": [
+      "Desde esse dia, a Lila e a Francisca acordam cedo para ajudar a Florinda a pintar as flores. E à hora do lanche há sempre três chávenas na mesa: duas pequeninas e uma do tamanho de um dedal.",
+      [
+       "florinda",
+       "Tlim! Bom dia, flores!"
+      ],
+      "Fim."
+     ],
+     "o": {
+      "cogumelocasa": 1,
+      "borboletas": 6
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem é a fadinha da Lila?",
+     "quem": "lila",
+     "ops": [
+      {
+       "img": "lu"
+      },
+      {
+       "img": "florinda"
+      },
+      {
+       "img": "bia"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que pinta a Florinda todas as manhãs?",
+     "quem": "florinda",
+     "ops": [
+      {
+       "svg": "bola",
+       "d": "bolas"
+      },
+      {
+       "svg": "flor",
+       "d": "as flores"
+      },
+      {
+       "svg": "coroa",
+       "d": "coroas"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "De que cor é o vestido de pétalas da Florinda?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "preto",
+       "d": "preto"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      },
+      {
+       "cor": "cor-de-rosa",
+       "d": "cor-de-rosa"
+      }
+     ],
+     "ok": 2
+    }
+   ]
   }
  ],
  "factos": [
@@ -9346,6 +9655,14 @@
   [
    "foxius",
    "Ora, ora! Deixa-me consultar os meus livros."
+  ],
+  [
+   "florinda",
+   "Tlim! Bom dia, flores!"
+  ],
+  [
+   "florinda",
+   "Sou pequenina, mas dou cor ao jardim."
   ]
  ],
  "adivinhas": {
@@ -9445,6 +9762,10 @@
   "foxius": [
    "Sou uma raposa cor de laranja e uso óculos redondos.",
    "Sei tudo sobre o céu e as estrelas."
+  ],
+  "florinda": [
+   "Sou uma fadinha do tamanho de um polegar.",
+   "Todas as manhãs pinto as flores do jardim da Lila."
   ]
  },
  "situacoes": [
