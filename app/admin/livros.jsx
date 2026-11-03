@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowDown, ArrowUp, Copy, Plus, Trash2, Check, BookOpen, CircleHelp, MessageSquare, Type, Image as ImageIcon, Lightbulb } from 'lucide-react';
+import { ArrowDown, ArrowUp, Copy, Plus, RefreshCw, Trash2, Check, BookOpen, CircleHelp, MessageSquare, Type, Image as ImageIcon, Lightbulb } from 'lucide-react';
 import { DESENHOS } from '@/motor/cenas';
 import { Avatar, Campo, Interruptor, SelPers, Svg, TextoAuto, Vazio, copia, mover, CORES } from './ui';
 
@@ -56,6 +56,14 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
   }, []);
   const titulos = new Set(livros.map((l) => l.t));
   const porJuntar = novos.filter((l) => !titulos.has(l.t));
+  // livros da app que já estão na lista mas têm uma versão mais recente (por exemplo, com objetos novos)
+  const assinatura = (l) => JSON.stringify([l.capa, l.pags, l.perg, l.luz || 0]);
+  const porAtualizar = novos.filter((n) => { const a = livros.find((l) => l.t === n.t); return a && assinatura(a) !== assinatura(n); });
+  async function atualizar() {
+    if (!(await confirmar({ titulo: 'Atualizar livros', texto: `${porAtualizar.length === 1 ? 'Este livro passa' : 'Estes ' + porAtualizar.length + ' livros passam'} a ser iguais à versão mais recente da app: ${porAtualizar.map((l) => '«' + l.t + '»').join(', ')}. Alterações que tenhas feito neles no backoffice são substituídas.`, confirmar: 'Atualizar' }))) return;
+    set(livros.map((l) => { const n = porAtualizar.find((x) => x.t === l.t); return n ? { ...n, n: l.n } : l; }));
+    juntarPersDe(porAtualizar);
+  }
   function juntarTodos() {
     const novos = porJuntar.map((l, i) => ({ ...l, n: livros.length + i + 1 }));
     set([...livros, ...novos]); setSel(livros.length);
@@ -98,6 +106,12 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
     <div className="livros">
       <div className="col col-livros">
         <div className="col-cab"><b>Livros</b><small className="num">{livros.length}</small><button className="btn-ic" onClick={novoLivro} aria-label="Novo livro" title="Novo livro"><Plus size={16} /></button></div>
+        {porAtualizar.length > 0 && (
+          <div className="novo-livro">
+            <span><b>{porAtualizar.length === 1 ? '1 livro com versão nova' : porAtualizar.length + ' livros com versão nova'}</b>Já estão na lista, mas a app trouxe uma versão mais recente.</span>
+            <button className="btn btn-pri peq" onClick={atualizar}><RefreshCw size={14} />Atualizar</button>
+          </div>
+        )}
         {porJuntar.length > 1 && (
           <div className="novo-livro">
             <span><b>{porJuntar.length} livros novos</b>Vieram com a app e ainda não estão na lista.</span>

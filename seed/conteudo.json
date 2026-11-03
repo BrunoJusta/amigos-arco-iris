@@ -4630,7 +4630,10 @@
        "banze",
        "Calma, Balu. Devagar também se chega."
       ]
-     ]
+     ],
+     "o": {
+      "bola": 1
+     }
     },
     {
      "c": "feliz",
@@ -4938,7 +4941,10 @@
      ],
      "x": [
       "A Francisca olhou para o céu. Lá ao longe, umas nuvens cinzentas e gordas vinham a rolar devagarinho, como ovelhas zangadas."
-     ]
+     ],
+     "o": {
+      "trovoada": 1
+     }
     },
     {
      "c": "quarto",
@@ -5092,7 +5098,8 @@
       "No clarão seguinte contaram até oito. E depois até dez. A trovoada estava a ir-se embora, devagarinho."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -5140,7 +5147,8 @@
      ],
      "o": {
       "noite": 1,
-      "cabana": 1
+      "cabana": 1,
+      "trovoada": 1
      }
     },
     {
@@ -6234,7 +6242,10 @@
        "gelino",
        "Eu? Ajudar toda a gente? Mas eu sou só um dragãozinho de gelo..."
       ]
-     ]
+     ],
+     "o": {
+      "gelado": 1
+     }
     },
     {
      "c": "feliz",
@@ -6883,7 +6894,8 @@
      ],
      "o": {
       "luz": 1,
-      "cogumelos": 1
+      "cogumelos": 1,
+      "faisca": 1
      },
      "plim": 1
     },
@@ -6904,7 +6916,8 @@
      ],
      "o": {
       "luz": 1,
-      "cogumelos": 1
+      "cogumelos": 1,
+      "faisca": 1
      }
     },
     {
@@ -7199,7 +7212,8 @@
       "PLIM! A Bia guardou a segunda faísca e brilhou ainda mais."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "faisca": 1
      },
      "plim": 1
     },
@@ -7222,7 +7236,10 @@
        "francisca",
        "Prometo. Todos os dias."
       ]
-     ]
+     ],
+     "o": {
+      "faisca": 1
+     }
     },
     {
      "c": "colina",
@@ -7478,7 +7495,8 @@
      ],
      "o": {
       "luz": 1,
-      "pirilampos": 10
+      "pirilampos": 10,
+      "faisca": 1
      },
      "plim": 1
     },
