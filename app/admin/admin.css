@@ -402,3 +402,8 @@ label.btn input[type='file'] { display: none; }
 @keyframes ef-flutua { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 @keyframes ef-pulsa { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.08); opacity: .82; } }
 @keyframes ef-cintila { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* Luz e lanterna: brilho extra */
+.bo .obj-luminoso .ef,.bo .obj-luminoso>g[filter]{filter:drop-shadow(0 0 4px #FFF1A8) drop-shadow(0 0 12px #FFD54Acc) drop-shadow(0 0 24px #FFC83D88)}
+.bo .ef-aura{transform-box:fill-box;transform-origin:center;mix-blend-mode:screen;animation:aura 2.8s ease-in-out infinite}
+@keyframes aura{0%,100%{opacity:.75;transform:scale(.92)}50%{opacity:1;transform:scale(1.1)}}

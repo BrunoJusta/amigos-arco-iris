@@ -109,7 +109,11 @@ function cena(key, quem=[], o={}){
   }
   function montar(k,x,y,w,ef,sombra,corpo,atraso){
     const f=id+k+(++cid);
-    let r='<g class="obj" data-obj="'+k+'" transform="translate('+x+' '+y+')">';
+    const luminoso = k==='luz' || k==='lanterna';
+    let r='<g class="obj'+(luminoso?' obj-luminoso':'')+'" data-obj="'+k+'" transform="translate('+x+' '+y+')">';
+    // Luz e lanterna: aura de luz extra por trás (o brilho e a pulsação vêm do CSS)
+    if(luminoso) r+='<defs><radialGradient id="'+f+'a"><stop offset="0" stop-color="#FFF4B8" stop-opacity=".95"/><stop offset=".4" stop-color="#FFE07A" stop-opacity=".55"/><stop offset="1" stop-color="#FFD24A" stop-opacity="0"/></radialGradient></defs>'+
+      '<circle class="ef-aura" cx="0" cy="'+(-w*.5)+'" r="'+(w*1.05)+'" fill="url(#'+f+'a)"/>';
     if(sombra) r+='<ellipse cx="0" cy="2" rx="'+(w*.38)+'" ry="5" fill="#000" opacity=".14"/>';
     if(ef==='brilho'){
       const e=(ex,ey,er,d)=>'<path class="ef-estrela" style="animation-delay:'+d+'s" transform="translate('+(ex*w).toFixed(1)+' '+(ey*w).toFixed(1)+')" d="M0 -'+er+'Q0 0 '+er+' 0Q0 0 0 '+er+'Q0 0 -'+er+' 0Q0 0 0 -'+er+'Z" fill="#FFF6C8"/>';
