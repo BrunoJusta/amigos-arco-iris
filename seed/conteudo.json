@@ -73,6 +73,16 @@
    }
   },
   {
+   "id": "tuninhobranco",
+   "nome": "Tuninho Branco",
+   "img": "/personagens/tuninhobranco.jpg",
+   "frase": "Bip-bop! Agora sou o Tuninho Pérola!",
+   "tom": {
+    "p": 1.45,
+    "r": 1.05
+   }
+  },
+  {
    "id": "coelhita",
    "nome": "Coelhita",
    "img": "/personagens/coelhita.jpg",
@@ -21403,6 +21413,3854 @@
      "ok": 1
     }
    ]
+  },
+  {
+   "n": 83,
+   "t": "O Colar do Banzé",
+   "capa": "banze",
+   "pags": [
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "O Banzé é o cão mais velho do parque. Anda devagarinho, conhece as histórias antigas e tem sempre ao pescoço um colar de flores de todas as cores."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "banze"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Banzé, porque é que usas sempre esse colar de flores?"
+      ],
+      [
+       "banze",
+       "Ah, isso é uma história comprida. Senta-te aqui ao pé de mim."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "Quando eu era cachorrinho, era muito medroso. Tinha medo de tudo: do vento, das folhas, da minha própria sombra."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "Um dia, uma menina do parque viu-me a tremer debaixo de um banco. Fez-me este colar com flores de todas as cores e disse: assim, levas o parque inteiro contigo. Nunca estás sozinho."
+      ]
+     ],
+     "o": {
+      "borboletas": 3
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze",
+      "francisca"
+     ],
+     "x": [
+      [
+       "banze",
+       "E foi ela que me ensinou: devagar também se chega. Desde então, nunca mais tirei o colar."
+      ],
+      [
+       "francisca",
+       "Que história tão bonita!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "Mas nesse dia, quando o Banzé se levantou, o colar fez trac. Estava velhinho. As flores estavam desbotadas e o fio partiu-se. As pétalas caíram na relva."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "O Banzé baixou as orelhas. Ficou muito quieto, a olhar para as pétalas.",
+      [
+       "banze",
+       "O meu colar... tantos anos..."
+      ],
+      "E uma lágrima rolou-lhe pelo focinho cinzento."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca apanhou as pétalas, uma a uma. E teve uma ideia.",
+      [
+       "francisca",
+       "Banzé, espera aqui. Não saias daí!"
+      ],
+      "E foi a correr pelo parque."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "florinda"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Florinda, precisamos de flores! De todas as cores!"
+      ],
+      [
+       "florinda",
+       "Tlim! Para quê?"
+      ],
+      [
+       "francisca",
+       "Para um colar novo para o Banzé. Feito pelo parque inteiro!"
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "balu",
+      "maia",
+      "coelhita"
+     ],
+     "x": [
+      "A notícia correu depressa. O Balu trouxe uma flor vermelha. A Maia trouxe uma amarela, que encontrou com o nariz. A Coelhita trouxe uma azul, aos saltos."
+     ],
+     "o": {
+      "borboletas": 4
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tartarugas",
+      "gelino",
+      "lila"
+     ],
+     "x": [
+      "As tartarugas trouxeram duas iguais, para não discutirem. O Gelino trouxe uma branca, geladinha. A Lila trouxe uma lilás do jardim do castelo."
+     ],
+     "o": {
+      "borboletas": 4
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "florinda",
+      "francisca"
+     ],
+     "x": [
+      "A Florinda pintou as pétalas velhas com o seu pincel de orvalho, e elas ficaram outra vez coloridas. E a Francisca juntou tudo num fio novo, flor velha, flor nova, flor velha, flor nova."
+     ],
+     "o": {
+      "borboletas": 4
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "banze"
+     ],
+     "x": [
+      "Quando acabou, pôs o colar ao pescoço do Banzé.",
+      [
+       "francisca",
+       "Agora tem as flores da menina e as flores de todos nós. Levas o parque inteiro contigo. Outra vez."
+      ]
+     ],
+     "o": {
+      "borboletas": 6
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze",
+      "francisca",
+      "balu",
+      "maia"
+     ],
+     "x": [
+      "O Banzé abanou a cauda devagarinho, devagarinho, e depois cada vez mais depressa.",
+      [
+       "banze",
+       "Sabes, Francisca? Afinal a menina tinha razão. Nunca estive sozinho."
+      ],
+      "Fim."
+     ],
+     "o": {
+      "borboletas": 6,
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "O que usa o Banzé ao pescoço?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "flor",
+       "d": "um colar de flores"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "capacete",
+       "d": "um capacete"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem pintou as pétalas velhas?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "florinda"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "tobias"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Qual destes é o Banzé?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "balu"
+      },
+      {
+       "img": "banze"
+      },
+      {
+       "img": "maia"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 84,
+   "t": "Arco-Íris 1 · O Balde Rachado",
+   "capa": "francisca",
+   "pags": [
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Numa manhã de domingo, a Francisca acordou e foi dar os bons-dias ao balde mágico, como sempre. Mas o balde não brilhou."
+     ],
+     "b": 1
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Olhou melhor. No bordo dourado havia uma racha fininha, como um risco de lápis. E os brilhantezinhos, que antes piscavam como estrelas, estavam apagados."
+     ],
+     "b": 1
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Maia! O balde está doente!"
+      ],
+      [
+       "maia",
+       "Snif, snif... Cheira a tristeza. E a pouca magia."
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "Nesse momento, tocou a campainha. Era o Padrinho Bruno!",
+      [
+       "bruno",
+       "Bom dia, afilhada! Que cara é essa?"
+      ],
+      [
+       "francisca",
+       "Padrinho, o balde mágico partiu-se e já não brilha!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bruno"
+     ],
+     "x": [
+      "O padrinho pegou no balde com muito cuidado, como quem pega num passarinho.",
+      [
+       "bruno",
+       "Hum. Isto é um trabalho para quem sabe muito. Vamos ter com o Dr. Foxius."
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "foxius"
+     ],
+     "x": [
+      "O Dr. Foxius pôs os óculos na ponta do focinho e examinou o balde de todos os lados.",
+      [
+       "foxius",
+       "Ora, ora. Este balde não é um balde qualquer."
+      ]
+     ],
+     "o": {
+      "livro": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "foxius"
+     ],
+     "x": [
+      [
+       "foxius",
+       "Diz o meu livro mais antigo que o balde mágico nasceu no dia em que os amigos do parque se juntaram pela primeira vez. Foi feito das sete cores do arco-íris."
+      ]
+     ],
+     "o": {
+      "livro": 1
+     }
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "foxius",
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "E como se arranja?"
+      ],
+      [
+       "foxius",
+       "Para o curar, é preciso juntar outra vez as sete cores. Uma de cada vez. E cada cor tem de ser dada por um amigo, de coração."
+      ]
+     ],
+     "o": {
+      "livro": 1
+     }
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bruno",
+       "Sete cores, sete aventuras. Eu vou contigo, Francisca."
+      ],
+      [
+       "maia",
+       "E eu também! O meu nariz nunca mente."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca abraçou o balde com força.",
+      [
+       "francisca",
+       "Vou curar-te, balde. Prometo."
+      ],
+      "E foi assim que começou a maior aventura do parque.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O que aconteceu ao balde mágico?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "balde",
+       "d": "ficou rachado e sem brilho"
+      },
+      {
+       "svg": "flor",
+       "d": "virou flor"
+      },
+      {
+       "svg": "mota",
+       "d": "virou mota"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas cores é preciso juntar?",
+     "quem": "foxius",
+     "ops": [
+      {
+       "num": 7,
+       "d": "sete"
+      },
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 12,
+       "d": "doze"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem foi com a Francisca à raposa?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "bruno"
+      },
+      {
+       "img": "maria"
+      },
+      {
+       "img": "ze"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 85,
+   "t": "Arco-Íris 2 · O Grande Conselho",
+   "capa": "banze",
+   "pags": [
+    {
+     "c": "fonte",
+     "q": [
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      "Antes de partirem, a Francisca quis contar a toda a gente. Subiu à beira da fonte e tocou uma campainha. Trim-trim!",
+      [
+       "francisca",
+       "Amigos! Reunião do parque!"
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "ernesto"
+     ],
+     "x": [
+      "O Ouriço Ernesto pedalou pelo parque inteiro a entregar convites. Correio! Correio para todos! Reunião na fonte!"
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "balu",
+      "coelhita",
+      "rugido",
+      "tartarugas"
+     ],
+     "x": [
+      "Vieram todos. O Balu aos saltos, a Coelhita a deixar cores, o Rugido de mota e as tartarugas a discutir quem chegava primeiro."
+     ],
+     "o": {
+      "mota": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "parafuso",
+      "bigodes",
+      "leonor"
+     ],
+     "x": [
+      "Veio o Parafuso, com o ecrã a piscar de curiosidade. Veio o Professor Bigodes com os alunos. E a Dona Leonor, com os dez patinhos em fila."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "Por fim chegou o Banzé, devagarinho, com o colar de flores novo.",
+      [
+       "banze",
+       "Eu conheço a história do balde. A menina que me deu o primeiro colar contou-ma."
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "Há muitos anos, o parque estava zangado. Cada um vivia no seu canto. Um dia, houve uma grande tempestade, e todos se abrigaram juntos debaixo do mesmo arco-íris."
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      [
+       "banze",
+       "Quando a tempestade passou, no sítio onde tinham estado abraçados, apareceu um balde dourado. Era o arco-íris guardado. É por isso que o balde brilha quando os amigos estão juntos."
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Então, se cada um der um bocadinho da sua cor, o balde volta a brilhar!"
+      ],
+      [
+       "foxius",
+       "Ora, ora. Exatamente. Vermelho, laranja, amarelo, verde, azul, anil e violeta."
+      ]
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "rugido",
+      "gelino",
+      "lila"
+     ],
+     "x": [
+      [
+       "rugido",
+       "O vermelho é comigo!"
+      ],
+      [
+       "gelino",
+       "O azul é comigo!"
+      ],
+      [
+       "lila",
+       "E o violeta é meu!"
+      ],
+      "Toda a gente queria ajudar."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca",
+      "banze"
+     ],
+     "x": [
+      "A Francisca sorriu. Já não tinha medo. Tinha o parque inteiro com ela.",
+      [
+       "banze",
+       "Devagar também se chega. Mas juntos chega-se mais longe."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem contou a história do balde?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "banze"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "tobias"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Onde foi a reunião?",
+     "quem": "banze",
+     "ops": [
+      {
+       "cena": "fonte",
+       "d": "na fonte"
+      },
+      {
+       "cena": "caverna",
+       "d": "na caverna"
+      },
+      {
+       "cena": "quarto",
+       "d": "no quarto"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem entregou os convites?",
+     "quem": "foxius",
+     "ops": [
+      {
+       "img": "ernesto"
+      },
+      {
+       "img": "rosinha"
+      },
+      {
+       "img": "leonor"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 86,
+   "t": "Arco-Íris 3 · O Vermelho da Coragem",
+   "capa": "rugido",
+   "pags": [
+    {
+     "c": "estrada",
+     "q": [
+      "rugido",
+      "francisca"
+     ],
+     "x": [
+      "A primeira cor era o vermelho. O Rugido levou a Francisca de mota até à estrada, de capacetes postos.",
+      [
+       "rugido",
+       "O vermelho é a cor da coragem!"
+      ]
+     ],
+     "o": {
+      "mota": 1
+     }
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "balu",
+      "ketchup"
+     ],
+     "x": [
+      "Lá estavam o Balu, com o lenço vermelho, e o Ketchup, vermelho dos pés à cabeça.",
+      [
+       "balu",
+       "Nós também somos vermelhos!"
+      ],
+      [
+       "ketchup",
+       "É connosco?"
+      ]
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "x": [
+      [
+       "foxius",
+       "Para dar uma cor, é preciso mostrar que se tem essa cor por dentro."
+      ],
+      "O Rugido pensou na bicicleta, e em como tinha tido medo e tentado na mesma."
+     ]
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rugido"
+     ],
+     "x": [
+      [
+       "rugido",
+       "A minha coragem é cair e levantar-me outra vez."
+      ],
+      "E do peito dele saiu uma faísca vermelha, quente como o sol de verão."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "balu"
+     ],
+     "x": [
+      [
+       "balu",
+       "A minha coragem é correr para ajudar quem precisa, mesmo que esteja longe!"
+      ],
+      "Outra faísca vermelha!"
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "A minha coragem foi deixar o meu irmão soprar as velas comigo."
+      ],
+      [
+       "mustarda",
+       "Isso foi coragem?"
+      ],
+      [
+       "ketchup",
+       "Partilhar o que queremos muito é muito corajoso!"
+      ]
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "rosinha"
+     ],
+     "x": [
+      "A Rosinha, que estava a ver tudo, levantou a pata.",
+      [
+       "rosinha",
+       "A minha coragem foi entrar no banho pela primeira vez!"
+      ],
+      "Toda a gente riu, mas era verdade. E saiu mais uma faísca."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "As faíscas juntaram-se numa só e entraram no balde. Plim! Um risco vermelho acendeu-se no bordo dourado."
+     ],
+     "b": 1
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "francisca",
+      "rugido"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Uma cor! Já temos uma!"
+      ],
+      [
+       "rugido",
+       "ROAAAR! Capacetes postos, vamos à próxima!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "estrada",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E a racha do balde ficou um bocadinho mais pequenina.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Qual é a cor da coragem?",
+     "quem": "rugido",
+     "ops": [
+      {
+       "cor": "vermelho",
+       "d": "vermelho"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      },
+      {
+       "cor": "branco",
+       "d": "branco"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem levou a Francisca de mota?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "ze"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que usa o Balu ao pescoço?",
+     "quem": "balu",
+     "ops": [
+      {
+       "cor": "vermelho",
+       "d": "um lenço vermelho"
+      },
+      {
+       "cor": "verde",
+       "d": "um colar verde"
+      },
+      {
+       "cor": "preto",
+       "d": "nada"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 87,
+   "t": "Arco-Íris 4 · O Laranja das Ideias",
+   "capa": "tuninhobranco",
+   "pags": [
+    {
+     "c": "rua",
+     "q": [
+      "tuninhobranco",
+      "francisca"
+     ],
+     "x": [
+      "A segunda cor era o laranja. A Francisca foi à oficina do Tuninho, que agora era o Tuninho Pérola, branquinho como uma nuvem.",
+      [
+       "francisca",
+       "Tuninho, precisamos do laranja!"
+      ]
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "tuninhobranco"
+     ],
+     "x": [
+      [
+       "tuninhobranco",
+       "Bip... bop. Laranja? Mas eu já não sou cor de laranja..."
+      ],
+      "O Tuninho deu uma volta triste no aquário."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bolota",
+      "teodoro"
+     ],
+     "x": [
+      "Mas lá chegaram a Bolota, ruiva como o outono, e o Teodoro, com a sua carapaça cor de laranja.",
+      [
+       "bolota",
+       "Tuninho, o laranja não é só a cor por fora!"
+      ]
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "teodoro"
+     ],
+     "x": [
+      [
+       "teodoro",
+       "O laranja... é a cor... das ideias. E tu... és o maior... inventor do parque."
+      ]
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "tuninhobranco"
+     ],
+     "x": [
+      "O Tuninho pensou em todas as suas invenções: as pernas do aquário, o mapa de luz, os carrinhos da corrida, o robô Parafuso.",
+      [
+       "tuninhobranco",
+       "Bip-bop! É verdade! As ideias não mudam de cor!"
+      ]
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "tuninhobranco"
+     ],
+     "x": [
+      "E do aquário dele saiu uma faísca laranja, viva, a rodopiar como uma roda de inventor."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bolota"
+     ],
+     "x": [
+      [
+       "bolota",
+       "A minha ideia foi guardar para o inverno e partilhar com os amigos!"
+      ],
+      "Outra faísca laranja."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "rua",
+     "q": [
+      "parafuso"
+     ],
+     "x": [
+      "O Parafuso, que tinha vindo com o criador, pôs a mão no peito.",
+      [
+       "parafuso",
+       "Eu sou uma ideia do Tuninho. A melhor ideia dele, acho eu."
+      ],
+      "E o ecrã dele ficou cor de laranja."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "rua",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O segundo risco, cor de laranja, acendeu-se no balde. A racha ficou ainda mais pequena."
+     ],
+     "b": 1
+    },
+    {
+     "c": "rua",
+     "q": [
+      "tuninhobranco",
+      "francisca"
+     ],
+     "x": [
+      [
+       "tuninhobranco",
+       "Afinal, ser branco por fora não muda o que sou por dentro."
+      ],
+      [
+       "francisca",
+       "Nunca mudou, Tuninho Pérola!"
+      ],
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O laranja é a cor de quê?",
+     "quem": "teodoro",
+     "ops": [
+      {
+       "cor": "laranja",
+       "d": "das ideias"
+      },
+      {
+       "cor": "preto",
+       "d": "da noite"
+      },
+      {
+       "cor": "cinzento",
+       "d": "da chuva"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "De que cor está agora o Tuninho?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "branco",
+       "d": "branco"
+      },
+      {
+       "cor": "laranja",
+       "d": "laranja"
+      },
+      {
+       "cor": "roxo",
+       "d": "roxo"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Qual destes foi inventado pelo Tuninho?",
+     "quem": "bolota",
+     "ops": [
+      {
+       "img": "parafuso"
+      },
+      {
+       "img": "teodoro"
+      },
+      {
+       "img": "bolota"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 88,
+   "t": "Arco-Íris 5 · O Amarelo da Partilha",
+   "capa": "joao",
+   "pags": [
+    {
+     "c": "colina",
+     "q": [
+      "joao",
+      "francisca"
+     ],
+     "x": [
+      "A terceira cor era o amarelo. O João esperava-os no cimo da colina, com uma cesta de sandes de banana.",
+      [
+       "joao",
+       "Amarelo? Sou eu! Todo eu!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "mustarda",
+      "leonor"
+     ],
+     "x": [
+      "Também lá estavam o Mustarda, a Dona Leonor com os dez patinhos amarelinhos e, lá em cima no céu, a piscar, a Estrelinha Bia."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "foxius",
+       "Ora, ora. O amarelo é a cor da partilha, como o sol, que brilha para todos."
+      ],
+      [
+       "joao",
+       "Então é fácil!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      "O João abriu a cesta e deu uma sandes a cada amigo. Ficou sem nenhuma para ele. E sorriu.",
+      [
+       "joao",
+       "A minha mãe diz que uma sandes partilhada sabe ao dobro."
+      ]
+     ],
+     "o": {
+      "piquenique": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      "Uma faísca amarela saiu da cesta vazia."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "mustarda"
+     ],
+     "x": [
+      [
+       "mustarda",
+       "Eu partilho a minha lanterna com o meu irmão quando está escuro."
+      ],
+      "Outra faísca."
+     ],
+     "o": {
+      "faisca": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "leonor"
+     ],
+     "x": [
+      [
+       "leonor",
+       "Quá-quá! E eu partilho o meu tempo com dez patinhos ao mesmo tempo. Não é fácil!"
+      ],
+      "E os patinhos fizeram piu-piu todos juntos. Mais uma faísca."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "Lá de cima desceu um raio de luz. Era a Bia, que piscou duas vezes e mandou uma faísca dourada, como as que a Francisca a tinha ajudado a encontrar.",
+      [
+       "bia",
+       "Pisca, pisca! Esta é para ti, Francisca!"
+      ]
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O risco amarelo acendeu-se no balde. Três cores! A racha já quase não se via."
+     ],
+     "b": 1
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "joao"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Obrigada, Bia!"
+      ],
+      [
+       "joao",
+       "E agora? Quem quer uma sandes? Ah... já não há."
+      ],
+      "E toda a gente riu.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O amarelo é a cor de quê?",
+     "quem": "joao",
+     "ops": [
+      {
+       "cor": "amarelo",
+       "d": "da partilha"
+      },
+      {
+       "cor": "preto",
+       "d": "do escuro"
+      },
+      {
+       "cor": "azul",
+       "d": "do frio"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem mandou uma faísca lá do céu?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "bia"
+      },
+      {
+       "img": "nimbo"
+      },
+      {
+       "img": "dragao"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantos patinhos tem a Dona Leonor?",
+     "quem": "leonor",
+     "ops": [
+      {
+       "num": 10,
+       "d": "dez"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 7,
+       "d": "sete"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 89,
+   "t": "Arco-Íris 6 · O Verde do Cuidado",
+   "capa": "florinda",
+   "pags": [
+    {
+     "c": "castelo",
+     "q": [
+      "florinda"
+     ],
+     "x": [
+      "A quarta cor era o verde. A Florinda esperava-os sentada no seu cogumelo, com o cabelo verde como musgo.",
+      [
+       "florinda",
+       "Tlim! O verde é comigo!"
+      ]
+     ],
+     "o": {
+      "cogumelocasa": 1
+     }
+    },
+    {
+     "c": "campo",
+     "q": [
+      "borbolessauro",
+      "ze"
+     ],
+     "x": [
+      "No campo, estavam o Borbolessauro, verde e enorme, e o Zé, o papagaio, com as penas verdes a brilhar.",
+      [
+       "ze",
+       "Verde! Verde! Rrrá!"
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "florinda"
+     ],
+     "x": [
+      [
+       "florinda",
+       "O verde é a cor do cuidado. As plantas crescem quando cuidamos delas."
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "florinda"
+     ],
+     "x": [
+      "A Florinda contou como pintava as flores todas as manhãs, às escondidas, para o jardim ter cor. Uma faísca verde saiu do seu pincel de orvalho."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "campo",
+     "q": [
+      "borbolessauro"
+     ],
+     "x": [
+      [
+       "borbolessauro",
+       "Eu sou grande, mas sou meigo. Cuido sempre onde ponho as patas, para não pisar as flores."
+      ],
+      "Outra faísca verde."
+     ],
+     "o": {
+      "faisca": 1,
+      "borboletas": 4
+     }
+    },
+    {
+     "c": "campo",
+     "q": [
+      "ze"
+     ],
+     "x": [
+      [
+       "ze",
+       "Eu aprendi a cuidar dos amigos ouvindo-os com o coração."
+      ],
+      "E o Zé, pela primeira vez, falou devagar e baixinho. Mais uma faísca."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "campo",
+     "q": [
+      "teodoro"
+     ],
+     "x": [
+      "O Teodoro chegou devagarinho com uma plantinha num vaso.",
+      [
+       "teodoro",
+       "Plantei-a... na escola. Rego-a... todos os dias."
+      ]
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "campo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O risco verde acendeu-se. Quatro cores! O balde começou a ficar morninho nas mãos da Francisca."
+     ],
+     "b": 1
+    },
+    {
+     "c": "campo",
+     "q": [
+      "francisca",
+      "florinda"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Sente, Florinda! O balde está a aquecer!"
+      ],
+      [
+       "florinda",
+       "Tlim! Está a acordar!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "campo",
+     "q": [
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      [
+       "bruno",
+       "Faltam três. Mas está a ficar tarde... e vem aí nevoeiro."
+      ],
+      "Ao longe, uma névoa cinzenta começava a rastejar pelo chão.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O verde é a cor de quê?",
+     "quem": "florinda",
+     "ops": [
+      {
+       "cor": "verde",
+       "d": "do cuidado"
+      },
+      {
+       "cor": "vermelho",
+       "d": "da zanga"
+      },
+      {
+       "cor": "preto",
+       "d": "da noite"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "De que cor é o cabelo da Florinda?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cor": "verde",
+       "d": "verde"
+      },
+      {
+       "cor": "amarelo",
+       "d": "amarelo"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que trouxe o Teodoro?",
+     "quem": "ze",
+     "ops": [
+      {
+       "svg": "flor",
+       "d": "uma plantinha"
+      },
+      {
+       "svg": "bola",
+       "d": "uma bola"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 90,
+   "t": "Arco-Íris 7 · O Azul da Calma",
+   "capa": "gelino",
+   "pags": [
+    {
+     "c": "colina",
+     "q": [
+      "gelino",
+      "coelhita"
+     ],
+     "x": [
+      "A quinta cor era o azul. O Gelino e a Coelhita esperavam no cimo da Colina Geladinha.",
+      [
+       "gelino",
+       "O azul é a cor da calma. Como o céu limpinho."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "ernesto"
+     ],
+     "x": [
+      "O Ernesto também lá estava, de boné azul, com a bolsa de cartas.",
+      [
+       "ernesto",
+       "Correio! Trago uma carta para o balde, de todos os amigos!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Eu aprendi a ficar calmo e a pedir ajuda quando preciso."
+      ],
+      "E soprou uma faísca azul, fresquinha, com floquinhos de neve à volta."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      [
+       "coelhita",
+       "Eu aprendi a acalmar-me para dormir, com a hora do soninho."
+      ],
+      "Outra faísca azul."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "ernesto"
+     ],
+     "x": [
+      [
+       "ernesto",
+       "E eu aprendi a dizer o meu nome, sem vergonha."
+      ],
+      "A carta abriu-se sozinha, e dela saiu mais uma faísca."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O risco azul acendeu-se. Cinco cores!"
+     ],
+     "b": 1
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Mas nesse momento, a névoa cinzenta subiu a colina. Era um nevoeiro enorme, espesso como algodão."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      "O nevoeiro tapou tudo. Já não se via o céu, nem as árvores, nem o caminho. Só se ouviam vozes.",
+      [
+       "bruno",
+       "Francisca! Dá-me a mão!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E dentro do nevoeiro, as cores começavam a desbotar. O vermelho do lenço do Balu ficou cinzento. A Coelhita ficou cinzenta."
+     ],
+     "b": 1
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca agarrou o balde com força. Os cinco riscos coloridos tremiam, fraquinhos, como velas ao vento.",
+      [
+       "francisca",
+       "Não! As cores não!"
+      ],
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O azul é a cor de quê?",
+     "quem": "gelino",
+     "ops": [
+      {
+       "cor": "azul",
+       "d": "da calma"
+      },
+      {
+       "cor": "vermelho",
+       "d": "da pressa"
+      },
+      {
+       "cor": "preto",
+       "d": "do medo"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas cores já tinha o balde?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 5,
+       "d": "cinco"
+      },
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 10,
+       "d": "dez"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que tapou a colina?",
+     "quem": "bruno",
+     "ops": [
+      {
+       "cor": "cinzento",
+       "d": "um nevoeiro cinzento"
+      },
+      {
+       "cor": "verde",
+       "d": "relva"
+      },
+      {
+       "cor": "amarelo",
+       "d": "o sol"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 91,
+   "t": "Arco-Íris 8 · Perdidos no Nevoeiro",
+   "capa": "maia",
+   "pags": [
+    {
+     "c": "bosque",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "No nevoeiro, cada um ficou sozinho. A Francisca chamava, mas as vozes pareciam vir de todo o lado e de lado nenhum."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Sentou-se no chão, com o balde ao colo. Estava com medo. Lembrou-se do Parafuso: o medo fica mais pequeno com luz, com amigos e com respiração devagarinho."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Respirou devagar. Ffff. E ouviu, ao longe, um snif, snif.",
+      [
+       "maia",
+       "Francisca! O meu nariz nunca mente! Estás aí!"
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "maia",
+      "francisca"
+     ],
+     "x": [
+      "A Maia saltou-lhe para o colo. E juntas começaram a chamar os outros, um a um, seguindo os cheiros."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "ticetac"
+     ],
+     "x": [
+      "Ouviu-se um tic-tac. Eram o Tic e o Tac, com um despertador.",
+      [
+       "tic",
+       "Seguimos o tic-tac!"
+      ],
+      [
+       "tac",
+       "Assim ninguém se perde no tempo!"
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "relogio": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "ernesto"
+     ],
+     "x": [
+      "Trim-trim! O Ernesto apareceu de bicicleta, com uma lanterna no boné.",
+      [
+       "ernesto",
+       "Conheço a morada de toda a gente. Até no nevoeiro!"
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "mustarda"
+     ],
+     "x": [
+      "E o Mustarda acendeu a lanterna e levantou-a bem alto.",
+      [
+       "mustarda",
+       "Venham todos para a luz!"
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "balu",
+      "coelhita",
+      "rugido"
+     ],
+     "x": [
+      "Um a um, os amigos foram aparecendo. O Balu, a Coelhita, o Rugido, as tartarugas. Cinzentos, mas inteiros."
+     ],
+     "o": {
+      "noite": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "Por fim, apareceu o Padrinho Bruno, que tinha ficado a ajudar a Dona Leonor a juntar os patinhos. Os dez!",
+      [
+       "bruno",
+       "Contámos duas vezes. Estão todos!"
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Ninguém se perdeu. Mas temos de sair deste nevoeiro. As cores estão a apagar-se."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "noite": 1,
+      "lanterna": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem encontrou a Francisca no nevoeiro?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "maia"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "lila"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que levantou o Mustarda?",
+     "quem": "mustarda",
+     "ops": [
+      {
+       "svg": "lanterna",
+       "d": "a lanterna"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "bola",
+       "d": "uma bola"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem seguiu o tic-tac?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "ticetac"
+      },
+      {
+       "img": "bolota"
+      },
+      {
+       "img": "teodoro"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 92,
+   "t": "Arco-Íris 9 · O Mapa e o Túnel",
+   "capa": "girafa",
+   "pags": [
+    {
+     "c": "bosque",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      "O Girafa desenrolou um mapa à luz da lanterna.",
+      [
+       "girafa",
+       "O nevoeiro está em todo o lado cá em cima. Mas há um sítio onde nunca chega."
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "mapa": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "girafa"
+     ],
+     "x": [
+      [
+       "girafa",
+       "Debaixo da terra! Se formos por baixo, chegamos à torre, que é mais alta do que o nevoeiro."
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "mapa": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      "E quem conhece todos os túneis? O Tobias, claro. A terra mexeu-se e apareceu o chapéu de mineiro.",
+      [
+       "tobias",
+       "Ai, que claridade! Ah, é só uma lanterna. Sigam-me!"
+      ]
+     ],
+     "o": {
+      "cogumelos": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      "Os túneis do Tobias estavam iluminados pelos cogumelos que brilham, como um céu às avessas. E lá dentro não havia nevoeiro nenhum."
+     ],
+     "o": {
+      "cogumelos": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E as cores voltaram! O Balu ficou outra vez com o lenço vermelho. A Coelhita voltou a ser azul. E os cinco riscos do balde brilharam mais fortes."
+     ],
+     "o": {
+      "cogumelos": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "teodoro"
+     ],
+     "x": [
+      "O túnel era comprido. O Teodoro ia lá atrás, devagarinho.",
+      [
+       "balu",
+       "Teodoro, queres vir às minhas costas?"
+      ],
+      [
+       "teodoro",
+       "Desta vez... sim. Obrigado... Balu."
+      ]
+     ],
+     "o": {
+      "cogumelos": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "No caminho passaram pela caverna dos cíclopes, que guiaram os amigos pelos túneis mais escuros.",
+      [
+       "ketchup",
+       "É connosco a guiar!"
+      ]
+     ],
+     "o": {
+      "cogumelos": 1,
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "torre",
+     "q": [
+      "francisca",
+      "girafa"
+     ],
+     "x": [
+      "Por fim, o túnel acabou numa escada de pedra, dentro da torre velha. Subiram, subiram, subiram..."
+     ],
+     "o": {
+      "escada": 1
+     }
+    },
+    {
+     "c": "torre",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      "Lá em cima, à janela, estava a Maria, à espera deles.",
+      [
+       "maria",
+       "Eu vi o nevoeiro chegar. Vi-o lá de cima. E sei uma coisa: o nevoeiro não é mau. Está perdido, como eu estava."
+      ]
+     ],
+     "o": {
+      "magia": 1
+     }
+    },
+    {
+     "c": "torre",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Perdido?"
+      ],
+      [
+       "maria",
+       "Anda à procura de cor. Por isso agarra-se às nossas."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "magia": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Por onde fugiram do nevoeiro?",
+     "quem": "girafa",
+     "ops": [
+      {
+       "cena": "caverna",
+       "d": "por baixo da terra"
+      },
+      {
+       "cena": "ceu",
+       "d": "pelo céu"
+      },
+      {
+       "cena": "rio",
+       "d": "pelo rio"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem guiou os túneis com chapéu de mineiro?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "tobias"
+      },
+      {
+       "img": "joao"
+      },
+      {
+       "img": "ze"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem levou o Teodoro às costas?",
+     "quem": "teodoro",
+     "ops": [
+      {
+       "img": "balu"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "gelino"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 93,
+   "t": "Arco-Íris 10 · O Anil dos Sonhos",
+   "capa": "dragao",
+   "pags": [
+    {
+     "c": "torre",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "x": [
+      "Do cimo da torre via-se o nevoeiro cá em baixo, como um mar cinzento. E lá em cima, o céu estava limpo e cheio de estrelas."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "torre",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A sexta cor era o anil, o azul escuro da noite. Mas quem tinha essa cor?"
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      "Foi então que, entre as estrelas, apareceu o Dragão dos Sonhos, comprido e cor-de-rosa.",
+      [
+       "dragao",
+       "Quem souber procurar, encontra-me sempre. Precisam do anil?"
+      ]
+     ],
+     "o": {
+      "escamas": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      [
+       "dragao",
+       "O anil é a cor dos sonhos. É a cor do céu quando estamos a dormir e imaginamos coisas bonitas."
+      ]
+     ],
+     "o": {
+      "escamas": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "bia",
+      "lu"
+     ],
+     "x": [
+      "Com ele vinham a Estrelinha Bia e a Pirilampa Lu, com o coro todo a piscar.",
+      [
+       "lu",
+       "Um, dois, três, luzinhas outra vez!"
+      ]
+     ],
+     "o": {
+      "pirilampos": 12
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "dragao"
+     ],
+     "x": [
+      [
+       "dragao",
+       "Francisca, lembras-te de como mudaste o fim do teu pesadelo?"
+      ],
+      [
+       "francisca",
+       "Lembro! A sombra virou balão!"
+      ]
+     ],
+     "o": {
+      "escamas": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca fechou os olhos e sonhou acordada: sonhou com o parque cheio de cores outra vez. Do sonho dela saiu uma faísca cor de anil."
+     ],
+     "o": {
+      "faisca": 1,
+      "escamas": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "bia",
+      "lu"
+     ],
+     "x": [
+      "A Bia piscou e deu outra. A Lu e os pirilampos acenderam-se todos ao mesmo tempo, e saiu mais uma."
+     ],
+     "o": {
+      "faisca": 1,
+      "pirilampos": 12
+     }
+    },
+    {
+     "c": "torre",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O sexto risco acendeu-se. Seis cores! Só faltava o violeta."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "torre",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "O violeta... é a cor da magia. E a Lila e eu sabemos onde ela está. Está onde está o nevoeiro."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O anil é a cor de quê?",
+     "quem": "dragao",
+     "ops": [
+      {
+       "cor": "azul",
+       "d": "dos sonhos"
+      },
+      {
+       "cor": "amarelo",
+       "d": "do sol"
+      },
+      {
+       "cor": "vermelho",
+       "d": "da zanga"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem apareceu entre as estrelas?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "dragao"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "leonor"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas cores faltavam no fim?",
+     "quem": "maria",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      },
+      {
+       "num": 7,
+       "d": "sete"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 94,
+   "t": "Arco-Íris 11 · O Violeta da Magia",
+   "capa": "lila",
+   "pags": [
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "cavaleiro"
+     ],
+     "x": [
+      "No castelo, que estava no meio do nevoeiro, a Lila e o Cavaleiro tinham acendido todas as janelas.",
+      [
+       "lila",
+       "Não sou princesa de ficar à espera! Venham!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Quando há muitas coisas para resolver, faz-se uma cor de cada vez. E agora é a vez do violeta."
+      ],
+      "E soltou a trança violeta."
+     ],
+     "o": {
+      "faisca": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      [
+       "lila",
+       "O violeta é a cor da magia. Mas a magia mais forte é perdoar e recomeçar."
+      ],
+      "A Lila lembrou-se do feitiço das cores trocadas, e de como tinha perdoado a Maria."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "maria",
+      "lila"
+     ],
+     "x": [
+      [
+       "maria",
+       "E eu lembro-me de quando fiz a nuvem cinzenta... e vocês me deram a mão em vez de ralharem."
+      ],
+      "A Maria e a Lila deram as mãos."
+     ],
+     "o": {
+      "magia": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "maria",
+      "lila"
+     ],
+     "x": [
+      "Das mãos das duas saiu uma faísca violeta, a brilhar como uma ametista."
+     ],
+     "o": {
+      "faisca": 1,
+      "magia": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Plim! O sétimo risco acendeu-se. Sete cores! O balde ficou quente, dourado e cheio de brilhantezinhos outra vez."
+     ],
+     "b": 1
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Mas a racha... a racha não desapareceu. Ficou ali, fininha, no meio das sete cores.",
+      [
+       "francisca",
+       "Porquê? Já temos as sete cores!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "foxius"
+     ],
+     "x": [
+      "O Dr. Foxius abriu o livro antigo na última página, que tinha estado colada até então.",
+      [
+       "foxius",
+       "Ora, ora... Há mais uma linha. Diz assim: as sete cores acendem o balde. Mas só o coração do parque o fecha."
+      ]
+     ],
+     "o": {
+      "livro": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "foxius"
+     ],
+     "x": [
+      [
+       "francisca",
+       "O coração do parque? O que é isso?"
+      ],
+      [
+       "foxius",
+       "Não diz. Ora, ora. Teremos de descobrir."
+      ]
+     ],
+     "o": {
+      "livro": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "Lá fora, o nevoeiro encostava-se às janelas do castelo, cinzento e silencioso. Parecia estar a ouvir.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O violeta é a cor de quê?",
+     "quem": "lila",
+     "ops": [
+      {
+       "cor": "roxo",
+       "d": "da magia"
+      },
+      {
+       "cor": "verde",
+       "d": "da relva"
+      },
+      {
+       "cor": "castanho",
+       "d": "da terra"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem deu as mãos para fazer a faísca violeta?",
+     "quem": "cavaleiro",
+     "ops": [
+      {
+       "img": "maria",
+       "d": "a Maria e a Lila"
+      },
+      {
+       "img": "balu",
+       "d": "o Balu"
+      },
+      {
+       "img": "joao",
+       "d": "o João"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas cores tem agora o balde?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 7,
+       "d": "sete"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 2,
+       "d": "duas"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 95,
+   "t": "Arco-Íris 12 · A Voz do Nevoeiro",
+   "capa": "nimbo",
+   "pags": [
+    {
+     "c": "castelo",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      "Nessa noite, alguém bateu à janela do castelo. Era o Senhor Nimbo, a nuvem resmungona, todo aflito.",
+      [
+       "nimbo",
+       "Resmungo, resmungo... Eu sei quem é o nevoeiro!"
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "É uma nuvenzinha bebé. Caiu do céu, como a Bia caiu um dia. E está assustada cá em baixo, sem saber voltar."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "nimbo"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Então o nevoeiro não é mau?"
+      ],
+      [
+       "nimbo",
+       "É só pequenino e perdido. Agarra-se às cores porque tem frio e medo do escuro."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "parafuso"
+     ],
+     "x": [
+      "O Parafuso pôs a mão no peito. No ecrã apareceu um coração.",
+      [
+       "parafuso",
+       "Eu sei o que é sentir medo e estar sozinho. Aprendi isso no meu caderno."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Então não vamos fugir dele. Vamos ajudá-lo."
+      ],
+      "E a Francisca abriu a janela."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "O nevoeiro entrou devagarinho, frio e húmido. A Francisca não fugiu. Falou baixinho, como falava com a Maia na trovoada.",
+      [
+       "francisca",
+       "Olá. Não tenhas medo. Nós ajudamos-te a voltar para casa."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [],
+     "x": [
+      "E o nevoeiro, pela primeira vez, parou. Ficou à volta deles, quieto, como quem escuta."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "Para voltar para o céu, uma nuvem precisa de calor. Precisa que o sol a aqueça. Mas lá fora é de noite e está tudo cinzento."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "bigodes",
+      "lu"
+     ],
+     "x": [
+      "O Professor Bigodes ajeitou os óculos.",
+      [
+       "bigodes",
+       "Então teremos de fazer um sol nós mesmos. Com a coisa mais quente que conhecemos."
+      ],
+      [
+       "lu",
+       "Música e luz!"
+      ]
+     ],
+     "o": {
+      "noite": 1,
+      "pirilampos": 8
+     }
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca olhou para o balde, para a racha, e para os amigos todos à volta. E começou a perceber.",
+      "Continua..."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem descobriu o que era o nevoeiro?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "nimbo"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "bolota"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que era o nevoeiro?",
+     "quem": "nimbo",
+     "ops": [
+      {
+       "cor": "cinzento",
+       "d": "uma nuvenzinha bebé perdida"
+      },
+      {
+       "svg": "mota",
+       "d": "uma mota"
+      },
+      {
+       "svg": "coroa",
+       "d": "um rei"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "O que precisa uma nuvem para voltar ao céu?",
+     "quem": "parafuso",
+     "ops": [
+      {
+       "cor": "amarelo",
+       "d": "calor do sol"
+      },
+      {
+       "svg": "gelo",
+       "d": "gelo"
+      },
+      {
+       "cor": "preto",
+       "d": "escuro"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 96,
+   "t": "Arco-Íris 13 · O Coro de Todos",
+   "capa": "lu",
+   "pags": [
+    {
+     "c": "feliz",
+     "q": [
+      "bigodes",
+      "lu"
+     ],
+     "x": [
+      "Ao amanhecer, todos se juntaram no meio do parque, dentro do nevoeiro. O Professor Bigodes e a Pirilampa Lu organizaram o maior coro de sempre."
+     ],
+     "o": {
+      "pirilampos": 14
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      [
+       "lu",
+       "Cada um faz o seu som! Um, dois, três!"
+      ]
+     ],
+     "o": {
+      "pirilampos": 14
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "rugido",
+      "balu",
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "O Rugido rugiu. O Balu ladrou. Os cíclopes bateram nos troncos como tambores. Tum, tum, tum!"
+     ],
+     "o": {
+      "pirilampos": 10
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ze",
+      "leonor"
+     ],
+     "x": [
+      "O Zé assobiou. Os dez patinhos fizeram piu-piu. A Dona Leonor fez quá-quá. A Rosinha fez splash numa poça."
+     ],
+     "o": {
+      "pirilampos": 10,
+      "pocas": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ticetac",
+      "parafuso"
+     ],
+     "x": [
+      "O Tic e o Tac marcaram o ritmo com o despertador. O Parafuso fez bip-bip. E o Tuninho Pérola fez bip-bop."
+     ],
+     "o": {
+      "pirilampos": 10,
+      "relogio": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tartarugas",
+      "bolota",
+      "teodoro"
+     ],
+     "x": [
+      "As tartarugas cantaram a duas vozes, sem discutir! A Bolota batia bolotas umas nas outras. E o Teodoro cantava devagarinho a nota mais comprida de todas."
+     ],
+     "o": {
+      "pirilampos": 10
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E a Francisca bateu no balde mágico com a pontinha do dedo. Tlim! Tlim! Tlim!"
+     ],
+     "o": {
+      "pirilampos": 14
+     },
+     "b": 1
+    },
+    {
+     "c": "feliz",
+     "q": [],
+     "x": [
+      "A música subiu, subiu, e os pirilampos acenderam-se todos ao mesmo tempo. O nevoeiro começou a ficar mais claro. Primeiro cinzento-claro. Depois branquinho. Depois cor-de-rosa, com o sol a nascer atrás."
+     ],
+     "o": {
+      "pirilampos": 16,
+      "arco": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "Está a aquecer! A nuvenzinha está a ficar quentinha!"
+      ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Mas ainda não chegava. O nevoeiro subia um bocadinho e voltava a descer, como um balão sem ar suficiente.",
+      "Continua..."
+     ],
+     "o": {
+      "pirilampos": 10
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem organizou o coro com o Professor Bigodes?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "lu"
+      },
+      {
+       "img": "tobias"
+      },
+      {
+       "img": "ernesto"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Que som fez o balde?",
+     "quem": "lu",
+     "ops": [
+      {
+       "svg": "balde",
+       "d": "tlim"
+      },
+      {
+       "svg": "mota",
+       "d": "vrum"
+      },
+      {
+       "svg": "lua",
+       "d": "nenhum"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Em que cor ficou o nevoeiro com o sol a nascer?",
+     "quem": "bigodes",
+     "ops": [
+      {
+       "cor": "cor-de-rosa",
+       "d": "cor-de-rosa"
+      },
+      {
+       "cor": "preto",
+       "d": "preto"
+      },
+      {
+       "cor": "verde",
+       "d": "verde"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 97,
+   "t": "Arco-Íris 14 · O Coração do Parque",
+   "capa": "francisca",
+   "pags": [
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca olhou à sua volta. Para os amigos todos, tão diferentes. Grandes e pequenos, rápidos e lentos, falantes e calados."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E lembrou-se da história do Banzé: o balde tinha nascido no dia em que todos se abrigaram juntos, abraçados."
+     ],
+     "b": 1
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "banze"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Banzé! Já sei o que é o coração do parque!"
+      ],
+      [
+       "banze",
+       "Diz, Francisca."
+      ],
+      [
+       "francisca",
+       "Somos nós. Todos juntos!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca subiu à beira da fonte e levantou o balde bem alto.",
+      [
+       "francisca",
+       "Amigos! Façam um círculo! De mãos dadas! Todos, todos, todos!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "bruno",
+      "maia",
+      "balu",
+      "banze"
+     ],
+     "x": [
+      "O Padrinho Bruno deu a mão à Maia. A Maia deu a pata ao Balu. O Balu ao Banzé."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "coelhita",
+      "rugido",
+      "lila",
+      "cavaleiro"
+     ],
+     "x": [
+      "O Banzé à Coelhita, a Coelhita ao Rugido, o Rugido à Lila, a Lila ao Cavaleiro."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "maria",
+      "gelino",
+      "joao",
+      "borbolessauro"
+     ],
+     "x": [
+      "O Cavaleiro à Maria, a Maria ao Gelino, o Gelino ao João, o João ao Borbolessauro, que deu a pata com muito cuidado, porque é grande mas é meigo."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "ketchup",
+      "mustarda",
+      "girafa",
+      "tartarugas"
+     ],
+     "x": [
+      "Depois os cíclopes, o Girafa, as tartarugas, o Tuninho Pérola, o Tobias, a Florinda, a Lu e o Senhor Nimbo, que deu a mão com uma ponta de nuvem."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "parafuso",
+      "bigodes",
+      "bolota",
+      "ze"
+     ],
+     "x": [
+      "E o Parafuso, o Professor Bigodes, a Bolota, o Zé, a Dona Doroteia, a Rosinha, o Ernesto, o Teodoro, o Tic e o Tac, a Dona Leonor e os dez patinhos. E o Dr. Foxius fechou o círculo, dando a mão à Francisca."
+     ]
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Era o maior círculo de amigos que o parque alguma vez tinha visto. E no meio dele, o balde começou a tremer, quente, quente, cada vez mais quente.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "O que é o coração do parque?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "francisca",
+       "d": "os amigos todos juntos"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "gelo",
+       "d": "um gelo"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Onde fizeram o grande círculo?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "fonte",
+       "d": "à volta da fonte"
+      },
+      {
+       "cena": "caverna",
+       "d": "na caverna"
+      },
+      {
+       "cena": "quarto",
+       "d": "no quarto"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem fechou o círculo?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "foxius"
+      },
+      {
+       "img": "dragao"
+      },
+      {
+       "img": "tobias"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 98,
+   "t": "Arco-Íris 15 · O Abraço Gigante",
+   "capa": "banze",
+   "pags": [
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "O balde tremeu, tremeu... e de repente, PLIIIIM! Uma luz dourada saiu dele e subiu ao céu, como um foguete de festa."
+     ],
+     "o": {
+      "acesa": 1,
+      "luz": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "fonte",
+     "q": [],
+     "x": [
+      "A luz abriu-se lá em cima num arco-íris enorme, o maior arco-íris do mundo, que ia de um lado ao outro do parque."
+     ],
+     "o": {
+      "arco": 1,
+      "acesa": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      "O nevoeiro, aquecido pela luz, começou a subir. Subiu, subiu, ficou branquinho e fofo, e transformou-se numa nuvenzinha bebé, com dois olhinhos e um sorriso."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "Lá vai ela! A nuvenzinha vai para casa!"
+      ],
+      "E o Senhor Nimbo subiu também, para a acompanhar. Lá em cima, a nuvenzinha deu-lhe um abraço de algodão."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca olhou para o balde. A racha... tinha desaparecido! O bordo estava inteiro, dourado, liso. E as sete cores brilhavam por dentro, como um arco-íris guardado."
+     ],
+     "b": 1
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Padrinho! Está curado!"
+      ],
+      [
+       "bruno",
+       "Está mais bonito do que nunca, afilhada."
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "O Banzé, emocionado, uivou de alegria. Auuuu! E toda a gente, sem largar as mãos, se juntou num abraço gigante, apertadinho, quentinho."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "borbolessauro",
+      "gelino"
+     ],
+     "x": [
+      "Foi um abraço tão grande que o Borbolessauro abraçou dez amigos de uma vez. E o Gelino, no meio do abraço, sentiu-se quentinho por dentro e não derreteu nadinha."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "parafuso"
+     ],
+     "x": [
+      "O ecrã do Parafuso encheu-se de todas as palavras do caderno ao mesmo tempo. E depois de uma só, em letras enormes.",
+      [
+       "parafuso",
+       "AMIZADE."
+      ]
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "fonte",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A fonte, que estava apagada, acendeu-se com água de todas as cores, a saltar e a brilhar ao sol.",
+      "Continua..."
+     ],
+     "o": {
+      "arco": 1,
+      "acesa": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "O que apareceu no céu?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "svg": "arcoiris",
+       "d": "um arco-íris enorme"
+      },
+      {
+       "svg": "lua",
+       "d": "a lua"
+      },
+      {
+       "svg": "gelo",
+       "d": "gelo"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Em que se transformou o nevoeiro?",
+     "quem": "nimbo",
+     "ops": [
+      {
+       "cor": "branco",
+       "d": "numa nuvenzinha bebé"
+      },
+      {
+       "svg": "mota",
+       "d": "numa mota"
+      },
+      {
+       "svg": "coroa",
+       "d": "numa coroa"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem acompanhou a nuvenzinha para casa?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "nimbo"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "leonor"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 99,
+   "t": "Arco-Íris 16 · A Festa do Arco-Íris",
+   "capa": "doroteia",
+   "pags": [
+    {
+     "c": "feliz",
+     "q": [
+      "doroteia"
+     ],
+     "x": [
+      "Nessa tarde, houve a maior festa que o parque alguma vez tinha visto. A Dona Doroteia fez um bolo com sete andares, um de cada cor do arco-íris."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "bolo": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "O João fez sandes de banana para todos. E o Gelino fez gelados, de banana, de morango e de arco-íris."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "gelado": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "lu",
+      "bigodes"
+     ],
+     "x": [
+      "A Pirilampa Lu e o Professor Bigodes dirigiram a música, e os alunos da escola cantaram a canção das vogais."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "pirilampos": 8
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tartarugas",
+      "tuninhobranco"
+     ],
+     "x": [
+      "As tartarugas dançaram uma com a outra, sem discutir. E a Dona Júlia, muito corada, convidou o Tuninho Pérola para dançar também.",
+      [
+       "julia",
+       "Ai, Tuninho... dança comigo?"
+      ],
+      [
+       "tuninhobranco",
+       "Bip... bop... com todo o gosto."
+      ],
+      [
+       "xica",
+       "Júlia, estás corada outra vez!"
+      ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "rugido",
+      "teodoro"
+     ],
+     "x": [
+      "O Rugido deu voltas de mota ao parque, devagarinho, com o Teodoro sentado à frente, de capacete azul, a sentir o vento pela primeira vez."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "mota": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ernesto"
+     ],
+     "x": [
+      "O Ernesto distribuiu cartas a toda a gente. E desta vez, todas tinham remetente: Com carinho, de todos para todos."
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "leonor",
+      "rosinha",
+      "bolota"
+     ],
+     "x": [
+      "Os dez patinhos fizeram uma fila de dança. A Rosinha saltou para a poça mais colorida. E a Bolota partilhou bolotas com toda a gente."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "pocas": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "A Coelhita saltou tão alto que tocou no arco-íris. E de lá caíram pozinhos coloridos sobre o parque inteiro."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "arco": 1,
+      "magia": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "O Padrinho Bruno atirou a bola baixinho, como a Francisca gostava. E desta vez ninguém a perdeu."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "bola": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Ao pôr do sol, a Francisca sentou-se na relva com o balde ao colo, a ver os amigos todos felizes.",
+      "Continua..."
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "arco": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quantos andares tinha o bolo?",
+     "quem": "doroteia",
+     "ops": [
+      {
+       "num": 7,
+       "d": "sete"
+      },
+      {
+       "num": 1,
+       "d": "um"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem dançou com a Dona Júlia?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "tuninhobranco"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "ze"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem fez gelados de arco-íris?",
+     "quem": "joao",
+     "ops": [
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "maria"
+      },
+      {
+       "img": "tobias"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 100,
+   "t": "Arco-Íris 17 · Para Sempre Arco-Íris",
+   "capa": "francisca",
+   "pags": [
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Nessa noite, a Francisca pôs o balde mágico no sítio do costume, ao pé da janela. Brilhava como nunca, com sete riscos de cores a piscar devagarinho."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "A Maia deitou-se aos pés da cama, enroladinha como um caracol.",
+      [
+       "maia",
+       "Que aventura, Francisca."
+      ],
+      [
+       "francisca",
+       "A maior de todas, Maia."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Sabes o que aprendi? O balde não brilha sozinho. Brilha quando estamos juntos. Como o arco-íris: cada cor sozinha é bonita, mas juntas fazem uma coisa mágica."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Lá fora, no céu, a Estrelinha Bia piscou duas vezes. E ao lado dela, uma nuvenzinha bebé, branca e fofa, fez adeus."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "No parque, cada amigo foi para a sua casa. O Ernesto para a casinha de porta azul. O Tobias para o túnel. O Tic e o Tac para o relógio da torre, a dar-lhe corda."
+     ],
+     "o": {
+      "noite": 1,
+      "relogio": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Florinda para o seu cogumelo. A Lila para o castelo. O Gelino para a colina. E o Banzé deitou-se debaixo do banco preferido, com o colar de flores ao pescoço."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "O Padrinho Bruno veio dar-lhe um beijinho de boa noite.",
+      [
+       "bruno",
+       "Dorme bem, afilhada. Amanhã há mais parque à nossa espera."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca fechou os olhos. E antes de adormecer, sussurrou para o balde:",
+      [
+       "francisca",
+       "Obrigada, balde. Obrigada, amigos."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E o balde respondeu como sempre respondia: brilhou três vezes. Plim, plim, plim. Parecia mesmo um sim."
+     ],
+     "o": {
+      "noite": 1
+     },
+     "b": 1,
+     "plim": 1
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "maia",
+      "balu",
+      "banze"
+     ],
+     "x": [
+      "E o parque dos amigos do Arco-Íris ficou assim: cheio de cores, cheio de histórias e cheio de amigos. Para sempre.",
+      "Fim."
+     ],
+     "o": {
+      "arco": 1,
+      "bandeirinhas": 1
+     },
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quantas vezes brilhou o balde no fim?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 9,
+       "d": "nove"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem veio dar o beijinho de boa noite?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "bruno"
+      },
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "joao"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quando é que o balde brilha?",
+     "quem": "banze",
+     "ops": [
+      {
+       "img": "francisca",
+       "d": "quando estamos juntos"
+      },
+      {
+       "svg": "lua",
+       "d": "só à noite"
+      },
+      {
+       "svg": "gelo",
+       "d": "quando está frio"
+      }
+     ],
+     "ok": 0
+    }
+   ]
   }
  ],
  "factos": [
@@ -23025,6 +26883,10 @@
   "rosinha": [
    "Sou uma porquinha cor-de-rosa com um laço amarelo.",
    "Adoro lama, mas agora também adoro banhos com bolas de sabão."
+  ],
+  "tuninhobranco": [
+   "Sou um peixe branquinho como uma pérola.",
+   "Vivo num aquário com pernas e sou inventor."
   ]
  },
  "situacoes": [
