@@ -67,7 +67,7 @@ function cena(key, quem=[], o={}){
   if(IMGC[key]&&o.noite) s+='<rect width="400" height="250" fill="#1E2850" opacity=".32"/>';
   if(o.arco) s+=objeto('arco',200,182,'<g fill="none" stroke-width="7" opacity=".85">'+['#E5484D','#F28C28','#F5C518','#2FB383','#3E92E0','#4B4BB5','#9A5BD6'].map((cr,i)=>'<path d="M'+(20+i*7)+' 180 A'+(180-i*7)+' '+(150-i*7)+' 0 0 1 '+(380-i*7)+' 180" stroke="'+cr+'"/>').join('')+'</g>');
   if(o.escada) s+=objeto('escada',197,208,'<g fill="none" stroke-width="6" stroke-linecap="round">'+['#E5484D','#F28C28','#F5C518','#2FB383','#3E92E0','#9A5BD6'].map((cr,i)=>'<path d="M'+(120+i*6)+' 205 Q'+(150+i*4)+' '+(120-i*3)+' '+(274-i*2)+' '+(158+i*5)+'" stroke="'+cr+'"/>').join('')+'</g>');
-  if(o.acesa) s+=objeto('acesa',300,200,'<g transform="translate(300 150)">'+'<circle cx="0" cy="-10" r="60" fill="#FFE08A" opacity=".35"/><g fill="#FFF3B0">'+[[-30,-40],[25,-50],[40,-10],[-45,0],[0,-62]].map(([x,y])=>'<path d="M'+x+' '+(y-7)+'l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>').join('')+'</g><path d="M0 -30q-20 -30 -40 6M0 -30q20 -30 40 6" stroke="#BDE9FF" stroke-width="4" fill="none"/>'+'</g>');
+  if(o.acesa) s+=objeto('acesa',IMGC[key]?203:300,IMGC[key]?172:200,'<g transform="translate(300 150)">'+'<circle cx="0" cy="-10" r="60" fill="#FFE08A" opacity=".35"/><g fill="#FFF3B0">'+[[-30,-40],[25,-50],[40,-10],[-45,0],[0,-62]].map(([x,y])=>'<path d="M'+x+' '+(y-7)+'l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>').join('')+'</g><path d="M0 -30q-20 -30 -40 6M0 -30q20 -30 40 6" stroke="#BDE9FF" stroke-width="4" fill="none"/>'+'</g>',300,200);
   if(o.mapa) s+=objeto('mapa',315,118,'<g transform="translate(250 30)"><rect width="130" height="88" rx="10" fill="#BFEFFF" opacity=".55" stroke="#7FD6F7" stroke-width="2"/><path d="M14 60q30-40 60-10t45-30" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 5"/>'+[[24,58],[62,30],[110,22],[88,66]].map(([x,y],i)=>'<circle cx="'+x+'" cy="'+y+'" r="7" fill="#FFD86B" opacity=".6"/><circle cx="'+x+'" cy="'+y+'" r="4" fill="#F7BC2F"/>'+(i===3?'<path d="M'+(x+8)+' '+y+'h12m-4-4 4 4-4 4" stroke="#F7BC2F" stroke-width="2" fill="none"/>':'')).join('')+'</g>');
   if(o.luz){ const lx=c.dentro||key==='caverna'?282:330, ly=(key==='caverna'?168:120)+34;
     s+=objeto('luz',lx,ly,'<g transform="translate('+(c.dentro||key==='caverna'?282:330)+' '+(key==='caverna'?168:120)+')"><circle r="34" fill="#FFE08A" opacity=".3"/><circle r="20" fill="#FFE9A0" opacity=".7"/><circle r="11" fill="#FFF8DC"/></g>'); }
@@ -86,7 +86,9 @@ function cena(key, quem=[], o={}){
 
   function vazio(a){ return a===undefined||a===null||a===''; }
   function cfgObj(k){
-    const b=OBJ[k]||{w:60,efeito:'nenhum'}, u=(objetos&&objetos[k])||{};
+    const b=OBJ[k]||{w:60,efeito:'nenhum'}, g=(objetos&&objetos[k])||{};
+    // posição própria deste cenário (se existir) tem prioridade sobre a posição geral
+    const p=(g.pos&&g.pos[key])||{}, u={...g, x:vazio(p.x)?g.x:p.x, y:vazio(p.y)?g.y:p.y, w:vazio(p.w)?g.w:p.w};
     return { img: vazio(u.img)?(k==='balde'?baldeImg:''):u.img, x:vazio(u.x)?null:+u.x, y:vazio(u.y)?null:+u.y,
       w: vazio(u.w)?b.w:+u.w, efeito: vazio(u.efeito)?b.efeito:u.efeito, sombra: vazio(u.sombra)?!!b.sombra:!!u.sombra };
   }

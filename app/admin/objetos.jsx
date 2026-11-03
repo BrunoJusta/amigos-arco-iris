@@ -59,7 +59,7 @@ export default function Objetos({ objetos, set, balde, setBalde, livros, cenario
       <div className="grelha-c">
         {OBJETOS_BASE.map((o) => {
           const c = cfg(o.id), img = imgDe(o.id), ef = c.efeito || o.efeito, n = usos[o.id] || 0;
-          const mexido = !vazio(c.x) || !vazio(c.y) || !vazio(c.w) || !vazio(c.efeito) || !vazio(c.sombra);
+          const mexido = !vazio(c.x) || !vazio(c.y) || !vazio(c.w) || !vazio(c.efeito) || !vazio(c.sombra) || !vazio(c.pos);
           return (
             <div className="cartao c-cen" key={o.id}>
               <div className={'vis' + (sobre === o.id ? ' solta' : '')}
@@ -94,53 +94,93 @@ export default function Objetos({ objetos, set, balde, setBalde, livros, cenario
 
 function Ajustar({ o, c, mudar, cenarios, previa, onFechar }) {
   const [cenaP, setCenaP] = useState(o.cena);
-  const auto = vazio(c.x) && vazio(c.y);
-  const w = vazio(c.w) ? o.w : +c.w;
+  const [ambito, setAmbito] = useState('cena');
+  const pos = c.pos || {};
+  const local = pos[cenaP] || {};
+  const nomeCena = (id) => cenarios.find((x) => x.id === id)?.nome || id;
+  // valores efetivos neste cenário
   const ef = c.efeito || o.efeito;
   const sombra = vazio(c.sombra) ? !!o.sombra : !!c.sombra;
+  const atual = ambito === 'cena' ? local : c;
+  const wGeral = vazio(c.w) ? o.w : +c.w;
+  const w = ambito === 'cena' && !vazio(local.w) ? +local.w : wGeral;
+  const auto = vazio(atual.x) && vazio(atual.y);
   const html = previa(o, { cena: cenaP });
 
+  function mudarPos(campos) {
+    if (ambito === 'todos') { mudar(campos); return; }
+    const n = { ...local, ...campos };
+    Object.keys(n).forEach((k) => { if (vazio(n[k])) delete n[k]; });
+    const p = { ...pos };
+    if (Object.keys(n).length) p[cenaP] = n; else delete p[cenaP];
+    mudar({ pos: Object.keys(p).length ? p : '' });
+  }
+  function tirarCena(id) { const p = { ...pos }; delete p[id]; mudar({ pos: Object.keys(p).length ? p : '' }); }
   function clicar(e) {
     if (o.varios) return;
     const r = e.currentTarget.getBoundingClientRect();
     // a pré-visualização tem a mesma proporção do cenário (400 × 250)
     const x = Math.round(((e.clientX - r.left) / r.width) * 400);
     const y = Math.round(((e.clientY - r.top) / r.height) * 250);
-    mudar({ x: Math.max(0, Math.min(400, x)), y: Math.max(0, Math.min(250, y)) });
+    mudarPos({ x: Math.max(0, Math.min(400, x)), y: Math.max(0, Math.min(250, y)) });
   }
+  const proprios = Object.keys(pos);
   return (
     <Dialogo titulo={'Ajustar · ' + o.nome} onFechar={onFechar} largo>
       <div className="dl-corpo">
+        <div className="linha c">
+          <Campo label="Ver no cenário" id="aj-cena" className="f">
+            <select id="aj-cena" value={cenaP} onChange={(e) => setCenaP(e.target.value)}>{cenarios.map((x) => <option key={x.id} value={x.id}>{x.nome}{pos[x.id] ? ' · posição própria' : ''}</option>)}</select>
+          </Campo>
+          {!o.varios && (
+            <div className="campo">
+              <span className="rotulo">Aplicar posição e tamanho</span>
+              <div className="seg" role="group" aria-label="Onde aplicar">
+                <button aria-pressed={ambito === 'cena'} onClick={() => setAmbito('cena')}>Só neste cenário</button>
+                <button aria-pressed={ambito === 'todos'} onClick={() => setAmbito('todos')}>Em todos</button>
+              </div>
+            </div>
+          )}
+        </div>
         <div className={'ajustar-vis' + (o.varios ? '' : ' clica')} onClick={clicar} title={o.varios ? '' : 'Clica para pôr o objeto aqui'}>
           <Svg html={html} />
         </div>
-        {!o.varios && <small className="ajuda-c">Clica na imagem para pôr o objeto nesse sítio. O ponto onde clicas é onde ele assenta.</small>}
+        {!o.varios && <small className="ajuda-c">Clica na imagem para pôr o objeto nesse sítio: o ponto onde clicas é onde ele assenta. {ambito === 'cena' ? `Fica guardado só para «${nomeCena(cenaP)}», útil quando o cenário tem imagem própria.` : 'Vale para todos os cenários que não tenham posição própria.'}</small>}
         <div className="grelha-2">
-          <Campo label="Ver no cenário" id="aj-cena">
-            <select id="aj-cena" value={cenaP} onChange={(e) => setCenaP(e.target.value)}>{cenarios.map((x) => <option key={x.id} value={x.id}>{x.nome}</option>)}</select>
+          <Campo label={`Tamanho · ${w}`} id="aj-w">
+            <input id="aj-w" type="range" min={o.varios ? 6 : 12} max={o.varios ? 80 : 400} value={w}
+              onChange={(e) => (o.varios || ambito === 'todos' ? mudar({ w: +e.target.value === o.w ? '' : +e.target.value }) : mudarPos({ w: +e.target.value === wGeral ? '' : +e.target.value }))} />
           </Campo>
           <Campo label="Efeito" id="aj-ef">
             <select id="aj-ef" value={ef} onChange={(e) => mudar({ efeito: e.target.value === o.efeito ? '' : e.target.value })}>{EFEITOS.map(([k, t]) => <option key={k} value={k}>{t}{k === o.efeito ? ' (original)' : ''}</option>)}</select>
           </Campo>
         </div>
-        <Campo label={`Tamanho · ${w}`} id="aj-w">
-          <input id="aj-w" type="range" min={o.varios ? 6 : 12} max={o.varios ? 80 : 400} value={w} onChange={(e) => mudar({ w: +e.target.value === o.w ? '' : +e.target.value })} />
-        </Campo>
         {!o.varios && (
           <>
-            <Interruptor id="aj-auto" checked={auto} onChange={(v) => mudar(v ? { x: '', y: '' } : { x: 200, y: 200 })} label="Sítio original em cada cenário" />
+            <Interruptor id="aj-auto" checked={auto} onChange={(v) => mudarPos(v ? { x: '', y: '' } : { x: 200, y: 200 })} label={ambito === 'cena' ? 'Usar a posição geral neste cenário' : 'Sítio original em cada cenário'} />
             {!auto && (
               <div className="grelha-2">
-                <Campo label={`Horizontal · ${c.x ?? ''}`} id="aj-x"><input id="aj-x" type="range" min="0" max="400" value={c.x ?? 200} onChange={(e) => mudar({ x: +e.target.value, y: c.y ?? 200 })} /></Campo>
-                <Campo label={`Vertical · ${c.y ?? ''}`} id="aj-y"><input id="aj-y" type="range" min="0" max="250" value={c.y ?? 200} onChange={(e) => mudar({ y: +e.target.value, x: c.x ?? 200 })} /></Campo>
+                <Campo label={`Horizontal · ${atual.x ?? ''}`} id="aj-x"><input id="aj-x" type="range" min="0" max="400" value={atual.x ?? 200} onChange={(e) => mudarPos({ x: +e.target.value, y: atual.y ?? 200 })} /></Campo>
+                <Campo label={`Vertical · ${atual.y ?? ''}`} id="aj-y"><input id="aj-y" type="range" min="0" max="250" value={atual.y ?? 200} onChange={(e) => mudarPos({ y: +e.target.value, x: atual.x ?? 200 })} /></Campo>
               </div>
             )}
             <Interruptor id="aj-sombra" checked={sombra} onChange={(v) => mudar({ sombra: v === !!o.sombra ? '' : v ? 1 : 0 })} label="Sombra no chão" />
+            {proprios.length > 0 && (
+              <div className="campo">
+                <span className="rotulo">Cenários com posição própria</span>
+                <div className="chips">{proprios.map((id) => (
+                  <span key={id} className="chip sem-av" style={{ gap: 4, paddingRight: 4 }}>
+                    <button className="btn-fan" style={{ border: 0, background: 'none', cursor: 'pointer', padding: 0 }} onClick={() => setCenaP(id)}>{nomeCena(id)}</button>
+                    <button className="btn-ic" style={{ width: 22, height: 22 }} onClick={() => tirarCena(id)} aria-label={'Tirar a posição própria de ' + nomeCena(id)}>×</button>
+                  </span>
+                ))}</div>
+              </div>
+            )}
           </>
         )}
       </div>
       <div className="dl-acoes">
-        <button className="btn btn-fan" style={{ marginRight: 'auto' }} onClick={() => mudar({ x: '', y: '', w: '', efeito: '', sombra: '' })}><RotateCcw size={14} />Repor original</button>
+        <button className="btn btn-fan" style={{ marginRight: 'auto' }} onClick={() => mudar({ x: '', y: '', w: '', efeito: '', sombra: '', pos: '' })}><RotateCcw size={14} />Repor original</button>
         <button className="btn btn-pri" onClick={onFechar}>Concluir</button>
       </div>
     </Dialogo>
