@@ -54,13 +54,21 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
   }, []);
   const titulos = new Set(livros.map((l) => l.t));
   const porJuntar = novos.filter((l) => !titulos.has(l.t));
-  function juntar(l) {
-    set([...livros, { ...l, n: livros.length + 1 }]); setSel(livros.length);
-    // personagens novas que o livro usa e que ainda não existem (com as frases e pistas delas)
-    const usados = new Set([l.capa, ...(l.pags || []).flatMap((p) => [...(p.q || []), ...(p.x || []).filter(Array.isArray).map((x) => x[0])]), ...(l.perg || []).flatMap((q) => [q.quem, ...q.ops.map((o) => o.img)])].filter(Boolean));
+  function juntarTodos() {
+    const novos = porJuntar.map((l, i) => ({ ...l, n: livros.length + i + 1 }));
+    set([...livros, ...novos]); setSel(livros.length);
+    juntarPersDe(porJuntar);
+  }
+  function juntarPersDe(lista) {
+    const usados = new Set(lista.flatMap((l) => [l.capa, ...(l.pags || []).flatMap((p) => [...(p.q || []), ...(p.x || []).filter(Array.isArray).map((x) => x[0])]), ...(l.perg || []).flatMap((q) => [q.quem, ...q.ops.map((o) => o.img)])]).filter(Boolean));
     const faltam = (extras.personagens || []).filter((p) => usados.has(p.id) && !pers.some((x) => x.id === p.id));
     if (faltam.length && juntarPers) juntarPers(faltam, extras);
   }
+  function juntar(l) {
+    set([...livros, { ...l, n: livros.length + 1 }]); setSel(livros.length);
+    juntarPersDe([l]);
+  }
+
   if (!L) return <div className="bo-corpo"><Vazio titulo="Ainda não há livros" acao={<button className="btn btn-pri" onClick={() => novoLivro()}><Plus size={16} />Novo livro</button>} /></div>;
 
   const setL = (n) => { const l = livros.slice(); l[sel] = n; set(l); };
@@ -88,6 +96,12 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
     <div className="livros">
       <div className="col col-livros">
         <div className="col-cab"><b>Livros</b><small className="num">{livros.length}</small><button className="btn-ic" onClick={novoLivro} aria-label="Novo livro" title="Novo livro"><Plus size={16} /></button></div>
+        {porJuntar.length > 1 && (
+          <div className="novo-livro">
+            <span><b>{porJuntar.length} livros novos</b>Vieram com a app e ainda não estão na lista.</span>
+            <button className="btn btn-pri peq" onClick={() => juntarTodos()}><Plus size={14} />Juntar todos</button>
+          </div>
+        )}
         {porJuntar.map((l) => (
           <div className="novo-livro" key={l.t}>
             <span><b>Livro novo</b>{l.t}</span>

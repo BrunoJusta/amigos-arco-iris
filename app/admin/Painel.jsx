@@ -96,7 +96,8 @@ export default function Painel() {
   function juntarPers(lista, ex) {
     mudar('personagens', [...pers, ...lista]);
     const ids = lista.map((x) => x.id);
-    const fr = (ex.frases || []).filter((f) => ids.includes(f[0]));
+    const atuais = new Set((valor('frases') || []).map((f) => f[0] + '|' + f[1]));
+    const fr = (ex.frases || []).filter((f) => ids.includes(f[0]) && !atuais.has(f[0] + '|' + f[1]));
     if (fr.length) mudar('frases', [...(valor('frases') || []), ...fr]);
     const ad = { ...(valor('adivinhas') || {}) }; let mudou = false;
     ids.forEach((id) => { if (ex.adivinhas?.[id] && !ad[id]) { ad[id] = ex.adivinhas[id]; mudou = true; } });

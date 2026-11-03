@@ -211,6 +211,56 @@
     "r": 1.02
    },
    "extra": 1
+  },
+  {
+   "id": "bia",
+   "nome": "Estrelinha Bia",
+   "img": "/personagens/bia.jpg",
+   "frase": "Pisca, pisca! Sou a Bia!",
+   "tom": {
+    "p": 1.6,
+    "r": 1.05
+   }
+  },
+  {
+   "id": "olga",
+   "nome": "Doutora Olga",
+   "img": "/personagens/olga.jpg",
+   "frase": "Hum-hum. Deixa-me consultar as estrelas.",
+   "tom": {
+    "p": 0.95,
+    "r": 0.85
+   }
+  },
+  {
+   "id": "tobias",
+   "nome": "Tobias",
+   "img": "/personagens/tobias.jpg",
+   "frase": "Ai, que claridade!",
+   "tom": {
+    "p": 1.15,
+    "r": 0.95
+   }
+  },
+  {
+   "id": "nimbo",
+   "nome": "Senhor Nimbo",
+   "img": "/personagens/nimbo.jpg",
+   "frase": "Resmungo, logo existo.",
+   "tom": {
+    "p": 0.72,
+    "r": 0.82
+   }
+  },
+  {
+   "id": "lu",
+   "nome": "Pirilampa Lu",
+   "img": "/personagens/lu.jpg",
+   "frase": "Um, dois, três, luzinhas outra vez!",
+   "tom": {
+    "p": 1.55,
+    "r": 1.1
+   }
   }
  ],
  "livros": [
@@ -4839,6 +4889,2825 @@
      "ok": 1
     }
    ]
+  },
+  {
+   "n": 17,
+   "t": "A Maia e a Trovoada",
+   "capa": "maia",
+   "pags": [
+    {
+     "c": "rua",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Era uma tarde quente. A Francisca e a Maia brincavam no jardim, a correr atrás de uma folha que o vento levava."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "De repente, a Maia parou. Levantou o focinho e cheirou o ar: snif, snif, snif.",
+      [
+       "maia",
+       "Francisca, cheira a chuva. Vem aí uma grande. O meu nariz nunca mente!"
+      ]
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca olhou para o céu. Lá ao longe, umas nuvens cinzentas e gordas vinham a rolar devagarinho, como ovelhas zangadas."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Entraram em casa mesmo a tempo. Ploc, ploc, ploc! As primeiras gotas bateram na janela. Depois vieram mais. E mais ainda."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Quando chegou a noite, a chuva ainda caía. A Francisca vestiu o pijama e a Maia deitou-se aos pés da cama, enroladinha como um caracol."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "De repente, um clarão branco iluminou o quarto todo. E logo a seguir... BRRRUUUM! Um barulho enorme fez tremer os vidros."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Maia deu um salto e escondeu-se debaixo da cama. Só se via a ponta da cauda, a tremer.",
+      [
+       "francisca",
+       "Maia? Estás bem?"
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Não estou nada bem. Tenho medo, Francisca. Muito medo. O céu está zangado comigo?"
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca também tinha um bocadinho de medo. Mas olhou para a Maia e pensou: quando eu tenho medo, gosto que alguém fique ao pé de mim."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Então deitou-se no chão, ao lado da cama, e esticou a mão devagarinho.",
+      [
+       "francisca",
+       "O céu não está zangado, Maia. É só a trovoada. Eu fico aqui contigo."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "A Maia encostou o focinho à mão dela. Já tremia um bocadinho menos.",
+      [
+       "francisca",
+       "Sabes uma coisa? Primeiro vem o relâmpago, que é a luz. Depois vem o trovão, que é o barulho."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Vamos contar entre os dois. Se contarmos muitos números, quer dizer que a trovoada está longe."
+      ],
+      "Veio um clarão. E as duas contaram baixinho: um, dois, três, quatro, cinco... BRRRUM."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Cinco! Contámos até cinco!"
+      ],
+      "No clarão seguinte contaram até oito. E depois até dez. A trovoada estava a ir-se embora, devagarinho."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Para ficarem ainda mais quentinhas, fizeram uma cabana com o cobertor, por cima de duas cadeiras. Lá dentro era escuro, mas era um escuro bom."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Francisca, também tens medo?"
+      ],
+      [
+       "francisca",
+       "Um bocadinho. Mas o medo fica mais pequenino quando estamos juntas."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E a Francisca cantou uma canção baixinha, daquelas que a mãe lhe cantava quando era bebé. A chuva fazia de tambor no telhado: tum, tum, tum."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Quando a canção acabou, já não havia trovões. Só uma chuvinha mansa. A Maia bocejou um bocejo enorme. E as duas adormeceram dentro da cabana."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "De manhã, a Maia acordou primeiro. Cheirou o ar: snif, snif.",
+      [
+       "maia",
+       "Francisca! Acorda! Cheira a terra molhada e a sol!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Lá fora, o céu estava azul outra vez, e por cima do parque brilhava um arco-íris enorme. Havia poças por todo o lado."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "E a Maia, que ontem tremia, saltou para a maior poça de todas. SPLASH!",
+      [
+       "maia",
+       "Afinal, a seguir à trovoada vem a parte mais divertida!"
+      ],
+      "Fim."
+     ],
+     "o": {
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Onde se escondeu a Maia com medo?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "rio",
+       "d": "no rio"
+      },
+      {
+       "cena": "quarto",
+       "d": "debaixo da cama, no quarto"
+      },
+      {
+       "cena": "castelo",
+       "d": "num castelo"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que apareceu no céu depois da trovoada?",
+     "quem": "maia",
+     "ops": [
+      {
+       "svg": "lua",
+       "d": "a lua"
+      },
+      {
+       "svg": "arcoiris",
+       "d": "um arco-íris"
+      },
+      {
+       "svg": "estrela",
+       "d": "uma estrela"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Qual destas é a Maia?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "balu"
+      },
+      {
+       "img": "banze"
+      },
+      {
+       "img": "maia"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "t": "O Feitiço das Cores Trocadas",
+   "capa": "lila",
+   "pags": [
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "francisca"
+     ],
+     "x": [
+      "No castelinho cor de lilás havia festa! A Princesa Lila fazia anos e tinha convidado todos os amigos do parque.",
+      [
+       "lila",
+       "Francisca! Chegaste! Ajudas-me a pendurar as bandeirinhas?"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "francisca"
+     ],
+     "x": [
+      "Penduraram bandeirinhas, encheram balões e puseram flores lilases em todas as janelas. O castelo estava lindo."
+     ]
+    },
+    {
+     "c": "torre",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      "Lá longe, na torre velha, a Maria estava muito atarefada. Mexia, mexia e voltava a mexer um caldeirão pequenino."
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "Vou fazer um feitiço bom para a festa da Lila. Um feitiço que deixe as cores do castelo ainda mais bonitas!"
+      ],
+      "Juntou uma pitada de pó de arco-íris, três pétalas e uma gotinha de orvalho."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "maria",
+      "lila"
+     ],
+     "x": [
+      "A Maria chegou à festa a correr, com o frasquinho na mão.",
+      [
+       "maria",
+       "Parabéns, Lila! Tenho uma prenda especial. Olhem!"
+      ],
+      "E soprou o pó mágico para o ar. Fffff..."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "francisca"
+     ],
+     "x": [
+      "Uma nuvenzinha brilhante cobriu o castelo. Quando desapareceu... ai, ai, ai. As cores estavam todas trocadas!"
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "O castelo estava cor de laranja. As flores estavam azuis. O cabelo da Lila estava verde, verde como uma alface!",
+      [
+       "lila",
+       "O meu cabelo!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      "A Maria ficou muito vermelha. E depois, por causa do feitiço, ficou às bolinhas amarelas.",
+      [
+       "maria",
+       "Desculpa, Lila. Eu só queria fazer uma coisa bonita. Estraguei a tua festa..."
+      ],
+      "E começou a chorar."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "maria"
+     ],
+     "x": [
+      "A Francisca deu-lhe a mão.",
+      [
+       "francisca",
+       "Toda a gente se engana, Maria. O importante é que querias ajudar. Agora vamos arranjar isto juntas."
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "maria"
+     ],
+     "x": [
+      [
+       "lila",
+       "Não estou zangada, Maria. É verdade que o verde é estranho... mas vamos resolver isto."
+      ],
+      [
+       "maria",
+       "Mas como? São cores a mais! Não sei por onde começar!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      "Foi então que se ouviu um tlim-tlim de armadura. Era o Cavaleiro, com as suas tranças de todas as cores, que chegava atrasado à festa."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Ora bem. Quando há muitas coisas para arrumar, eu faço sempre assim: uma cor de cada vez."
+      ],
+      "E soltou uma das suas tranças, a vermelha."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro",
+      "maria"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Maria, o teu feitiço trocou as cores. Vamos destrocá-las, uma a uma. Primeiro, o vermelho. Onde é que ele deve estar?"
+      ],
+      [
+       "francisca",
+       "Nas cerejas do bolo!"
+      ]
+     ]
+    },
+    {
+     "c": "sala",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      "A Maria abriu o seu livro de feitiços, respirou fundo e disse as palavras devagarinho, com muito cuidado. E as cerejas ficaram vermelhas outra vez!"
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila",
+      "maria",
+      "cavaleiro"
+     ],
+     "x": [
+      "Depois o azul voltou para o céu. O verde voltou para as folhas. O amarelo voltou para o sol. Uma cor de cada vez, sem pressa."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila"
+     ],
+     "x": [
+      "No fim, só faltava uma: o lilás.",
+      [
+       "lila",
+       "O meu cabelo, por favor!"
+      ],
+      "Pling! O cabelo da Lila ficou lilás outra vez, aos caracóis, como sempre."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "maria"
+     ],
+     "x": [
+      [
+       "maria",
+       "Consegui! Conseguimos!"
+      ],
+      "E as bolinhas amarelas da Maria desapareceram também."
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "lila",
+      "maria"
+     ],
+     "x": [
+      [
+       "lila",
+       "Sabes, Maria? Foi a festa mais divertida de sempre. E deixa-me ficar só com uma madeixa verde. Gosto dela!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "cavaleiro",
+      "francisca"
+     ],
+     "x": [
+      [
+       "cavaleiro",
+       "Estão a ver? As coisas grandes também se arrumam. Basta começar pela primeira."
+      ],
+      [
+       "francisca",
+       "Uma cor de cada vez!"
+      ]
+     ]
+    },
+    {
+     "c": "castelo",
+     "q": [
+      "francisca",
+      "lila",
+      "maria",
+      "cavaleiro"
+     ],
+     "x": [
+      "E cantaram os parabéns à Princesa Lila, à frente de um castelo cor de lilás, com uma madeixa verde a brilhar ao sol.",
+      "Fim."
+     ],
+     "o": {
+      "borboletas": 6
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor ficou o cabelo da Lila com o feitiço?",
+     "quem": "lila",
+     "ops": [
+      {
+       "cor": "verde",
+       "d": "verde"
+      },
+      {
+       "cor": "roxo",
+       "d": "lilás"
+      },
+      {
+       "cor": "vermelho",
+       "d": "vermelho"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quem fez o feitiço?",
+     "quem": "cavaleiro",
+     "ops": [
+      {
+       "img": "maria"
+      },
+      {
+       "img": "lila"
+      },
+      {
+       "img": "coelhita"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Onde foi a festa da Lila?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "caverna",
+       "d": "numa caverna"
+      },
+      {
+       "cena": "castelo",
+       "d": "no castelo"
+      },
+      {
+       "cena": "colina",
+       "d": "na colina gelada"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "t": "Quem é o Mais Velho?",
+   "capa": "mustarda",
+   "pags": [
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "À porta da caverna, os dois irmãos cíclopes estavam outra vez a discutir.",
+      [
+       "ketchup",
+       "Eu é que sou o mais velho!"
+      ],
+      [
+       "mustarda",
+       "Não, eu é que sou!"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "A Francisca chegou com um cesto de morangos.",
+      [
+       "francisca",
+       "Bom dia! Estão a discutir porquê?"
+      ],
+      [
+       "ketchup",
+       "É connosco?"
+      ],
+      [
+       "mustarda",
+       "É contigo ou é comigo?"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Amanhã fazemos anos. E o mais velho é que apaga as velas primeiro. Por isso tenho de ser eu!"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "mustarda"
+     ],
+     "x": [
+      [
+       "mustarda",
+       "Mas eu também quero! E eu é que sou o mais velho, tenho a certeza. Quase a certeza. Um bocadinho a certeza..."
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Esperem lá. Vocês fazem anos no mesmo dia?"
+      ],
+      [
+       "ketchup",
+       "Fazemos."
+      ],
+      [
+       "mustarda",
+       "Sempre fizemos."
+      ],
+      [
+       "francisca",
+       "Então... vocês são gémeos!"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "Os dois olharam um para o outro com o seu único olho muito arregalado.",
+      [
+       "ketchup",
+       "Gémeos?"
+      ],
+      [
+       "mustarda",
+       "O que é isso? Come-se?"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Gémeos são irmãos que nasceram no mesmo dia. Como vocês! Mas mesmo assim, há sempre um que nasce uns minutinhos antes."
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "E como sabemos qual foi?"
+      ],
+      [
+       "francisca",
+       "Podemos perguntar a quem sabe as histórias antigas do parque. Vamos ter com o Banzé!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "Pelo caminho, os irmãos iam aos empurrões. Quem chegava primeiro à árvore? Quem saltava o tronco primeiro? Quem espirrava primeiro? Atchim! Atchim!"
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "mustarda"
+     ],
+     "x": [
+      "Ao passar por uma parte escura da mata, o Mustarda parou.",
+      [
+       "mustarda",
+       "Está muito escuro aqui..."
+      ],
+      "Mas depois lembrou-se e acendeu a sua lanterna. Click!"
+     ],
+     "o": {
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "mata",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "O Ketchup, que fingia não ter medo, chegou-se muito para ao pé do irmão.",
+      [
+       "ketchup",
+       "Posso andar ao pé da tua luz?"
+      ],
+      [
+       "mustarda",
+       "Claro que podes. És meu irmão."
+      ]
+     ],
+     "o": {
+      "lanterna": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "O Banzé estava a dormir a sesta debaixo de uma árvore. Abriu um olho, depois o outro.",
+      [
+       "banze",
+       "Gémeos cíclopes, é? Eu lembro-me bem do dia em que vocês nasceram."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "banze",
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "banze",
+       "Primeiro nasceu um cíclope pequenino e vermelho. E logo a seguir nasceu um cíclope pequenino e amarelo, a segurar o pé do irmão."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ketchup"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Vermelho! Sou eu! Eu sou o mais velho!"
+      ],
+      "O Ketchup deu um pulo de alegria. Mas depois olhou para o irmão e parou de pular."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "mustarda"
+     ],
+     "x": [
+      "O Mustarda estava muito calado, a olhar para os pés.",
+      [
+       "mustarda",
+       "Então és tu que apagas as velas primeiro..."
+      ],
+      "E uma lágrima amarela escorregou do seu olho."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      "O Ketchup pensou, pensou e pensou. E depois deu a mão ao irmão.",
+      [
+       "ketchup",
+       "Sabes que mais? Eu nasci primeiro. Mas tu nasceste a segurar-me o pé. Quer dizer que viemos juntos."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "Por isso, este ano apagamos as velas ao mesmo tempo. Um, dois, três... e sopramos os dois!"
+      ],
+      [
+       "mustarda",
+       "Os dois? A sério?"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "mustarda",
+      "francisca"
+     ],
+     "x": [
+      "No dia seguinte, à porta da caverna, havia um bolo de morango com duas velas. Uma vermelha e uma amarela."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Um, dois, três!"
+      ],
+      "Fuuuu! Os dois irmãos sopraram ao mesmo tempo, e as duas velas apagaram-se juntas."
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "ketchup",
+      "mustarda"
+     ],
+     "x": [
+      [
+       "ketchup",
+       "É connosco?"
+      ],
+      [
+       "mustarda",
+       "É connosco os dois!"
+      ],
+      "E a partir desse dia, nunca mais discutiram sobre quem era o mais velho. Bem... quase nunca.",
+      "Fim."
+     ]
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que cor é o irmão que nasceu primeiro?",
+     "quem": "banze",
+     "ops": [
+      {
+       "cor": "amarelo",
+       "d": "amarelo"
+      },
+      {
+       "cor": "vermelho",
+       "d": "vermelho"
+      },
+      {
+       "cor": "azul",
+       "d": "azul"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que usou o Mustarda na parte escura da mata?",
+     "quem": "mustarda",
+     "ops": [
+      {
+       "svg": "lanterna",
+       "d": "uma lanterna"
+      },
+      {
+       "svg": "coroa",
+       "d": "uma coroa"
+      },
+      {
+       "svg": "bola",
+       "d": "uma bola"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas velas tinha o bolo?",
+     "quem": "ketchup",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 5,
+       "d": "cinco"
+      }
+     ],
+     "ok": 1
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "t": "O Gelado do Gelino",
+   "capa": "gelino",
+   "pags": [
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Era o dia mais quente do verão. O sol brilhava tanto que até as flores do parque andavam de cabeça baixa, cheias de calor."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      "O João, o pinguim amarelo, tinha tirado o gorro de lã. E mesmo assim abanava-se com uma folha grande.",
+      [
+       "joao",
+       "Que calor! Até as minhas sandes de banana estão a suar!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "joao"
+     ],
+     "x": [
+      [
+       "francisca",
+       "E o Gelino? Com este calor, onde estará ele?"
+      ],
+      [
+       "joao",
+       "Ai, o Gelino! Ele é feito de gelo! Vamos procurá-lo, depressa!"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "joao"
+     ],
+     "x": [
+      "Subiram à Colina Geladinha, onde o Gelino gostava de brincar. Mas até lá em cima a neve estava a derreter em fiozinhos de água."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "Encontraram-no à sombra de uma pedra, encolhido. O dragãozinho estava a pingar. Plic, plic, plic. A ponta da cauda já estava mais pequenina."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Estou a derreter um bocadinho... Mas não queria incomodar ninguém."
+      ],
+      [
+       "joao",
+       "Gelino! Porque é que não pediste ajuda?"
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino",
+      "francisca"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Eu não sabia pedir..."
+      ],
+      [
+       "francisca",
+       "Pedir é fácil. É só dizer: preciso de ajuda. E os amigos vêm."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "O Gelino respirou fundo, olhou para os dois e disse, muito baixinho:",
+      [
+       "gelino",
+       "Preciso de ajuda."
+      ],
+      [
+       "joao",
+       "Pronto! Já está! Viste como é fácil?"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "Levaram o Gelino para dentro da mata, onde as árvores faziam uma sombra fresquinha. O João abanava-o com a folha. A Francisca molhava-lhe a cabeça com água fresca do regato."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "Pouco a pouco, o Gelino deixou de pingar. Deu um espirro gelado: ATCHIM! E à frente dele caíram floquinhos de neve.",
+      [
+       "gelino",
+       "Já estou melhor. Obrigado!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "joao",
+       "Gelino, espera! Faz isso outra vez! Sopra para dentro desta caneca!"
+      ],
+      "O João pôs lá dentro banana esmagada, leite e uma colher de mel."
+     ],
+     "o": {
+      "caneca": 1
+     }
+    },
+    {
+     "c": "mata",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "O Gelino soprou devagarinho. Fffff... E dentro da caneca, a banana com leite ficou geladinha, cremosa, fresquinha."
+     ],
+     "o": {
+      "caneca": 1
+     }
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      [
+       "francisca",
+       "É um gelado! O Gelino fez um gelado de banana!"
+      ],
+      [
+       "joao",
+       "O melhor gelado do mundo! Com a melhor banana do mundo!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "gelino"
+     ],
+     "x": [
+      [
+       "francisca",
+       "E se fizéssemos gelados para todos os amigos? Toda a gente está cheia de calor!"
+      ],
+      [
+       "gelino",
+       "Eu? Ajudar toda a gente? Mas eu sou só um dragãozinho de gelo..."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "joao"
+     ],
+     "x": [
+      [
+       "joao",
+       "Só? O teu frio é um superpoder, Gelino! Hoje és o herói do parque!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "Então montaram uma bancada à sombra. O João descascava bananas, a Francisca misturava e o Gelino soprava. Fffff! Um gelado. Fffff! Outro gelado."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "maia",
+      "balu",
+      "tuninho"
+     ],
+     "x": [
+      "Vieram a Maia e o Balu, de língua de fora. Veio o Tuninho, a fazer bip-bop. E vieram as tartarugas, a discutir quem chegava primeiro à fila."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "O Gelino nunca tinha tido tantos amigos à sua volta. E, pela primeira vez, sentiu uma coisa quentinha por dentro. Mas era um quentinho bom, que não derretia nada."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "gelino",
+      "francisca"
+     ],
+     "x": [
+      [
+       "gelino",
+       "Francisca, acho que percebi uma coisa. Quando peço ajuda, recebo ajuda. E quando ajudo, fico feliz."
+      ],
+      [
+       "francisca",
+       "É isso mesmo, Gelino."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "joao",
+      "gelino"
+     ],
+     "x": [
+      "E ao fim da tarde, quando o calor passou, sentaram-se os três a comer o último gelado de banana, a ver o sol a pôr-se devagarinho.",
+      "Fim."
+     ],
+     "o": {
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "De que fruta era o gelado?",
+     "quem": "joao",
+     "ops": [
+      {
+       "cor": "vermelho",
+       "d": "morango, vermelho"
+      },
+      {
+       "cor": "amarelo",
+       "d": "banana, amarela"
+      },
+      {
+       "cor": "roxo",
+       "d": "uva, roxa"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quem fez os gelados com o seu sopro gelado?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "joao"
+      },
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "rugido"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Onde estava o Gelino a derreter?",
+     "quem": "joao",
+     "ops": [
+      {
+       "cena": "colina",
+       "d": "na colina"
+      },
+      {
+       "cena": "quarto",
+       "d": "no quarto"
+      },
+      {
+       "cena": "castelo",
+       "d": "no castelo"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "t": "Bia 1 · A Estrelinha que Caiu do Céu",
+   "capa": "bia",
+   "pags": [
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Era uma noite muito calma. A Francisca não conseguia dormir, por isso ficou à janela a contar estrelas. Uma, duas, três, cem..."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "De repente, uma das estrelas mais pequeninas deu um tropeção no céu, rodopiou e caiu. Ziiiiiim! Lá para o fundo do jardim."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "A Francisca calçou as pantufas e pegou no balde mágico. A Maia foi atrás dela, de nariz no ar.",
+      [
+       "maia",
+       "Cheira a... poeira de estrela!"
+      ]
+     ],
+     "b": 1
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "Entre as ervas, encolhida, estava uma estrelinha do tamanho de uma maçã. Tinha cinco pontas, dois olhos redondos e brilhava muito, muito fraquinho."
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Olá. Estás magoada?"
+      ],
+      [
+       "bia",
+       "Pisca, pisca... Sou a Bia. Estava a brincar à apanhada com as minhas irmãs e escorreguei do céu."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      [
+       "bia",
+       "Quando caí, as minhas três faíscas saltaram e fugiram para longe. Sem elas não tenho brilho. E sem brilho não consigo voltar para casa."
+      ],
+      "E uma lagrimazinha de luz escorregou-lhe pela bochecha."
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Não chores, Bia. Nós ajudamos-te a encontrar as tuas faíscas. Pois não, Maia?"
+      ],
+      [
+       "maia",
+       "Claro! O meu nariz nunca mente."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      [
+       "bia",
+       "A sério? Mas o mundo cá em baixo é tão grande... Por onde começamos?"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "francisca",
+      "maia",
+      "bia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Quando não sabemos o caminho, perguntamos a quem sabe. E quem sabe tudo sobre o céu é a Doutora Olga!"
+      ],
+      "E foram pela floresta, com a Bia aninhada dentro do balde."
+     ],
+     "b": 1
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga"
+     ],
+     "x": [
+      "No tronco da árvore mais velha da floresta havia uma janelinha redonda, com luz lá dentro. Toc, toc, toc.",
+      [
+       "olga",
+       "Hum-hum. Quem bate à minha porta a estas horas?"
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga"
+     ],
+     "x": [
+      "Apareceu uma coruja de óculos redondos, com uma touca de dormir e um livro debaixo da asa. Era a Doutora Olga."
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga",
+      "bia"
+     ],
+     "x": [
+      [
+       "olga",
+       "Ora, ora! Uma estrelinha cá em baixo! Isso não acontece todos os dias."
+      ],
+      [
+       "bia",
+       "Perdi as minhas três faíscas, Doutora Olga."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga"
+     ],
+     "x": [
+      "A Doutora Olga abriu um livro enorme, cheio de desenhos do céu, e ajeitou os óculos.",
+      [
+       "olga",
+       "Hum-hum. As faíscas de estrela gostam de se esconder onde faz falta um bocadinho de luz."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga"
+     ],
+     "x": [
+      [
+       "olga",
+       "Uma foi para debaixo da terra. Outra subiu para as nuvens. E a terceira foi para o meio da mata, onde moram os pirilampos."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "francisca",
+      "bia",
+      "maia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Debaixo da terra, nas nuvens e na mata. Três aventuras!"
+      ],
+      [
+       "bia",
+       "Vens comigo, Francisca?"
+      ],
+      [
+       "francisca",
+       "Vou contigo até ao fim."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "bia",
+      "maia"
+     ],
+     "x": [
+      "E naquela noite, a Bia dormiu dentro do balde mágico, ao lado da cama da Francisca. A brilhar fraquinho, fraquinho, mas já um bocadinho mais contente.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem caiu do céu?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "bia"
+      },
+      {
+       "img": "maia"
+      },
+      {
+       "img": "olga"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas faíscas perdeu a Bia?",
+     "quem": "bia",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      },
+      {
+       "num": 6,
+       "d": "seis"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quem sabe tudo sobre o céu?",
+     "quem": "maia",
+     "ops": [
+      {
+       "img": "tobias"
+      },
+      {
+       "img": "balu"
+      },
+      {
+       "img": "olga"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "t": "Bia 2 · O Túnel do Tobias",
+   "capa": "tobias",
+   "pags": [
+    {
+     "c": "floresta",
+     "q": [
+      "francisca",
+      "maia",
+      "bia"
+     ],
+     "x": [
+      "De manhã, a Francisca, a Maia e a Bia partiram à procura da primeira faísca. A que tinha ido para debaixo da terra."
+     ],
+     "b": 1
+    },
+    {
+     "c": "mata",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "A Maia ia de focinho no chão. Snif, snif, snif.",
+      [
+       "maia",
+       "Aqui! Há um buraco. E lá dentro cheira a terra... e a faísca!"
+      ]
+     ]
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "O buraco dava para um túnel, e o túnel dava para uma caverna. Lá dentro estava escuro como o fundo de um bolso.",
+      [
+       "bia",
+       "Eu brilho pouquinho, mas vou à frente."
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      "Ao fundo do túnel, sentado numa cadeirinha de raízes, estava uma toupeira pequenina, de focinho cor-de-rosa e mãos enormes. Tinha a faísca ao colo, como um tesouro."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      [
+       "tobias",
+       "Ai! Quem está aí? Ai, que claridade! Desculpem, eu vejo muito mal."
+      ],
+      [
+       "francisca",
+       "Olá. Eu sou a Francisca. Esta é a Maia, e esta é a Bia."
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias",
+      "bia"
+     ],
+     "x": [
+      [
+       "bia",
+       "Essa luzinha que tens ao colo... é a minha faísca."
+      ],
+      "O Tobias abraçou a faísca com mais força."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      [
+       "tobias",
+       "Mas eu gosto tanto dela! Desde que ela caiu aqui, a minha casa deixou de ser escura. Consigo ver os meus amigos minhocas. Consigo ler os meus livros de pedras."
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca percebeu que o Tobias não era mau. Só tinha medo de voltar a ficar sozinho no escuro."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "francisca",
+      "tobias"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Tobias, e se arranjássemos outra luz para a tua casa? Uma que fique sempre contigo?"
+      ],
+      [
+       "tobias",
+       "Outra luz? Há mais luzes no mundo?"
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      "A Maia lembrou-se de uma coisa e correu lá fora. Voltou com um frasco cheio de cogumelos que brilham no escuro, daqueles que crescem junto às raízes.",
+      [
+       "maia",
+       "O meu nariz encontrou-os!"
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      "Puseram os cogumelos pelas paredes do túnel. Pouco a pouco, a casa do Tobias ficou cheia de pontinhos verdes, como um céu às avessas."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias"
+     ],
+     "x": [
+      [
+       "tobias",
+       "Ohhh! É o meu próprio céu! Debaixo da terra!"
+      ],
+      "E o Tobias, muito devagarinho, estendeu as mãos com a faísca."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "tobias",
+      "bia"
+     ],
+     "x": [
+      [
+       "tobias",
+       "Toma, Bia. Esta é tua. Eu já tenho o meu céu."
+      ],
+      "A Bia abraçou a faísca. PLIM! E brilhou logo um bocadinho mais."
+     ],
+     "o": {
+      "luz": 1
+     },
+     "plim": 1
+    },
+    {
+     "c": "caverna",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      [
+       "bia",
+       "Uma faísca! Já tenho uma!"
+      ],
+      [
+       "tobias",
+       "Voltem quando quiserem. Lá em baixo também há coisas bonitas."
+      ]
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "maia",
+      "bia"
+     ],
+     "x": [
+      "Saíram do túnel ao sol. A Bia piscava de alegria, e o seu brilho já se via mesmo de dia."
+     ],
+     "o": {
+      "luz": 1
+     },
+     "b": 1
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Agora a faísca das nuvens!"
+      ],
+      [
+       "bia",
+       "As nuvens ficam tão alto... Como é que lá vamos chegar?"
+      ],
+      "A Francisca sorriu. Já tinha uma ideia.",
+      "Continua..."
+     ],
+     "b": 1
+    }
+   ],
+   "perg": [
+    {
+     "q": "Onde vivia o Tobias?",
+     "quem": "bia",
+     "ops": [
+      {
+       "cena": "ceu",
+       "d": "no céu"
+      },
+      {
+       "cena": "caverna",
+       "d": "debaixo da terra"
+      },
+      {
+       "cena": "castelo",
+       "d": "num castelo"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "O que tinha o Tobias ao colo?",
+     "quem": "tobias",
+     "ops": [
+      {
+       "svg": "sandes",
+       "d": "uma sandes"
+      },
+      {
+       "svg": "estrela",
+       "d": "a faísca da Bia"
+      },
+      {
+       "svg": "capacete",
+       "d": "um capacete"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Qual destes é o Tobias?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "tobias"
+      },
+      {
+       "img": "tuninho"
+      },
+      {
+       "img": "gelino"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "t": "Bia 3 · A Nuvem Resmungona",
+   "capa": "nimbo",
+   "pags": [
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "bia",
+      "maia"
+     ],
+     "x": [
+      "Para chegar às nuvens, foram para o sítio mais alto do parque: o cimo da Colina Geladinha."
+     ],
+     "b": 1
+    },
+    {
+     "c": "colina",
+     "q": [
+      "gelino"
+     ],
+     "x": [
+      "Lá em cima estava o Gelino, a fazer bonecos de neve.",
+      [
+       "gelino",
+       "Querem chegar às nuvens? Eu sei fazer uma escada de gelo!"
+      ],
+      "E soprou, soprou, soprou."
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "Fez-se uma escada de gelo azul, a brilhar, que subia até ao céu. A Francisca segurou-se bem e subiu degrau a degrau, com a Bia ao colo."
+     ],
+     "o": {
+      "escada": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "Lá em cima, o mundo era fofo e branco. Havia nuvens por todo o lado, como almofadas gigantes."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      "Mas havia uma nuvem diferente. Era mais escura, de sobrancelhas franzidas, e estava a resmungar sozinha.",
+      [
+       "nimbo",
+       "Resmungo, resmungo. Ninguém olha para as nuvens. Resmungo, resmungo."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo",
+      "bia"
+     ],
+     "x": [
+      "E lá dentro, a espreitar no meio do cinzento, estava uma luzinha dourada.",
+      [
+       "bia",
+       "A minha segunda faísca!"
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo",
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Olá, senhor nuvem. Como se chama?"
+      ],
+      [
+       "nimbo",
+       "Senhor Nimbo. E não estou para conversas. Aposto que também só vieram por causa das estrelas."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "Toda a gente olha para as estrelas. Toda a gente olha para o sol. Para o arco-íris. Mas para as nuvens? Ninguém! Por isso fiquei com a faísca. Assim alguém olha para mim."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca pensou um bocadinho. E depois deitou-se de costas numa nuvem fofa, a olhar para o Senhor Nimbo.",
+      [
+       "francisca",
+       "Sabe que eu adoro olhar para as nuvens?"
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "francisca",
+      "nimbo"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Às vezes deito-me na relva e procuro formas. Uma parece um coelho. Outra parece um barco. Outra parece um gelado."
+      ]
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "A sério? E eu? Pareço o quê?"
+      ],
+      "A Francisca olhou com muita atenção."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "francisca",
+      "nimbo"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Assim de lado, parece um elefante a dormir. E assim de frente, parece um carneirinho fofo."
+      ],
+      "O Senhor Nimbo ficou tão contente que desfranziu as sobrancelhas."
+     ]
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo"
+     ],
+     "x": [
+      "E ficou mais clarinho. E depois mais branco. E depois tão fofo que até fez uma chuvinha de alegria, daquelas que trazem arco-íris."
+     ],
+     "o": {
+      "arco": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "nimbo",
+      "bia"
+     ],
+     "x": [
+      [
+       "nimbo",
+       "Toma, estrelinha. Afinal não precisava dela. Só precisava que alguém olhasse para mim."
+      ],
+      "PLIM! A Bia guardou a segunda faísca e brilhou ainda mais."
+     ],
+     "o": {
+      "arco": 1
+     },
+     "plim": 1
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "bia",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bia",
+       "Duas faíscas! Já tenho duas!"
+      ],
+      [
+       "nimbo",
+       "E prometes que olhas para as nuvens de vez em quando?"
+      ],
+      [
+       "francisca",
+       "Prometo. Todos os dias."
+      ]
+     ]
+    },
+    {
+     "c": "colina",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "Desceram pela escada de gelo e voltaram para casa. Nessa noite, a Bia brilhava tanto que iluminava o quarto todo.",
+      [
+       "bia",
+       "Só falta uma..."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "escada": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem fez a escada para chegar às nuvens?",
+     "quem": "bia",
+     "ops": [
+      {
+       "img": "rugido"
+      },
+      {
+       "img": "gelino"
+      },
+      {
+       "img": "maria"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "De que cor ficou o Senhor Nimbo quando ficou contente?",
+     "quem": "nimbo",
+     "ops": [
+      {
+       "cor": "preto",
+       "d": "preto"
+      },
+      {
+       "cor": "branco",
+       "d": "branco"
+      },
+      {
+       "cor": "cinzento",
+       "d": "cinzento"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Onde estava a segunda faísca?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "ceu",
+       "d": "nas nuvens"
+      },
+      {
+       "cena": "rio",
+       "d": "no rio"
+      },
+      {
+       "cena": "quarto",
+       "d": "no quarto"
+      }
+     ],
+     "ok": 0
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "t": "Bia 4 · O Concerto dos Pirilampos",
+   "capa": "lu",
+   "pags": [
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "bia",
+      "maia"
+     ],
+     "x": [
+      "A última faísca estava na mata, onde moram os pirilampos. Mas os pirilampos só acordam à noite. Por isso esperaram que o sol se fosse deitar."
+     ],
+     "b": 1
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "maia"
+     ],
+     "x": [
+      [
+       "maia",
+       "Estão a ouvir? Parece música."
+      ],
+      "Lá do meio das árvores vinha um som baixinho: zum, zum, zum, como uma canção sem palavras."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      "Numa clareira estavam centenas de pirilampos, cada um com a sua luzinha na barriga. À frente deles, em cima de um cogumelo, estava a Pirilampa Lu, de varinha na mão."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      [
+       "lu",
+       "Um, dois, três, luzinhas outra vez!"
+      ],
+      "E todos os pirilampos acendiam e apagavam ao mesmo tempo, ao ritmo da música."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu",
+      "bia"
+     ],
+     "x": [
+      "Mas no meio da clareira, a brilhar mais do que todos, estava uma faísca dourada.",
+      [
+       "bia",
+       "É a minha terceira faísca!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      [
+       "lu",
+       "Ai, é tua? Desculpa! Ela caiu aqui e nós usámo-la como a estrela do nosso concerto. É hoje à noite, o grande Concerto dos Pirilampos!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      [
+       "lu",
+       "Sem ela, o concerto vai ser tão escurinho... Há tanto tempo que ensaiamos..."
+      ],
+      "E as luzinhas dos pirilampos ficaram todas tristes e fraquinhas."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "A Bia ficou a pensar. Ela queria muito a faísca. Mas também não queria estragar a festa de ninguém."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "bia",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bia",
+       "Francisca, o que é que eu faço?"
+      ],
+      [
+       "francisca",
+       "E se fizessem o concerto juntos? A faísca fica contigo, mas tu brilhas no concerto com eles!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu",
+      "bia"
+     ],
+     "x": [
+      [
+       "lu",
+       "Uma estrela verdadeira no nosso concerto? Isso nunca aconteceu na história dos pirilampos!"
+      ],
+      [
+       "bia",
+       "Mas eu não sei cantar..."
+      ],
+      [
+       "lu",
+       "Não faz mal. Só tens de brilhar quando eu disser três!"
+      ]
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "A Bia abraçou a terceira faísca. PLIM! E de repente brilhou como nunca: dourada, quente, linda."
+     ],
+     "o": {
+      "luz": 1
+     },
+     "plim": 1
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu"
+     ],
+     "x": [
+      "O concerto começou. Os pirilampos cantavam e piscavam. Os grilos tocavam violino. O Tobias veio do túnel, e o Senhor Nimbo espreitava lá de cima, todo branquinho."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu",
+      "bia"
+     ],
+     "x": [
+      [
+       "lu",
+       "Um, dois... TRÊS!"
+      ],
+      "E a Bia acendeu-se toda. A mata inteira ficou iluminada, como se fosse dia de festa."
+     ],
+     "o": {
+      "luz": 1
+     }
+    },
+    {
+     "c": "mata",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Toda a gente bateu palmas. A Maia uivou de alegria. Auuuu! A Francisca tinha os olhos cheios de luzinhas."
+     ]
+    },
+    {
+     "c": "mata",
+     "q": [
+      "lu",
+      "bia"
+     ],
+     "x": [
+      [
+       "lu",
+       "Obrigada, Bia. Foi o concerto mais bonito de sempre."
+      ],
+      [
+       "bia",
+       "Obrigada eu. Nunca tinha brilhado com tantos amigos ao mesmo tempo."
+      ]
+     ]
+    },
+    {
+     "c": "bosque",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "Com as três faíscas, a Bia já podia voltar para casa. Mas, quando olhou para a Francisca, o seu brilho tremeu um bocadinho.",
+      [
+       "bia",
+       "Já posso ir... Mas vou ter tantas saudades."
+      ],
+      "Continua..."
+     ],
+     "o": {
+      "luz": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem dirigia o concerto?",
+     "quem": "bia",
+     "ops": [
+      {
+       "img": "olga"
+      },
+      {
+       "img": "lu"
+      },
+      {
+       "img": "nimbo"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quando é que os pirilampos acordam?",
+     "quem": "lu",
+     "ops": [
+      {
+       "cena": "feliz",
+       "d": "de dia"
+      },
+      {
+       "cena": "bosque",
+       "d": "à noite"
+      },
+      {
+       "cena": "colina",
+       "d": "na neve"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quantas faíscas tem agora a Bia?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "num": 1,
+       "d": "uma"
+      },
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 3,
+       "d": "três"
+      }
+     ],
+     "ok": 2
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "t": "Bia 5 · O Caminho de Volta para Casa",
+   "capa": "bia",
+   "pags": [
+    {
+     "c": "floresta",
+     "q": [
+      "olga"
+     ],
+     "x": [
+      "Na noite seguinte, foram todos ter com a Doutora Olga. Ela já estava à espera, de óculos na ponta do bico.",
+      [
+       "olga",
+       "Hum-hum. Esta noite o céu está limpinho. É a noite certa para voltar."
+      ]
+     ]
+    },
+    {
+     "c": "floresta",
+     "q": [
+      "olga",
+      "bia"
+     ],
+     "x": [
+      [
+       "olga",
+       "Mas para subir tão alto é preciso um caminho especial. Um caminho feito de todas as cores."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "E quem sabe fazer caminhos de todas as cores? A Coelhita, claro! Chegou aos saltos, deixando um rasto colorido atrás de si.",
+      [
+       "coelhita",
+       "Olha as cores!"
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "coelhita"
+     ],
+     "x": [
+      "A Coelhita saltou, saltou e saltou cada vez mais alto. E atrás dela ficou uma escada de arco-íris que subia, subia, até às estrelas."
+     ],
+     "o": {
+      "escada": 1,
+      "arco": 1
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tobias",
+      "nimbo",
+      "lu"
+     ],
+     "x": [
+      "Vieram todos despedir-se. O Tobias, de óculos escuros por causa da claridade. O Senhor Nimbo, branquinho e sorridente. E a Pirilampa Lu, com o coro todo."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "tobias",
+      "bia"
+     ],
+     "x": [
+      [
+       "tobias",
+       "Adeus, Bia. Sempre que olhar para os meus cogumelos, lembro-me de ti."
+      ],
+      [
+       "nimbo",
+       "E eu fico a tapar-te um bocadinho, de vez em quando. Só para brincarmos às escondidas."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "bia"
+     ],
+     "x": [
+      "A Francisca segurou a Bia nas mãos. Estava quentinha e brilhante, como uma chávena de chocolate."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Vou ter saudades tuas, Bia."
+      ],
+      "E uma lágrima caiu-lhe pela bochecha. Mas era uma lágrima calma, daquelas que caem quando gostamos muito de alguém."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      [
+       "bia",
+       "Eu também. Mas sabes uma coisa? As estrelas nunca se vão embora de verdade. Estão sempre lá em cima, mesmo quando não as vemos."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bia",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bia",
+       "Todas as noites, quando te fores deitar, olha pela janela. Vou estar lá em cima, a piscar só para ti. Duas piscadelas quer dizer: boa noite, Francisca."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "E a Bia subiu pela escada de arco-íris, degrau a degrau, cada vez mais pequenina, cada vez mais alto."
+     ],
+     "o": {
+      "escada": 1,
+      "arco": 1
+     }
+    },
+    {
+     "c": "ceu",
+     "q": [
+      "bia"
+     ],
+     "x": [
+      "Lá em cima, as irmãs dela estavam à espera. Abraçaram-na com tanta força que o céu inteiro brilhou."
+     ]
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "Nessa noite, a Francisca vestiu o pijama e foi à janela, com a Maia ao colo. O céu estava cheio de estrelas."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "E uma delas, pequenina, piscou. Uma vez. Duas vezes.",
+      [
+       "francisca",
+       "Boa noite, Bia."
+      ]
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca",
+      "maia"
+     ],
+     "x": [
+      "A Francisca deitou-se a sorrir. E desde esse dia, nunca mais teve medo do escuro. Porque sabia que, lá em cima, havia sempre alguém a brilhar por ela."
+     ],
+     "o": {
+      "noite": 1
+     }
+    },
+    {
+     "c": "quarto",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Fim da história da Estrelinha Bia."
+     ],
+     "o": {
+      "noite": 1,
+      "luz": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem fez a escada de arco-íris?",
+     "quem": "olga",
+     "ops": [
+      {
+       "img": "coelhita"
+      },
+      {
+       "img": "tobias"
+      },
+      {
+       "img": "lu"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Quantas vezes pisca a Bia para dizer boa noite?",
+     "quem": "bia",
+     "ops": [
+      {
+       "num": 2,
+       "d": "duas"
+      },
+      {
+       "num": 4,
+       "d": "quatro"
+      },
+      {
+       "num": 1,
+       "d": "uma"
+      }
+     ],
+     "ok": 0
+    },
+    {
+     "q": "Para onde voltou a Bia?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "cena": "caverna",
+       "d": "para a caverna"
+      },
+      {
+       "cena": "ceu",
+       "d": "para o céu"
+      },
+      {
+       "cena": "rio",
+       "d": "para o rio"
+      }
+     ],
+     "ok": 1
+    }
+   ]
   }
  ],
  "factos": [
@@ -6238,6 +9107,38 @@
   [
    "bruno",
    "Quando perdemos uma coisa, paramos e procuramos com calma."
+  ],
+  [
+   "bia",
+   "Pisca, pisca! Sou a Bia!"
+  ],
+  [
+   "bia",
+   "Cada faísca que encontro faz-me brilhar um bocadinho mais."
+  ],
+  [
+   "olga",
+   "Hum-hum. Deixa-me consultar as estrelas."
+  ],
+  [
+   "tobias",
+   "Ai, que claridade!"
+  ],
+  [
+   "tobias",
+   "Lá em baixo também há coisas bonitas."
+  ],
+  [
+   "nimbo",
+   "Resmungo, logo existo."
+  ],
+  [
+   "nimbo",
+   "Ninguém olha para as nuvens!"
+  ],
+  [
+   "lu",
+   "Um, dois, três, luzinhas outra vez!"
   ]
  ],
  "adivinhas": {
@@ -6317,6 +9218,26 @@
    "Sou o padrinho da Francisca.",
    "Tenho barba castanha e uma t-shirt branca.",
    "Adoro jogar à bola no parque."
+  ],
+  "bia": [
+   "Sou uma estrela pequenina que caiu do céu.",
+   "Perdi o meu brilho e ando à procura das minhas faíscas."
+  ],
+  "olga": [
+   "Sou uma coruja de óculos e sei ler o céu.",
+   "Moro numa árvore cheia de livros."
+  ],
+  "tobias": [
+   "Sou uma toupeira e vivo debaixo da terra.",
+   "Vejo mal, mas tenho umas mãos ótimas para cavar."
+  ],
+  "nimbo": [
+   "Sou uma nuvem resmungona.",
+   "Achava que ninguém olhava para mim."
+  ],
+  "lu": [
+   "Sou uma pirilampa e tenho uma luzinha na barriga.",
+   "Dirijo o coro de luzes da mata."
   ]
  },
  "situacoes": [
