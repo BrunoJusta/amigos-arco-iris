@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowDown, ArrowUp, Copy, Plus, RefreshCw, Trash2, Check, BookOpen, CircleHelp, MessageSquare, Type, Image as ImageIcon, Lightbulb } from 'lucide-react';
+import { ArrowDown, ArrowUp, Copy, Plus, RefreshCw, RotateCcw, Trash2, Check, BookOpen, CircleHelp, MessageSquare, Type, Image as ImageIcon, Lightbulb } from 'lucide-react';
 import { DESENHOS } from '@/motor/cenas';
 import { Avatar, Campo, Interruptor, SelPers, Svg, TextoAuto, Vazio, copia, mover, CORES } from './ui';
 
@@ -57,8 +57,15 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
   const titulos = new Set(livros.map((l) => l.t));
   const porJuntar = novos.filter((l) => !titulos.has(l.t));
   // livros da app que já estão na lista mas têm uma versão mais recente (por exemplo, com objetos novos)
-  const assinatura = (l) => JSON.stringify([l.capa, l.pags, l.perg, l.luz || 0]);
-  const porAtualizar = novos.filter((n) => { const a = livros.find((l) => l.t === n.t); return a && assinatura(a) !== assinatura(n); });
+  // Só há versão nova quando a app mudou o livro depois de ele ter sido juntado ou atualizado.
+  // As alterações feitas no backoffice não contam: o livro guarda a "origem" da versão da app de onde veio.
+  // Livros guardados antes de existir a origem são considerados atualizados (a versão do backoffice manda).
+  const porAtualizar = novos.filter((n) => { const a = livros.find((l) => l.t === n.t); return a && a.origem && n.origem && a.origem !== n.origem; });
+  const versaoApp = L ? novos.find((n) => n.t === L.t) : null;
+  async function reporDaApp() {
+    if (!(await confirmar({ titulo: 'Repor versão da app', texto: `«${L.t}» volta a ficar igual à versão que vem com a app. As alterações que fizeste neste livro no backoffice são substituídas.`, confirmar: 'Repor', perigo: true }))) return;
+    const l = livros.slice(); l[sel] = { ...versaoApp, n: L.n }; set(l); juntarPersDe([versaoApp]);
+  }
   async function atualizar() {
     if (!(await confirmar({ titulo: 'Atualizar livros', texto: `${porAtualizar.length === 1 ? 'Este livro passa' : 'Estes ' + porAtualizar.length + ' livros passam'} a ser iguais à versão mais recente da app: ${porAtualizar.map((l) => '«' + l.t + '»').join(', ')}. Alterações que tenhas feito neles no backoffice são substituídas.`, confirmar: 'Atualizar' }))) return;
     set(livros.map((l) => { const n = porAtualizar.find((x) => x.t === l.t); return n ? { ...n, n: l.n } : l; }));
@@ -108,7 +115,7 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
         <div className="col-cab"><b>Livros</b><small className="num">{livros.length}</small><button className="btn-ic" onClick={novoLivro} aria-label="Novo livro" title="Novo livro"><Plus size={16} /></button></div>
         {porAtualizar.length > 0 && (
           <div className="novo-livro">
-            <span><b>{porAtualizar.length === 1 ? '1 livro com versão nova' : porAtualizar.length + ' livros com versão nova'}</b>Já estão na lista, mas a app trouxe uma versão mais recente.</span>
+            <span><b>{porAtualizar.length === 1 ? '1 livro com versão nova' : porAtualizar.length + ' livros com versão nova'}</b>A app mudou {porAtualizar.length === 1 ? 'este livro' : 'estes livros'} depois de os juntares: {porAtualizar.map((l) => l.t).join(', ')}.</span>
             <button className="btn btn-pri peq" onClick={atualizar}><RefreshCw size={14} />Atualizar</button>
           </div>
         )}
@@ -146,6 +153,7 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
             <div className="grupo-ic">
               <button className="btn-ic" disabled={sel === 0} onClick={() => { set(renumerar(mover(livros, sel, -1))); setSel(sel - 1); }} aria-label="Mover livro para cima"><ArrowUp size={16} /></button>
               <button className="btn-ic" disabled={sel === livros.length - 1} onClick={() => { set(renumerar(mover(livros, sel, 1))); setSel(sel + 1); }} aria-label="Mover livro para baixo"><ArrowDown size={16} /></button>
+              {versaoApp && <button className="btn-ic" onClick={reporDaApp} aria-label="Repor a versão da app" title="Repor a versão da app"><RotateCcw size={16} /></button>}
               <button className="btn-ic perigo" onClick={apagarLivro} aria-label="Apagar livro"><Trash2 size={16} /></button>
             </div>
           </div>
