@@ -497,3 +497,4 @@ body.com-mini .app{padding-bottom:calc(11.5rem + env(safe-area-inset-bottom,0px)
 .obj-luminoso .ef,.obj-luminoso>g[filter]{filter:drop-shadow(0 0 4px #FFF1A8) drop-shadow(0 0 12px #FFD54Acc) drop-shadow(0 0 24px #FFC83D88)}
 .ef-aura{transform-box:fill-box;transform-origin:center;mix-blend-mode:screen;animation:aura 2.8s ease-in-out infinite}
 @keyframes aura{0%,100%{opacity:.75;transform:scale(.92)}50%{opacity:1;transform:scale(1.1)}}
+.op-obj svg{aspect-ratio:1;object-fit:contain;max-height:140px;margin:0 auto}

@@ -21914,15 +21914,15 @@
      "quem": "francisca",
      "ops": [
       {
-       "svg": "balde",
+       "obj": "baldepartido",
        "d": "ficou rachado e sem brilho"
       },
       {
-       "svg": "flor",
-       "d": "virou flor"
+       "obj": "bola",
+       "d": "virou bola"
       },
       {
-       "svg": "mota",
+       "obj": "mota",
        "d": "virou mota"
       }
      ],
@@ -22157,17 +22157,20 @@
      "ok": 0
     },
     {
-     "q": "Quem entregou os convites?",
+     "q": "O que entregou o Ernesto?",
      "quem": "foxius",
      "ops": [
       {
-       "img": "ernesto"
+       "obj": "carta",
+       "d": "uma carta"
       },
       {
-       "img": "rosinha"
+       "obj": "bola",
+       "d": "uma bola"
       },
       {
-       "img": "leonor"
+       "obj": "gelado",
+       "d": "um gelado"
       }
      ],
      "ok": 0
@@ -22772,20 +22775,23 @@
    ],
    "perg": [
     {
-     "q": "O amarelo é a cor de quê?",
+     "q": "Que faísca ganhou a Francisca neste livro?",
      "quem": "joao",
      "ops": [
       {
-       "cor": "amarelo",
-       "d": "da partilha"
+       "obj": "faiscacor",
+       "v": 3,
+       "d": "a amarela, da partilha"
       },
       {
-       "cor": "preto",
-       "d": "do escuro"
+       "obj": "faiscacor",
+       "v": 1,
+       "d": "a vermelha"
       },
       {
-       "cor": "azul",
-       "d": "do frio"
+       "obj": "faiscacor",
+       "v": 5,
+       "d": "a azul"
       }
      ],
      "ok": 0
@@ -23460,15 +23466,15 @@
      "quem": "mustarda",
      "ops": [
       {
-       "svg": "lanterna",
+       "obj": "lanterna",
        "d": "a lanterna"
       },
       {
-       "svg": "coroa",
-       "d": "uma coroa"
+       "obj": "carta",
+       "d": "uma carta"
       },
       {
-       "svg": "bola",
+       "obj": "bola",
        "d": "uma bola"
       }
      ],
@@ -24347,16 +24353,16 @@
      "quem": "nimbo",
      "ops": [
       {
-       "cor": "cinzento",
+       "obj": "nuvenzinha",
        "d": "uma nuvenzinha bebé perdida"
       },
       {
-       "svg": "mota",
+       "obj": "mota",
        "d": "uma mota"
       },
       {
-       "svg": "coroa",
-       "d": "um rei"
+       "obj": "bolo",
+       "d": "um bolo"
       }
      ],
      "ok": 0
@@ -24964,16 +24970,16 @@
      "quem": "nimbo",
      "ops": [
       {
-       "cor": "branco",
+       "obj": "nuvenzinha",
        "d": "numa nuvenzinha bebé"
       },
       {
-       "svg": "mota",
+       "obj": "mota",
        "d": "numa mota"
       },
       {
-       "svg": "coroa",
-       "d": "numa coroa"
+       "obj": "bolo",
+       "d": "num bolo"
       }
      ],
      "ok": 0

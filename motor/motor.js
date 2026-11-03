@@ -268,6 +268,7 @@ function opVisual(o){
   if(o.cor) return '<span class="pote" style="background:'+COR[o.cor]+'"></span>';
   if(o.num) return '<span class="luzes-c">'+'<i></i>'.repeat(o.num)+'</span>';
   if(o.cena) return '<span class="op-cena">'+cena(o.cena,[],{})+'</span>';
+  if(o.obj) return '<span class="op-svg op-obj">'+cena.solto(o.obj,o.v)+'</span>';
   if(o.svg) return '<span class="op-svg">'+(imgDes(o.svg)?tagImg(imgDes(o.svg)):DESENHOS[o.svg])+'</span>';
   return '';
 }

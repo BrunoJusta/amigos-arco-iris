@@ -414,3 +414,5 @@ label.btn input[type='file'] { display: none; }
 .novo-livro { margin: 8px; padding: 10px; border-radius: var(--rc); background: var(--link-soft); display: flex; flex-direction: column; gap: 8px; font-size: 13px; }
 .novo-livro b { display: block; font-size: 12px; font-weight: 600; color: var(--link); }
 .novo-livro .btn { align-self: flex-start; }
+
+.op-vis.obj svg { width: 90%; height: 90%; }

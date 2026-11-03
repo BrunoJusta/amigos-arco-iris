@@ -23,9 +23,10 @@ const CENAS = {
   ceu:{ceu:['#F7C6DD','#BFE2FF'],nuvensGrandes:1}
 };
 const BORB=(x,y,s,c1,c2,r)=>'<g transform="translate('+x+' '+y+') scale('+s+') rotate('+(r||0)+')"><ellipse cx="-7" cy="-4" rx="8" ry="6" fill="'+c1+'"/><ellipse cx="7" cy="-4" rx="8" ry="6" fill="'+c1+'"/><ellipse cx="-5" cy="5" rx="5" ry="4" fill="'+c2+'"/><ellipse cx="5" cy="5" rx="5" ry="4" fill="'+c2+'"/><rect x="-1.2" y="-8" width="2.4" height="16" rx="1.2" fill="#3B2F4A"/></g>';
-let cid=0;
+let cid=0, caixa=null;
 function cena(key, quem=[], o={}){
   const c=CENAS[key]||CENAS.rio; let s=''; const id='g'+(++cid);
+  if(!o.__solto){
   if(IMGC[key]){
     s+='<rect width="400" height="250" fill="#DCE6EE"/><image href="'+IMGC[key]+'" x="0" y="0" width="400" height="250" preserveAspectRatio="xMidYMid slice"/>';
   } else if(c.dentro==='quarto'){
@@ -63,6 +64,7 @@ function cena(key, quem=[], o={}){
     else if(c.flores) s+=[64,150,232,330].map(x=>'<g transform="translate('+x+' 204)"><path d="M0 0v-16" stroke="#7D8C6E" stroke-width="3" stroke-linecap="round"/><path d="M0 -16q9 6 6 13" fill="none" stroke="#B9A6B8" stroke-width="6" stroke-linecap="round"/></g>').join('');
   }
   /* objetos por cima do cenário */
+  }
   /* objetos por cima do cenário: desenho da app ou imagem do backoffice, com posição, tamanho e efeito configuráveis */
   if(IMGC[key]&&o.noite) s+='<rect width="400" height="250" fill="#1E2850" opacity=".32"/>';
   if(o.arco) s+=objeto('arco',200,182,'<g fill="none" stroke-width="7" opacity=".85">'+['#E5484D','#F28C28','#F5C518','#2FB383','#3E92E0','#4B4BB5','#9A5BD6'].map((cr,i)=>'<path d="M'+(20+i*7)+' 180 A'+(180-i*7)+' '+(150-i*7)+' 0 0 1 '+(380-i*7)+' 180" stroke="'+cr+'"/>').join('')+'</g>');
@@ -114,6 +116,7 @@ function cena(key, quem=[], o={}){
     const corpo=u.img
       ? (ti?'<defs><filter id="'+ti+'"><feFlood flood-color="'+tinta+'" result="f"/><feComposite in="f" in2="SourceAlpha" operator="in" result="c"/><feBlend in="c" in2="SourceGraphic" mode="multiply"/></filter></defs><g filter="url(#'+ti+')">':'')+'<image href="'+u.img+'" x="'+(-w/2)+'" y="'+(-w)+'" width="'+w+'" height="'+w+'" preserveAspectRatio="xMidYMax meet"/>'+(ti?'</g>':'')
       : '<g transform="scale('+(w/b.w)+') translate('+(-ox)+' '+(-oy)+')">'+desenho+'</g>';
+    caixa={x,y,w};
     return montar(k,x,y,w,u.efeito,u.sombra,corpo,0);
   }
   function varios(k,x,y,esc,desenho,i){
@@ -154,6 +157,17 @@ function cena(key, quem=[], o={}){
   return '<svg viewBox="0 0 400 250" role="img" aria-label="'+(quem.map(k=>NOME[k]).join(', ')||'Cenário')+'">'+s+'</svg>';
 }
 
+// Um objeto sozinho, sem cenário (para as respostas das perguntas)
+function solto(k, v){
+  caixa=null;
+  const o={__solto:1}; if(k==='balde') o.balde=1; else o[k]=v||(k==='borboletas'?3:k==='pirilampos'?5:1);
+  const svg=cena('feliz',[],o);
+  const corpo=svg.replace(/^<svg[^>]*>|<\/svg>$/g,'');
+  if(!caixa) return '<svg viewBox="0 0 400 250" aria-hidden="true">'+corpo+'</svg>';
+  const m=8, w=caixa.w+m*2, h=Math.min(caixa.w,250)+m*2;
+  return '<svg viewBox="'+(caixa.x-caixa.w/2-m)+' '+(caixa.y-h+m)+' '+w+' '+h+'" aria-hidden="true">'+corpo+'</svg>';
+}
+cena.solto=solto;
 return cena;
 }
 

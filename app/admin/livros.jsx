@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowDown, ArrowUp, Copy, Plus, RefreshCw, RotateCcw, Trash2, Check, BookOpen, CircleHelp, MessageSquare, Type, Image as ImageIcon, Lightbulb } from 'lucide-react';
-import { DESENHOS } from '@/motor/cenas';
+import { DESENHOS, OBJETOS_BASE } from '@/motor/cenas';
 import { Avatar, Campo, Interruptor, SelPers, Svg, TextoAuto, Vazio, copia, mover, CORES } from './ui';
 
 export const OBJETOS = [
@@ -11,8 +11,8 @@ export const OBJETOS = [
   ['bolo', 'Bolo'], ['bandeirinhas', 'Bandeirinhas'], ['caldeirao', 'Caldeirão'], ['magia', 'Pó mágico'], ['gelado', 'Gelado'], ['trovoada', 'Trovoada'], ['cabana', 'Cabana'], ['pocas', 'Poças'], ['cogumelocasa', 'Casinha-cogumelo'],
   ['nevoeiro', 'Nevoeiro'], ['baldepartido', 'Balde rachado'], ['faiscacor', 'Faísca colorida'], ['nuvenzinha', 'Nuvenzinha'], ['carta', 'Carta'],
 ];
-const TIPOS = [['img', 'Personagem'], ['cor', 'Cor'], ['num', 'Luzes'], ['cena', 'Cenário'], ['svg', 'Desenho']];
-const tipoDe = (o) => (o.img ? 'img' : o.cor ? 'cor' : o.num ? 'num' : o.cena ? 'cena' : 'svg');
+const TIPOS = [['img', 'Personagem'], ['cor', 'Cor'], ['num', 'Luzes'], ['cena', 'Cenário'], ['svg', 'Desenho'], ['obj', 'Objeto']];
+const tipoDe = (o) => (o.img ? 'img' : o.cor ? 'cor' : o.num ? 'num' : o.cena ? 'cena' : o.obj ? 'obj' : 'svg');
 const textoDe = (p) => (p.x || []).map((x) => (typeof x === 'string' ? x : x[1])).join(' ');
 const cenaDe = (cena, p) => cena(p.c, p.q || [], Object.assign({ balde: p.b }, p.o || {}));
 
@@ -22,6 +22,7 @@ export function OpcaoVisual({ o, pers, cena }) {
   if (t === 'cor') return <div className="op-vis"><span className="cor" style={{ background: CORES[o.cor] || '#ccc' }} /></div>;
   if (t === 'num') return <div className="op-vis"><span className="luzes" aria-label={o.num + ' Luzes'}>{Array.from({ length: Math.min(12, o.num || 0) }, (_, i) => <i key={i} />)}</span></div>;
   if (t === 'cena') return <div className="op-vis cena"><Svg html={cena(o.cena, [], {})} /></div>;
+  if (t === 'obj') return <div className="op-vis obj"><Svg html={cena.solto ? cena.solto(o.obj, o.v) : ''} /></div>;
   const img = cena.imgDesenho?.(o.svg);
   return <div className="op-vis">{img ? <img src={img} alt="" style={{ width: 80, height: 80, borderRadius: 0, objectFit: 'contain' }} /> : <Svg html={DESENHOS[o.svg] || ''} />}</div>;
 }
@@ -327,7 +328,7 @@ function EditorPagina({ p, i, total, set, pers, cenarios, cena, acoes, irPara })
 
 function EditorPergunta({ q, i, set, pers, cenarios, cena, apagar }) {
   const setOp = (k, o) => { const ops = q.ops.slice(); ops[k] = o; set({ ...q, ops }); };
-  const mudarTipo = (k, t) => { const v = { img: 'francisca', cor: 'vermelho', num: 1, cena: cenarios[0]?.id || 'quarto', svg: 'balde' }[t]; const o = { [t]: v }; if (q.ops[k].d) o.d = q.ops[k].d; setOp(k, o); };
+  const mudarTipo = (k, t) => { const v = { img: 'francisca', cor: 'vermelho', num: 1, cena: cenarios[0]?.id || 'quarto', svg: 'balde', obj: 'faisca' }[t]; const o = { [t]: v }; if (q.ops[k].d) o.d = q.ops[k].d; setOp(k, o); };
   const apagarOp = (k) => set({ ...q, ops: q.ops.filter((_, j) => j !== k), ok: q.ok === k ? 0 : q.ok > k ? q.ok - 1 : q.ok });
   return (
     <div className="perguntas">
@@ -356,6 +357,8 @@ function EditorPergunta({ q, i, set, pers, cenarios, cena, apagar }) {
               {t === 'cor' && <select className="peq" aria-label="Cor" value={o.cor} onChange={(e) => setOp(k, { ...o, cor: e.target.value })}>{Object.keys(CORES).map((c) => <option key={c}>{c}</option>)}</select>}
               {t === 'num' && <input className="peq" aria-label="Número de Luzes" type="number" min="1" max="12" value={o.num} onChange={(e) => setOp(k, { ...o, num: Math.max(1, Math.min(12, +e.target.value || 1)) })} />}
               {t === 'cena' && <select className="peq" aria-label="Cenário" value={o.cena} onChange={(e) => setOp(k, { ...o, cena: e.target.value })}>{cenarios.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}</select>}
+              {t === 'obj' && <select className="peq" aria-label="Objeto" value={o.obj} onChange={(e) => { const n = { ...o, obj: e.target.value }; delete n.v; setOp(k, n); }}>{OBJETOS_BASE.map((b) => <option key={b.id} value={b.id}>{b.nome}</option>)}</select>}
+              {t === 'obj' && (o.obj === 'faiscacor' || o.obj === 'nevoeiro') && <select className="peq" aria-label="Variante" value={o.v || 1} onChange={(e) => setOp(k, { ...o, v: +e.target.value })}>{(o.obj === 'faiscacor' ? ['Vermelho', 'Laranja', 'Amarelo', 'Verde', 'Azul', 'Anil', 'Violeta'] : ['Cinzento', 'Branco', 'Cor-de-rosa']).map((n, i) => <option key={i} value={i + 1}>{n}</option>)}</select>}
               {t === 'svg' && <select className="peq" aria-label="Desenho" value={o.svg} onChange={(e) => setOp(k, { ...o, svg: e.target.value })}>{Object.keys(DESENHOS).map((d) => <option key={d}>{d}</option>)}</select>}
               <input className="peq" aria-label="Texto dito" placeholder="Texto dito (opcional)" value={o.d || ''} onChange={(e) => { const n = { ...o }; if (e.target.value) n.d = e.target.value; else delete n.d; setOp(k, n); }} />
             </div>
