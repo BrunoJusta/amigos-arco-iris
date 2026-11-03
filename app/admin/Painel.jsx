@@ -1,12 +1,13 @@
 'use client';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
-  LayoutDashboard, BookOpen, Users, Mountain, Lightbulb, Palette, MessageCircleQuestion, HeartHandshake, Music, KeyRound,
+  LayoutDashboard, BookOpen, Users, Mountain, Sparkles, Lightbulb, Palette, MessageCircleQuestion, HeartHandshake, Music, KeyRound,
   ExternalLink, LogOut, Menu, Check, TriangleAlert, CircleCheck, CircleX, Info, X, LoaderCircle, RotateCcw, ChevronRight,
 } from 'lucide-react';
 import { criarCena, BALDE_SVG } from '@/motor/cenas';
 import { api, useAvisos, useConfirmar, Campo, Vazio } from './ui';
 import Livros from './livros';
+import Objetos from './objetos';
 import { Personagens, Cenarios, Factos, Cores, Quem, Situacoes, Musicas } from './seccoes';
 
 const MENU = [
@@ -14,7 +15,8 @@ const MENU = [
   { grupo: 'Conteúdo', itens: [
     { id: 'livros', t: 'Livros', I: BookOpen, k: ['livros'] },
     { id: 'personagens', t: 'Personagens', I: Users, k: ['personagens'] },
-    { id: 'cenarios', t: 'Cenários', I: Mountain, k: ['cenarios', 'balde'] },
+    { id: 'cenarios', t: 'Cenários', I: Mountain, k: ['cenarios'] },
+    { id: 'objetos', t: 'Objetos', I: Sparkles, k: ['objetos', 'balde'] },
   ] },
   { grupo: 'Aprender e jogar', itens: [
     { id: 'factos', t: 'Sabias que', I: Lightbulb, k: ['factos'] },
@@ -26,7 +28,7 @@ const MENU = [
   { grupo: 'Administração', itens: [{ id: 'contas', t: 'Contas', I: KeyRound }] },
 ];
 const ITENS = MENU.flatMap((g) => g.itens);
-const NOMES_K = { livros: 'Livros', personagens: 'Personagens', cenarios: 'Cenários', balde: 'Balde', factos: 'Sabias que', cores: 'Cores', frases: 'Frases', adivinhas: 'Adivinhas', situacoes: 'E se…?', musicas: 'Músicas' };
+const NOMES_K = { livros: 'Livros', personagens: 'Personagens', cenarios: 'Cenários', balde: 'Balde', objetos: 'Objetos', factos: 'Sabias que', cores: 'Cores', frases: 'Frases', adivinhas: 'Adivinhas', situacoes: 'E se…?', musicas: 'Músicas' };
 
 export default function Painel() {
   const [estado, setEstado] = useState(null);
@@ -79,11 +81,12 @@ export default function Painel() {
   const pers = valor('personagens') || [];
   const cenarios = valor('cenarios') || [];
   const balde = valor('balde') || '';
+  const objetos = valor('objetos') || {};
   const cena = useMemo(() => {
     const IMG = {}, NOME = {};
     pers.forEach((p) => { IMG[p.id] = p.img; NOME[p.id] = p.nome; });
-    return criarCena({ IMG, NOME, BALDE: BALDE_SVG, cenarios, baldeImg: balde });
-  }, [pers, cenarios, balde]);
+    return criarCena({ IMG, NOME, BALDE: BALDE_SVG, cenarios, baldeImg: balde, objetos });
+  }, [pers, cenarios, balde, objetos]);
 
   function irPara(s) { setSeccao(s); setMenu(false); try { history.replaceState(null, '', '#' + s); } catch {} window.scrollTo(0, 0); }
   async function sair() {
@@ -153,7 +156,8 @@ export default function Painel() {
           <main className="bo-corpo">
             {seccao === 'resumo' && <Resumo c={conteudo} valor={valor} estado={estado} irPara={irPara} {...comum} aoRepor={(t) => setConteudo((c) => ({ ...c, reset: t }))} />}
             {seccao === 'personagens' && <Personagens lista={pers} set={(v) => mudar('personagens', v)} livros={valor('livros')} {...comum} />}
-            {seccao === 'cenarios' && <Cenarios lista={cenarios} set={(v) => mudar('cenarios', v)} balde={balde} setBalde={(v) => mudar('balde', v)} livros={valor('livros')} cena={cena} {...comum} />}
+            {seccao === 'cenarios' && <Cenarios lista={cenarios} set={(v) => mudar('cenarios', v)} livros={valor('livros')} cena={cena} {...comum} />}
+            {seccao === 'objetos' && <Objetos objetos={objetos} set={(v) => mudar('objetos', v)} balde={balde} setBalde={(v) => mudar('balde', v)} livros={valor('livros')} cenarios={cenarios} cena={cena} {...comum} />}
             {seccao === 'factos' && <Factos temas={valor('factos') || []} set={(v) => mudar('factos', v)} {...comum} />}
             {seccao === 'cores' && <Cores lista={valor('cores') || []} set={(v) => mudar('cores', v)} {...comum} />}
             {seccao === 'quem' && <Quem frases={valor('frases') || []} adivinhas={valor('adivinhas') || {}} setF={(v) => mudar('frases', v)} setA={(v) => mudar('adivinhas', v)} {...comum} />}
