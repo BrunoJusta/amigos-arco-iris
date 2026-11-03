@@ -13,6 +13,16 @@
    }
   },
   {
+   "id": "bruno",
+   "nome": "Padrinho Bruno",
+   "img": "/personagens/bruno.jpg",
+   "frase": "Bom dia, afilhada!",
+   "tom": {
+    "p": 0.85,
+    "r": 0.92
+   }
+  },
+  {
    "id": "maia",
    "nome": "Maia",
    "img": "/personagens/maia.jpg",
@@ -4502,6 +4512,333 @@
      "ok": 1
     }
    ]
+  },
+  {
+   "n": 16,
+   "t": "A Francisca, o Padrinho e a Bola Perdida",
+   "capa": "bruno",
+   "pags": [
+    {
+     "c": "rua",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "Era domingo de manhã. A Francisca ainda estava de pijama quando ouviu a campainha. Trrrim! Correu para a porta a saltitar."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "Era o Padrinho Bruno! Tinha barba castanha, uma t-shirt branca e um sorriso do tamanho do sol. Debaixo do braço trazia a sua bola preferida, vermelha e branca."
+     ]
+    },
+    {
+     "c": "rua",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bruno",
+       "Bom dia, afilhada! Está um dia tão bonito... Vamos jogar à bola para o parque?"
+      ],
+      [
+       "francisca",
+       "Vamos! Vamos!"
+      ],
+      "A Francisca vestiu-se num instante. Até pôs os óculos ao contrário, de tão depressa."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "balu",
+      "banze"
+     ],
+     "x": [
+      "À entrada do parque estavam dois amigos à espera. O Balu, pequenino, com o seu lenço vermelho, a dar pulos sem parar. E o Banzé, com o colar de flores, sentadinho à sombra."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "balu",
+      "banze"
+     ],
+     "x": [
+      [
+       "balu",
+       "Uma bola! Eu vou! Eu vou! Eu vou!"
+      ],
+      [
+       "banze",
+       "Calma, Balu. Devagar também se chega."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bruno",
+      "francisca",
+      "balu"
+     ],
+     "x": [
+      "O Padrinho Bruno atirou a bola baixinho, e a Francisca apanhou-a com as duas mãos. Depois a Francisca atirou-a ao Balu, que a trouxe de volta, todo orgulhoso."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Mais alto, padrinho! Atira mais alto!"
+      ],
+      [
+       "bruno",
+       "Mais alto? Está bem. Lá vai ela... uma, duas, três!"
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "bruno"
+     ],
+     "x": [
+      "O padrinho atirou a bola com tanta força que ela subiu, subiu, passou por cima de uma árvore... e caiu no meio do campo de margaridas. Plof!"
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "balu"
+     ],
+     "x": [
+      "O Balu disparou como um foguete. Correu para a esquerda, correu para a direita, deu voltas e mais voltas. Mas as margaridas eram tantas que não se via bola nenhuma."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "balu"
+     ],
+     "x": [
+      [
+       "balu",
+       "Encontrei! Encontrei!"
+      ],
+      "Mas era só uma pinha. Depois encontrou uma meia perdida. Depois um chapéu velho. Da bola, nem sinal."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "francisca"
+     ],
+     "x": [
+      "A Francisca ficou com os olhos cheios de água.",
+      [
+       "francisca",
+       "A bola preferida do padrinho perdeu-se. E a culpa foi minha, porque pedi para atirar mais alto."
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      "O Padrinho Bruno agachou-se ao lado dela e deu-lhe um abraço apertado.",
+      [
+       "bruno",
+       "A culpa não é de ninguém, Francisca. Foi uma brincadeira. E as coisas perdidas, muitas vezes, encontram-se."
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "bruno",
+      "francisca"
+     ],
+     "x": [
+      [
+       "bruno",
+       "Sabes o que eu faço quando perco uma coisa? Primeiro paro. Depois respiro fundo, assim. E depois procuro com calma, devagarinho."
+      ],
+      "A Francisca respirou fundo, como o padrinho. E sentiu-se logo melhor."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "banze"
+     ],
+     "x": [
+      "Foi então que chegou o Banzé, devagar, devagarinho, como sempre. Não correu. Não saltou. Baixou o focinho e começou a cheirar as margaridas, uma de cada vez."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "banze",
+      "balu"
+     ],
+     "x": [
+      "Snif, snif, snif. O Balu ficou a olhar, sem perceber. O Banzé andou mais um bocadinho, parou ao pé de uma margarida maior do que as outras... e abanou a cauda."
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "banze",
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      "Escondida debaixo das folhas estava a bola vermelha e branca!",
+      [
+       "banze",
+       "Devagar também se chega."
+      ],
+      [
+       "francisca",
+       "Banzé, és um herói!"
+      ]
+     ]
+    },
+    {
+     "c": "campo",
+     "q": [
+      "balu",
+      "banze"
+     ],
+     "x": [
+      [
+       "balu",
+       "Desculpa, Banzé. Eu corri tanto que nem olhei bem."
+      ],
+      [
+       "banze",
+       "Tu és rápido, Balu, e eu sou calmo. Cada um ajuda à sua maneira."
+      ]
+     ],
+     "o": {
+      "borboletas": 4
+     }
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bruno",
+      "francisca",
+      "balu",
+      "banze"
+     ],
+     "x": [
+      "Para festejar, sentaram-se todos na relva a comer as sandes que o padrinho trazia na mochila. O Balu comeu a dele num segundo. O Banzé saboreou a dele devagarinho."
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "francisca",
+      "bruno"
+     ],
+     "x": [
+      [
+       "francisca",
+       "Padrinho, o que é um padrinho?"
+      ],
+      [
+       "bruno",
+       "Um padrinho é alguém que te escolheu para cuidar de ti, brincar contigo e estar sempre ao teu lado. Mesmo quando as bolas se perdem."
+      ]
+     ]
+    },
+    {
+     "c": "feliz",
+     "q": [
+      "bruno",
+      "francisca",
+      "balu",
+      "banze"
+     ],
+     "x": [
+      "A Francisca deu-lhe o abraço mais apertado do mundo. E ficaram a jogar à bola até o sol se ir deitar, com cuidado para não a atirar alto demais.",
+      "Fim."
+     ],
+     "o": {
+      "arco": 1
+     }
+    }
+   ],
+   "perg": [
+    {
+     "q": "Quem é o padrinho da Francisca?",
+     "quem": "francisca",
+     "ops": [
+      {
+       "img": "girafa"
+      },
+      {
+       "img": "bruno"
+      },
+      {
+       "img": "rugido"
+      }
+     ],
+     "ok": 1
+    },
+    {
+     "q": "Quem encontrou a bola?",
+     "quem": "bruno",
+     "ops": [
+      {
+       "img": "balu"
+      },
+      {
+       "img": "maia"
+      },
+      {
+       "img": "banze"
+      }
+     ],
+     "ok": 2
+    },
+    {
+     "q": "Onde se perdeu a bola?",
+     "quem": "balu",
+     "ops": [
+      {
+       "cena": "rio",
+       "d": "no rio"
+      },
+      {
+       "cena": "campo",
+       "d": "no campo de margaridas"
+      },
+      {
+       "cena": "quarto",
+       "d": "no quarto"
+      }
+     ],
+     "ok": 1
+    }
+   ]
   }
  ],
  "factos": [
@@ -5786,6 +6123,11 @@
    "joao",
    "um pimento verde",
    "verde"
+  ],
+  [
+   "bruno",
+   "a t-shirt do Padrinho Bruno",
+   "branco"
   ]
  ],
  "frases": [
@@ -5892,6 +6234,10 @@
   [
    "ketchup",
    "Olha que bonita!"
+  ],
+  [
+   "bruno",
+   "Quando perdemos uma coisa, paramos e procuramos com calma."
   ]
  ],
  "adivinhas": {
@@ -5966,6 +6312,11 @@
   "mustarda": [
    "Sou um ciclope amarelo e tenho um irmão vermelho.",
    "Tinha medo do escuro, mas agora tenho uma lanterna."
+  ],
+  "bruno": [
+   "Sou o padrinho da Francisca.",
+   "Tenho barba castanha e uma t-shirt branca.",
+   "Adoro jogar à bola no parque."
   ]
  },
  "situacoes": [

@@ -39,21 +39,28 @@ export function Previa({ p, pers, cena }) {
   );
 }
 
-export default function Livros({ livros, set, pers, cenarios, cena, confirmar, irPara }) {
+export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, confirmar, irPara }) {
   const [sel, setSel] = useState(0);
   const [aba, setAba] = useState('pags');
   const [pi, setPi] = useState(0);
   const [qi, setQi] = useState(0);
   const [novos, setNovos] = useState([]);
+  const [extras, setExtras] = useState({});
   const L = livros[sel];
   useEffect(() => { setPi(0); setQi(0); }, [sel]);
   // livros novos que vieram com a app e ainda não estão no conteúdo guardado
   useEffect(() => {
-    fetch('/api/admin/novidades').then((r) => (r.ok ? r.json() : { livros: [] })).then((d) => setNovos(d.livros || [])).catch(() => {});
+    fetch('/api/admin/novidades').then((r) => (r.ok ? r.json() : { livros: [] })).then((d) => { setNovos(d.livros || []); setExtras(d); }).catch(() => {});
   }, []);
   const titulos = new Set(livros.map((l) => l.t));
   const porJuntar = novos.filter((l) => !titulos.has(l.t));
-  function juntar(l) { set([...livros, { ...l, n: livros.length + 1 }]); setSel(livros.length); }
+  function juntar(l) {
+    set([...livros, { ...l, n: livros.length + 1 }]); setSel(livros.length);
+    // personagens novas que o livro usa e que ainda não existem (com as frases e pistas delas)
+    const usados = new Set([l.capa, ...(l.pags || []).flatMap((p) => [...(p.q || []), ...(p.x || []).filter(Array.isArray).map((x) => x[0])]), ...(l.perg || []).flatMap((q) => [q.quem, ...q.ops.map((o) => o.img)])].filter(Boolean));
+    const faltam = (extras.personagens || []).filter((p) => usados.has(p.id) && !pers.some((x) => x.id === p.id));
+    if (faltam.length && juntarPers) juntarPers(faltam, extras);
+  }
   if (!L) return <div className="bo-corpo"><Vazio titulo="Ainda não há livros" acao={<button className="btn btn-pri" onClick={() => novoLivro()}><Plus size={16} />Novo livro</button>} /></div>;
 
   const setL = (n) => { const l = livros.slice(); l[sel] = n; set(l); };

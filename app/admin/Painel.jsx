@@ -92,6 +92,17 @@ export default function Painel() {
     return f;
   }, [pers, cenarios, balde, objetos, desenhos]);
 
+  // Quando se junta um livro novo, junta também as personagens novas que ele usa (e as frases e pistas delas)
+  function juntarPers(lista, ex) {
+    mudar('personagens', [...pers, ...lista]);
+    const ids = lista.map((x) => x.id);
+    const fr = (ex.frases || []).filter((f) => ids.includes(f[0]));
+    if (fr.length) mudar('frases', [...(valor('frases') || []), ...fr]);
+    const ad = { ...(valor('adivinhas') || {}) }; let mudou = false;
+    ids.forEach((id) => { if (ex.adivinhas?.[id] && !ad[id]) { ad[id] = ex.adivinhas[id]; mudou = true; } });
+    if (mudou) mudar('adivinhas', ad);
+    avisar('Também juntei ' + lista.map((x) => x.nome).join(', ') + ' às personagens.');
+  }
   function irPara(s) { setSeccao(s); setMenu(false); try { history.replaceState(null, '', '#' + s); } catch {} window.scrollTo(0, 0); }
   async function sair() {
     if (pendentes.length && !(await confirmar({ titulo: 'Sair sem guardar?', texto: 'Tens alterações por guardar. Se saíres agora, perdes essas alterações.', confirmar: 'Sair', perigo: true }))) return;
@@ -155,7 +166,7 @@ export default function Painel() {
         {estado && !estado.r2 && <div className="faixa"><TriangleAlert size={16} /><span>O armazenamento R2 ainda não está configurado. Podes ver e experimentar o conteúdo, mas não guardar nem enviar ficheiros. Segue o README para configurar as variáveis de ambiente no Vercel.</span></div>}
 
         {seccao === 'livros' ? (
-          <Livros livros={valor('livros') || []} set={(v) => mudar('livros', v)} cenarios={cenarios} cena={cena} irPara={irPara} {...comum} />
+          <Livros livros={valor('livros') || []} set={(v) => mudar('livros', v)} juntarPers={juntarPers} cenarios={cenarios} cena={cena} irPara={irPara} {...comum} />
         ) : (
           <main className="bo-corpo">
             {seccao === 'resumo' && <Resumo c={conteudo} valor={valor} estado={estado} irPara={irPara} {...comum} aoRepor={(t) => setConteudo((c) => ({ ...c, reset: t }))} />}
