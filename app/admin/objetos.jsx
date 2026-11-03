@@ -49,7 +49,7 @@ export default function Objetos({ objetos, set, desenhos, setDesenhos, balde, se
     if (o.id === 'balde' && balde) setBalde('');
   }
   const previa = (o, extra = {}) => {
-    const flags = o.id === 'balde' ? { balde: 1 } : { [o.id]: o.id === 'borboletas' ? o.n || 6 : 1 };
+    const flags = o.id === 'balde' ? { balde: 1 } : { [o.id]: o.varios && o.n ? o.n : o.id === 'borboletas' ? 6 : 1 };
     return cena(extra.cena || o.cena, extra.quem || o.quem || [], flags);
   };
 

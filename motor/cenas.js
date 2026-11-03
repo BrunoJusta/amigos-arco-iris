@@ -82,6 +82,13 @@ function cena(key, quem=[], o={}){
       s+=varios('borboletas',x,y,k,BORB(0,0,1,cs[i%4][0],cs[i%4][1],(i%5)*12-24),i); } }
   if(o.escamas) [[60,40],[120,90],[200,30],[260,110],[330,60],[160,150],[90,130],[300,150]].forEach(([x,y],i)=>{
     s+=varios('escamas',x,y,1,'<path transform="rotate('+(i*37)+')" d="M0 -8q7 4 0 14q-7-10 0-14z" fill="#F7B6D2" stroke="#fff" stroke-width="1.5"/>',i); });
+  // Objetos das histórias novas: desenhados à volta do ponto (0,0), que é o centro da base (onde assentam).
+  for(const k in NOVOS_OBJ){
+    if(!o[k]) continue;
+    const n=NOVOS_OBJ[k];
+    if(k==='pirilampos'){ const q=Math.max(1,+o[k]||8); for(let i=0;i<q;i++){ const x=30+((i*67)%340), y=40+((i*53)%130); s+=varios('pirilampos',x,y,.8+(i%3)*.25,n.svg,i); } }
+    else s+=objeto(k,n.x,n.y,n.svg,0,0);
+  }
   if(o.balde) s+=objeto('balde',quem.length?330:200,226,'<g transform="translate(-37 -60) scale(.62)">'+BALDE.replace(/^<svg[^>]*>|<\/svg>$/g,'')+'</g>',0,0);
 
   function vazio(a){ return a===undefined||a===null||a===''; }
@@ -111,7 +118,7 @@ function cena(key, quem=[], o={}){
   }
   function montar(k,x,y,w,ef,sombra,corpo,atraso){
     const f=id+k+(++cid);
-    const luminoso = k==='luz' || k==='lanterna';
+    const luminoso = k==='luz' || k==='lanterna' || k==='faisca' || k==='cogumelos';
     let r='<g class="obj'+(luminoso?' obj-luminoso':'')+'" data-obj="'+k+'" transform="translate('+x+' '+y+')">';
     // Luz e lanterna: aura de luz extra por trás (o brilho e a pulsação vêm do CSS)
     if(luminoso) r+='<defs><radialGradient id="'+f+'a"><stop offset="0" stop-color="#FFF4B8" stop-opacity=".95"/><stop offset=".4" stop-color="#FFE07A" stop-opacity=".55"/><stop offset="1" stop-color="#FFD24A" stop-opacity="0"/></radialGradient></defs>'+
@@ -129,7 +136,7 @@ function cena(key, quem=[], o={}){
     return r+'</g>';
   }
 
-  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
+  const temObj=o.balde||o.luz||o.mota||o.lanterna||o.mapa||o.caneca||o.faisca||o.cogumelos||o.escadagelo||o.livro||o.bola||o.piquenique||o.bolo||o.caldeirao||o.gelado||o.cabana||(c.dentro==='quarto')||c.castelo||c.torre||c.caverna||c.fonte||c.arvoreGrande;
   const n=quem.length, tam = n<=1?120:n==2?106:n==3?88:n==4?74:62, larg = temObj?(c.dentro==='quarto'&&!o.balde?380:250):380, x0 = 10+(larg-n*tam-(n-1)*8)/2;
   quem.forEach((k,i)=>{
     const x=x0+i*(tam+8), y=224-tam, cl=id+'c'+i, cx=x+tam/2, cy=y+tam/2;
@@ -184,6 +191,21 @@ export const OBJETOS_BASE = [
   { id: 'desenho', nome: 'Desenho', w: 46, efeito: 'nenhum', cena: 'quarto', quem: ['francisca'] },
   { id: 'borboletas', nome: 'Borboletas', w: 24, efeito: 'flutuar', varios: 1, cena: 'campo', quem: ['borbolessauro'], n: 8 },
   { id: 'escamas', nome: 'Escamas', w: 16, efeito: 'cintilar', varios: 1, cena: 'ceu', quem: ['dragao'] },
+  { id: 'faisca', nome: 'Faísca da Bia', w: 40, efeito: 'pulsar', cena: 'caverna', quem: ['tobias'] },
+  { id: 'cogumelos', nome: 'Cogumelos que brilham', w: 80, efeito: 'pulsar', cena: 'caverna', quem: ['tobias'] },
+  { id: 'pirilampos', nome: 'Pirilampos', w: 18, efeito: 'cintilar', varios: 1, cena: 'mata', quem: ['lu'], n: 10 },
+  { id: 'escadagelo', nome: 'Escada de gelo', w: 160, efeito: 'nenhum', cena: 'colina', quem: ['gelino'] },
+  { id: 'livro', nome: 'Livro', w: 50, efeito: 'nenhum', sombra: 1, cena: 'floresta', quem: ['foxius'] },
+  { id: 'bola', nome: 'Bola do padrinho', w: 34, efeito: 'nenhum', sombra: 1, cena: 'campo', quem: ['bruno'] },
+  { id: 'piquenique', nome: 'Piquenique', w: 120, efeito: 'nenhum', cena: 'feliz', quem: ['bruno', 'francisca'] },
+  { id: 'bolo', nome: 'Bolo de anos', w: 60, efeito: 'nenhum', sombra: 1, cena: 'caverna', quem: ['ketchup', 'mustarda'] },
+  { id: 'bandeirinhas', nome: 'Bandeirinhas de festa', w: 400, efeito: 'nenhum', cena: 'castelo', quem: ['lila'] },
+  { id: 'caldeirao', nome: 'Caldeirão', w: 64, efeito: 'nenhum', sombra: 1, cena: 'sala', quem: ['maria'] },
+  { id: 'magia', nome: 'Pó mágico', w: 160, efeito: 'cintilar', cena: 'castelo', quem: ['maria'] },
+  { id: 'gelado', nome: 'Gelado de banana', w: 24, efeito: 'nenhum', cena: 'feliz', quem: ['gelino'] },
+  { id: 'trovoada', nome: 'Trovoada', w: 400, efeito: 'nenhum', cena: 'quarto', quem: ['maia'] },
+  { id: 'cabana', nome: 'Cabana de cobertor', w: 144, efeito: 'nenhum', cena: 'quarto', quem: ['francisca', 'maia'] },
+  { id: 'pocas', nome: 'Poças de água', w: 360, efeito: 'nenhum', cena: 'feliz', quem: ['maia'] },
 ];
 const OBJ = Object.fromEntries(OBJETOS_BASE.map((o) => [o.id, o]));
 export const EFEITOS = [['nenhum', 'Nenhum'], ['brilho', 'Brilho dourado'], ['flutuar', 'Flutuar'], ['pulsar', 'Pulsar'], ['baloicar', 'Baloiçar'], ['cintilar', 'Cintilar']];
@@ -195,3 +217,22 @@ export const DESENHOS_PERGUNTAS = [
 ];
 // Desenhos das perguntas que correspondem a um objeto dos cenários (usam a imagem desse objeto).
 export const DESENHO_OBJETO = { balde: 'balde', mota: 'mota', mapa: 'mapa', lanterna: 'lanterna', borboleta: 'borboletas', escama: 'escamas', arcoiris: 'arco' };
+
+// Desenhos dos objetos das histórias novas (largura de referência = w em OBJETOS_BASE; base em y=0, centro em x=0).
+const NOVOS_OBJ = {
+  faisca:{x:330,y:150,svg:'<circle cx="0" cy="-20" r="20" fill="#FFE68A" opacity=".45"/><path d="M0 -40Q3 -23 20 -20Q3 -17 0 0Q-3 -17 -20 -20Q-3 -23 0 -40Z" fill="#FFD54A" stroke="#E0A800" stroke-width="1.5"/><circle cx="0" cy="-20" r="4" fill="#FFF8DC"/>'},
+  cogumelos:{x:320,y:226,svg:'<ellipse cx="0" cy="-14" rx="40" ry="18" fill="#B7FFD9" opacity=".35"/>'+[[-22,0,.8],[2,0,1.1],[24,0,.7]].map(([x,y,k])=>'<g transform="translate('+x+' '+y+') scale('+k+')"><rect x="-4" y="-22" width="8" height="22" rx="4" fill="#F4EBD8"/><path d="M-16 -20Q0 -44 16 -20Z" fill="#59D3A8" stroke="#2FA37E" stroke-width="1.5"/><circle cx="-6" cy="-27" r="2.5" fill="#E8FFF5"/><circle cx="5" cy="-30" r="2" fill="#E8FFF5"/></g>').join('')},
+  pirilampos:{svg:'<circle r="11" fill="#F6FF8A" opacity=".35"/><circle r="5.5" fill="#E2EE4A" stroke="#C8D23A" stroke-width="1"/><circle r="2.6" fill="#FFFFF0"/>'},
+  escadagelo:{x:300,y:226,svg:[0,1,2,3,4,5].map(i=>'<rect x="'+(-80+i*26)+'" y="'+(-18-i*18)+'" width="30" height="'+(18+i*18)+'" rx="4" fill="'+(i%2?'#CFEAFF':'#B4DDFB')+'" stroke="#8CC4EE" stroke-width="2"/>').join('')+'<path d="M-74 -12h18M-48 -30h18M-22 -48h18M4 -66h18M30 -84h18M56 -102h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".8"/>'},
+  livro:{x:330,y:226,svg:'<path d="M-25 0V-26L0 -22L25 -26V0L0 -4Z" fill="#2F7D5B"/><path d="M-22 -3V-28Q-10 -30 0 -24V-6Q-10 -10 -22 -3Z" fill="#FFF8E7" stroke="#D9CBB0" stroke-width="1"/><path d="M22 -3V-28Q10 -30 0 -24V-6Q10 -10 22 -3Z" fill="#FFF8E7" stroke="#D9CBB0" stroke-width="1"/><path d="M-17 -20h11M-17 -15h11M6 -20h11M6 -15h11" stroke="#C7B9A0" stroke-width="1.5" stroke-linecap="round"/>'},
+  bola:{x:330,y:226,svg:'<circle cx="0" cy="-17" r="17" fill="#E5484D" stroke="#B83236" stroke-width="1.5"/>'+[[-7,-24,4],[6,-12,4.5],[8,-27,3],[-9,-10,3],[0,-18,2.5]].map(([x,y,r])=>'<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="#fff"/>').join('')+'<path d="M-10 -29Q-5 -33 1 -32" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".6"/>'},
+  piquenique:{x:300,y:234,svg:'<ellipse cx="0" cy="-8" rx="60" ry="14" fill="#F4F1EA"/>'+[-45,-25,-5,15,35].map((x,i)=>'<rect x="'+x+'" y="-20" width="10" height="24" fill="#E5484D" opacity=".75" transform="skewX(-20)"/>').join('')+'<g transform="translate(26 -14)"><rect x="-14" y="-16" width="28" height="18" rx="3" fill="#C99A5B" stroke="#A47A42" stroke-width="1.5"/><path d="M-10 -16Q0 -30 10 -16" fill="none" stroke="#A47A42" stroke-width="2.5"/></g><g transform="translate(-18 -14)"><path d="M-10 0L0 -14L10 0Z" fill="#E9C27A" stroke="#C99A55" stroke-width="1.5"/></g>'},
+  bolo:{x:330,y:226,svg:'<rect x="-30" y="-22" width="60" height="22" rx="5" fill="#F7B6D2" stroke="#E58AB3" stroke-width="1.5"/><rect x="-20" y="-40" width="40" height="18" rx="5" fill="#FFE0EE" stroke="#E58AB3" stroke-width="1.5"/><path d="M-30 -18q5 6 10 0t10 0t10 0t10 0t10 0t10 0" fill="none" stroke="#fff" stroke-width="3"/><circle cx="-10" cy="-42" r="3" fill="#E5484D"/><circle cx="10" cy="-42" r="3" fill="#E5484D"/><rect x="-7" y="-56" width="4" height="14" rx="2" fill="#E5484D"/><rect x="3" y="-56" width="4" height="14" rx="2" fill="#F5C518"/><path d="M-5 -58q-3 -5 0 -9q3 4 0 9Z" fill="#FFB020"/><path d="M5 -58q-3 -5 0 -9q3 4 0 9Z" fill="#FFB020"/>'},
+  bandeirinhas:{x:200,y:44,svg:'<path d="M-200 -40Q-100 -14 0 -32T200 -38" fill="none" stroke="#9A8F86" stroke-width="1.5"/>'+Array.from({length:16},(_,i)=>{const x=-188+i*25, y=-37+Math.sin(i*.8)*5+(i<8?i*1.6:(15-i)*1.6); return '<path d="M'+(x-9)+' '+y+'L'+(x+9)+' '+y+'L'+x+' '+(y+18)+'Z" fill="'+['#E5484D','#F28C28','#F5C518','#2FB383','#3E92E0','#9A5BD6'][i%6]+'"/>';}).join('')},
+  caldeirao:{x:320,y:226,svg:'<ellipse cx="0" cy="-34" rx="30" ry="8" fill="#8BE08A"/><path d="M-32 -34Q-34 0 0 0Q34 0 32 -34Z" fill="#4A3D63" stroke="#2E2540" stroke-width="2"/><ellipse cx="0" cy="-34" rx="32" ry="8" fill="none" stroke="#2E2540" stroke-width="3"/><circle cx="-10" cy="-44" r="5" fill="#B9F5B5"/><circle cx="6" cy="-52" r="4" fill="#B9F5B5"/><circle cx="14" cy="-42" r="3" fill="#B9F5B5"/><path d="M-20 0l-6 6M20 0l6 6" stroke="#2E2540" stroke-width="4" stroke-linecap="round"/>'},
+  magia:{x:220,y:170,svg:[[-60,-40,26],[-25,-60,32],[20,-50,30],[55,-30,24],[0,-25,30],[-40,-15,20],[40,-10,18]].map(([x,y,r],i)=>'<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+['#F9D6F0','#DCE8FF','#FFF1C2','#D9F7E8'][i%4]+'" opacity=".75"/>').join('')+[[-70,-70],[-10,-90],[50,-75],[70,-20],[-50,-5],[10,-10],[30,-40]].map(([x,y])=>'<path transform="translate('+x+' '+y+')" d="M0 -7Q1 -1 7 0Q1 1 0 7Q-1 1 -7 0Q-1 -1 0 -7Z" fill="#FFD54A"/>').join('')},
+  gelado:{x:330,y:226,svg:'<path d="M-12 -30L0 0L12 -30Z" fill="#E2B57A" stroke="#C08B4C" stroke-width="1.5"/><path d="M-8 -22l12 -6M-4 -12l10 -6" stroke="#C08B4C" stroke-width="1"/><circle cx="0" cy="-36" r="12" fill="#FFE58A" stroke="#E5BE3C" stroke-width="1.5"/><circle cx="0" cy="-52" r="10" fill="#FFF0B3" stroke="#E5BE3C" stroke-width="1.5"/><circle cx="-3" cy="-56" r="2.5" fill="#fff" opacity=".8"/>'},
+  trovoada:{x:200,y:250,svg:'<rect x="-200" y="-250" width="400" height="250" fill="#2A3352" opacity=".18"/><g fill="#7D8BA8"><ellipse cx="-110" cy="-218" rx="70" ry="26"/><ellipse cx="-60" cy="-226" rx="50" ry="30"/><ellipse cx="80" cy="-220" rx="80" ry="28"/><ellipse cx="140" cy="-226" rx="50" ry="24"/></g><path d="M-70 -200L-88 -160H-72L-92 -118L-50 -170H-66L-50 -200Z" fill="#FFE066" stroke="#F2B705" stroke-width="2"/><g stroke="#A9C6E8" stroke-width="2" stroke-linecap="round" opacity=".8">'+Array.from({length:28},(_,i)=>{const x=-190+((i*53)%380), y=-190+((i*37)%170); return '<path d="M'+x+' '+y+'l-5 14"/>';}).join('')+'</g>'},
+  cabana:{x:300,y:226,svg:'<path d="M-72 0L0 -86L72 0Z" fill="#F4A9C6" stroke="#E07FA8" stroke-width="2"/><path d="M-72 0L0 -86L-20 0Z" fill="#BFD9F5" stroke="#8DB6E2" stroke-width="2"/><path d="M-14 0L0 -40L14 0Z" fill="#5A4A6B"/><circle cx="-36" cy="-30" r="4" fill="#fff" opacity=".8"/><circle cx="30" cy="-20" r="4" fill="#fff" opacity=".8"/><circle cx="12" cy="-56" r="4" fill="#fff" opacity=".8"/><path d="M-80 0v-6M80 0v-6" stroke="#C69A74" stroke-width="5" stroke-linecap="round"/>'},
+  pocas:{x:200,y:244,svg:[[-130,-6,46],[-20,-14,60],[110,-4,50]].map(([x,y,r])=>'<ellipse cx="'+x+'" cy="'+y+'" rx="'+r+'" ry="'+(r*.22)+'" fill="#8EC9F0" opacity=".85"/><ellipse cx="'+(x-r*.3)+'" cy="'+(y-2)+'" rx="'+(r*.35)+'" ry="'+(r*.06)+'" fill="#fff" opacity=".7"/>').join('')},
+};

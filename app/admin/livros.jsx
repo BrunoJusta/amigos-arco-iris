@@ -7,6 +7,8 @@ import { Avatar, Campo, Interruptor, SelPers, Svg, TextoAuto, Vazio, copia, move
 export const OBJETOS = [
   ['mapa', 'Mapa de luz'], ['luz', 'Luz dourada'], ['escada', 'Escada de arco-íris'], ['acesa', 'Fonte acesa'], ['mota', 'Mota'], ['arco', 'Arco-íris'],
   ['escamas', 'Escamas'], ['lanterna', 'Lanterna'], ['caneca', 'Caneca'], ['relogio', 'Relógio parado'], ['passaro', 'Passarinho'], ['desenho', 'Desenho'], ['noite', 'Noite'], ['borboletas', 'Borboletas'],
+  ['faisca', 'Faísca'], ['cogumelos', 'Cogumelos'], ['pirilampos', 'Pirilampos'], ['escadagelo', 'Escada de gelo'], ['livro', 'Livro'], ['bola', 'Bola'], ['piquenique', 'Piquenique'],
+  ['bolo', 'Bolo'], ['bandeirinhas', 'Bandeirinhas'], ['caldeirao', 'Caldeirão'], ['magia', 'Pó mágico'], ['gelado', 'Gelado'], ['trovoada', 'Trovoada'], ['cabana', 'Cabana'], ['pocas', 'Poças'],
 ];
 const TIPOS = [['img', 'Personagem'], ['cor', 'Cor'], ['num', 'Luzes'], ['cena', 'Cenário'], ['svg', 'Desenho']];
 const tipoDe = (o) => (o.img ? 'img' : o.cor ? 'cor' : o.num ? 'num' : o.cena ? 'cena' : 'svg');
@@ -193,7 +195,7 @@ export default function Livros({ livros, set, juntarPers, pers, cenarios, cena, 
 function EditorPagina({ p, i, total, set, pers, cenarios, cena, acoes, irPara }) {
   const principais = pers.filter((x) => !x.extra);
   const togglePers = (id) => { const q = p.q || []; set({ ...p, q: q.includes(id) ? q.filter((k) => k !== id) : [...q, id].slice(0, 5) }); };
-  const toggleObj = (k) => { const o = { ...(p.o || {}) }; if (o[k]) delete o[k]; else o[k] = k === 'borboletas' ? 4 : 1; const n = { ...p, o }; if (!Object.keys(o).length) delete n.o; set(n); };
+  const toggleObj = (k) => { const o = { ...(p.o || {}) }; if (o[k]) delete o[k]; else o[k] = k === 'borboletas' ? 4 : k === 'pirilampos' ? 8 : 1; const n = { ...p, o }; if (!Object.keys(o).length) delete n.o; set(n); };
   const setParte = (k, v) => { const x = p.x.slice(); x[k] = v; set({ ...p, x }); };
   const flag = (k, v) => { const n = { ...p }; if (v) n[k] = 1; else delete n[k]; set(n); };
   const cenaExiste = cenarios.some((c) => c.id === p.c);
@@ -242,6 +244,12 @@ function EditorPagina({ p, i, total, set, pers, cenarios, cena, acoes, irPara })
               <div className="linha c" style={{ marginTop: 6 }}>
                 <label htmlFor="p-bor" className="rotulo">Quantas borboletas</label>
                 <input id="p-bor" type="number" min="1" max="20" className="peq" style={{ width: 80 }} value={p.o.borboletas} onChange={(e) => set({ ...p, o: { ...p.o, borboletas: Math.max(1, Math.min(20, +e.target.value || 1)) } })} />
+              </div>
+            ) : null}
+            {p.o?.pirilampos ? (
+              <div className="linha c" style={{ marginTop: 6 }}>
+                <label htmlFor="p-pir" className="rotulo">Quantos pirilampos</label>
+                <input id="p-pir" type="number" min="1" max="30" className="peq" style={{ width: 80 }} value={p.o.pirilampos} onChange={(e) => set({ ...p, o: { ...p.o, pirilampos: Math.max(1, Math.min(30, +e.target.value || 1)) } })} />
               </div>
             ) : null}
           </div>

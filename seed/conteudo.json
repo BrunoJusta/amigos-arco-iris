@@ -4641,7 +4641,10 @@
      ],
      "x": [
       "O Padrinho Bruno atirou a bola baixinho, e a Francisca apanhou-a com as duas mãos. Depois a Francisca atirou-a ao Balu, que a trouxe de volta, todo orgulhoso."
-     ]
+     ],
+     "o": {
+      "bola": 1
+     }
     },
     {
      "c": "feliz",
@@ -4667,7 +4670,10 @@
      ],
      "x": [
       "O padrinho atirou a bola com tanta força que ela subiu, subiu, passou por cima de uma árvore... e caiu no meio do campo de margaridas. Plof!"
-     ]
+     ],
+     "o": {
+      "bola": 1
+     }
     },
     {
      "c": "campo",
@@ -4768,7 +4774,10 @@
        "francisca",
        "Banzé, és um herói!"
       ]
-     ]
+     ],
+     "o": {
+      "bola": 1
+     }
     },
     {
      "c": "campo",
@@ -4800,7 +4809,10 @@
      ],
      "x": [
       "Para festejar, sentaram-se todos na relva a comer as sandes que o padrinho trazia na mochila. O Balu comeu a dele num segundo. O Banzé saboreou a dele devagarinho."
-     ]
+     ],
+     "o": {
+      "piquenique": 1
+     }
     },
     {
      "c": "feliz",
@@ -4832,7 +4844,8 @@
       "Fim."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "bola": 1
      }
     }
    ],
@@ -4935,7 +4948,10 @@
      ],
      "x": [
       "Entraram em casa mesmo a tempo. Ploc, ploc, ploc! As primeiras gotas bateram na janela. Depois vieram mais. E mais ainda."
-     ]
+     ],
+     "o": {
+      "trovoada": 1
+     }
     },
     {
      "c": "quarto",
@@ -4947,7 +4963,8 @@
       "Quando chegou a noite, a chuva ainda caía. A Francisca vestiu o pijama e a Maia deitou-se aos pés da cama, enroladinha como um caracol."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -4959,7 +4976,8 @@
       "De repente, um clarão branco iluminou o quarto todo. E logo a seguir... BRRRUUUM! Um barulho enorme fez tremer os vidros."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -4975,7 +4993,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -4990,7 +5009,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -5019,7 +5039,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -5036,7 +5057,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -5053,7 +5075,8 @@
       "Veio um clarão. E as duas contaram baixinho: um, dois, três, quatro, cinco... BRRRUM."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "trovoada": 1
      }
     },
     {
@@ -5082,7 +5105,8 @@
       "Para ficarem ainda mais quentinhas, fizeram uma cabana com o cobertor, por cima de duas cadeiras. Lá dentro era escuro, mas era um escuro bom."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "cabana": 1
      }
     },
     {
@@ -5102,7 +5126,8 @@
       ]
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "cabana": 1
      }
     },
     {
@@ -5114,7 +5139,8 @@
       "E a Francisca cantou uma canção baixinha, daquelas que a mãe lhe cantava quando era bebé. A chuva fazia de tambor no telhado: tum, tum, tum."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "cabana": 1
      }
     },
     {
@@ -5127,7 +5153,8 @@
       "Quando a canção acabou, já não havia trovões. Só uma chuvinha mansa. A Maia bocejou um bocejo enorme. E as duas adormeceram dentro da cabana."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "cabana": 1
      }
     },
     {
@@ -5153,7 +5180,8 @@
       "Lá fora, o céu estava azul outra vez, e por cima do parque brilhava um arco-íris enorme. Havia poças por todo o lado."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "pocas": 1
      }
     },
     {
@@ -5171,7 +5199,8 @@
       "Fim."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "pocas": 1
      }
     }
    ],
@@ -5249,7 +5278,10 @@
        "lila",
        "Francisca! Chegaste! Ajudas-me a pendurar as bandeirinhas?"
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5259,7 +5291,10 @@
      ],
      "x": [
       "Penduraram bandeirinhas, encheram balões e puseram flores lilases em todas as janelas. O castelo estava lindo."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "torre",
@@ -5281,7 +5316,10 @@
        "Vou fazer um feitiço bom para a festa da Lila. Um feitiço que deixe as cores do castelo ainda mais bonitas!"
       ],
       "Juntou uma pitada de pó de arco-íris, três pétalas e uma gotinha de orvalho."
-     ]
+     ],
+     "o": {
+      "caldeirao": 1
+     }
     },
     {
      "c": "castelo",
@@ -5296,7 +5334,10 @@
        "Parabéns, Lila! Tenho uma prenda especial. Olhem!"
       ],
       "E soprou o pó mágico para o ar. Fffff..."
-     ]
+     ],
+     "o": {
+      "magia": 1
+     }
     },
     {
      "c": "castelo",
@@ -5306,7 +5347,11 @@
      ],
      "x": [
       "Uma nuvenzinha brilhante cobriu o castelo. Quando desapareceu... ai, ai, ai. As cores estavam todas trocadas!"
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1,
+      "magia": 1
+     }
     },
     {
      "c": "castelo",
@@ -5319,7 +5364,10 @@
        "lila",
        "O meu cabelo!"
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5333,7 +5381,10 @@
        "Desculpa, Lila. Eu só queria fazer uma coisa bonita. Estraguei a tua festa..."
       ],
       "E começou a chorar."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5347,7 +5398,10 @@
        "francisca",
        "Toda a gente se engana, Maria. O importante é que querias ajudar. Agora vamos arranjar isto juntas."
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5364,7 +5418,10 @@
        "maria",
        "Mas como? São cores a mais! Não sei por onde começar!"
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5373,7 +5430,10 @@
      ],
      "x": [
       "Foi então que se ouviu um tlim-tlim de armadura. Era o Cavaleiro, com as suas tranças de todas as cores, que chegava atrasado à festa."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5386,7 +5446,10 @@
        "Ora bem. Quando há muitas coisas para arrumar, eu faço sempre assim: uma cor de cada vez."
       ],
       "E soltou uma das suas tranças, a vermelha."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5403,7 +5466,10 @@
        "francisca",
        "Nas cerejas do bolo!"
       ]
-     ]
+     ],
+     "o": {
+      "bolo": 1
+     }
     },
     {
      "c": "sala",
@@ -5412,7 +5478,10 @@
      ],
      "x": [
       "A Maria abriu o seu livro de feitiços, respirou fundo e disse as palavras devagarinho, com muito cuidado. E as cerejas ficaram vermelhas outra vez!"
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "castelo",
@@ -5424,7 +5493,10 @@
      ],
      "x": [
       "Depois o azul voltou para o céu. O verde voltou para as folhas. O amarelo voltou para o sol. Uma cor de cada vez, sem pressa."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5438,7 +5510,10 @@
        "O meu cabelo, por favor!"
       ],
       "Pling! O cabelo da Lila ficou lilás outra vez, aos caracóis, como sempre."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5451,7 +5526,10 @@
        "Consegui! Conseguimos!"
       ],
       "E as bolinhas amarelas da Maria desapareceram também."
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5464,7 +5542,10 @@
        "lila",
        "Sabes, Maria? Foi a festa mais divertida de sempre. E deixa-me ficar só com uma madeixa verde. Gosto dela!"
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5481,7 +5562,10 @@
        "francisca",
        "Uma cor de cada vez!"
       ]
-     ]
+     ],
+     "o": {
+      "bandeirinhas": 1
+     }
     },
     {
      "c": "castelo",
@@ -5496,7 +5580,9 @@
       "Fim."
      ],
      "o": {
-      "borboletas": 6
+      "borboletas": 6,
+      "bandeirinhas": 1,
+      "bolo": 1
      }
     }
    ],
@@ -5843,7 +5929,7 @@
       "No dia seguinte, à porta da caverna, havia um bolo de morango com duas velas. Uma vermelha e uma amarela."
      ],
      "o": {
-      "luz": 1
+      "bolo": 1
      }
     },
     {
@@ -5858,7 +5944,10 @@
        "Um, dois, três!"
       ],
       "Fuuuu! Os dois irmãos sopraram ao mesmo tempo, e as duas velas apagaram-se juntas."
-     ]
+     ],
+     "o": {
+      "bolo": 1
+     }
     },
     {
      "c": "caverna",
@@ -5878,7 +5967,10 @@
       ],
       "E a partir desse dia, nunca mais discutiram sobre quem era o mais velho. Bem... quase nunca.",
       "Fim."
-     ]
+     ],
+     "o": {
+      "bolo": 1
+     }
     }
    ],
    "perg": [
@@ -6122,7 +6214,10 @@
        "joao",
        "O melhor gelado do mundo! Com a melhor banana do mundo!"
       ]
-     ]
+     ],
+     "o": {
+      "gelado": 1
+     }
     },
     {
      "c": "feliz",
@@ -6161,7 +6256,10 @@
      ],
      "x": [
       "Então montaram uma bancada à sombra. O João descascava bananas, a Francisca misturava e o Gelino soprava. Fffff! Um gelado. Fffff! Outro gelado."
-     ]
+     ],
+     "o": {
+      "gelado": 1
+     }
     },
     {
      "c": "feliz",
@@ -6172,7 +6270,10 @@
      ],
      "x": [
       "Vieram a Maia e o Balu, de língua de fora. Veio o Tuninho, a fazer bip-bop. E vieram as tartarugas, a discutir quem chegava primeiro à fila."
-     ]
+     ],
+     "o": {
+      "gelado": 1
+     }
     },
     {
      "c": "feliz",
@@ -6212,7 +6313,8 @@
       "Fim."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "gelado": 1
      }
     }
    ],
@@ -6299,7 +6401,8 @@
       "De repente, uma das estrelas mais pequeninas deu um tropeção no céu, rodopiou e caiu. Ziiiiiim! Lá para o fundo do jardim."
      ],
      "o": {
-      "noite": 1
+      "noite": 1,
+      "faisca": 1
      }
     },
     {
@@ -6421,7 +6524,10 @@
      ],
      "x": [
       "Apareceu uma raposa cor de laranja, de óculos redondos na ponta do focinho, um cachecol às riscas e um livro debaixo do braço. Era o Dr. Foxius, o sábio da floresta."
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "floresta",
@@ -6438,7 +6544,10 @@
        "bia",
        "Perdi as minhas três faíscas, Dr. Foxius."
       ]
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "floresta",
@@ -6451,7 +6560,10 @@
        "foxius",
        "Ora, ora. As faíscas de estrela gostam de se esconder onde faz falta um bocadinho de luz."
       ]
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "floresta",
@@ -6463,7 +6575,10 @@
        "foxius",
        "Uma foi para debaixo da terra. Outra subiu para as nuvens. E a terceira foi para o meio da mata, onde moram os pirilampos."
       ]
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "floresta",
@@ -6611,7 +6726,8 @@
       "Ao fundo do túnel, sentado numa cadeirinha de raízes, estava uma toupeira pequenina, de focinho cor-de-rosa e mãos enormes. Tinha a faísca ao colo, como um tesouro."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6630,7 +6746,8 @@
       ]
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6647,7 +6764,8 @@
       "O Tobias abraçou a faísca com mais força."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6662,7 +6780,8 @@
       ]
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6674,7 +6793,8 @@
       "A Francisca percebeu que o Tobias não era mau. Só tinha medo de voltar a ficar sozinho no escuro."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6694,7 +6814,8 @@
       ]
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1
      }
     },
     {
@@ -6710,7 +6831,9 @@
       ]
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1,
+      "cogumelos": 1
      }
     },
     {
@@ -6722,7 +6845,9 @@
       "Puseram os cogumelos pelas paredes do túnel. Pouco a pouco, a casa do Tobias ficou cheia de pontinhos verdes, como um céu às avessas."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1,
+      "cogumelos": 1
      }
     },
     {
@@ -6738,7 +6863,9 @@
       "E o Tobias, muito devagarinho, estendeu as mãos com a faísca."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "faisca": 1,
+      "cogumelos": 1
      }
     },
     {
@@ -6755,7 +6882,8 @@
       "A Bia abraçou a faísca. PLIM! E brilhou logo um bocadinho mais."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "cogumelos": 1
      },
      "plim": 1
     },
@@ -6775,7 +6903,8 @@
       ]
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "cogumelos": 1
      }
     },
     {
@@ -6912,7 +7041,7 @@
       "Fez-se uma escada de gelo azul, a brilhar, que subia até ao céu. A Francisca segurou-se bem e subiu degrau a degrau, com a Bia ao colo."
      ],
      "o": {
-      "escada": 1
+      "escadagelo": 1
      }
     },
     {
@@ -6950,7 +7079,10 @@
        "bia",
        "A minha segunda faísca!"
       ]
-     ]
+     ],
+     "o": {
+      "faisca": 1
+     }
     },
     {
      "c": "ceu",
@@ -6967,7 +7099,10 @@
        "nimbo",
        "Senhor Nimbo. E não estou para conversas. Aposto que também só vieram por causa das estrelas."
       ]
-     ]
+     ],
+     "o": {
+      "faisca": 1
+     }
     },
     {
      "c": "ceu",
@@ -6979,7 +7114,10 @@
        "nimbo",
        "Toda a gente olha para as estrelas. Toda a gente olha para o sol. Para o arco-íris. Mas para as nuvens? Ninguém! Por isso fiquei com a faísca. Assim alguém olha para mim."
       ]
-     ]
+     ],
+     "o": {
+      "faisca": 1
+     }
     },
     {
      "c": "ceu",
@@ -7043,7 +7181,8 @@
       "E ficou mais clarinho. E depois mais branco. E depois tão fofo que até fez uma chuvinha de alegria, daquelas que trazem arco-íris."
      ],
      "o": {
-      "arco": 1
+      "arco": 1,
+      "faisca": 1
      }
     },
     {
@@ -7100,7 +7239,7 @@
       "Continua..."
      ],
      "o": {
-      "escada": 1
+      "escadagelo": 1
      }
     }
    ],
@@ -7198,7 +7337,10 @@
      ],
      "x": [
       "Numa clareira estavam centenas de pirilampos, cada um com a sua luzinha na barriga. À frente deles, em cima de um cogumelo, estava a Pirilampa Lu, de varinha na mão."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
     },
     {
      "c": "mata",
@@ -7211,7 +7353,10 @@
        "Um, dois, três, luzinhas outra vez!"
       ],
       "E todos os pirilampos acendiam e apagavam ao mesmo tempo, ao ritmo da música."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
     },
     {
      "c": "mata",
@@ -7225,7 +7370,11 @@
        "bia",
        "É a minha terceira faísca!"
       ]
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7237,7 +7386,11 @@
        "lu",
        "Ai, é tua? Desculpa! Ela caiu aqui e nós usámo-la como a estrela do nosso concerto. É hoje à noite, o grande Concerto dos Pirilampos!"
       ]
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7250,7 +7403,11 @@
        "Sem ela, o concerto vai ser tão escurinho... Há tanto tempo que ensaiamos..."
       ],
       "E as luzinhas dos pirilampos ficaram todas tristes e fraquinhas."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7259,7 +7416,11 @@
      ],
      "x": [
       "A Bia ficou a pensar. Ela queria muito a faísca. Mas também não queria estragar a festa de ninguém."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7276,7 +7437,11 @@
        "francisca",
        "E se fizessem o concerto juntos? A faísca fica contigo, mas tu brilhas no concerto com eles!"
       ]
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7297,7 +7462,11 @@
        "lu",
        "Não faz mal. Só tens de brilhar quando eu disser três!"
       ]
-     ]
+     ],
+     "o": {
+      "pirilampos": 10,
+      "faisca": 1
+     }
     },
     {
      "c": "mata",
@@ -7308,7 +7477,8 @@
       "A Bia abraçou a terceira faísca. PLIM! E de repente brilhou como nunca: dourada, quente, linda."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "pirilampos": 10
      },
      "plim": 1
     },
@@ -7319,7 +7489,10 @@
      ],
      "x": [
       "O concerto começou. Os pirilampos cantavam e piscavam. Os grilos tocavam violino. O Tobias veio do túnel, e o Senhor Nimbo espreitava lá de cima, todo branquinho."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
     },
     {
      "c": "mata",
@@ -7335,7 +7508,8 @@
       "E a Bia acendeu-se toda. A mata inteira ficou iluminada, como se fosse dia de festa."
      ],
      "o": {
-      "luz": 1
+      "luz": 1,
+      "pirilampos": 10
      }
     },
     {
@@ -7346,7 +7520,10 @@
      ],
      "x": [
       "Toda a gente bateu palmas. A Maia uivou de alegria. Auuuu! A Francisca tinha os olhos cheios de luzinhas."
-     ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
     },
     {
      "c": "mata",
@@ -7363,7 +7540,10 @@
        "bia",
        "Obrigada eu. Nunca tinha brilhado com tantos amigos ao mesmo tempo."
       ]
-     ]
+     ],
+     "o": {
+      "pirilampos": 10
+     }
     },
     {
      "c": "bosque",
@@ -7457,7 +7637,10 @@
        "foxius",
        "Ora, ora. Esta noite o céu está limpinho. É a noite certa para voltar."
       ]
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "floresta",
@@ -7470,7 +7653,10 @@
        "foxius",
        "Mas para subir tão alto é preciso um caminho especial. Um caminho feito de todas as cores."
       ]
-     ]
+     ],
+     "o": {
+      "livro": 1
+     }
     },
     {
      "c": "feliz",
@@ -7507,7 +7693,10 @@
      ],
      "x": [
       "Vieram todos despedir-se. O Tobias, de óculos escuros por causa da claridade. O Senhor Nimbo, branquinho e sorridente. E a Pirilampa Lu, com o coro todo."
-     ]
+     ],
+     "o": {
+      "pirilampos": 8
+     }
     },
     {
      "c": "feliz",
